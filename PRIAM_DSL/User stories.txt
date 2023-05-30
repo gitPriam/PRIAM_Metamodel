@@ -1,0 +1,243 @@
+               USER STORIES                  
+
+****************** ACCESS RIGHT ******************
+
+
+-------------- user -------------------     
+AS A user
+I WANT to acces to all my personal data from which  
+     name,      firstName,      dateOfBirth,      weight, 
+     waistSize,      fatMass,      profession,      psychoProfil, 
+     morphoProfil, 
+SO THAT I exercise my right of access to all my personal data
+
+-------------- Mensuration -------------------     
+AS A user
+I WANT to acces to all my personal data from which  
+     newWeight,      newWaistSize,      newFatMass, 
+
+SO THAT I exercise my right of access to all my personal data
+
+
+
+
+
+
+-------------- FoodHabit -------------------     
+AS A user
+I WANT to acces to all my personal data from which  
+     id, 
+SO THAT I exercise my right of access to all my personal data
+
+-------------- Account -------------------     
+AS A user
+I WANT to acces to all my personal data from which  
+     userName,      passWord,      state, 
+
+SO THAT I exercise my right of access to all my personal data
+
+-------------- SportActivity -------------------     
+AS A user
+I WANT to acces to all my personal data from which  
+     sportActivityname,      duration,      calorie,      date, 
+
+SO THAT I exercise my right of access to all my personal data
+
+
+***************** RECTIFICATION RIGHT *****************
+
+
+-------------- user -------------------     
+AS A user
+I want to rectify any of my personal data 
+     name,       firstName,       dateOfBirth,       weight,  
+     waistSize,       fatMass,       profession,       psychoProfil,  
+     morphoProfil,  
+SO THAT I exercise my right to rectify personal data 
+
+-------------- Mensuration -------------------     
+AS A user
+I want to rectify any of my personal data 
+     newWeight,       newWaistSize,       newFatMass,  
+
+SO THAT I exercise my right to rectify personal data 
+
+
+
+
+
+
+-------------- FoodHabit -------------------     
+AS A user
+I want to rectify any of my personal data 
+     id,  
+SO THAT I exercise my right to rectify personal data 
+
+-------------- Account -------------------     
+AS A user
+I want to rectify any of my personal data 
+     userName,       passWord,       state,  
+
+SO THAT I exercise my right to rectify personal data 
+
+-------------- SportActivity -------------------     
+AS A user
+I want to rectify any of my personal data 
+     sportActivityname,       duration,       calorie,       date,  
+
+SO THAT I exercise my right to rectify personal data 
+
+
+***************** RIGHT TO BE FORGOTTEN *****************
+
+
+
+-------------user-------------------     
+AS A user
+I want to erase any of my personal data 
+     name,       firstName,       dateOfBirth,       weight,  
+     waistSize,       fatMass,       profession,       psychoProfil,  
+     morphoProfil,  
+SO THAT I exercise my right to be forgotten 
+
+
+-------------Mensuration-------------------     
+AS A user
+I want to erase any of my personal data 
+     newWeight,       newWaistSize,       newFatMass,  
+
+SO THAT I exercise my right to be forgotten 
+
+
+
+
+
+
+
+
+
+
+
+
+-------------FoodHabit-------------------     
+AS A user
+I want to erase any of my personal data 
+     id,  
+SO THAT I exercise my right to be forgotten 
+
+
+-------------Account-------------------     
+AS A user
+I want to erase any of my personal data 
+     userName,       passWord,       state,  
+
+SO THAT I exercise my right to be forgotten 
+
+
+-------------SportActivity-------------------     
+AS A user
+I want to erase any of my personal data 
+     sportActivityname,       duration,       calorie,       date,  
+
+SO THAT I exercise my right to be forgotten 
+
+
+
+***************** DATA PORTABILITY RIGHT *****************
+
+-------------user-------------------     
+AS A user
+I want to obtain any of my personal data 
+     name,       firstName,       dateOfBirth,       weight,  
+     waistSize,       fatMass,       profession,       psychoProfil,  
+     morphoProfil,  
+SO THAT I exercise my right to personal data portability
+-------------Mensuration-------------------     
+AS A user
+I want to obtain any of my personal data 
+     newWeight,       newWaistSize,       newFatMass,  
+
+SO THAT I exercise my right to personal data portability
+-------------FoodHabit-------------------     
+AS A user
+I want to obtain any of my personal data 
+     id,  
+SO THAT I exercise my right to personal data portability
+-------------Account-------------------     
+AS A user
+I want to obtain any of my personal data 
+     userName,       passWord,       state,  
+
+SO THAT I exercise my right to personal data portability
+-------------SportActivity-------------------     
+AS A user
+I want to obtain any of my personal data 
+     sportActivityname,       duration,       calorie,       date,  
+
+SO THAT I exercise my right to personal data portability
+
+
+              ********** Processing Right **********
+****** KNOWLEDGE RIGHT **********
+
+as a user
+     I want to know all information about "Mensuration Management"
+     such as : Purposes, personal data used, provider and datareceivers information
+SO THAT I exercise my right to knowledge
+
+as a user
+     I want to know all information about "Monitoring of sport activities"
+     such as : Purposes, personal data used, provider and datareceivers information
+SO THAT I exercise my right to knowledge
+
+as a user
+     I want to know all information about "Personal Prospection"
+     such as : Purposes, personal data used, provider and datareceivers information
+SO THAT I exercise my right to knowledge
+
+
+****** RIGHT TO GIVE AND WITHDRAW CONSENT **********
+
+as a user
+     I want to give or not and withdraw my consent anytime for "Mensuration Management"
+SO THAT I exercise my right to consent
+
+as a user
+     I want to give or not and withdraw my consent anytime for "Monitoring of sport activities"
+SO THAT I exercise my right to consent
+
+
+
+****** OPPOSITION RIGHT **********
+
+
+
+as a user
+     I want oppose to "Personal Prospection"
+SO THAT I exercise my right of opposition
+
+
+******* NOTIFICATION RIGHT **********
+
+as a user
+     I want to be notified when changes are made to "Mensuration Management"processing
+
+as a user
+     I want to be notified when changes are made to "Monitoring of sport activities"processing
+
+as a user
+     I want to be notified when changes are made to "Personal Prospection"processing
+
+
+******* Provider user stories **********
+as a Provider 
+I want to be able to edit any information about a data item, such as the category, the category of the person involved. 
+
+as a Provider 
+I want to be able to edit any information about a processing, such as category, type, purposes and data used 
+
+as a Provider 
+I want to be able to respond to requests from data subjects.
+
+as a Provider 
+I want to be able to generate the register.
