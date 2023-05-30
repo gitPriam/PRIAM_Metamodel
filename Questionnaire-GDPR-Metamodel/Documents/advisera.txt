@@ -1,0 +1,32 @@
+Is the legal basis for each processing activity documented ? 
+Is the purpose for each processing activity documented ?
+Will the personal data be processed for a purpose other than what was intended at the time of collection ?
+Do consent-collecting mechanisms require some action (e.g., ticking a box) or affirmative statement by the data subject ?
+Where processing involving special categories of data is based on consent, is explicit consent obtained (e.g., in writing or verbally) from the data subject ?
+Is a process in place to respond to requests for access to information held about a data subject ?
+Is a process in place to rectify / delete information about a data subject pursuant to a request ?
+Is a process in place to communicate updates of personal data to third parties who have received the data ?
+Is there a process in place to allow a data subject to revoke consent for a particular processing activity at any time ?
+When consent for a particular processing activity is revoked, are there processes in place to ensure processing is stopped, including any processing by third parties ?
+Is there a process in place to comply with requests to restrict the processing of data if requested by a data subject, including any processing by third parties ?
+Is a process in place to comply with requests from a data subject to have their personal data transferred directly to another controller, if technically possible ? 
+Is a process in place to stop processing for direct marketing purposes when an objection is received ?
+If engaged in automated decision making, including profiling, is there a process by which a data subject may request a manual review of the decision or profiling activity ?
+Has a representative within the European Union been designated ? 
+Do contracts with third parties specify that the third party, and any subcontractor that may be utilised, must have data protection and security protection clauses / annexes in place ?
+Are records kept of all processing activities your company engages in ?
+Are all data transfers documented, including cross-border transfers ?
+Is a data transfer mechanism in place in the event that personal data is to be transferred to a third country or international organisation ?
+Is a Privacy Notice provided to data subjects no later than at the time information is collected from those data subjects ?
+Is a Privacy Notice provided to data subjects at every point of collection ?
+If data is to be processed for a secondary purpose, are data subjects notified of the new purpose prior to processing ?
+Does the Privacy Notice clearly specify how data subjects can exercise their rights under the GDPR ?
+Is a process in place to ensure the appropriate Supervisory Authority is notified within 72 hours of a confirmed data breach ?
+Do agreements / contracts with third parties specify that the third party has to notify you (the controller) without undue delay after becoming aware of a data breach or potential data breach involving personal data ?
+Are internal policies in place defining what is considered to be a data breach and when and if notification to data subjects or Supervisory Authorities is required ?
+Is a log kept of all data breaches that occur, along with the effects and remedial actions taken ? 
+Are assessments of processing activities conducted by the relevant personnel to determine the data protection measures that should be in place, proportionate to the risks involved with the processing activity ? 
+Is privacy assessed at the beginning stages of development of any processing activity ?
+Are measures such as data minimisation and pseudonymisation implemented across all applicable organisational units ?
+Are Data Protection Impact Assessments (DPIAs) completed for processing activities involving special categories of information, automated decision making, or profiling ?
+Are DPIAs completed prior to implementing new technologies, processes, or projects ?
