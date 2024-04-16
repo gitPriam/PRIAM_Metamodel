@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_mgAOgPOxEe6CW7MgdPVb3A" name="ConsentCatalog">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_mhHo0POxEe6CW7MgdPVb3A">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_qO9zkPOxEe6CW7MgdPVb3A" name="DataSubject">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_5jqFoPOxEe6CW7MgdPVb3A" name="age" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_-VUd0POxEe6CW7MgdPVb3A" name="referencedId" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Eyq7wPOyEe6CW7MgdPVb3A" name="Contract">
+    <ownedRule xmi:type="uml:Constraint" xmi:id="_y9L9MPX8Ee6MlraA4SNnjQ" name="C.C1">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_y9NLUPX8Ee6MlraA4SNnjQ" name="constraintSpec">
+        <language>OCL</language>
+        <body>self.consent -> forAll( c : Consent | c.startDate >= self.signatureDate and c.endDate &lt;= self.expirationDate)</body>
+      </specification>
+    </ownedRule>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_G3hvcPOyEe6CW7MgdPVb3A" name="contractId">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Ltq_APOyEe6CW7MgdPVb3A" name="signatureDate" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_VkGRkPOyEe6CW7MgdPVb3A" name="expirationDate" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LPreQPhOEe6J8cdOUxJSVQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LQAOYPhOEe6J8cdOUxJSVQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_-XIJwfOzEe6CW7MgdPVb3A" name="consent" type="_s8CoYPOyEe6CW7MgdPVb3A" aggregation="composite" association="_-XGUkPOzEe6CW7MgdPVb3A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CBosoPO0Ee6CW7MgdPVb3A" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_czU4YPOyEe6CW7MgdPVb3A" memberEnd="_czX7sPOyEe6CW7MgdPVb3A _czZJ0fOyEe6CW7MgdPVb3A" navigableOwnedEnd="_czZJ0fOyEe6CW7MgdPVb3A _czX7sPOyEe6CW7MgdPVb3A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_czWtkPOyEe6CW7MgdPVb3A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_czXUoPOyEe6CW7MgdPVb3A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_czZJ0fOyEe6CW7MgdPVb3A" name="datasubject" type="_qO9zkPOxEe6CW7MgdPVb3A" association="_czU4YPOyEe6CW7MgdPVb3A"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_czX7sPOyEe6CW7MgdPVb3A" name="contract" type="_Eyq7wPOyEe6CW7MgdPVb3A" association="_czU4YPOyEe6CW7MgdPVb3A">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hguboPOyEe6CW7MgdPVb3A" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_s8CoYPOyEe6CW7MgdPVb3A" name="Consent">
+    <ownedRule xmi:type="uml:Constraint" xmi:id="_GfjesPX_Ee6MlraA4SNnjQ" name="C.C2">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Gfks0PX_Ee6MlraA4SNnjQ" name="constraintSpec">
+        <language>OCL</language>
+        <body>self.startDate >= self.processing.createdAt and self.endDate &lt;= self.processing.endedAt</body>
+      </specification>
+    </ownedRule>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_AnKvMPOzEe6CW7MgdPVb3A" name="startDate" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_C63QIPOzEe6CW7MgdPVb3A" name="endDate" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_kNixwPOzEe6CW7MgdPVb3A" name="consentId" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_-XJX4fOzEe6CW7MgdPVb3A" name="contract" type="_Eyq7wPOyEe6CW7MgdPVb3A" association="_-XGUkPOzEe6CW7MgdPVb3A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ISKE8POzEe6CW7MgdPVb3A" name="Processing">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Pvh1cPOzEe6CW7MgdPVb3A" name="ProcessingId" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RMAagPOzEe6CW7MgdPVb3A" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RLkVoPOzEe6CW7MgdPVb3A" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_rCug4POzEe6CW7MgdPVb3A" name="processingName" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_yFVoAPOzEe6CW7MgdPVb3A" name="pt" visibility="public" type="_SkZUUPO0Ee6CW7MgdPVb3A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_y8rfsPOzEe6CW7MgdPVb3A" name="pc" visibility="public" type="_WKJTAPO0Ee6CW7MgdPVb3A"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_z-yc8POzEe6CW7MgdPVb3A" name="createdAt" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_3k2ksPOzEe6CW7MgdPVb3A" name="modifiedAt" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QTzfcPhOEe6J8cdOUxJSVQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QUHBcPhOEe6J8cdOUxJSVQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_6WeXwPOzEe6CW7MgdPVb3A" name="endedAt" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UVJ1APhOEe6J8cdOUxJSVQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UVd-EPhOEe6J8cdOUxJSVQ" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-XGUkPOzEe6CW7MgdPVb3A" memberEnd="_-XIJwfOzEe6CW7MgdPVb3A _-XJX4fOzEe6CW7MgdPVb3A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-XHisPOzEe6CW7MgdPVb3A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-XIJwPOzEe6CW7MgdPVb3A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_F0y1MPO0Ee6CW7MgdPVb3A" visibility="public" memberEnd="_F00qYfO0Ee6CW7MgdPVb3A _F014gPO0Ee6CW7MgdPVb3A" navigableOwnedEnd="_F014gPO0Ee6CW7MgdPVb3A _F00qYfO0Ee6CW7MgdPVb3A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_F00DUPO0Ee6CW7MgdPVb3A" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_F00qYPO0Ee6CW7MgdPVb3A" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_F014gPO0Ee6CW7MgdPVb3A" name="consent" type="_s8CoYPOyEe6CW7MgdPVb3A" association="_F0y1MPO0Ee6CW7MgdPVb3A">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JeGeMPO0Ee6CW7MgdPVb3A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_I5RS0PO0Ee6CW7MgdPVb3A" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_F00qYfO0Ee6CW7MgdPVb3A" name="processing" type="_ISKE8POzEe6CW7MgdPVb3A" association="_F0y1MPO0Ee6CW7MgdPVb3A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_SkZUUPO0Ee6CW7MgdPVb3A" name="ProcessingType">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_wR9JYPO0Ee6CW7MgdPVb3A" name="Default"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_x_d0EPO0Ee6CW7MgdPVb3A" name="Mandatory"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_15G_IPO0Ee6CW7MgdPVb3A" name="Necessary"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4V38gPO0Ee6CW7MgdPVb3A" name="Optional"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_WKJTAPO0Ee6CW7MgdPVb3A" name="ProcessingCategory">
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Z3S6MPO0Ee6CW7MgdPVb3A" name="Consent/Contract"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_dNbvkPO0Ee6CW7MgdPVb3A" name="Ligitimate interest"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_gAZmcPO0Ee6CW7MgdPVb3A" name="Public interest"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_ik4VYPO0Ee6CW7MgdPVb3A" name=" Ligal obligation"/>
+    <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_smtmsPO0Ee6CW7MgdPVb3A" name="Vital interests"/>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_SploQPOyEe6CW7MgdPVb3A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Spx1gPOyEe6CW7MgdPVb3A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>
