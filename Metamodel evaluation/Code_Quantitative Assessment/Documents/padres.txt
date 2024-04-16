@@ -1,0 +1,31 @@
+Does your software ask and record for consent ?
+Does the consent inform the inviduals about the processing objectives ?
+Have you performed any audit to map data flows ? 
+Does your application provide any information regarding the individual’s rights ?
+The data being collected is sufficient to fulfill the consent purposes
+Is your application only holding the data being used ?
+Is it possible to demonstrate your data minimization practices ?
+Is it possible to justify the time frame for the retained data ?
+Does your application automatically deletes the data after the time frame expires ?
+Does your application provides a way, so the individual can erease his data (right to erasure) ?
+Does your software record a users consent choices ?
+Is personal data being collected for the specified, explicit and legitimate purpose ?
+Do the individuals have accessto the purpose details ? 
+Do you regularly update your purpose based on the changes made for the processing ?
+Do you ask for new consent if the purpose changes ? 
+Do you regularly review the data stored ?
+Can you still achieve your purpose, if the data collected is reduced ?
+Does you application provide mechanisms to keep data updated ?
+Do you inform individuals about their right of rectification ?
+Are you aware of your right to refuse requests for rectifications ? 
+Do you comply with the limit of one month to answer requests to update data (right of access) ?
+Does your application erase incorrect data ?
+Are you aware that you can keep data for longer then needed if you are only keeping it for public interest archiving, scientific or historical 
+Do you have any mechanisms to anonymize data ?
+Are you aware that the security of personal data is the date controller’s responsibility ?
+Do you apply techniques to protect against unlawful and unauthorised processing ?
+Do you have any measures regarding any data leak ?
+Do you have any mechanisms to pseudonymize data ? 
+Does your application use encryption ?
+Can you demonstrate compliance with the points answered before ? 
+Do you clear data, when it is no longer needed ?

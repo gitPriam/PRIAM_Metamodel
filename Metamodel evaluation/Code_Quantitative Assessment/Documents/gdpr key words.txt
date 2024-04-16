@@ -1,0 +1,536 @@
+Unauthorised access
+Regulatory act
+Single regulatory act
+Personal or household activities
+Adequate, relevant and non excessive (data)
+Provision of medical services / care / treatment
+E-government
+Employee’s designated email address
+First paragraph, sub-paragraph
+Anonymisation process
+Trade union affiliation
+Periodic Penalty Payments
+Targeted informational workshops
+(Serious) breach of rights and liberties
+Breach of privacy rights
+Summons for hearing
+Authentication
+Authorisation by the CNIL
+Authorisation granted
+Authorisation refused
+Authorisation deemed granted
+Authorisation deemed refused
+Single authorisation
+New drug approval (N.D.A.)
+Temporary Utilisation Authorisations (T.U.A.)
+Independent administrative authority
+Supervisory authority (authorities)
+Concerned Supervisory authority
+Data protection authority (DPA)
+Representatives of the law
+Warning
+Warning issued to a data controller
+Opinion (by the CNIL)
+Favourable opinion
+Favourable opinion with reservations
+Unfavourable opinion
+Prior opinion
+Opinion deemed favourable
+Opinion deemed unfavourable
+Motivated opinion  /  justified opinion
+Providers of social housing
+Database – Databank
+Legal basis; legal grounds
+Biometry, biometrics
+Money laundering
+CNIL executive committee
+Identity card
+Criminal record
+Licensing of data
+Processing implementation officer
+CNIL registered data protection officer; Privacy Officer (US)
+Contractual clauses
+Standard contractual clauses
+French DPA ; French data protection authority ; CNIL
+Civil Code
+Code of conduct
+Civil Procedure Code
+Criminal Procedure Code
+Data collection
+Unfair, fraudulent or unlawful collection of data
+Local authority
+Local authorities
+CNIL’s College of Commissioners
+Advisory Committee
+Workers’ Committee
+Protection of Persons Committee (PPC)
+Coordinated Supervision Committee
+European data protection board (EDPB)
+Commissioner
+Government Commissioner
+Freedom of Information Commission
+Communication (of data, of information)
+Electronic communication
+Entering into a contract / Concluding a contract
+Compliance
+(Current) understanding of biology, diagnostics and medicine
+(French) Constitutional Council
+The French Conseil d’Etat 
+Consent
+Free consent
+Specific consent
+Informed consent
+Prior consent
+Data retention
+Data retention period
+Storing of archives ; Record-keeping
+Intake / consumption
+Findings
+Consultation procedure involving personnel representative bodies
+Circumvention of the rules
+Fine 
+Supervision / Monitoring (Supervisory or investigatory powers) 
+Ex post investigations
+Prior investigations
+Ex ante investigations
+Onsite investigations
+Validity and consistency checks
+European data protection supervisor
+Council of Europe Convention 108 for the Protection of Individuals with regard to Automatic Processing of Persona Data (Council of Europe Convention 108)
+Amending protocol to the Convention for the Protection of Individuals with Regard to the Processing of Personal Data (Council of Europe Convention 108+)
+European Convention for the Protection of Human Rights and Fundamental Freedoms 
+Emergency contact information
+Temporary copy
+Representative in an EU Member State
+Court of Appeal
+Court of Justice of the European Union
+Court of Auditors
+European Court for the Protection of Human Rights and Fundamental Rights
+Court of Cassation
+Cyber surveillance 
+Inclusion date
+Automated decision
+Notification (of data processing)
+Defending one’s right in court
+Deliberation
+After receiving the proof of… 
+Authorisation Request (To request an authorisation by the CNIL)
+Request for an opinion (to request an official CNIL opinion)
+Request for advice
+To seek redress
+Referring (a case) or notifying something to the public prosecutor
+Recipient
+Data Protection Officer (DPO)
+Purpose diversion
+Medical diagnosis
+Communication (publication)
+Unauthorised communication / publication of data
+Directive 95 / 46 / EC on the protection of individuals with regard to the processing of personal data and on the free movement of such data
+Discrimination
+Affirmative action
+Reverse discrimination
+Biometric device
+Concealment
+Damages (general term)
+Can be compensatory or punitive damages.
+Aggregate data
+(Processing of) data for the purpose of therapeutic or medicinal patient follow-ups
+Biometric data
+Encoded data
+Data containing the assessment of individuals’ social difficulties
+Data concerning health
+Genetic data
+Personal data
+Data relating to offences, criminal convictions or security measures
+Sensitive data
+Data processed for journalistic purposes or for literary or artistic expression
+Data processed for scientific, historical or statistical purposes
+Disciplinary file
+Medical record
+Right to be informed
+Right to be forgotten
+Right to be de-listed
+Right to the respect of private life  /  Right to privacy
+Right of access
+Right of indirect access to one’s data  /  Indirect access rights
+Copyright
+Right to object
+Right to consult
+Right to request the rectification (and erasure)
+Right to restriction of processing
+Employment law (labour law)
+Legal claim
+Establishment of a legal claim
+Exercising a legal claim
+Defending a legal claim
+Private international law
+Conflict of laws
+Public international law 
+Human rights
+Retention period
+Deletion of data
+Adverse effects and events
+Disproportionate efforts
+Digital fingerprint
+Genetic fingerprint
+Compliance commitment (to)
+To commit to comply with 
+Recording of telephone conversations
+Recording of data
+Hindrance to the CNIL supervisory powers; hindering the CNIL supervisory powers
+Company  /  Undertaking
+Group of undertakings
+Listed company
+Private company
+State-owned company
+Epidemiology 
+Terminal equipment
+Main establishment
+Pharmacogenetic studies
+Pharmacogenomic studies
+Accuracy of the data
+Performance of a contract
+Exemption from notification
+Judicial expert; court expert
+Utilise / Use personal data
+Retrieval
+Security breach
+To be filed; to be put on file
+Fact Sheet
+Filing system
+Police file
+Physical file / hard-copy file
+Private file
+Public file
+Dispute management files
+Purpose
+Explicit and legitimate purpose
+Predetermined purpose
+Compatible purpose
+Original purpose
+International  /  cross border data flows
+Prior formalities
+Litigation / sanctions committee
+Plenary session
+To appeal the decision, case, sanction, etc…
+To appeal the decision (case, sanction, etc…) before the Court of Cassation, the State Council etc…
+Standard data collection form
+Appropriate safeguards
+Risk management
+Sex
+Management of healthcare services
+Economic Interest Group
+Severity (of a breach)
+Employment history
+Identifier
+Unique identifier
+Sector-based identifier
+Identification of individuals
+(Human) Identity
+Legal incapacity
+Data on deceased persons
+Cache data
+Information that do not comply with / 
+Descriptive information
+Computer science
+Criminal offences
+Criminal investigations and prosecutions
+Injunction to stop processing
+Injunction to suspend a transfer
+To examine a complaint
+Interconnection of files
+Prohibition on processing
+Temporary ban
+Permanent ban
+Interruption of processing
+Judge
+Judicial investigating authority
+Trial court
+The jurisdiction is not competent for...
+Privacy Seal  ; certification procedure ; to certify
+Medical laboratories
+European national data protection authorities
+Registered letter
+With acknowledgement of receipt
+Freedom of expression
+Civil and individual liberties
+Free movement of goods, persons, services and capital
+Lawfulness of processing 
+Register of notified processing
+Business premises
+Applicable law (applicable national law)
+Data Protection Act ; the French Data Protection Act
+Clinical batches
+Fair and lawful (collection of data)
+Mandate
+Term of office
+Renewed mandate
+Breach(es)
+Internal market
+Bad faith
+The organisation has acted in bad faith
+Preventive medicine
+Ombudsman
+General Conditions of Use  /  Terms and conditions
+Security measures
+Technical security measures
+Organizational security measures
+Supplementary measures
+Ministry (of) ; Department (of)
+Order to comply
+To render an order
+Injunction / order to comply
+Public interest mission
+Investigation
+Mission carried out in the exercise of an official authority
+Alteration (of data)
+Legitimate grounds 
+Right to object to processing of data on legitimate and compelling grounds
+Overriding the ....(type of) function
+Social Security number (SSN)
+Adequate (equivalent / sufficient) level of protection
+Identifier; identification number
+Relevant and reasoned objection
+Political opinions
+Mission order
+Agenda
+Organisation chart
+International organisation
+Professional associations
+Not-for-profit body
+Compliance packs
+Third country ; non-EU Member State
+Individual
+Data subject
+Legal entity; legal person
+Private legal entity
+Private legal entity managing a public service
+Public legal entity
+Individual; natural person
+Pharmaco-economic
+Pharmacovigilance
+Claim  /  complaint (to lodge a claim / complaint)
+Genetic polymorphism
+To undermine human identity 
+To undermine privacy rights
+To undermine human rights
+To undermine individual and civil liberties
+To cause harm ; to damage
+Supervisory power
+Sanction power
+Prior to
+Preamble
+Paragraph 58 of Preamble
+Collection of biological identifiers
+Chair
+CNIL Chair
+EDPB Chair
+Radio and TV press; audiovisual press
+Service providers
+Crime prevention
+Therapeutic care
+Contradictory procedure
+Emergency procedure 
+Notification procedure
+Record; Minutes (used for parliamentary meetings and other types of meetings)
+Public prosecutor
+Public Prosecutor Office
+Health professional
+Regulated professions
+Profiling
+Bill ; draft law
+Promoting agent
+Proportionality 
+Marketing
+Unsolicited commercial communications
+Protection of privacy, of private life
+Data protection; protection of personal data
+Human proteomic data
+Research protocol
+Pseudonymisation
+To submit a question for a preliminary ruling (to the Court of Justice of the European Union)
+Annual report
+Cross-referencing of data
+Approximation of laws
+Proof of receipt
+CNIL Recommendation
+Utilisation of personal data
+Administrative remedy
+Judicial remedies
+To collect any useful information
+Summary proceedings ; summary procedure
+Registers intended for public information
+Regulation (EU) 2016 / 679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95 / 46 / EC (General Data Protection Regulation)
+Internal rules of procedure
+Binding corporate rules
+Sectoral rules
+Personally; in person
+Performance at work 
+Summary of Product Characteristics
+Representative
+Personnel’s representatives
+Legal representative 
+Communication networks
+Liability (ties)
+Controller
+Website administrator
+Withdrawal of an authorisation
+National register for the identification of individuals
+Social security number (SSN)
+Referral to the judicial authority
+Submission of a case to the CNIL
+Financial penalty  /  fine
+Sanction(s)
+Financial sanction; financial penalty (fine)
+Administrative sanction
+Criminal sanction
+Sanctions provided for in Article...
+Plenary session
+Trade secrets
+Business secrecy
+Secrecy of correspondence
+Professional secrecy
+Banking secrecy
+Medical confidentiality
+Secretary General
+Business line
+Public security
+Investigations Department
+Public services
+Electronic signature
+Source website
+Risk source
+Processor
+Storage
+Intermediary or temporary storage
+Medical or therapeutical follow-up
+State security
+Data processing system
+Online services (services provided at a distance)
+Territory
+Third party
+Authorised third party
+Unauthorised third party
+(right) holder
+Holder of parental rights
+Data subject
+Processing
+Cross-border processing
+Data transmission
+Transposition of a Directive
+Users
+Individual variability
+Blocking
+Private life; Privacy
+Personal data breach
+Casting vote
+Vulnerability 
+Subject-matter and objectives
+Material scope
+Territorial scope
+Definitions
+Principles
+Principles relating to processing of personal data
+Lawfulness of processing
+Conditions for consent
+Conditions applicable to child’s consent in relation to information society services
+Processing of special categories of personal data
+Processing of personal data relating to criminal convictions and offences
+Processing which does not require identification
+Rights of the data subject
+Transparent information, communication and modalities for the exercise of the rights of the data subject
+Information to be provided where personal data are collected from the data subject
+Information to be provided where personal data have not been obtained from the data subject
+Right of access by the data subject
+Right to rectification
+Right to erasure (‘right to be forgotten’)
+Right to restriction of processing
+Notification obligation regarding rectification or erasure of personal data or restriction of processing
+Right to data portability
+Right to object
+Automated individual decision-making, including profiling
+Restrictions
+Controller and processor
+Responsibility of the controller
+Data protection by design and by default
+Joint controllers
+Representatives of controllers or processors not established in the Union
+Processor
+Processing under the authority of the controller or processor
+Records of processing activities
+Cooperation with the supervisory authority
+Security of processing
+Notification of a personal data breach to the supervisory authority
+Communication of a personal data breach to the data subject
+Data protection impact assessment
+Prior consultation
+Designation of the data protection officer
+Position of the data protection officer
+Tasks of the data protection officer
+Codes of conduct
+Monitoring of approved codes of conduct
+Certification
+Certification bodies
+Transfers of personal data to third countries or international organisations
+General principle for transfer
+Transfers on the basis of an adequacy decision
+Transfers subject to appropriate safeguards
+Binding corporate rules
+Transfers or disclosures not authorised by Union law
+Derogations for specific situations
+International cooperation for the protection of personal data
+Independent supervisory authorities
+Supervisory authority
+Independence
+General conditions for the members of the supervisory authority
+Rules on the establishment of the supervisory authority
+Competence
+Competence of the lead supervisory authority
+Tasks
+Powers
+Activity reports
+Cooperation and consistency
+Cooperation between the lead supervisory authority and the other supervisory authorities concerned
+Mutual assistance
+Joint operations of supervisory authorities
+Consistency mechanism
+Opinion of the Board
+Dispute resolution by the Board
+Urgency procedure
+Exchange of information
+European Data Protection Board
+Independence
+Tasks of the Board
+Reports
+Procedure
+Chair
+Tasks of the Chair
+Secretariat
+Confidentiality
+Remedies, liability and penalties
+Right to lodge a complaint with a supervisory authority
+Right to an effective judicial remedy against a supervisory authority
+Right to an effective judicial remedy against a controller or processor
+Representation of data subjects
+Suspension of proceedings
+Right to compensation and liability
+General conditions for imposing administrative fines
+Penalties
+Provisions relating to specific processing situations
+Processing and freedom of expression and information
+Processing and public access to official documents
+Processing of the national identification number
+Processing in the context of employment
+Safeguards and derogations relating to processing for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes
+Obligations of secrecy
+Existing data protection rules of churches and religious associations
+Delegated acts and implementing acts
+Exercise of the delegation
+Committee procedure
+Final provisions
+Repeal of Directive /    / EC
+Relationship with Directive  00  /    / EC
+Relationship with previously concluded Agreements
+Commission reports
+Review of other Union legal acts on data protection
+Entry into force and application
