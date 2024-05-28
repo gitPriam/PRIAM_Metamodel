@@ -5,3 +5,4 @@ Papyrus Eclipse can be integrated into the Eclipse environment by installing the
 You can import the PRIAM_Metamodel_OCL project to access the metamodel. To check the validity of OCLs, **"right-click on the metamodel in the interface"**, then select **"Validation"** --> **"Validate Model"**.
 
 The list of constraints is available in png format.
+
