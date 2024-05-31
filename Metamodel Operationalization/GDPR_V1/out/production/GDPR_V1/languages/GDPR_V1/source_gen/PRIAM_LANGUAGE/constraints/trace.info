@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="13,0,29,0" name="PRIAM_LANGUAGE.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:1dfc30dd-a369-40c9-b654-fedeab4cc8c4(PRIAM_LANGUAGE.constraints)/4400862896331978862">
+    <file name="DataSubject_Constraints.java">
+      <node id="4400862896331978862" at="20,36,21,35" concept="8" />
+      <node id="4400862896331978863" at="25,58,26,59" concept="8" />
+      <node id="4400862896331978863" at="29,109,30,100" concept="4" />
+      <node id="4400862896331978863" at="31,53,32,155" concept="1" />
+      <node id="4400862896331978863" at="33,7,34,20" concept="5" />
+      <node id="4400862896331979337" at="36,82,37,71" concept="5" />
+      <node id="4400862896331978862" at="41,84,42,119" concept="4" />
+      <node id="4400862896331978863" at="42,119,43,59" concept="1" />
+      <node id="4400862896331978862" at="43,59,44,22" concept="5" />
+      <node id="4400862896331978862" at="48,0,49,0" concept="6" trace="DataSubject$Ol" />
+      <node id="4400862896331978862" at="52,0,53,0" concept="6" trace="age$k8JX" />
+      <node id="4400862896331978862" at="20,0,23,0" concept="0" trace="DataSubject_Constraints#()V" />
+      <node id="4400862896331978863" at="25,0,28,0" concept="0" trace="Age_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="4400862896331978863" at="30,100,33,7" concept="2" />
+      <node id="4400862896331978863" at="36,0,39,0" concept="7" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;I)Z" />
+      <node id="4400862896331978862" at="40,0,46,0" concept="3" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="4400862896331978863" at="28,0,36,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="4400862896331978862" at="20,36,21,35" />
+      <scope id="4400862896331978863" at="25,58,26,59" />
+      <scope id="4400862896331978863" at="31,53,32,155" />
+      <scope id="4400862896331979028" at="36,82,37,71" />
+      <scope id="4400862896331978862" at="20,0,23,0" />
+      <scope id="4400862896331978863" at="25,0,28,0">
+        <var name="container" id="4400862896331978863" />
+      </scope>
+      <scope id="4400862896331978863" at="36,0,39,0">
+        <var name="node" id="4400862896331978863" />
+        <var name="propertyValue" id="4400862896331978863" />
+      </scope>
+      <scope id="4400862896331978862" at="41,84,44,22">
+        <var name="properties" id="4400862896331978862" />
+      </scope>
+      <scope id="4400862896331978863" at="29,109,34,20">
+        <var name="result" id="4400862896331978863" />
+      </scope>
+      <scope id="4400862896331978862" at="40,0,46,0" />
+      <scope id="4400862896331978863" at="28,0,36,0">
+        <var name="checkingNodeContext" id="4400862896331978863" />
+        <var name="node" id="4400862896331978863" />
+        <var name="propertyValue" id="4400862896331978863" />
+      </scope>
+      <unit id="4400862896331978862" at="47,0,50,0" name="PRIAM_LANGUAGE.constraints.DataSubject_Constraints$CONCEPTS" />
+      <unit id="4400862896331978862" at="51,0,54,0" name="PRIAM_LANGUAGE.constraints.DataSubject_Constraints$PROPS" />
+      <unit id="4400862896331978863" at="24,0,40,0" name="PRIAM_LANGUAGE.constraints.DataSubject_Constraints$Age_Property" />
+      <unit id="4400862896331978862" at="19,0,55,0" name="PRIAM_LANGUAGE.constraints.DataSubject_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

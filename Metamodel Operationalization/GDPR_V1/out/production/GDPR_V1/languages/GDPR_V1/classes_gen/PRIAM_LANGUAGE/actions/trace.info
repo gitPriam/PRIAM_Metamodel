@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="ActionAspectDescriptorImpl.java">
+      <unit at="12,0,32,0" name="PRIAM_LANGUAGE.actions.ActionAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:ae9a234e-2f2b-4d0a-a548-06e4e6ac0b45(PRIAM_LANGUAGE.actions)/1633837476039055326">
+    <file name="PdFactory.java">
+      <node id="5648447043213221042" at="18,102,19,243" concept="0" />
+      <node id="1633837476039055326" at="24,0,25,0" concept="2" trace="id$6Yum" />
+      <node id="1633837476039055326" at="28,0,29,0" concept="2" trace="Data$W_" />
+      <node id="5648447043213183316" at="18,0,21,0" concept="1" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="5648447043213183316" at="18,102,19,243" />
+      <scope id="5648447043213183316" at="18,0,21,0">
+        <var name="enclosingNode" id="5648447043213183316" />
+        <var name="index" id="5648447043213183316" />
+        <var name="model" id="5648447043213183316" />
+        <var name="newNode" id="5648447043213183316" />
+        <var name="sampleNode" id="5648447043213183316" />
+      </scope>
+      <unit id="1633837476039055326" at="23,0,26,0" name="PRIAM_LANGUAGE.actions.PdFactory$PROPS" />
+      <unit id="1633837476039055326" at="27,0,30,0" name="PRIAM_LANGUAGE.actions.PdFactory$CONCEPTS" />
+      <unit id="5648447043213183316" at="17,0,22,0" name="PRIAM_LANGUAGE.actions.PdFactory$NodeFactory_5648447043213183316" />
+      <unit id="1633837476039055326" at="16,0,31,0" name="PRIAM_LANGUAGE.actions.PdFactory" />
+    </file>
+  </root>
+  <root nodeRef="r:ae9a234e-2f2b-4d0a-a548-06e4e6ac0b45(PRIAM_LANGUAGE.actions)/1633837476039058289">
+    <file name="NpdFactory.java">
+      <node id="1633837476039058294" at="18,102,19,243" concept="0" />
+      <node id="1633837476039058289" at="24,0,25,0" concept="2" trace="id$6Yum" />
+      <node id="1633837476039058289" at="28,0,29,0" concept="2" trace="Data$W_" />
+      <node id="1633837476039058291" at="18,0,21,0" concept="1" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="1633837476039058291" at="18,102,19,243" />
+      <scope id="1633837476039058291" at="18,0,21,0">
+        <var name="enclosingNode" id="1633837476039058291" />
+        <var name="index" id="1633837476039058291" />
+        <var name="model" id="1633837476039058291" />
+        <var name="newNode" id="1633837476039058291" />
+        <var name="sampleNode" id="1633837476039058291" />
+      </scope>
+      <unit id="1633837476039058289" at="23,0,26,0" name="PRIAM_LANGUAGE.actions.NpdFactory$PROPS" />
+      <unit id="1633837476039058289" at="27,0,30,0" name="PRIAM_LANGUAGE.actions.NpdFactory$CONCEPTS" />
+      <unit id="1633837476039058291" at="17,0,22,0" name="PRIAM_LANGUAGE.actions.NpdFactory$NodeFactory_1633837476039058291" />
+      <unit id="1633837476039058289" at="16,0,31,0" name="PRIAM_LANGUAGE.actions.NpdFactory" />
+    </file>
+  </root>
+  <root nodeRef="r:ae9a234e-2f2b-4d0a-a548-06e4e6ac0b45(PRIAM_LANGUAGE.actions)/5648447043206985113">
+    <file name="DataSubjectFactory.java">
+      <node id="5648447043206985138" at="18,102,19,255" concept="0" />
+      <node id="5648447043206985113" at="24,0,25,0" concept="2" trace="id$UrlW" />
+      <node id="5648447043206985113" at="28,0,29,0" concept="2" trace="DataSubject$Ol" />
+      <node id="5648447043206985114" at="18,0,21,0" concept="1" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="5648447043206985114" at="18,102,19,255" />
+      <scope id="5648447043206985114" at="18,0,21,0">
+        <var name="enclosingNode" id="5648447043206985114" />
+        <var name="index" id="5648447043206985114" />
+        <var name="model" id="5648447043206985114" />
+        <var name="newNode" id="5648447043206985114" />
+        <var name="sampleNode" id="5648447043206985114" />
+      </scope>
+      <unit id="5648447043206985113" at="23,0,26,0" name="PRIAM_LANGUAGE.actions.DataSubjectFactory$PROPS" />
+      <unit id="5648447043206985113" at="27,0,30,0" name="PRIAM_LANGUAGE.actions.DataSubjectFactory$CONCEPTS" />
+      <unit id="5648447043206985114" at="17,0,22,0" name="PRIAM_LANGUAGE.actions.DataSubjectFactory$NodeFactory_5648447043206985114" />
+      <unit id="5648447043206985113" at="16,0,31,0" name="PRIAM_LANGUAGE.actions.DataSubjectFactory" />
+    </file>
+  </root>
+</debug-info>
+

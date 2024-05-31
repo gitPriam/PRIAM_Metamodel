@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="GeneratedFeedbackAspectFeedback.java">
+      <unit at="10,0,17,0" name="PRIAM_LANGUAGE.feedback.GeneratedFeedbackAspectFeedback" />
+    </file>
+  </root>
+  <root nodeRef="r:5eebfd3b-0fb0-4007-b496-48f3dce2989e(PRIAM_LANGUAGE.feedback)/1903269460204638977">
+    <file name="Processing_FeedbackFeedback.java">
+      <node id="1903269460204638977" at="21,0,22,0" concept="3" trace="CONCEPT" />
+      <node id="1903269460204638978" at="26,87,27,47" concept="2" />
+      <node id="1903269460204638977" at="31,0,32,0" concept="3" trace="PROVIDERS" />
+      <node id="1903269460204638977" at="33,40,34,19" concept="4" />
+      <node id="1903269460204638977" at="39,58,40,30" concept="2" />
+      <node id="1903269460204638977" at="44,0,45,0" concept="3" trace="modifiedDate$RWFH" />
+      <node id="1903269460204638977" at="33,0,36,0" concept="0" trace="Processing_FeedbackFeedback#()V" />
+      <node id="1903269460204638978" at="24,0,29,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/feedback/messages/FailingPropertyConstraintContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="1903269460204638977" at="37,0,42,0" concept="1" trace="getDeclaredProviders#()Ljava/util/stream/Stream;" />
+      <node id="1903269460204638978" at="23,0,30,0" concept="3" trace="MSGPROVIDER_WhenPropertyConstraintFails_g17563_a" />
+      <scope id="1903269460204638978" at="26,87,27,47" />
+      <scope id="1903269460204638977" at="33,40,34,19" />
+      <scope id="1903269460204638977" at="39,58,40,30" />
+      <scope id="1903269460204638977" at="33,0,36,0" />
+      <scope id="1903269460204638978" at="24,0,29,0">
+        <var name="context" id="1903269460204638978" />
+      </scope>
+      <scope id="1903269460204638977" at="37,0,42,0" />
+      <unit id="1903269460204638977" at="43,0,46,0" name="PRIAM_LANGUAGE.feedback.Processing_FeedbackFeedback$PROPS" />
+      <unit id="1903269460204638978" at="23,129,29,3" name="PRIAM_LANGUAGE.feedback.Processing_FeedbackFeedback$1" />
+      <unit id="1903269460204638977" at="20,0,47,0" name="PRIAM_LANGUAGE.feedback.Processing_FeedbackFeedback" />
+    </file>
+  </root>
+  <root nodeRef="r:5eebfd3b-0fb0-4007-b496-48f3dce2989e(PRIAM_LANGUAGE.feedback)/8305117647605690423">
+    <file name="DataSubject_FeedbackFeedback.java">
+      <node id="8305117647605690423" at="21,0,22,0" concept="3" trace="CONCEPT" />
+      <node id="8305117647605690424" at="26,75,27,47" concept="2" />
+      <node id="8305117647605690423" at="31,0,32,0" concept="3" trace="PROVIDERS" />
+      <node id="8305117647605690423" at="33,41,34,19" concept="4" />
+      <node id="8305117647605690423" at="39,58,40,30" concept="2" />
+      <node id="8305117647605690423" at="44,0,45,0" concept="3" trace="parent$TQS8" />
+      <node id="8305117647605690423" at="33,0,36,0" concept="0" trace="DataSubject_FeedbackFeedback#()V" />
+      <node id="8305117647605690424" at="24,0,29,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/feedback/messages/RefOutOfScopeContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="8305117647605690423" at="37,0,42,0" concept="1" trace="getDeclaredProviders#()Ljava/util/stream/Stream;" />
+      <node id="8305117647605690424" at="23,0,30,0" concept="3" trace="MSGPROVIDER_WhenReferenceIsOutOfScope_1n429f_a" />
+      <scope id="8305117647605690424" at="26,75,27,47" />
+      <scope id="8305117647605690423" at="33,41,34,19" />
+      <scope id="8305117647605690423" at="39,58,40,30" />
+      <scope id="8305117647605690423" at="33,0,36,0" />
+      <scope id="8305117647605690424" at="24,0,29,0">
+        <var name="context" id="8305117647605690424" />
+      </scope>
+      <scope id="8305117647605690423" at="37,0,42,0" />
+      <unit id="8305117647605690423" at="43,0,46,0" name="PRIAM_LANGUAGE.feedback.DataSubject_FeedbackFeedback$LINKS" />
+      <unit id="8305117647605690424" at="23,115,29,3" name="PRIAM_LANGUAGE.feedback.DataSubject_FeedbackFeedback$1" />
+      <unit id="8305117647605690423" at="20,0,47,0" name="PRIAM_LANGUAGE.feedback.DataSubject_FeedbackFeedback" />
+    </file>
+  </root>
+</debug-info>
+

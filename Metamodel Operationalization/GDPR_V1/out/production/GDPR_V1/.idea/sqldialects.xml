@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/languages/GDPR_V1/sandbox/source_gen/PRIAM_LANGUAGE/sandbox/Definition of personal data categories.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/languages/GDPR_V1/sandbox/source_gen/PRIAM_LANGUAGE/sandbox/PRIAM_GDPR.sql" dialect="MySQL" />
+  </component>
+</project>
