@@ -57,6 +57,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.addEditorCell(createCollection_1());
     editorCell.addEditorCell(createConstant_1());
     editorCell.addEditorCell(createRefNodeList_1());
+    editorCell.addEditorCell(createConstant_2());
+    editorCell.addEditorCell(createRefNodeList_2());
     return editorCell;
   }
   private EditorCell createConstant_0() {
@@ -244,14 +246,103 @@ import org.jetbrains.mps.openapi.language.SConcept;
       }
     }
   }
+  private EditorCell createConstant_2() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Transfers");
+    editorCell.setCellId("Constant_yl15g5_e0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createRefNodeList_2() {
+    AbstractCellListHandler handler = new processingTransferListHandler_yl15g5_f0(myNode, getEditorContext());
+    EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
+    editorCell.setCellId("refNodeList_processingTransfer");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setSRole(handler.getElementSRole());
+    return editorCell;
+  }
+  private static class processingTransferListHandler_yl15g5_f0 extends RefNodeListHandler {
+    @NotNull
+    private SNode myNode;
+
+    public processingTransferListHandler_yl15g5_f0(SNode ownerNode, EditorContext context) {
+      super(context, false);
+      myNode = ownerNode;
+    }
+
+    @NotNull
+    public SNode getNode() {
+      return myNode;
+    }
+    public SContainmentLink getSLink() {
+      return LINKS.processingTransfer$ZZGJ;
+    }
+    public SAbstractConcept getChildSConcept() {
+      return CONCEPTS.PersonalDataTransfer$ri;
+    }
+
+    public EditorCell createNodeCell(SNode elementNode) {
+      EditorCell elementCell = getUpdateSession().updateChildNodeCell(elementNode);
+      installElementCellActions(elementNode, elementCell, false);
+      return elementCell;
+    }
+    public EditorCell createEmptyCell() {
+      getCellFactory().pushCellContext();
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(processingTransferListHandler_yl15g5_f0.this.getNode(), LINKS.processingTransfer$ZZGJ));
+      try {
+        EditorCell emptyCell = null;
+        emptyCell = super.createEmptyCell();
+        installElementCellActions(null, emptyCell, true);
+        setCellContext(emptyCell);
+        return emptyCell;
+      } finally {
+        getCellFactory().popCellContext();
+      }
+    }
+
+    private static final Object OBJ = new Object();
+
+    public void installElementCellActions(SNode elementNode, EditorCell elementCell, boolean isEmptyCell) {
+      if (elementCell.getUserObject(AbstractCellListHandler.ELEMENT_CELL_COMPLETE_SET) == null) {
+        if (elementCell.getSubstituteInfo() == null || elementCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
+          elementCell.putUserObject(AbstractCellListHandler.ELEMENT_CELL_COMPLETE_SET, OBJ);
+          elementCell.setSubstituteInfo((isEmptyCell ? new SEmptyContainmentSubstituteInfo(elementCell) : new SChildSubstituteInfo(elementCell)));
+        }
+      }
+      if (elementCell.getUserObject(AbstractCellListHandler.ELEMENT_CELL_DELETE_SET) == null) {
+        if (elementNode != null) {
+          elementCell.putUserObject(AbstractCellListHandler.ELEMENT_CELL_DELETE_SET, OBJ);
+          elementCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(elementNode, CellAction_DeleteNode.DeleteDirection.FORWARD));
+        }
+      }
+      if (elementCell.getUserObject(ELEMENT_CELL_BACKSPACE_SET) == null) {
+        if (elementNode != null) {
+          elementCell.putUserObject(ELEMENT_CELL_BACKSPACE_SET, OBJ);
+          elementCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(elementNode, CellAction_DeleteNode.DeleteDirection.BACKWARD));
+        }
+      }
+      if (elementCell.getUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET) == null) {
+        if (elementNode != null) {
+          elementCell.putUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET, OBJ);
+        }
+      }
+    }
+  }
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink measures$x3gb = MetaAdapterFactory.getContainmentLink(0xe02dfeab630f4f6dL, 0x86a8a0833a3f70fcL, 0x500664cd9d79c21fL, 0x3c40a36f20df10c4L, "measures");
     /*package*/ static final SContainmentLink processing$XRQF = MetaAdapterFactory.getContainmentLink(0xe02dfeab630f4f6dL, 0x86a8a0833a3f70fcL, 0x500664cd9d79c21fL, 0x500664cd9d79c220L, "processing");
+    /*package*/ static final SContainmentLink processingTransfer$ZZGJ = MetaAdapterFactory.getContainmentLink(0xe02dfeab630f4f6dL, 0x86a8a0833a3f70fcL, 0x500664cd9d79c21fL, 0x8eea37654f47a1cL, "processingTransfer");
   }
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept Measure$t5 = MetaAdapterFactory.getConcept(0xe02dfeab630f4f6dL, 0x86a8a0833a3f70fcL, 0x5e5ebbabb1377b9fL, "PRIAM_LANGUAGE.structure.Measure");
     /*package*/ static final SConcept Processing$5F = MetaAdapterFactory.getConcept(0xe02dfeab630f4f6dL, 0x86a8a0833a3f70fcL, 0x5ed7b73b7b411242L, "PRIAM_LANGUAGE.structure.Processing");
+    /*package*/ static final SConcept PersonalDataTransfer$ri = MetaAdapterFactory.getConcept(0xe02dfeab630f4f6dL, 0x86a8a0833a3f70fcL, 0x7e195c253bae1d4fL, "PRIAM_LANGUAGE.structure.PersonalDataTransfer");
   }
 }

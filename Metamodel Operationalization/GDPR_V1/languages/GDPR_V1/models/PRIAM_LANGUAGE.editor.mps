@@ -1202,6 +1202,22 @@
         </node>
       </node>
       <node concept="l2Vlx" id="1TBED5l3Fxl" role="2iSdaV" />
+      <node concept="3F0ifn" id="zICRpleUHV" role="3EZMnx">
+        <property role="3F0ifm" value="Transfers" />
+        <node concept="pVoyu" id="zICRpleUIg" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="zICRpleUIB" role="3EZMnx">
+        <ref role="1NtTu8" to="20wa:zICRpkX7Cs" resolve="processingTransfer" />
+        <node concept="l2Vlx" id="zICRpleUID" role="2czzBx" />
+        <node concept="pVoyu" id="zICRpleUIZ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="zICRpleUJ1" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="1YnZUUMUaFu">
@@ -2120,10 +2136,37 @@
       <node concept="l2Vlx" id="7NG5rl3dIGL" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="BX0Qxpqfrf">
+  <node concept="24kQdi" id="zICRpkX7Cw">
     <property role="3GE5qa" value="Processing" />
     <ref role="1XX52x" to="20wa:7Spn2kVFxPf" resolve="PersonalDataTransfer" />
-    <node concept="3F0ifn" id="zYdDDSa1jd" role="2wV5jI" />
+    <node concept="3EZMnI" id="zICRpkX7Cy" role="2wV5jI">
+      <node concept="3EZMnI" id="zICRpkX7DJ" role="3EZMnx">
+        <node concept="VPM3Z" id="zICRpkX7DL" role="3F10Kt" />
+        <node concept="3F0ifn" id="zICRpkX7DZ" role="3EZMnx">
+          <property role="3F0ifm" value="processing reference:" />
+        </node>
+        <node concept="2iRfu4" id="zICRpkX7DO" role="2iSdaV" />
+        <node concept="3F1sOY" id="zICRpkX7E5" role="3EZMnx">
+          <ref role="1NtTu8" to="20wa:7Spn2kVKthq" resolve="processingRef" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="zICRpkX7Es" role="3EZMnx">
+        <property role="3F0ifm" value="Data:" />
+      </node>
+      <node concept="3F2HdR" id="zICRpkX7CQ" role="3EZMnx">
+        <ref role="1NtTu8" to="20wa:7Spn2kVHg6z" resolve="data" />
+        <node concept="2iRfu4" id="zICRpkX7CT" role="2czzBx" />
+        <node concept="VPM3Z" id="zICRpkX7CU" role="3F10Kt" />
+      </node>
+      <node concept="3F0ifn" id="zICRpkX7EB" role="3EZMnx">
+        <property role="3F0ifm" value="concerned actor(s):" />
+      </node>
+      <node concept="3F2HdR" id="zICRpkX7EN" role="3EZMnx">
+        <ref role="1NtTu8" to="20wa:7Spn2kVKthn" resolve="secondaryActor" />
+        <node concept="2iRkQZ" id="zICRpkX7EP" role="2czzBx" />
+      </node>
+      <node concept="2iRkQZ" id="zICRpkX7C_" role="2iSdaV" />
+    </node>
   </node>
 </model>
 

@@ -34,7 +34,6 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
-      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -76,7 +75,6 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
-      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
@@ -164,18 +162,7 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
-      <concept id="9042586985346099698" name="jetbrains.mps.baseLanguage.collections.structure.MultiForEachStatement" flags="nn" index="1_o_46">
-        <child id="9042586985346099734" name="forEach" index="1_o_by" />
-      </concept>
-      <concept id="9042586985346099733" name="jetbrains.mps.baseLanguage.collections.structure.MultiForEachPair" flags="ng" index="1_o_bx">
-        <child id="9042586985346099778" name="variable" index="1_o_aQ" />
-        <child id="9042586985346099735" name="input" index="1_o_bz" />
-      </concept>
-      <concept id="9042586985346099736" name="jetbrains.mps.baseLanguage.collections.structure.MultiForEachVariable" flags="ng" index="1_o_bG" />
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
-      <concept id="8293956702609956630" name="jetbrains.mps.baseLanguage.collections.structure.MultiForEachVariableReference" flags="nn" index="3M$PaV">
-        <reference id="8293956702609966325" name="variable" index="3M$S_o" />
-      </concept>
       <concept id="1178894719932" name="jetbrains.mps.baseLanguage.collections.structure.DistinctOperation" flags="nn" index="1VAtEI" />
     </language>
   </registry>
@@ -5496,14 +5483,9 @@
                 <property role="TrG5h" value="dataList" />
                 <node concept="17QB3L" id="2W9GWXMeFRV" role="1tU5fm" />
                 <node concept="2OqwBi" id="2W9GWXMg2EU" role="33vP2m">
-                  <node concept="2OqwBi" id="2W9GWXMg2be" role="2Oq$k0">
-                    <node concept="117lpO" id="2W9GWXMg23_" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="2W9GWXMg2pr" role="2OqNvi">
-                      <ref role="3Tt5mk" to="20wa:2pxN2iW2EZ1" resolve="dataAtnnotation" />
-                    </node>
-                  </node>
+                  <node concept="117lpO" id="2W9GWXMg23_" role="2Oq$k0" />
                   <node concept="2qgKlT" id="2W9GWXMg2WB" role="2OqNvi">
-                    <ref role="37wK5l" to="oniz:2W9GWXMeA2H" resolve="Display" />
+                    <ref role="37wK5l" to="oniz:zICRpkL01v" resolve="Display" />
                     <node concept="37vLTw" id="2W9GWXMg30L" role="37wK5m">
                       <ref role="3cqZAo" node="2W9GWXMcZEP" resolve="listDataByDSC" />
                     </node>
@@ -5624,144 +5606,7 @@
             <node concept="3clFbH" id="2W9GWXMqNj0" role="3cqZAp" />
           </node>
         </node>
-        <node concept="1X3_iC" id="2W9GWXMqPGb" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="68IGnZW1l4e" role="8Wnug">
-            <node concept="la8eA" id="68IGnZW1l4f" role="lcghm">
-              <property role="lacIc" value="Data subject: " />
-            </node>
-            <node concept="l8MVK" id="68IGnZW1onc" role="lcghm" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="2W9GWXMqPGc" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="68IGnZW1h6_" role="8Wnug">
-            <node concept="la8eA" id="68IGnZW1hjM" role="lcghm">
-              <property role="lacIc" value="As a data subject, I want to be informed  about which personal data is collected, processed and shared." />
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="2W9GWXMqPGd" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="68IGnZW1hxd" role="8Wnug">
-            <node concept="la8eA" id="68IGnZW1hxe" role="lcghm">
-              <property role="lacIc" value="As a data subject, I want to be informed of the source of my personal data." />
-            </node>
-            <node concept="l8MVK" id="68IGnZW1m8x" role="lcghm" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="2W9GWXMqPGe" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="68IGnZW1hVA" role="8Wnug">
-            <node concept="la8eA" id="68IGnZW1hVB" role="lcghm">
-              <property role="lacIc" value="As a data subject, I want to be informed about the categories of my personal data." />
-            </node>
-            <node concept="l8MVK" id="68IGnZW1m98" role="lcghm" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="2W9GWXMqPGf" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="68IGnZW1ilT" role="8Wnug">
-            <node concept="la8eA" id="68IGnZW1ilU" role="lcghm">
-              <property role="lacIc" value="As a data subject, I want to be informed about how long my personal data will be kept.(retention period)." />
-            </node>
-            <node concept="l8MVK" id="68IGnZW1m9J" role="lcghm" />
-          </node>
-        </node>
-        <node concept="3clFbH" id="68IGnZW1vu8" role="3cqZAp" />
-        <node concept="lc7rE" id="68IGnZW1lGl" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1lGm" role="lcghm">
-            <property role="lacIc" value="Data controller: " />
-          </node>
-          <node concept="l8MVK" id="68IGnZW1mam" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW1iKu" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1iKv" role="lcghm">
-            <property role="lacIc" value="As a data controller, I want to ensure that my organization has mechanisms in place to keep personal data up to date and accurate." />
-          </node>
-          <node concept="l8MVK" id="68IGnZW1onN" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW1jb9" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1jba" role="lcghm">
-            <property role="lacIc" value="As data controller, I want to list the data in my application and their status (personal or non-personal)." />
-          </node>
-          <node concept="l8MVK" id="68IGnZW1ooq" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW1j_I" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1j_J" role="lcghm">
-            <property role="lacIc" value="As a data controller, I want to document for each piece of personal data, its retention period, its source, its category, as well as the category \nof data subject to which it belongs that ensure adequate and transparent documentation.&quot;" />
-          </node>
-          <node concept="l8MVK" id="68IGnZW1op1" role="lcghm" />
-        </node>
-        <node concept="3clFbH" id="2W9GWXMxMmt" role="3cqZAp" />
-        <node concept="lc7rE" id="68IGnZW1opl" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1opm" role="lcghm">
-            <property role="lacIc" value="--------------------------- Processing part -----------------------------" />
-          </node>
-          <node concept="l8MVK" id="68IGnZW1opn" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW3KTN" role="3cqZAp">
-          <node concept="l8MVK" id="68IGnZW3KTO" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW1u8F" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1u8G" role="lcghm">
-            <property role="lacIc" value="Data subject: " />
-          </node>
-          <node concept="l8MVK" id="68IGnZW1u8H" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW1oBm" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1oOS" role="lcghm">
-            <property role="lacIc" value="As a data subject, I want to be informed of any personal processing performed on my personal data." />
-          </node>
-          <node concept="l8MVK" id="68IGnZW1oPu" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW1oPM" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1oPN" role="lcghm">
-            <property role="lacIc" value="As a data subject, I want to be informed of the legal basis for my processings." />
-          </node>
-          <node concept="l8MVK" id="68IGnZW1oPO" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW1p3q" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1p3r" role="lcghm">
-            <property role="lacIc" value="As a data subject, I want to be informed of the purposes for which my personal processing has been performed." />
-          </node>
-          <node concept="l8MVK" id="68IGnZW1p3s" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW1pgT" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1pgU" role="lcghm">
-            <property role="lacIc" value="As a data subject, I want to be informed about the transfer of my personal data within or outside the European Union, including the data transferred, \nthe purpose of the transfer and the receiving entity&quot;" />
-          </node>
-          <node concept="l8MVK" id="68IGnZW1pgV" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW1puB" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1puC" role="lcghm">
-            <property role="lacIc" value="As a data subject I must be informed of the technical and organizational measures taken to guarantee the protection of my personal data. " />
-          </node>
-          <node concept="l8MVK" id="68IGnZW1puD" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW1pGo" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1pGp" role="lcghm">
-            <property role="lacIc" value="As a data subject, I want to be informed of any further processing of my personal data, including the purposes of such processing" />
-          </node>
-          <node concept="l8MVK" id="68IGnZW1pGq" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW1pUc" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1pUd" role="lcghm">
-            <property role="lacIc" value="As a data subject I want to be notified of any changes concerning my personal data and data processing" />
-          </node>
-          <node concept="l8MVK" id="68IGnZW1pUe" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW1q83" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1q84" role="lcghm">
-            <property role="lacIc" value="&quot;As a data subject, I want to understand whether providing my personal data is a legal or contractual obligation, and what the consequences are if I choose not to\n provide this data, so that I can make decisions about disclosing my personal data.&quot;" />
-          </node>
-          <node concept="l8MVK" id="68IGnZW1q85" role="lcghm" />
-        </node>
+        <node concept="3clFbH" id="zICRpljqz4" role="3cqZAp" />
         <node concept="lc7rE" id="68IGnZW3HiF" role="3cqZAp">
           <node concept="l8MVK" id="68IGnZW3HiG" role="lcghm" />
         </node>
@@ -5813,6 +5658,526 @@
           </node>
           <node concept="l8MVK" id="68IGnZW1sm9" role="lcghm" />
         </node>
+        <node concept="3clFbH" id="zICRpljraO" role="3cqZAp" />
+        <node concept="3clFbH" id="68IGnZW1vu8" role="3cqZAp" />
+        <node concept="lc7rE" id="68IGnZW1lGl" role="3cqZAp">
+          <node concept="la8eA" id="68IGnZW1lGm" role="lcghm">
+            <property role="lacIc" value="Data controller: " />
+          </node>
+          <node concept="l8MVK" id="68IGnZW1mam" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="68IGnZW1iKu" role="3cqZAp">
+          <node concept="la8eA" id="68IGnZW1iKv" role="lcghm">
+            <property role="lacIc" value="As a data controller, I want to ensure that my organization has mechanisms in place to keep personal data up to date and accurate." />
+          </node>
+          <node concept="l8MVK" id="68IGnZW1onN" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="68IGnZW1jb9" role="3cqZAp">
+          <node concept="la8eA" id="68IGnZW1jba" role="lcghm">
+            <property role="lacIc" value="As data controller, I want to list the data in my application and their status (personal or non-personal)." />
+          </node>
+          <node concept="l8MVK" id="68IGnZW1ooq" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="68IGnZW1j_I" role="3cqZAp">
+          <node concept="la8eA" id="68IGnZW1j_J" role="lcghm">
+            <property role="lacIc" value="As a data controller, I want to document for each piece of personal data, its retention period, its source, its category, as well as the category \nof data subject to which it belongs that ensure adequate and transparent documentation.&quot;" />
+          </node>
+          <node concept="l8MVK" id="68IGnZW1op1" role="lcghm" />
+        </node>
+        <node concept="3clFbH" id="2W9GWXMxMmt" role="3cqZAp" />
+        <node concept="lc7rE" id="68IGnZW1opl" role="3cqZAp">
+          <node concept="la8eA" id="68IGnZW1opm" role="lcghm">
+            <property role="lacIc" value="--------------------------- Processing part -----------------------------" />
+          </node>
+          <node concept="l8MVK" id="68IGnZW1opn" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="zICRpkHHuR" role="3cqZAp">
+          <node concept="la8eA" id="zICRpkHHuS" role="lcghm">
+            <property role="lacIc" value="Data subject: " />
+          </node>
+          <node concept="l8MVK" id="zICRpkHHuT" role="lcghm" />
+        </node>
+        <node concept="2Gpval" id="zICRpkH9sW" role="3cqZAp">
+          <node concept="2GrKxI" id="zICRpkH9sX" role="2Gsz3X">
+            <property role="TrG5h" value="dsc" />
+          </node>
+          <node concept="2OqwBi" id="zICRpkH9sY" role="2GsD0m">
+            <node concept="2OqwBi" id="zICRpkH9sZ" role="2Oq$k0">
+              <node concept="2OqwBi" id="zICRpkH9t0" role="2Oq$k0">
+                <node concept="117lpO" id="zICRpkH9t1" role="2Oq$k0" />
+                <node concept="3TrEf2" id="zICRpkH9t2" role="2OqNvi">
+                  <ref role="3Tt5mk" to="20wa:2W9GWXMcx2s" resolve="actorAnnotation" />
+                </node>
+              </node>
+              <node concept="3Tsc0h" id="zICRpkH9t3" role="2OqNvi">
+                <ref role="3TtcxE" to="20wa:2Dg$yBZX58x" resolve="dataSubjectCategories" />
+              </node>
+            </node>
+            <node concept="1VAtEI" id="zICRpkH9t4" role="2OqNvi" />
+          </node>
+          <node concept="3clFbS" id="zICRpkH9t5" role="2LFqv$">
+            <node concept="3cpWs8" id="zICRpkH9t6" role="3cqZAp">
+              <node concept="3cpWsn" id="zICRpkH9t7" role="3cpWs9">
+                <property role="TrG5h" value="listDataByDSC" />
+                <node concept="_YKpA" id="zICRpkH9t8" role="1tU5fm">
+                  <node concept="17QB3L" id="zICRpkH9t9" role="_ZDj9" />
+                </node>
+                <node concept="2OqwBi" id="zICRpkH9ta" role="33vP2m">
+                  <node concept="2OqwBi" id="zICRpkH9tb" role="2Oq$k0">
+                    <node concept="117lpO" id="zICRpkH9tc" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="zICRpkH9td" role="2OqNvi">
+                      <ref role="3Tt5mk" to="20wa:2pxN2iW2EZ1" resolve="dataAtnnotation" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="zICRpkH9te" role="2OqNvi">
+                    <ref role="37wK5l" to="oniz:2W9GWXMd5x9" resolve="getDataListByDSCategory" />
+                    <node concept="2OqwBi" id="zICRpkH9tf" role="37wK5m">
+                      <node concept="2GrUjf" id="zICRpkH9tg" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="zICRpkH9sX" resolve="dsc" />
+                      </node>
+                      <node concept="3TrcHB" id="zICRpkH9th" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="zICRpkH9ti" role="3cqZAp">
+              <node concept="3cpWsn" id="zICRpkH9tj" role="3cpWs9">
+                <property role="TrG5h" value="dataList" />
+                <node concept="17QB3L" id="zICRpkH9tk" role="1tU5fm" />
+                <node concept="2OqwBi" id="zICRpkH9tl" role="33vP2m">
+                  <node concept="117lpO" id="zICRpkH9tn" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="zICRpkH9tp" role="2OqNvi">
+                    <ref role="37wK5l" to="oniz:zICRpkL01v" resolve="Display" />
+                    <node concept="37vLTw" id="zICRpkH9tq" role="37wK5m">
+                      <ref role="3cqZAo" node="zICRpkH9t7" resolve="listDataByDSC" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="zICRpl3WG6" role="3cqZAp" />
+            <node concept="3cpWs8" id="zICRpkHjwY" role="3cqZAp">
+              <node concept="3cpWsn" id="zICRpkHjx1" role="3cpWs9">
+                <property role="TrG5h" value="processings" />
+                <node concept="_YKpA" id="zICRpkHjwU" role="1tU5fm">
+                  <node concept="17QB3L" id="zICRpkHFgX" role="_ZDj9" />
+                </node>
+                <node concept="2OqwBi" id="zICRpkHkkm" role="33vP2m">
+                  <node concept="2OqwBi" id="zICRpkHjTF" role="2Oq$k0">
+                    <node concept="117lpO" id="zICRpkHjMa" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="zICRpkHka7" role="2OqNvi">
+                      <ref role="3Tt5mk" to="20wa:506pcQtxmXV" resolve="processingAnnotation" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="zICRpkHkvc" role="2OqNvi">
+                    <ref role="37wK5l" to="oniz:zICRpkHbQu" resolve="listProcessingName" />
+                    <node concept="2OqwBi" id="zICRpkHl2O" role="37wK5m">
+                      <node concept="2GrUjf" id="zICRpkHkRO" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="zICRpkH9sX" resolve="dsc" />
+                      </node>
+                      <node concept="3TrcHB" id="zICRpkHlI0" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="zICRpkKYur" role="3cqZAp">
+              <node concept="3cpWsn" id="zICRpkKYus" role="3cpWs9">
+                <property role="TrG5h" value="processingList" />
+                <node concept="17QB3L" id="zICRpkKYut" role="1tU5fm" />
+                <node concept="2OqwBi" id="zICRpkKYuu" role="33vP2m">
+                  <node concept="117lpO" id="zICRpkKYuw" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="zICRpkKYuy" role="2OqNvi">
+                    <ref role="37wK5l" to="oniz:zICRpkL01v" resolve="Display" />
+                    <node concept="37vLTw" id="zICRpkKYuz" role="37wK5m">
+                      <ref role="3cqZAo" node="zICRpkHjx1" resolve="processings" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="zICRpl3X4m" role="3cqZAp" />
+            <node concept="3cpWs8" id="zICRpl3XfJ" role="3cqZAp">
+              <node concept="3cpWsn" id="zICRpl3XfK" role="3cpWs9">
+                <property role="TrG5h" value="processingsTransfer" />
+                <node concept="_YKpA" id="zICRpl3XfL" role="1tU5fm">
+                  <node concept="17QB3L" id="zICRpl3XfM" role="_ZDj9" />
+                </node>
+                <node concept="2OqwBi" id="zICRpl3XfN" role="33vP2m">
+                  <node concept="2OqwBi" id="zICRpl3XfO" role="2Oq$k0">
+                    <node concept="117lpO" id="zICRpl3XfP" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="zICRpl3XfQ" role="2OqNvi">
+                      <ref role="3Tt5mk" to="20wa:506pcQtxmXV" resolve="processingAnnotation" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="zICRpl3XfR" role="2OqNvi">
+                    <ref role="37wK5l" to="oniz:zICRpl1aIT" resolve="listProcessingTransfer" />
+                    <node concept="2OqwBi" id="zICRpl3XfS" role="37wK5m">
+                      <node concept="2GrUjf" id="zICRpl3XfT" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="zICRpkH9sX" resolve="dsc" />
+                      </node>
+                      <node concept="3TrcHB" id="zICRpl3XfU" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="zICRpl3XfV" role="3cqZAp">
+              <node concept="3cpWsn" id="zICRpl3XfW" role="3cpWs9">
+                <property role="TrG5h" value="processingTransferList" />
+                <node concept="17QB3L" id="zICRpl3XfX" role="1tU5fm" />
+                <node concept="2OqwBi" id="zICRpl3XfY" role="33vP2m">
+                  <node concept="117lpO" id="zICRpl3XfZ" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="zICRpl3Xg0" role="2OqNvi">
+                    <ref role="37wK5l" to="oniz:zICRpkL01v" resolve="Display" />
+                    <node concept="37vLTw" id="zICRpl3Xg1" role="37wK5m">
+                      <ref role="3cqZAo" node="zICRpl3XfK" resolve="processings" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="zICRplhULR" role="3cqZAp" />
+            <node concept="3cpWs8" id="zICRplhV9a" role="3cqZAp">
+              <node concept="3cpWsn" id="zICRplhV9b" role="3cpWs9">
+                <property role="TrG5h" value="furtherProcessings" />
+                <node concept="_YKpA" id="zICRplhV9c" role="1tU5fm">
+                  <node concept="17QB3L" id="zICRplhV9d" role="_ZDj9" />
+                </node>
+                <node concept="2OqwBi" id="zICRplhV9e" role="33vP2m">
+                  <node concept="2OqwBi" id="zICRplhV9f" role="2Oq$k0">
+                    <node concept="117lpO" id="zICRplhV9g" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="zICRplhV9h" role="2OqNvi">
+                      <ref role="3Tt5mk" to="20wa:506pcQtxmXV" resolve="processingAnnotation" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="zICRplhV9i" role="2OqNvi">
+                    <ref role="37wK5l" to="oniz:zICRplhHpG" resolve="listFurtherProcessing" />
+                    <node concept="2OqwBi" id="zICRplhV9j" role="37wK5m">
+                      <node concept="2GrUjf" id="zICRplhV9k" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="zICRpkH9sX" resolve="dsc" />
+                      </node>
+                      <node concept="3TrcHB" id="zICRplhV9l" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="zICRplhV9m" role="3cqZAp">
+              <node concept="3cpWsn" id="zICRplhV9n" role="3cpWs9">
+                <property role="TrG5h" value="furtherProcessingList" />
+                <node concept="17QB3L" id="zICRplhV9o" role="1tU5fm" />
+                <node concept="2OqwBi" id="zICRplhV9p" role="33vP2m">
+                  <node concept="117lpO" id="zICRplhV9q" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="zICRplhV9r" role="2OqNvi">
+                    <ref role="37wK5l" to="oniz:zICRpkL01v" resolve="Display" />
+                    <node concept="37vLTw" id="zICRplhV9s" role="37wK5m">
+                      <ref role="3cqZAo" node="zICRplhV9b" resolve="processingsTransfer" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="zICRplhV70" role="3cqZAp" />
+            <node concept="lc7rE" id="zICRpkHHuP" role="3cqZAp">
+              <node concept="l8MVK" id="zICRpkHHuQ" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="zICRpkHHVN" role="3cqZAp">
+              <node concept="la8eA" id="zICRpkHHVO" role="lcghm">
+                <property role="lacIc" value="As a " />
+              </node>
+              <node concept="l9hG8" id="zICRpkHIIo" role="lcghm">
+                <node concept="2OqwBi" id="zICRpkHISq" role="lb14g">
+                  <node concept="2GrUjf" id="zICRpkHIJg" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="zICRpkH9sX" resolve="dsc" />
+                  </node>
+                  <node concept="3TrcHB" id="zICRpkHJln" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpkHJEx" role="lcghm">
+                <property role="lacIc" value=", I want to be informed of any personal processing performed on my personal data (" />
+              </node>
+              <node concept="l9hG8" id="zICRpkHK3j" role="lcghm">
+                <node concept="37vLTw" id="zICRpkHK4f" role="lb14g">
+                  <ref role="3cqZAo" node="zICRpkH9tj" resolve="dataList" />
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpkHK5q" role="lcghm">
+                <property role="lacIc" value=")" />
+              </node>
+              <node concept="l8MVK" id="zICRpkSHIT" role="lcghm" />
+            </node>
+            <node concept="3clFbH" id="zICRpkHJFq" role="3cqZAp" />
+            <node concept="lc7rE" id="zICRpkJ_MK" role="3cqZAp">
+              <node concept="la8eA" id="zICRpkJ_ML" role="lcghm">
+                <property role="lacIc" value="As a " />
+              </node>
+              <node concept="l9hG8" id="zICRpkJA7h" role="lcghm">
+                <node concept="2OqwBi" id="zICRpkJAhX" role="lb14g">
+                  <node concept="2GrUjf" id="zICRpkJA8a" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="zICRpkH9sX" resolve="dsc" />
+                  </node>
+                  <node concept="3TrcHB" id="zICRpkJAX$" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpkJA69" role="lcghm">
+                <property role="lacIc" value=", I want to be informed of the legal basis for my processings (" />
+              </node>
+              <node concept="l9hG8" id="zICRpkKX$n" role="lcghm">
+                <node concept="37vLTw" id="zICRpkKX_k" role="lb14g">
+                  <ref role="3cqZAo" node="zICRpkKYus" resolve="processingList" />
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpkSGZk" role="lcghm">
+                <property role="lacIc" value=")" />
+              </node>
+              <node concept="l8MVK" id="zICRpkJ_MM" role="lcghm" />
+            </node>
+            <node concept="3clFbH" id="zICRpkHHOl" role="3cqZAp" />
+            <node concept="lc7rE" id="zICRpkSHOG" role="3cqZAp">
+              <node concept="la8eA" id="zICRpkSHOH" role="lcghm">
+                <property role="lacIc" value="As a " />
+              </node>
+              <node concept="l9hG8" id="zICRpkSI92" role="lcghm">
+                <node concept="2OqwBi" id="zICRpkSIgI" role="lb14g">
+                  <node concept="2GrUjf" id="zICRpkSI9V" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="zICRpkH9sX" resolve="dsc" />
+                  </node>
+                  <node concept="3TrcHB" id="zICRpkSJ7y" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpkSJh1" role="lcghm">
+                <property role="lacIc" value=" , I want to be informed of the purposes for which my personal processing (" />
+              </node>
+              <node concept="l9hG8" id="zICRpkSJiP" role="lcghm">
+                <node concept="37vLTw" id="zICRpkSJjM" role="lb14g">
+                  <ref role="3cqZAo" node="zICRpkKYus" resolve="processingList" />
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpkSJHY" role="lcghm">
+                <property role="lacIc" value=")  has been performed" />
+              </node>
+              <node concept="l8MVK" id="zICRpkSHOI" role="lcghm" />
+            </node>
+            <node concept="3clFbH" id="zICRpkSHJl" role="3cqZAp" />
+            <node concept="lc7rE" id="zICRpkSMsp" role="3cqZAp">
+              <node concept="la8eA" id="zICRpkSMsq" role="lcghm">
+                <property role="lacIc" value="As a " />
+              </node>
+              <node concept="l9hG8" id="zICRpkSNMY" role="lcghm">
+                <node concept="2OqwBi" id="zICRpkSNUF" role="lb14g">
+                  <node concept="2GrUjf" id="zICRpkSNNS" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="zICRpkH9sX" resolve="dsc" />
+                  </node>
+                  <node concept="3TrcHB" id="zICRpkSOEy" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpkSOOV" role="lcghm">
+                <property role="lacIc" value=", I want to be informed of any processing ( " />
+              </node>
+              <node concept="l9hG8" id="zICRpl19Fn" role="lcghm">
+                <node concept="37vLTw" id="zICRpl3Y50" role="lb14g">
+                  <ref role="3cqZAo" node="zICRpl3XfW" resolve="processingTransferList" />
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpkSORD" role="lcghm">
+                <property role="lacIc" value=") related to the transfer of my personal data within or outside the European Union, including the data transferred, \nthe purpose of the transfer and the receiving entity" />
+              </node>
+              <node concept="l8MVK" id="zICRpkSMsr" role="lcghm" />
+            </node>
+            <node concept="3clFbH" id="zICRpkSMm$" role="3cqZAp" />
+            <node concept="lc7rE" id="zICRplhBub" role="3cqZAp">
+              <node concept="la8eA" id="zICRplhBuc" role="lcghm">
+                <property role="lacIc" value="As a data subject,  " />
+              </node>
+              <node concept="l9hG8" id="zICRplhBOb" role="lcghm">
+                <node concept="2OqwBi" id="zICRplhBYf" role="lb14g">
+                  <node concept="2GrUjf" id="zICRplhBP5" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="zICRpkH9sX" resolve="dsc" />
+                  </node>
+                  <node concept="3TrcHB" id="zICRplhCJz" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRplhCVW" role="lcghm">
+                <property role="lacIc" value="I must be informed of the technical and organizational measures taken to guarantee the protection of my personal data (" />
+              </node>
+              <node concept="l9hG8" id="zICRplhCXz" role="lcghm">
+                <node concept="37vLTw" id="zICRplhCYw" role="lb14g">
+                  <ref role="3cqZAo" node="zICRpkH9tj" resolve="dataList" />
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRplhCZt" role="lcghm">
+                <property role="lacIc" value=" )" />
+              </node>
+              <node concept="l8MVK" id="zICRplhBud" role="lcghm" />
+            </node>
+            <node concept="3clFbH" id="zICRplhDNB" role="3cqZAp" />
+            <node concept="lc7rE" id="zICRplhEaw" role="3cqZAp">
+              <node concept="la8eA" id="zICRplhEax" role="lcghm">
+                <property role="lacIc" value="As a " />
+              </node>
+              <node concept="l9hG8" id="zICRplhEjn" role="lcghm">
+                <node concept="2OqwBi" id="zICRplhEtp" role="lb14g">
+                  <node concept="2GrUjf" id="zICRplhEkf" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="zICRpkH9sX" resolve="dsc" />
+                  </node>
+                  <node concept="3TrcHB" id="zICRplhFBe" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRplhG2$" role="lcghm">
+                <property role="lacIc" value=", I want to be informed of any further processing (" />
+              </node>
+              <node concept="l9hG8" id="zICRplhG5J" role="lcghm">
+                <node concept="37vLTw" id="zICRplhW8T" role="lb14g">
+                  <ref role="3cqZAo" node="zICRplhV9n" resolve="furtherProcessingList" />
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRplhG77" role="lcghm">
+                <property role="lacIc" value=") of my personal data, including the purposes of such processing" />
+              </node>
+              <node concept="l8MVK" id="zICRplhEay" role="lcghm" />
+            </node>
+            <node concept="3clFbH" id="zICRplhE8z" role="3cqZAp" />
+            <node concept="lc7rE" id="zICRpljkvi" role="3cqZAp">
+              <node concept="la8eA" id="zICRpljkvj" role="lcghm">
+                <property role="lacIc" value="As a " />
+              </node>
+              <node concept="l9hG8" id="zICRpljkF1" role="lcghm">
+                <node concept="2OqwBi" id="zICRpljkP5" role="lb14g">
+                  <node concept="2GrUjf" id="zICRpljkFV" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="zICRpkH9sX" resolve="dsc" />
+                  </node>
+                  <node concept="3TrcHB" id="zICRpljlp8" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpljlQQ" role="lcghm">
+                <property role="lacIc" value=", I want to be notified of any changes concerning my personal data (" />
+              </node>
+              <node concept="l9hG8" id="zICRpljlUI" role="lcghm">
+                <node concept="37vLTw" id="zICRpljlVI" role="lb14g">
+                  <ref role="3cqZAo" node="zICRpkH9tj" resolve="dataList" />
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpljlS8" role="lcghm">
+                <property role="lacIc" value=") and data processing (" />
+              </node>
+              <node concept="l9hG8" id="zICRpljlTJ" role="lcghm">
+                <node concept="37vLTw" id="zICRpljlWg" role="lb14g">
+                  <ref role="3cqZAo" node="zICRpkKYus" resolve="processingList" />
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpljlXg" role="lcghm">
+                <property role="lacIc" value=" )" />
+              </node>
+              <node concept="l8MVK" id="zICRpljkvk" role="lcghm" />
+            </node>
+            <node concept="3clFbH" id="zICRpljmNK" role="3cqZAp" />
+            <node concept="lc7rE" id="zICRpljnnu" role="3cqZAp">
+              <node concept="la8eA" id="zICRpljnnv" role="lcghm">
+                <property role="lacIc" value="&quot;As a " />
+              </node>
+              <node concept="l9hG8" id="zICRpljnzF" role="lcghm">
+                <node concept="2OqwBi" id="zICRpljnHI" role="lb14g">
+                  <node concept="2GrUjf" id="zICRpljn$$" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="zICRpkH9sX" resolve="dsc" />
+                  </node>
+                  <node concept="3TrcHB" id="zICRpljoiE" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpljoLj" role="lcghm">
+                <property role="lacIc" value=", I want to understand whether providing my personal data ( " />
+              </node>
+              <node concept="l9hG8" id="zICRpljoNv" role="lcghm">
+                <node concept="37vLTw" id="zICRpljoPy" role="lb14g">
+                  <ref role="3cqZAo" node="zICRpkH9tj" resolve="dataList" />
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpljoOR" role="lcghm">
+                <property role="lacIc" value=") is a legal or contractual obligation, and what the consequences are if I choose not to\n provide this data, so that I can make decisions about disclosing my personal data." />
+              </node>
+              <node concept="l8MVK" id="zICRpljnnw" role="lcghm" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="zICRpljCFO" role="3cqZAp" />
+        <node concept="lc7rE" id="zICRpljEbM" role="3cqZAp">
+          <node concept="l8MVK" id="zICRpljEbN" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="zICRpljEbO" role="3cqZAp">
+          <node concept="la8eA" id="zICRpljEbP" role="lcghm">
+            <property role="lacIc" value="Data controller: " />
+          </node>
+          <node concept="l8MVK" id="zICRpljEbQ" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="zICRpljEbR" role="3cqZAp">
+          <node concept="la8eA" id="zICRpljEbS" role="lcghm">
+            <property role="lacIc" value="As a data controller, I want to ensure that my organization complies with the data minimization principles by collecting only the information that is \nstrictly necessary for the specific purposes of the processing. purposes of the processing.&quot;" />
+          </node>
+          <node concept="l8MVK" id="zICRpljEbT" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="zICRpljEbU" role="3cqZAp">
+          <node concept="la8eA" id="zICRpljEbV" role="lcghm">
+            <property role="lacIc" value="As a data controller, I want to be able to document the details of each data processing operation, including its legal basis, its purpose(s) and \nthe associated technical and organizational measures.&quot;\n\n" />
+          </node>
+          <node concept="l8MVK" id="zICRpljEbW" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="zICRpljEbX" role="3cqZAp">
+          <node concept="la8eA" id="zICRpljEbY" role="lcghm">
+            <property role="lacIc" value="As a data controller, I want to be able to document the data required for each processing operation (data usage table)" />
+          </node>
+          <node concept="l8MVK" id="zICRpljEbZ" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="zICRpljEc0" role="3cqZAp">
+          <node concept="la8eA" id="zICRpljEc1" role="lcghm">
+            <property role="lacIc" value="As a data controller I want to be able to document all transfers, including the data consumer and the data to be transferred." />
+          </node>
+          <node concept="l8MVK" id="zICRpljEc2" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="zICRpljEc3" role="3cqZAp">
+          <node concept="la8eA" id="zICRpljEc4" role="lcghm">
+            <property role="lacIc" value="&quot;As a data controller, I want to be able to add and perform a processing operation with the same purpose as another, where further\n processing is necessary, without obtaining additional consent from data subjects.&quot;" />
+          </node>
+          <node concept="l8MVK" id="zICRpljEc5" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="zICRpljEc6" role="3cqZAp">
+          <node concept="la8eA" id="zICRpljEc7" role="lcghm">
+            <property role="lacIc" value="&quot;As a controller, I want to ensure that my organization has complete documentation of processing activities, including purposes, \ncategories of data, and recipients (processing record).&quot;" />
+          </node>
+          <node concept="l8MVK" id="zICRpljEc8" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="zICRpljEc9" role="3cqZAp">
+          <node concept="la8eA" id="zICRpljEca" role="lcghm">
+            <property role="lacIc" value="As a data controller, I want to ensure that my organization carries out Data Protection Impact Assessments (DPIA)" />
+          </node>
+          <node concept="l8MVK" id="zICRpljEcb" role="lcghm" />
+        </node>
+        <node concept="3clFbH" id="zICRpljDlw" role="3cqZAp" />
+        <node concept="3clFbH" id="zICRpkH935" role="3cqZAp" />
         <node concept="lc7rE" id="68IGnZW1vYa" role="3cqZAp">
           <node concept="l8MVK" id="68IGnZW1wcy" role="lcghm" />
         </node>
@@ -5821,45 +6186,227 @@
             <property role="lacIc" value="--------------------------- Consent part -----------------------------" />
           </node>
         </node>
-        <node concept="lc7rE" id="68IGnZW1$Q5" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1$Q6" role="lcghm">
+        <node concept="lc7rE" id="zICRploPqu" role="3cqZAp">
+          <node concept="l8MVK" id="zICRploQlU" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="zICRpljH6F" role="3cqZAp">
+          <node concept="la8eA" id="zICRpljH6G" role="lcghm">
             <property role="lacIc" value="Data subject: " />
           </node>
-          <node concept="l8MVK" id="68IGnZW1$Q7" role="lcghm" />
+          <node concept="l8MVK" id="zICRpljH6H" role="lcghm" />
         </node>
-        <node concept="lc7rE" id="68IGnZW1x6M" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1xlf" role="lcghm">
-            <property role="lacIc" value="As a data subject I want to give my explicit consent for each specific processing of my personal data" />
+        <node concept="2Gpval" id="zICRpljH6I" role="3cqZAp">
+          <node concept="2GrKxI" id="zICRpljH6J" role="2Gsz3X">
+            <property role="TrG5h" value="dsc" />
           </node>
-          <node concept="l8MVK" id="68IGnZW1xlP" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW1xm9" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1xma" role="lcghm">
-            <property role="lacIc" value="As a data subject, I want to be able to change my consent preferences at any time." />
+          <node concept="2OqwBi" id="zICRpljH6K" role="2GsD0m">
+            <node concept="2OqwBi" id="zICRpljH6L" role="2Oq$k0">
+              <node concept="2OqwBi" id="zICRpljH6M" role="2Oq$k0">
+                <node concept="117lpO" id="zICRpljH6N" role="2Oq$k0" />
+                <node concept="3TrEf2" id="zICRpljH6O" role="2OqNvi">
+                  <ref role="3Tt5mk" to="20wa:2W9GWXMcx2s" resolve="actorAnnotation" />
+                </node>
+              </node>
+              <node concept="3Tsc0h" id="zICRpljH6P" role="2OqNvi">
+                <ref role="3TtcxE" to="20wa:2Dg$yBZX58x" resolve="dataSubjectCategories" />
+              </node>
+            </node>
+            <node concept="1VAtEI" id="zICRpljH6Q" role="2OqNvi" />
           </node>
-          <node concept="l8MVK" id="68IGnZW1xmb" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW1x$G" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1x$H" role="lcghm">
-            <property role="lacIc" value="As a data subject, I want to be able to refuse that my data to be used for profiling purposes or to be the subject of automated decisions." />
+          <node concept="3clFbS" id="zICRpljH6R" role="2LFqv$">
+            <node concept="3cpWs8" id="zICRpljH6S" role="3cqZAp">
+              <node concept="3cpWsn" id="zICRpljH6T" role="3cpWs9">
+                <property role="TrG5h" value="listDataByDSC" />
+                <node concept="_YKpA" id="zICRpljH6U" role="1tU5fm">
+                  <node concept="17QB3L" id="zICRpljH6V" role="_ZDj9" />
+                </node>
+                <node concept="2OqwBi" id="zICRpljH6W" role="33vP2m">
+                  <node concept="2OqwBi" id="zICRpljH6X" role="2Oq$k0">
+                    <node concept="117lpO" id="zICRpljH6Y" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="zICRpljH6Z" role="2OqNvi">
+                      <ref role="3Tt5mk" to="20wa:2pxN2iW2EZ1" resolve="dataAtnnotation" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="zICRpljH70" role="2OqNvi">
+                    <ref role="37wK5l" to="oniz:2W9GWXMd5x9" resolve="getDataListByDSCategory" />
+                    <node concept="2OqwBi" id="zICRpljH71" role="37wK5m">
+                      <node concept="2GrUjf" id="zICRpljH72" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="zICRpljH6J" resolve="dsc" />
+                      </node>
+                      <node concept="3TrcHB" id="zICRpljH73" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="zICRpljH74" role="3cqZAp">
+              <node concept="3cpWsn" id="zICRpljH75" role="3cpWs9">
+                <property role="TrG5h" value="dataList" />
+                <node concept="17QB3L" id="zICRpljH76" role="1tU5fm" />
+                <node concept="2OqwBi" id="zICRpljH77" role="33vP2m">
+                  <node concept="117lpO" id="zICRpljH78" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="zICRpljH79" role="2OqNvi">
+                    <ref role="37wK5l" to="oniz:zICRpkL01v" resolve="Display" />
+                    <node concept="37vLTw" id="zICRpljH7a" role="37wK5m">
+                      <ref role="3cqZAo" node="zICRpljH6T" resolve="listDataByDSC" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="zICRpljH7b" role="3cqZAp" />
+            <node concept="3cpWs8" id="zICRpljH7c" role="3cqZAp">
+              <node concept="3cpWsn" id="zICRpljH7d" role="3cpWs9">
+                <property role="TrG5h" value="processings" />
+                <node concept="_YKpA" id="zICRpljH7e" role="1tU5fm">
+                  <node concept="17QB3L" id="zICRpljH7f" role="_ZDj9" />
+                </node>
+                <node concept="2OqwBi" id="zICRpljH7g" role="33vP2m">
+                  <node concept="2OqwBi" id="zICRpljH7h" role="2Oq$k0">
+                    <node concept="117lpO" id="zICRpljH7i" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="zICRpljH7j" role="2OqNvi">
+                      <ref role="3Tt5mk" to="20wa:506pcQtxmXV" resolve="processingAnnotation" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="zICRpljH7k" role="2OqNvi">
+                    <ref role="37wK5l" to="oniz:zICRpkHbQu" resolve="listProcessingName" />
+                    <node concept="2OqwBi" id="zICRpljH7l" role="37wK5m">
+                      <node concept="2GrUjf" id="zICRpljH7m" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="zICRpljH6J" resolve="dsc" />
+                      </node>
+                      <node concept="3TrcHB" id="zICRpljH7n" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="zICRpljH7o" role="3cqZAp">
+              <node concept="3cpWsn" id="zICRpljH7p" role="3cpWs9">
+                <property role="TrG5h" value="processingList" />
+                <node concept="17QB3L" id="zICRpljH7q" role="1tU5fm" />
+                <node concept="2OqwBi" id="zICRpljH7r" role="33vP2m">
+                  <node concept="117lpO" id="zICRpljH7s" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="zICRpljH7t" role="2OqNvi">
+                    <ref role="37wK5l" to="oniz:zICRpkL01v" resolve="Display" />
+                    <node concept="37vLTw" id="zICRpljH7u" role="37wK5m">
+                      <ref role="3cqZAo" node="zICRpljH7d" resolve="processings" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="zICRpljH7N" role="3cqZAp" />
+            <node concept="lc7rE" id="68IGnZW1x6M" role="3cqZAp">
+              <node concept="la8eA" id="68IGnZW1xlf" role="lcghm">
+                <property role="lacIc" value="As a " />
+              </node>
+              <node concept="l9hG8" id="zICRpljLpf" role="lcghm">
+                <node concept="2OqwBi" id="zICRpljLzY" role="lb14g">
+                  <node concept="2GrUjf" id="zICRpljLqO" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="zICRpljH6J" resolve="dsc" />
+                  </node>
+                  <node concept="3TrcHB" id="zICRpljMrG" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpljLqt" role="lcghm">
+                <property role="lacIc" value=", I want to give my explicit consent for each specific processing of my personal data" />
+              </node>
+              <node concept="l9hG8" id="zICRpljMJ7" role="lcghm">
+                <node concept="37vLTw" id="zICRpljMK4" role="lb14g">
+                  <ref role="3cqZAo" node="zICRpljH7p" resolve="processingList" />
+                </node>
+              </node>
+              <node concept="l8MVK" id="68IGnZW1xlP" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="68IGnZW1xm9" role="3cqZAp">
+              <node concept="la8eA" id="68IGnZW1xma" role="lcghm">
+                <property role="lacIc" value="As a " />
+              </node>
+              <node concept="l9hG8" id="zICRpljML3" role="lcghm">
+                <node concept="2OqwBi" id="zICRpljMVt" role="lb14g">
+                  <node concept="2GrUjf" id="zICRpljMMj" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="zICRpljH6J" resolve="dsc" />
+                  </node>
+                  <node concept="3TrcHB" id="zICRpljNNO" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpljMLW" role="lcghm">
+                <property role="lacIc" value=", I want to be able to change my consent preferences at any time." />
+              </node>
+              <node concept="l8MVK" id="68IGnZW1xmb" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="68IGnZW1x$G" role="3cqZAp">
+              <node concept="la8eA" id="68IGnZW1x$H" role="lcghm">
+                <property role="lacIc" value="As a " />
+              </node>
+              <node concept="l9hG8" id="zICRpljO7N" role="lcghm">
+                <node concept="2OqwBi" id="zICRpljOhP" role="lb14g">
+                  <node concept="2GrUjf" id="zICRpljO8F" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="zICRpljH6J" resolve="dsc" />
+                  </node>
+                  <node concept="3TrcHB" id="zICRpljPaz" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpljPH8" role="lcghm">
+                <property role="lacIc" value=", I want to be able to refuse that my data to be used for profiling purposes or to be the subject of automated decisions." />
+              </node>
+              <node concept="l8MVK" id="68IGnZW1x$I" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="68IGnZW1xNi" role="3cqZAp">
+              <node concept="la8eA" id="68IGnZW1xNj" role="lcghm">
+                <property role="lacIc" value="As a " />
+              </node>
+              <node concept="l9hG8" id="zICRpljPHY" role="lcghm">
+                <node concept="2OqwBi" id="zICRpljPT5" role="lb14g">
+                  <node concept="2GrUjf" id="zICRpljPJV" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="zICRpljH6J" resolve="dsc" />
+                  </node>
+                  <node concept="3TrcHB" id="zICRpljQxA" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpljPIR" role="lcghm">
+                <property role="lacIc" value=", I want the process of collecting my consent to be transparent and easy to understand" />
+              </node>
+              <node concept="l8MVK" id="68IGnZW1xNk" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="68IGnZW1y1V" role="3cqZAp">
+              <node concept="la8eA" id="68IGnZW1y1W" role="lcghm">
+                <property role="lacIc" value="As a data subject " />
+              </node>
+              <node concept="l9hG8" id="zICRpljR49" role="lcghm">
+                <node concept="2OqwBi" id="zICRpljRec" role="lb14g">
+                  <node concept="2GrUjf" id="zICRpljR52" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="zICRpljH6J" resolve="dsc" />
+                  </node>
+                  <node concept="3TrcHB" id="zICRpljS8r" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpljSsH" role="lcghm">
+                <property role="lacIc" value=", I want to access/download my contract" />
+              </node>
+              <node concept="l8MVK" id="68IGnZW1y1X" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="68IGnZW3I44" role="3cqZAp">
+              <node concept="l8MVK" id="68IGnZW3I45" role="lcghm" />
+            </node>
+            <node concept="3clFbH" id="zICRpljL4A" role="3cqZAp" />
           </node>
-          <node concept="l8MVK" id="68IGnZW1x$I" role="lcghm" />
         </node>
-        <node concept="lc7rE" id="68IGnZW1xNi" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1xNj" role="lcghm">
-            <property role="lacIc" value="As a data subject, I want the process of collecting my consent to be transparent and easy to understand" />
-          </node>
-          <node concept="l8MVK" id="68IGnZW1xNk" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW1y1V" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1y1W" role="lcghm">
-            <property role="lacIc" value="As a data subject I want to access/download my contract" />
-          </node>
-          <node concept="l8MVK" id="68IGnZW1y1X" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW3I44" role="3cqZAp">
-          <node concept="l8MVK" id="68IGnZW3I45" role="lcghm" />
-        </node>
+        <node concept="3clFbH" id="zICRpljGg$" role="3cqZAp" />
         <node concept="lc7rE" id="68IGnZW1$9t" role="3cqZAp">
           <node concept="la8eA" id="68IGnZW1$9u" role="lcghm">
             <property role="lacIc" value="Data controller: " />
@@ -5898,96 +6445,491 @@
             <property role="lacIc" value="--------------------------- Right part -----------------------------" />
           </node>
         </node>
+        <node concept="lc7rE" id="zICRploRTc" role="3cqZAp">
+          <node concept="l8MVK" id="zICRploT34" role="lcghm" />
+        </node>
         <node concept="lc7rE" id="68IGnZW1_zz" role="3cqZAp">
           <node concept="la8eA" id="68IGnZW1_Mz" role="lcghm">
             <property role="lacIc" value="Data subject:" />
           </node>
           <node concept="l8MVK" id="68IGnZW1_NE" role="lcghm" />
         </node>
-        <node concept="lc7rE" id="68IGnZW1Axv" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1AKA" role="lcghm">
-            <property role="lacIc" value="As a [data subject] I want to acces to all my personal data [data list]" />
+        <node concept="2Gpval" id="zICRplljnJ" role="3cqZAp">
+          <node concept="2GrKxI" id="zICRplljnK" role="2Gsz3X">
+            <property role="TrG5h" value="dsc" />
           </node>
-          <node concept="l8MVK" id="68IGnZW1ALc" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW1B0z" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1B0$" role="lcghm">
-            <property role="lacIc" value="As a [data subject], I want to be able to object to processing [processing list]." />
+          <node concept="2OqwBi" id="zICRplljnL" role="2GsD0m">
+            <node concept="2OqwBi" id="zICRplljnM" role="2Oq$k0">
+              <node concept="2OqwBi" id="zICRplljnN" role="2Oq$k0">
+                <node concept="117lpO" id="zICRplljnO" role="2Oq$k0" />
+                <node concept="3TrEf2" id="zICRplljnP" role="2OqNvi">
+                  <ref role="3Tt5mk" to="20wa:2W9GWXMcx2s" resolve="actorAnnotation" />
+                </node>
+              </node>
+              <node concept="3Tsc0h" id="zICRplljnQ" role="2OqNvi">
+                <ref role="3TtcxE" to="20wa:2Dg$yBZX58x" resolve="dataSubjectCategories" />
+              </node>
+            </node>
+            <node concept="1VAtEI" id="zICRplljnR" role="2OqNvi" />
           </node>
-          <node concept="l8MVK" id="68IGnZW1B0_" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW1BuS" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1BuT" role="lcghm">
-            <property role="lacIc" value="As a [data subject], I want to be able to restrict processing [processing list]." />
+          <node concept="3clFbS" id="zICRplljnS" role="2LFqv$">
+            <node concept="3cpWs8" id="zICRplljnT" role="3cqZAp">
+              <node concept="3cpWsn" id="zICRplljnU" role="3cpWs9">
+                <property role="TrG5h" value="listDataByDSC" />
+                <node concept="_YKpA" id="zICRplljnV" role="1tU5fm">
+                  <node concept="17QB3L" id="zICRplljnW" role="_ZDj9" />
+                </node>
+                <node concept="2OqwBi" id="zICRplljnX" role="33vP2m">
+                  <node concept="2OqwBi" id="zICRplljnY" role="2Oq$k0">
+                    <node concept="117lpO" id="zICRplljnZ" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="zICRplljo0" role="2OqNvi">
+                      <ref role="3Tt5mk" to="20wa:2pxN2iW2EZ1" resolve="dataAtnnotation" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="zICRplljo1" role="2OqNvi">
+                    <ref role="37wK5l" to="oniz:2W9GWXMd5x9" resolve="getDataListByDSCategory" />
+                    <node concept="2OqwBi" id="zICRplljo2" role="37wK5m">
+                      <node concept="2GrUjf" id="zICRplljo3" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="zICRplljnK" resolve="dsc" />
+                      </node>
+                      <node concept="3TrcHB" id="zICRplljo4" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="zICRplljo5" role="3cqZAp">
+              <node concept="3cpWsn" id="zICRplljo6" role="3cpWs9">
+                <property role="TrG5h" value="dataList" />
+                <node concept="17QB3L" id="zICRplljo7" role="1tU5fm" />
+                <node concept="2OqwBi" id="zICRplljo8" role="33vP2m">
+                  <node concept="117lpO" id="zICRplljo9" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="zICRplljoa" role="2OqNvi">
+                    <ref role="37wK5l" to="oniz:zICRpkL01v" resolve="Display" />
+                    <node concept="37vLTw" id="zICRplljob" role="37wK5m">
+                      <ref role="3cqZAo" node="zICRplljnU" resolve="listDataByDSC" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="zICRplljoc" role="3cqZAp" />
+            <node concept="3cpWs8" id="zICRpllxIp" role="3cqZAp">
+              <node concept="3cpWsn" id="zICRpllxIq" role="3cpWs9">
+                <property role="TrG5h" value="listPortableDataByDSC" />
+                <node concept="_YKpA" id="zICRpllxIr" role="1tU5fm">
+                  <node concept="17QB3L" id="zICRpllxIs" role="_ZDj9" />
+                </node>
+                <node concept="2OqwBi" id="zICRpllxIt" role="33vP2m">
+                  <node concept="2OqwBi" id="zICRpllxIu" role="2Oq$k0">
+                    <node concept="117lpO" id="zICRpllxIv" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="zICRpllxIw" role="2OqNvi">
+                      <ref role="3Tt5mk" to="20wa:2pxN2iW2EZ1" resolve="dataAtnnotation" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="zICRpllxIx" role="2OqNvi">
+                    <ref role="37wK5l" to="oniz:zICRpllzna" resolve="getPortableDataListByDSCategory" />
+                    <node concept="2OqwBi" id="zICRpllxIy" role="37wK5m">
+                      <node concept="2GrUjf" id="zICRpllxIz" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="zICRplljnK" resolve="dsc" />
+                      </node>
+                      <node concept="3TrcHB" id="zICRpllxI$" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="zICRpllxI_" role="3cqZAp">
+              <node concept="3cpWsn" id="zICRpllxIA" role="3cpWs9">
+                <property role="TrG5h" value="portableDataList" />
+                <node concept="17QB3L" id="zICRpllxIB" role="1tU5fm" />
+                <node concept="2OqwBi" id="zICRpllxIC" role="33vP2m">
+                  <node concept="117lpO" id="zICRpllxID" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="zICRpllxIE" role="2OqNvi">
+                    <ref role="37wK5l" to="oniz:zICRpkL01v" resolve="Display" />
+                    <node concept="37vLTw" id="zICRpllxIF" role="37wK5m">
+                      <ref role="3cqZAo" node="zICRpllxIq" resolve="listDataByDSC" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="zICRpllxGa" role="3cqZAp" />
+            <node concept="3cpWs8" id="zICRplljod" role="3cqZAp">
+              <node concept="3cpWsn" id="zICRplljoe" role="3cpWs9">
+                <property role="TrG5h" value="processings" />
+                <node concept="_YKpA" id="zICRplljof" role="1tU5fm">
+                  <node concept="17QB3L" id="zICRplljog" role="_ZDj9" />
+                </node>
+                <node concept="2OqwBi" id="zICRplljoh" role="33vP2m">
+                  <node concept="2OqwBi" id="zICRplljoi" role="2Oq$k0">
+                    <node concept="117lpO" id="zICRplljoj" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="zICRplljok" role="2OqNvi">
+                      <ref role="3Tt5mk" to="20wa:506pcQtxmXV" resolve="processingAnnotation" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="zICRplljol" role="2OqNvi">
+                    <ref role="37wK5l" to="oniz:zICRpkHbQu" resolve="listProcessingName" />
+                    <node concept="2OqwBi" id="zICRplljom" role="37wK5m">
+                      <node concept="2GrUjf" id="zICRplljon" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="zICRplljnK" resolve="dsc" />
+                      </node>
+                      <node concept="3TrcHB" id="zICRplljoo" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="zICRplljop" role="3cqZAp">
+              <node concept="3cpWsn" id="zICRplljoq" role="3cpWs9">
+                <property role="TrG5h" value="processingList" />
+                <node concept="17QB3L" id="zICRplljor" role="1tU5fm" />
+                <node concept="2OqwBi" id="zICRplljos" role="33vP2m">
+                  <node concept="117lpO" id="zICRplljot" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="zICRplljou" role="2OqNvi">
+                    <ref role="37wK5l" to="oniz:zICRpkL01v" resolve="Display" />
+                    <node concept="37vLTw" id="zICRplljov" role="37wK5m">
+                      <ref role="3cqZAo" node="zICRplljoe" resolve="processings" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="zICRplljow" role="3cqZAp" />
+            <node concept="lc7rE" id="68IGnZW1Axv" role="3cqZAp">
+              <node concept="la8eA" id="68IGnZW1AKA" role="lcghm">
+                <property role="lacIc" value="As a " />
+              </node>
+              <node concept="l9hG8" id="zICRpllmMG" role="lcghm">
+                <node concept="2OqwBi" id="zICRpllmWK" role="lb14g">
+                  <node concept="2GrUjf" id="zICRpllmNA" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="zICRplljnK" resolve="dsc" />
+                  </node>
+                  <node concept="3TrcHB" id="zICRpllnQS" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpllob4" role="lcghm">
+                <property role="lacIc" value=", I want to acces to all my personal data (" />
+              </node>
+              <node concept="l9hG8" id="zICRpllocq" role="lcghm">
+                <node concept="37vLTw" id="zICRpllodn" role="lb14g">
+                  <ref role="3cqZAo" node="zICRplljo6" resolve="dataList" />
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpllof1" role="lcghm">
+                <property role="lacIc" value=" )" />
+              </node>
+              <node concept="l8MVK" id="68IGnZW1ALc" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="68IGnZW1B0z" role="3cqZAp">
+              <node concept="la8eA" id="68IGnZW1B0$" role="lcghm">
+                <property role="lacIc" value="As a " />
+              </node>
+              <node concept="l9hG8" id="zICRpllogv" role="lcghm">
+                <node concept="2OqwBi" id="zICRplloqV" role="lb14g">
+                  <node concept="2GrUjf" id="zICRpllohL" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="zICRplljnK" resolve="dsc" />
+                  </node>
+                  <node concept="3TrcHB" id="zICRpllpl9" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpllohp" role="lcghm">
+                <property role="lacIc" value=", I want to be able to object to processing (" />
+              </node>
+              <node concept="l9hG8" id="zICRpllpFB" role="lcghm">
+                <node concept="37vLTw" id="zICRpllpG$" role="lb14g">
+                  <ref role="3cqZAo" node="zICRplljoq" resolve="processingList" />
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpllpHK" role="lcghm">
+                <property role="lacIc" value=" )" />
+              </node>
+              <node concept="l8MVK" id="68IGnZW1B0_" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="68IGnZW1BuS" role="3cqZAp">
+              <node concept="la8eA" id="68IGnZW1BuT" role="lcghm">
+                <property role="lacIc" value="As a " />
+              </node>
+              <node concept="l9hG8" id="zICRpllpKW" role="lcghm">
+                <node concept="2OqwBi" id="zICRpllpV0" role="lb14g">
+                  <node concept="2GrUjf" id="zICRpllpLQ" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="zICRplljnK" resolve="dsc" />
+                  </node>
+                  <node concept="3TrcHB" id="zICRpllqPR" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpllrbl" role="lcghm">
+                <property role="lacIc" value=", I want to be able to restrict processing (" />
+              </node>
+              <node concept="l9hG8" id="zICRpllrdo" role="lcghm">
+                <node concept="37vLTw" id="zICRpllrel" role="lb14g">
+                  <ref role="3cqZAo" node="zICRplljoq" resolve="processingList" />
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpllrfi" role="lcghm">
+                <property role="lacIc" value=")" />
+              </node>
+              <node concept="l8MVK" id="68IGnZW1BuU" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="68IGnZW1BIa" role="3cqZAp">
+              <node concept="la8eA" id="68IGnZW1BIb" role="lcghm">
+                <property role="lacIc" value="As a " />
+              </node>
+              <node concept="l9hG8" id="zICRpllrg$" role="lcghm">
+                <node concept="2OqwBi" id="zICRpllrqC" role="lb14g">
+                  <node concept="2GrUjf" id="zICRpllrhu" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="zICRplljnK" resolve="dsc" />
+                  </node>
+                  <node concept="3TrcHB" id="zICRpllsm8" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpllsGf" role="lcghm">
+                <property role="lacIc" value=", I want to give or not and withdraw my consent anytime for (" />
+              </node>
+              <node concept="l9hG8" id="zICRpllsJm" role="lcghm">
+                <node concept="37vLTw" id="zICRpllsKk" role="lb14g">
+                  <ref role="3cqZAo" node="zICRplljoq" resolve="processingList" />
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpllsIe" role="lcghm">
+                <property role="lacIc" value=") SO THAT I exercise my right to consent" />
+              </node>
+              <node concept="l8MVK" id="68IGnZW1BIc" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="68IGnZW1BXd" role="3cqZAp">
+              <node concept="la8eA" id="68IGnZW1BXe" role="lcghm">
+                <property role="lacIc" value="As a " />
+              </node>
+              <node concept="l9hG8" id="zICRpllsMp" role="lcghm">
+                <node concept="2OqwBi" id="zICRpllsVI" role="lb14g">
+                  <node concept="2GrUjf" id="zICRpllsM$" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="zICRplljnK" resolve="dsc" />
+                  </node>
+                  <node concept="3TrcHB" id="zICRplltRR" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpllugD" role="lcghm">
+                <property role="lacIc" value=", I want to rectify any of my personal data ( " />
+              </node>
+              <node concept="l9hG8" id="zICRplluiO" role="lcghm">
+                <node concept="37vLTw" id="zICRpllujM" role="lb14g">
+                  <ref role="3cqZAo" node="zICRplljo6" resolve="dataList" />
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRplluia" role="lcghm">
+                <property role="lacIc" value="SO THAT I exercise my right to rectify personal data" />
+              </node>
+              <node concept="l8MVK" id="68IGnZW1BXf" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="68IGnZW1CcF" role="3cqZAp">
+              <node concept="la8eA" id="68IGnZW1CcG" role="lcghm">
+                <property role="lacIc" value="As a  " />
+              </node>
+              <node concept="l9hG8" id="zICRpllumn" role="lcghm">
+                <node concept="2OqwBi" id="zICRplluws" role="lb14g">
+                  <node concept="2GrUjf" id="zICRplluni" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="zICRplljnK" resolve="dsc" />
+                  </node>
+                  <node concept="3TrcHB" id="zICRpllvcs" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpllulK" role="lcghm">
+                <property role="lacIc" value=", I want to erase any of my personal data ( " />
+              </node>
+              <node concept="l9hG8" id="zICRpllvNb" role="lcghm">
+                <node concept="37vLTw" id="zICRpllvPx" role="lb14g">
+                  <ref role="3cqZAo" node="zICRplljo6" resolve="dataList" />
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpllvO9" role="lcghm">
+                <property role="lacIc" value=" ) SO THAT I exercise my right to be forgotten" />
+              </node>
+              <node concept="l8MVK" id="68IGnZW1CcH" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="68IGnZW1Cs6" role="3cqZAp">
+              <node concept="la8eA" id="68IGnZW1Cs7" role="lcghm">
+                <property role="lacIc" value="As a " />
+              </node>
+              <node concept="l9hG8" id="zICRpllvRs" role="lcghm">
+                <node concept="2OqwBi" id="zICRpllw1Q" role="lb14g">
+                  <node concept="2GrUjf" id="zICRpllvSG" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="zICRplljnK" resolve="dsc" />
+                  </node>
+                  <node concept="3TrcHB" id="zICRpllwIt" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpllvSl" role="lcghm">
+                <property role="lacIc" value=", I want to obtain any of my personal data (" />
+              </node>
+              <node concept="l9hG8" id="zICRpllxme" role="lcghm">
+                <node concept="37vLTw" id="zICRpllBfH" role="lb14g">
+                  <ref role="3cqZAo" node="zICRpllxIA" resolve="portableDataList" />
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpllxnA" role="lcghm">
+                <property role="lacIc" value="SO THAT I exercise my right to personal data portability" />
+              </node>
+              <node concept="l8MVK" id="68IGnZW1Cs8" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="68IGnZW1CFo" role="3cqZAp">
+              <node concept="la8eA" id="68IGnZW1CFp" role="lcghm">
+                <property role="lacIc" value="As a " />
+              </node>
+              <node concept="l9hG8" id="zICRpllBgQ" role="lcghm">
+                <node concept="2OqwBi" id="zICRpllBqU" role="lb14g">
+                  <node concept="2GrUjf" id="zICRpllBhK" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="zICRplljnK" resolve="dsc" />
+                  </node>
+                  <node concept="3TrcHB" id="zICRpllC9B" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpllCMl" role="lcghm">
+                <property role="lacIc" value=", I want to know all information about my personal data (" />
+              </node>
+              <node concept="l9hG8" id="zICRpllCOz" role="lcghm">
+                <node concept="37vLTw" id="zICRpllCPx" role="lb14g">
+                  <ref role="3cqZAo" node="zICRplljo6" resolve="dataList" />
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpllCQ3" role="lcghm">
+                <property role="lacIc" value=") and their processing SO THAT I enforce my right to knowledge" />
+              </node>
+              <node concept="l8MVK" id="68IGnZW1CFq" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="68IGnZW1CUT" role="3cqZAp">
+              <node concept="la8eA" id="68IGnZW1CUU" role="lcghm">
+                <property role="lacIc" value="As a " />
+              </node>
+              <node concept="l9hG8" id="zICRpllCRl" role="lcghm">
+                <node concept="2OqwBi" id="zICRpllD1p" role="lb14g">
+                  <node concept="2GrUjf" id="zICRpllCSf" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="zICRplljnK" resolve="dsc" />
+                  </node>
+                  <node concept="3TrcHB" id="zICRpllE1J" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpllEta" role="lcghm">
+                <property role="lacIc" value=", I want my personal data (" />
+              </node>
+              <node concept="l9hG8" id="zICRpllEuh" role="lcghm">
+                <node concept="37vLTw" id="zICRpllEve" role="lb14g">
+                  <ref role="3cqZAo" node="zICRplljo6" resolve="dataList" />
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpllEwb" role="lcghm">
+                <property role="lacIc" value="to be deleted when legally required to do so" />
+              </node>
+              <node concept="l8MVK" id="68IGnZW1CUV" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="68IGnZW1Dab" role="3cqZAp">
+              <node concept="la8eA" id="68IGnZW1Dac" role="lcghm">
+                <property role="lacIc" value="As a [data subject], I want to be informed of my rights" />
+              </node>
+              <node concept="l8MVK" id="68IGnZW1Dad" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="68IGnZW1DpS" role="3cqZAp">
+              <node concept="la8eA" id="68IGnZW1DpT" role="lcghm">
+                <property role="lacIc" value="As a  " />
+              </node>
+              <node concept="l9hG8" id="zICRpllExA" role="lcghm">
+                <node concept="2OqwBi" id="zICRpllEFE" role="lb14g">
+                  <node concept="2GrUjf" id="zICRpllEyw" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="zICRplljnK" resolve="dsc" />
+                  </node>
+                  <node concept="3TrcHB" id="zICRpllFGD" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpllGnm" role="lcghm">
+                <property role="lacIc" value=", I want to be informed of my right to lodge a complaint with a supervisory authority" />
+              </node>
+              <node concept="l8MVK" id="68IGnZW1DpU" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="68IGnZW1DDy" role="3cqZAp">
+              <node concept="la8eA" id="68IGnZW1DDz" role="lcghm">
+                <property role="lacIc" value="As a  " />
+              </node>
+              <node concept="l9hG8" id="zICRpllGpS" role="lcghm">
+                <node concept="2OqwBi" id="zICRpllGzV" role="lb14g">
+                  <node concept="2GrUjf" id="zICRpllGqL" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="zICRplljnK" resolve="dsc" />
+                  </node>
+                  <node concept="3TrcHB" id="zICRpllHkb" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpllHYy" role="lcghm">
+                <property role="lacIc" value=", I want to be notified when the limitation is lifted" />
+              </node>
+              <node concept="l8MVK" id="68IGnZW1DD$" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="68IGnZW1DTf" role="3cqZAp">
+              <node concept="la8eA" id="68IGnZW1DTg" role="lcghm">
+                <property role="lacIc" value="As a " />
+              </node>
+              <node concept="l9hG8" id="zICRpllHZB" role="lcghm">
+                <node concept="2OqwBi" id="zICRpllI9E" role="lb14g">
+                  <node concept="2GrUjf" id="zICRpllI0w" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="zICRplljnK" resolve="dsc" />
+                  </node>
+                  <node concept="3TrcHB" id="zICRpllJbn" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpllJCo" role="lcghm">
+                <property role="lacIc" value=", I want to be notified of responses to my requests to enforce my rights" />
+              </node>
+              <node concept="l8MVK" id="68IGnZW1DTh" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="68IGnZW1E8Z" role="3cqZAp">
+              <node concept="la8eA" id="68IGnZW1E90" role="lcghm">
+                <property role="lacIc" value="As a " />
+              </node>
+              <node concept="l9hG8" id="zICRpllJDt" role="lcghm">
+                <node concept="2OqwBi" id="zICRpllJNw" role="lb14g">
+                  <node concept="2GrUjf" id="zICRpllJEm" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="zICRplljnK" resolve="dsc" />
+                  </node>
+                  <node concept="3TrcHB" id="zICRpllK$q" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRpllLfv" role="lcghm">
+                <property role="lacIc" value=", I want to be informed of the answers given to my requests, as well as the date and justification." />
+              </node>
+              <node concept="l8MVK" id="68IGnZW1E91" role="lcghm" />
+            </node>
           </node>
-          <node concept="l8MVK" id="68IGnZW1BuU" role="lcghm" />
         </node>
-        <node concept="lc7rE" id="68IGnZW1BIa" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1BIb" role="lcghm">
-            <property role="lacIc" value="As a [data subject] I want to give or not and withdraw my consent anytime for [ ] SO THAT I exercise my right to consent" />
-          </node>
-          <node concept="l8MVK" id="68IGnZW1BIc" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW1BXd" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1BXe" role="lcghm">
-            <property role="lacIc" value="As a  [data subject] I want to rectify any of my personal data [data list] SO THAT I exercise my right to rectify personal data " />
-          </node>
-          <node concept="l8MVK" id="68IGnZW1BXf" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW1CcF" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1CcG" role="lcghm">
-            <property role="lacIc" value="AS [data subject] I want to erase any of my personal data  [data list] SO THAT I exercise my right to be forgotten " />
-          </node>
-          <node concept="l8MVK" id="68IGnZW1CcH" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW1Cs6" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1Cs7" role="lcghm">
-            <property role="lacIc" value="As a [data subject] I want to obtain any of my personal data [data list] SO THAT I exercise my right to personal data portability" />
-          </node>
-          <node concept="l8MVK" id="68IGnZW1Cs8" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW1CFo" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1CFp" role="lcghm">
-            <property role="lacIc" value="As a [data subject] I want to know all information about my personal data and their processing SO THAT I enforce my right to knowledge" />
-          </node>
-          <node concept="l8MVK" id="68IGnZW1CFq" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW1CUT" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1CUU" role="lcghm">
-            <property role="lacIc" value="As a [data subject], I want my personal data to be deleted when legally required to do so" />
-          </node>
-          <node concept="l8MVK" id="68IGnZW1CUV" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW1Dab" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1Dac" role="lcghm">
-            <property role="lacIc" value="As a [data subject], I want to be informed of my rights" />
-          </node>
-          <node concept="l8MVK" id="68IGnZW1Dad" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW1DpS" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1DpT" role="lcghm">
-            <property role="lacIc" value="As a data subject, I want to be informed of my right to lodge a complaint with a supervisory authority, " />
-          </node>
-          <node concept="l8MVK" id="68IGnZW1DpU" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW1DDy" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1DDz" role="lcghm">
-            <property role="lacIc" value="As data subject I want to be notified when the limitation is lifted " />
-          </node>
-          <node concept="l8MVK" id="68IGnZW1DD$" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW1DTf" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1DTg" role="lcghm">
-            <property role="lacIc" value="As a data subject I want to be notified of responses to my requests to enforce my rights" />
-          </node>
-          <node concept="l8MVK" id="68IGnZW1DTh" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW1E8Z" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1E90" role="lcghm">
-            <property role="lacIc" value="As the data subject, I want to be informed of the answers given to my requests, as well as the date and justification." />
-          </node>
-          <node concept="l8MVK" id="68IGnZW1E91" role="lcghm" />
-        </node>
+        <node concept="3clFbH" id="zICRplli_f" role="3cqZAp" />
         <node concept="lc7rE" id="68IGnZW3IPz" role="3cqZAp">
           <node concept="l8MVK" id="68IGnZW3IP$" role="lcghm" />
         </node>
@@ -6036,26 +6978,173 @@
           </node>
           <node concept="l8MVK" id="68IGnZW1Hd7" role="lcghm" />
         </node>
-        <node concept="lc7rE" id="68IGnZW1Htl" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1Htm" role="lcghm">
-            <property role="lacIc" value="&quot;As a data subject I want be informed of the technical and organizational measures taken to guarantee the protection of my personal data \nthat has been breached.&quot;" />
+        <node concept="2Gpval" id="zICRplncUB" role="3cqZAp">
+          <node concept="2GrKxI" id="zICRplncUC" role="2Gsz3X">
+            <property role="TrG5h" value="dsc" />
           </node>
-          <node concept="l8MVK" id="68IGnZW1Htn" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW1HXc" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1HXd" role="lcghm">
-            <property role="lacIc" value="As a [data subject], I want to be informed of the data that has been breached and the consequences of the breach." />
+          <node concept="2OqwBi" id="zICRplncUD" role="2GsD0m">
+            <node concept="2OqwBi" id="zICRplncUE" role="2Oq$k0">
+              <node concept="2OqwBi" id="zICRplncUF" role="2Oq$k0">
+                <node concept="117lpO" id="zICRplncUG" role="2Oq$k0" />
+                <node concept="3TrEf2" id="zICRplncUH" role="2OqNvi">
+                  <ref role="3Tt5mk" to="20wa:2W9GWXMcx2s" resolve="actorAnnotation" />
+                </node>
+              </node>
+              <node concept="3Tsc0h" id="zICRplncUI" role="2OqNvi">
+                <ref role="3TtcxE" to="20wa:2Dg$yBZX58x" resolve="dataSubjectCategories" />
+              </node>
+            </node>
+            <node concept="1VAtEI" id="zICRplncUJ" role="2OqNvi" />
           </node>
-          <node concept="l8MVK" id="68IGnZW1HXe" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW1Itb" role="3cqZAp">
-          <node concept="la8eA" id="68IGnZW1Itc" role="lcghm">
-            <property role="lacIc" value="As a data subject, I want to be informed in the event of a breach of my personal data." />
+          <node concept="3clFbS" id="zICRplncUK" role="2LFqv$">
+            <node concept="3cpWs8" id="zICRplncUL" role="3cqZAp">
+              <node concept="3cpWsn" id="zICRplncUM" role="3cpWs9">
+                <property role="TrG5h" value="listDataByDSC" />
+                <node concept="_YKpA" id="zICRplncUN" role="1tU5fm">
+                  <node concept="17QB3L" id="zICRplncUO" role="_ZDj9" />
+                </node>
+                <node concept="2OqwBi" id="zICRplncUP" role="33vP2m">
+                  <node concept="2OqwBi" id="zICRplncUQ" role="2Oq$k0">
+                    <node concept="117lpO" id="zICRplncUR" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="zICRplncUS" role="2OqNvi">
+                      <ref role="3Tt5mk" to="20wa:2pxN2iW2EZ1" resolve="dataAtnnotation" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="zICRplncUT" role="2OqNvi">
+                    <ref role="37wK5l" to="oniz:2W9GWXMd5x9" resolve="getDataListByDSCategory" />
+                    <node concept="2OqwBi" id="zICRplncUU" role="37wK5m">
+                      <node concept="2GrUjf" id="zICRplncUV" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="zICRplncUC" resolve="dsc" />
+                      </node>
+                      <node concept="3TrcHB" id="zICRplncUW" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="zICRplncUX" role="3cqZAp">
+              <node concept="3cpWsn" id="zICRplncUY" role="3cpWs9">
+                <property role="TrG5h" value="dataList" />
+                <node concept="17QB3L" id="zICRplncUZ" role="1tU5fm" />
+                <node concept="2OqwBi" id="zICRplncV0" role="33vP2m">
+                  <node concept="117lpO" id="zICRplncV1" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="zICRplncV2" role="2OqNvi">
+                    <ref role="37wK5l" to="oniz:zICRpkL01v" resolve="Display" />
+                    <node concept="37vLTw" id="zICRplncV3" role="37wK5m">
+                      <ref role="3cqZAo" node="zICRplncUM" resolve="listDataByDSC" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="zICRplncV4" role="3cqZAp" />
+            <node concept="3cpWs8" id="zICRplncV5" role="3cqZAp">
+              <node concept="3cpWsn" id="zICRplncV6" role="3cpWs9">
+                <property role="TrG5h" value="processings" />
+                <node concept="_YKpA" id="zICRplncV7" role="1tU5fm">
+                  <node concept="17QB3L" id="zICRplncV8" role="_ZDj9" />
+                </node>
+                <node concept="2OqwBi" id="zICRplncV9" role="33vP2m">
+                  <node concept="2OqwBi" id="zICRplncVa" role="2Oq$k0">
+                    <node concept="117lpO" id="zICRplncVb" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="zICRplncVc" role="2OqNvi">
+                      <ref role="3Tt5mk" to="20wa:506pcQtxmXV" resolve="processingAnnotation" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="zICRplncVd" role="2OqNvi">
+                    <ref role="37wK5l" to="oniz:zICRpkHbQu" resolve="listProcessingName" />
+                    <node concept="2OqwBi" id="zICRplncVe" role="37wK5m">
+                      <node concept="2GrUjf" id="zICRplncVf" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="zICRplncUC" resolve="dsc" />
+                      </node>
+                      <node concept="3TrcHB" id="zICRplncVg" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="zICRplncVh" role="3cqZAp">
+              <node concept="3cpWsn" id="zICRplncVi" role="3cpWs9">
+                <property role="TrG5h" value="processingList" />
+                <node concept="17QB3L" id="zICRplncVj" role="1tU5fm" />
+                <node concept="2OqwBi" id="zICRplncVk" role="33vP2m">
+                  <node concept="117lpO" id="zICRplncVl" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="zICRplncVm" role="2OqNvi">
+                    <ref role="37wK5l" to="oniz:zICRpkL01v" resolve="Display" />
+                    <node concept="37vLTw" id="zICRplncVn" role="37wK5m">
+                      <ref role="3cqZAo" node="zICRplncV6" resolve="processings" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="zICRplncVo" role="3cqZAp" />
+            <node concept="lc7rE" id="68IGnZW1Htl" role="3cqZAp">
+              <node concept="la8eA" id="68IGnZW1Htm" role="lcghm">
+                <property role="lacIc" value="As a " />
+              </node>
+              <node concept="l9hG8" id="zICRplni3H" role="lcghm">
+                <node concept="2OqwBi" id="zICRplnife" role="lb14g">
+                  <node concept="2GrUjf" id="zICRplni4B" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="zICRplncUC" resolve="dsc" />
+                  </node>
+                  <node concept="3TrcHB" id="zICRplniZ4" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRplnjDI" role="lcghm">
+                <property role="lacIc" value=", I want be informed of the technical and organizational measures taken to guarantee the protection of my personal data \nthat has been breached.&quot;" />
+              </node>
+              <node concept="l8MVK" id="68IGnZW1Htn" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="68IGnZW1HXc" role="3cqZAp">
+              <node concept="la8eA" id="68IGnZW1HXd" role="lcghm">
+                <property role="lacIc" value="As a " />
+              </node>
+              <node concept="l9hG8" id="zICRplnjFq" role="lcghm">
+                <node concept="2OqwBi" id="zICRplnjPt" role="lb14g">
+                  <node concept="2GrUjf" id="zICRplnjGj" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="zICRplncUC" resolve="dsc" />
+                  </node>
+                  <node concept="3TrcHB" id="zICRplnkQK" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRplnlx4" role="lcghm">
+                <property role="lacIc" value=", I want to be informed of the data that has been breached and the consequences of the breach." />
+              </node>
+              <node concept="l8MVK" id="68IGnZW1HXe" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="68IGnZW1Itb" role="3cqZAp">
+              <node concept="la8eA" id="68IGnZW1Itc" role="lcghm">
+                <property role="lacIc" value="As a " />
+              </node>
+              <node concept="l9hG8" id="zICRplnly0" role="lcghm">
+                <node concept="2OqwBi" id="zICRplnlGw" role="lb14g">
+                  <node concept="2GrUjf" id="zICRplnlzm" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="zICRplncUC" resolve="dsc" />
+                  </node>
+                  <node concept="3TrcHB" id="zICRplnmt0" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="zICRplnn83" role="lcghm">
+                <property role="lacIc" value=", I want to be informed in the event of a breach of my personal data" />
+              </node>
+              <node concept="l8MVK" id="68IGnZW1Itd" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="68IGnZW3KoB" role="3cqZAp">
+              <node concept="l8MVK" id="68IGnZW3KoC" role="lcghm" />
+            </node>
+            <node concept="3clFbH" id="zICRplncW5" role="3cqZAp" />
           </node>
-          <node concept="l8MVK" id="68IGnZW1Itd" role="lcghm" />
-        </node>
-        <node concept="lc7rE" id="68IGnZW3KoB" role="3cqZAp">
-          <node concept="l8MVK" id="68IGnZW3KoC" role="lcghm" />
         </node>
         <node concept="lc7rE" id="68IGnZW1IXi" role="3cqZAp">
           <node concept="la8eA" id="68IGnZW1IXj" role="lcghm">
@@ -6106,1780 +7195,6 @@
           <node concept="l8MVK" id="68IGnZW1Mxp" role="lcghm" />
         </node>
         <node concept="3clFbH" id="68IGnZW1MgP" role="3cqZAp" />
-        <node concept="1X3_iC" id="6LjtZeQRRCF" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="2pxN2iW2FX_" role="8Wnug">
-            <node concept="la8eA" id="2pxN2iW2FXA" role="lcghm">
-              <property role="lacIc" value="               USER STORIES                  " />
-            </node>
-            <node concept="l8MVK" id="2pxN2iW2FXB" role="lcghm" />
-            <node concept="l8MVK" id="2pxN2iW2FXC" role="lcghm" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRCG" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3SKdUt" id="2pxN2iW2FXD" role="8Wnug">
-            <node concept="1PaTwC" id="2pxN2iW2FXE" role="1aUNEU">
-              <node concept="3oM_SD" id="2pxN2iW2FXF" role="1PaTwD">
-                <property role="3oM_SC" value="ACCESS" />
-              </node>
-              <node concept="3oM_SD" id="2pxN2iW2FXG" role="1PaTwD">
-                <property role="3oM_SC" value="RIGHT" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRCH" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="2pxN2iW2FXH" role="8Wnug">
-            <node concept="la8eA" id="2pxN2iW2FXI" role="lcghm">
-              <property role="lacIc" value="****************** ACCESS RIGHT ******************" />
-            </node>
-            <node concept="l8MVK" id="2pxN2iW2FXJ" role="lcghm" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRCI" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3cpWs8" id="2pxN2iW38EN" role="8Wnug">
-            <node concept="3cpWsn" id="2pxN2iW38EO" role="3cpWs9">
-              <property role="TrG5h" value="i" />
-              <node concept="10Oyi0" id="2pxN2iW38EP" role="1tU5fm" />
-              <node concept="3cmrfG" id="2pxN2iW38EQ" role="33vP2m">
-                <property role="3cmrfH" value="1" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRCJ" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="2Gpval" id="2pxN2iW2FXT" role="8Wnug">
-            <node concept="2GrKxI" id="2pxN2iW2FXU" role="2Gsz3X">
-              <property role="TrG5h" value="e" />
-            </node>
-            <node concept="2OqwBi" id="2$chU367KRU" role="2GsD0m">
-              <node concept="2OqwBi" id="2pxN2iW2HeG" role="2Oq$k0">
-                <node concept="2OqwBi" id="2pxN2iW2FXW" role="2Oq$k0">
-                  <node concept="117lpO" id="2pxN2iW2FXX" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="2pxN2iW2H4r" role="2OqNvi">
-                    <ref role="3Tt5mk" to="20wa:2pxN2iW2EZ1" resolve="dataAtnnotation" />
-                  </node>
-                </node>
-                <node concept="3Tsc0h" id="2pxN2iW2Hpn" role="2OqNvi">
-                  <ref role="3TtcxE" to="20wa:3FQc_Nkm_Ez" resolve="dataType" />
-                </node>
-              </node>
-              <node concept="1VAtEI" id="2$chU367MFf" role="2OqNvi" />
-            </node>
-            <node concept="3clFbS" id="2pxN2iW2FY0" role="2LFqv$">
-              <node concept="lc7rE" id="2$chU366I39" role="3cqZAp">
-                <node concept="l8MVK" id="2$chU366I5t" role="lcghm" />
-              </node>
-              <node concept="2Gpval" id="2pxN2iW33e4" role="3cqZAp">
-                <node concept="2GrKxI" id="2pxN2iW33e5" role="2Gsz3X">
-                  <property role="TrG5h" value="f" />
-                </node>
-                <node concept="2OqwBi" id="2$chU366c2u" role="2GsD0m">
-                  <node concept="2OqwBi" id="2pxN2iW33e6" role="2Oq$k0">
-                    <node concept="2OqwBi" id="2pxN2iW33e7" role="2Oq$k0">
-                      <node concept="3Tsc0h" id="2pxN2iW347B" role="2OqNvi">
-                        <ref role="3TtcxE" to="20wa:2pxN2iVZd46" resolve="personalData" />
-                      </node>
-                      <node concept="2GrUjf" id="2pxN2iW33WD" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="2pxN2iW2FXU" resolve="e" />
-                      </node>
-                    </node>
-                    <node concept="13MTOL" id="2pxN2iW33ee" role="2OqNvi">
-                      <ref role="13MTZf" to="20wa:2pxN2iW2NcB" resolve="dataSubjectCategory" />
-                    </node>
-                  </node>
-                  <node concept="1VAtEI" id="2$chU366cvh" role="2OqNvi" />
-                </node>
-                <node concept="3clFbS" id="2pxN2iW33ef" role="2LFqv$">
-                  <node concept="lc7rE" id="2$chU365zlH" role="3cqZAp">
-                    <node concept="l8MVK" id="2$chU36ha7n" role="lcghm" />
-                    <node concept="la8eA" id="2$chU365zo1" role="lcghm">
-                      <property role="lacIc" value="-------------- " />
-                    </node>
-                    <node concept="l9hG8" id="2$chU365zp2" role="lcghm">
-                      <node concept="2OqwBi" id="2$chU365zwy" role="lb14g">
-                        <node concept="2GrUjf" id="2$chU365zpQ" role="2Oq$k0">
-                          <ref role="2Gs0qQ" node="2pxN2iW2FXU" resolve="e" />
-                        </node>
-                        <node concept="3TrcHB" id="2$chU365zXv" role="2OqNvi">
-                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="la8eA" id="2$chU365$7R" role="lcghm">
-                      <property role="lacIc" value=" -------------------" />
-                    </node>
-                  </node>
-                  <node concept="lc7rE" id="2$chU364wyz" role="3cqZAp">
-                    <node concept="la8eA" id="2$chU369Qko" role="lcghm">
-                      <property role="lacIc" value="     " />
-                    </node>
-                    <node concept="l8MVK" id="2$chU364w$R" role="lcghm" />
-                  </node>
-                  <node concept="lc7rE" id="2pxN2iW2FXK" role="3cqZAp">
-                    <node concept="la8eA" id="2pxN2iW2FXL" role="lcghm">
-                      <property role="lacIc" value="AS A " />
-                    </node>
-                    <node concept="l9hG8" id="2pxN2iW2FXM" role="lcghm">
-                      <node concept="2OqwBi" id="2pxN2iW34_G" role="lb14g">
-                        <node concept="2GrUjf" id="2pxN2iW34ve" role="2Oq$k0">
-                          <ref role="2Gs0qQ" node="2pxN2iW33e5" resolve="f" />
-                        </node>
-                        <node concept="3TrcHB" id="2pxN2iW34KQ" role="2OqNvi">
-                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="l8MVK" id="2pxN2iW2FXQ" role="lcghm" />
-                  </node>
-                  <node concept="lc7rE" id="2pxN2iW2FXR" role="3cqZAp">
-                    <node concept="la8eA" id="2pxN2iW2FXS" role="lcghm">
-                      <property role="lacIc" value="I WANT to acces to all my personal data from which  " />
-                    </node>
-                    <node concept="l8MVK" id="2$chU369lum" role="lcghm" />
-                  </node>
-                  <node concept="2Gpval" id="2pxN2iW3778" role="3cqZAp">
-                    <node concept="2GrKxI" id="2pxN2iW3779" role="2Gsz3X">
-                      <property role="TrG5h" value="g" />
-                    </node>
-                    <node concept="3clFbS" id="2pxN2iW377f" role="2LFqv$">
-                      <node concept="lc7rE" id="2pxN2iW377g" role="3cqZAp">
-                        <node concept="la8eA" id="2$chU36jE4y" role="lcghm">
-                          <property role="lacIc" value="     " />
-                        </node>
-                        <node concept="l9hG8" id="2pxN2iW377h" role="lcghm">
-                          <node concept="2GrUjf" id="2pxN2iW377i" role="lb14g">
-                            <ref role="2Gs0qQ" node="2pxN2iW3779" resolve="g" />
-                          </node>
-                        </node>
-                        <node concept="la8eA" id="2pxN2iW377j" role="lcghm">
-                          <property role="lacIc" value=", " />
-                        </node>
-                      </node>
-                      <node concept="3clFbF" id="2pxN2iW377k" role="3cqZAp">
-                        <node concept="37vLTI" id="2pxN2iW377l" role="3clFbG">
-                          <node concept="3cpWs3" id="2pxN2iW377m" role="37vLTx">
-                            <node concept="3cmrfG" id="2pxN2iW377n" role="3uHU7w">
-                              <property role="3cmrfH" value="1" />
-                            </node>
-                            <node concept="37vLTw" id="2pxN2iW377o" role="3uHU7B">
-                              <ref role="3cqZAo" node="2pxN2iW38EO" resolve="i" />
-                            </node>
-                          </node>
-                          <node concept="37vLTw" id="2pxN2iW377p" role="37vLTJ">
-                            <ref role="3cqZAo" node="2pxN2iW38EO" resolve="i" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3clFbJ" id="2pxN2iW377q" role="3cqZAp">
-                        <node concept="3clFbS" id="2pxN2iW377r" role="3clFbx">
-                          <node concept="3clFbF" id="2pxN2iW377s" role="3cqZAp">
-                            <node concept="37vLTI" id="2pxN2iW377t" role="3clFbG">
-                              <node concept="3cmrfG" id="2pxN2iW377u" role="37vLTx">
-                                <property role="3cmrfH" value="1" />
-                              </node>
-                              <node concept="37vLTw" id="2pxN2iW377v" role="37vLTJ">
-                                <ref role="3cqZAo" node="2pxN2iW38EO" resolve="i" />
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="lc7rE" id="2pxN2iW377w" role="3cqZAp">
-                            <node concept="l8MVK" id="2$chU369lch" role="lcghm" />
-                          </node>
-                        </node>
-                        <node concept="3clFbC" id="2pxN2iW377z" role="3clFbw">
-                          <node concept="3cmrfG" id="2pxN2iW377$" role="3uHU7w">
-                            <property role="3cmrfH" value="5" />
-                          </node>
-                          <node concept="37vLTw" id="2pxN2iW377_" role="3uHU7B">
-                            <ref role="3cqZAo" node="2pxN2iW38EO" resolve="i" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="2OqwBi" id="2pxN2iW389J" role="2GsD0m">
-                      <node concept="2GrUjf" id="2pxN2iW3810" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="2pxN2iW2FXU" resolve="e" />
-                      </node>
-                      <node concept="2qgKlT" id="2pxN2iW38zF" role="2OqNvi">
-                        <ref role="37wK5l" to="oniz:5Erw5yfdx17" resolve="ReturnPersonalData" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="lc7rE" id="SXiEYPJOdt" role="3cqZAp">
-                    <node concept="l8MVK" id="SXiEYPJOdu" role="lcghm" />
-                  </node>
-                  <node concept="lc7rE" id="2pxN2iW2FY8" role="3cqZAp">
-                    <node concept="la8eA" id="2pxN2iW2FY9" role="lcghm">
-                      <property role="lacIc" value="SO THAT I exercise my right of access to all my personal data" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRCK" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbH" id="2$chU36g7Y2" role="8Wnug" />
-        </node>
-        <node concept="1X3_iC" id="2$chU36g7vo" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="2pxN2iW2FY5" role="8Wnug">
-            <node concept="la8eA" id="2pxN2iW2FY6" role="lcghm">
-              <property role="lacIc" value="." />
-            </node>
-            <node concept="l8MVK" id="2pxN2iW2FY7" role="lcghm" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRCL" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="2pxN2iW3b7r" role="8Wnug">
-            <node concept="l8MVK" id="2pxN2iW3b7s" role="lcghm" />
-            <node concept="l8MVK" id="2pxN2iW3b7t" role="lcghm" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRCM" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbH" id="2$chU36e4BW" role="8Wnug" />
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRCN" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3SKdUt" id="2pxN2iW3b7u" role="8Wnug">
-            <node concept="1PaTwC" id="2pxN2iW3b7v" role="1aUNEU">
-              <node concept="3oM_SD" id="2pxN2iW3b7w" role="1PaTwD">
-                <property role="3oM_SC" value="RECTIFICATION" />
-              </node>
-              <node concept="3oM_SD" id="2pxN2iW3b7x" role="1PaTwD">
-                <property role="3oM_SC" value="RIGHT" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRCO" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="2pxN2iW3b7y" role="8Wnug">
-            <node concept="la8eA" id="2pxN2iW3b7z" role="lcghm">
-              <property role="lacIc" value="***************** RECTIFICATION RIGHT *****************" />
-            </node>
-            <node concept="l8MVK" id="2pxN2iW3b7$" role="lcghm" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRCP" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="2Gpval" id="2pxN2iW3a1e" role="8Wnug">
-            <node concept="2GrKxI" id="2pxN2iW3a1f" role="2Gsz3X">
-              <property role="TrG5h" value="e" />
-            </node>
-            <node concept="2OqwBi" id="2$chU36aW4o" role="2GsD0m">
-              <node concept="2OqwBi" id="2pxN2iW3a1g" role="2Oq$k0">
-                <node concept="2OqwBi" id="2pxN2iW3a1h" role="2Oq$k0">
-                  <node concept="117lpO" id="2pxN2iW3a1i" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="2pxN2iW3a1j" role="2OqNvi">
-                    <ref role="3Tt5mk" to="20wa:2pxN2iW2EZ1" resolve="dataAtnnotation" />
-                  </node>
-                </node>
-                <node concept="3Tsc0h" id="2pxN2iW3a1k" role="2OqNvi">
-                  <ref role="3TtcxE" to="20wa:3FQc_Nkm_Ez" resolve="dataType" />
-                </node>
-              </node>
-              <node concept="1VAtEI" id="2$chU36aXQY" role="2OqNvi" />
-            </node>
-            <node concept="3clFbS" id="2pxN2iW3a1l" role="2LFqv$">
-              <node concept="lc7rE" id="2$chU36bJT4" role="3cqZAp">
-                <node concept="l8MVK" id="2$chU36bJT5" role="lcghm" />
-              </node>
-              <node concept="2Gpval" id="2pxN2iW3a1m" role="3cqZAp">
-                <node concept="2GrKxI" id="2pxN2iW3a1n" role="2Gsz3X">
-                  <property role="TrG5h" value="f" />
-                </node>
-                <node concept="2OqwBi" id="2$chU36b0jJ" role="2GsD0m">
-                  <node concept="2OqwBi" id="2pxN2iW3a1o" role="2Oq$k0">
-                    <node concept="2OqwBi" id="2pxN2iW3a1p" role="2Oq$k0">
-                      <node concept="3Tsc0h" id="2pxN2iW3a1q" role="2OqNvi">
-                        <ref role="3TtcxE" to="20wa:2pxN2iVZd46" resolve="personalData" />
-                      </node>
-                      <node concept="2GrUjf" id="2pxN2iW3a1r" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="2pxN2iW3a1f" resolve="e" />
-                      </node>
-                    </node>
-                    <node concept="13MTOL" id="2pxN2iW3a1s" role="2OqNvi">
-                      <ref role="13MTZf" to="20wa:2pxN2iW2NcB" resolve="dataSubjectCategory" />
-                    </node>
-                  </node>
-                  <node concept="1VAtEI" id="2$chU36b0HI" role="2OqNvi" />
-                </node>
-                <node concept="3clFbS" id="2pxN2iW3a1t" role="2LFqv$">
-                  <node concept="lc7rE" id="2$chU36b0Lc" role="3cqZAp">
-                    <node concept="l8MVK" id="2$chU36hF8T" role="lcghm" />
-                    <node concept="la8eA" id="2$chU36b0Ld" role="lcghm">
-                      <property role="lacIc" value="-------------- " />
-                    </node>
-                    <node concept="l9hG8" id="2$chU36b0Le" role="lcghm">
-                      <node concept="2OqwBi" id="2$chU36b0Lf" role="lb14g">
-                        <node concept="2GrUjf" id="2$chU36b0Lg" role="2Oq$k0">
-                          <ref role="2Gs0qQ" node="2pxN2iW3a1f" resolve="e" />
-                        </node>
-                        <node concept="3TrcHB" id="2$chU36b0Lh" role="2OqNvi">
-                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="la8eA" id="2$chU36b0Li" role="lcghm">
-                      <property role="lacIc" value=" -------------------" />
-                    </node>
-                  </node>
-                  <node concept="lc7rE" id="2$chU36b0Lj" role="3cqZAp">
-                    <node concept="la8eA" id="2$chU36b0Lk" role="lcghm">
-                      <property role="lacIc" value="     " />
-                    </node>
-                    <node concept="l8MVK" id="2$chU36b0Ll" role="lcghm" />
-                  </node>
-                  <node concept="lc7rE" id="2$chU36b0Lm" role="3cqZAp">
-                    <node concept="la8eA" id="2$chU36b0Ln" role="lcghm">
-                      <property role="lacIc" value="AS A " />
-                    </node>
-                    <node concept="l9hG8" id="2$chU36b0Lo" role="lcghm">
-                      <node concept="2OqwBi" id="2$chU36b0Lp" role="lb14g">
-                        <node concept="2GrUjf" id="2$chU36b0Lq" role="2Oq$k0">
-                          <ref role="2Gs0qQ" node="2pxN2iW3a1n" resolve="f" />
-                        </node>
-                        <node concept="3TrcHB" id="2$chU36b0Lr" role="2OqNvi">
-                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="l8MVK" id="2$chU36b0Ls" role="lcghm" />
-                  </node>
-                  <node concept="lc7rE" id="2pxN2iW3bHH" role="3cqZAp">
-                    <node concept="la8eA" id="2pxN2iW3bHI" role="lcghm">
-                      <property role="lacIc" value="I want to rectify any of my personal data " />
-                    </node>
-                    <node concept="l8MVK" id="2pxN2iW3bHJ" role="lcghm" />
-                  </node>
-                  <node concept="2Gpval" id="2pxN2iW3a1B" role="3cqZAp">
-                    <node concept="2GrKxI" id="2pxN2iW3a1C" role="2Gsz3X">
-                      <property role="TrG5h" value="g" />
-                    </node>
-                    <node concept="3clFbS" id="2pxN2iW3a1D" role="2LFqv$">
-                      <node concept="lc7rE" id="2pxN2iW3a1E" role="3cqZAp">
-                        <node concept="la8eA" id="2$chU36j9ds" role="lcghm">
-                          <property role="lacIc" value="     " />
-                        </node>
-                        <node concept="l9hG8" id="2pxN2iW3a1F" role="lcghm">
-                          <node concept="2GrUjf" id="2pxN2iW3a1G" role="lb14g">
-                            <ref role="2Gs0qQ" node="2pxN2iW3a1C" resolve="g" />
-                          </node>
-                        </node>
-                        <node concept="la8eA" id="2pxN2iW3a1H" role="lcghm">
-                          <property role="lacIc" value=",  " />
-                        </node>
-                      </node>
-                      <node concept="3clFbF" id="2pxN2iW3a1I" role="3cqZAp">
-                        <node concept="37vLTI" id="2pxN2iW3a1J" role="3clFbG">
-                          <node concept="3cpWs3" id="2pxN2iW3a1K" role="37vLTx">
-                            <node concept="3cmrfG" id="2pxN2iW3a1L" role="3uHU7w">
-                              <property role="3cmrfH" value="1" />
-                            </node>
-                            <node concept="37vLTw" id="2pxN2iW3a1M" role="3uHU7B">
-                              <ref role="3cqZAo" node="2pxN2iW38EO" resolve="i" />
-                            </node>
-                          </node>
-                          <node concept="37vLTw" id="2pxN2iW3a1N" role="37vLTJ">
-                            <ref role="3cqZAo" node="2pxN2iW38EO" resolve="i" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3clFbJ" id="2pxN2iW3a1O" role="3cqZAp">
-                        <node concept="3clFbS" id="2pxN2iW3a1P" role="3clFbx">
-                          <node concept="3clFbF" id="2pxN2iW3a1Q" role="3cqZAp">
-                            <node concept="37vLTI" id="2pxN2iW3a1R" role="3clFbG">
-                              <node concept="3cmrfG" id="2pxN2iW3a1S" role="37vLTx">
-                                <property role="3cmrfH" value="1" />
-                              </node>
-                              <node concept="37vLTw" id="2pxN2iW3a1T" role="37vLTJ">
-                                <ref role="3cqZAo" node="2pxN2iW38EO" resolve="i" />
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="lc7rE" id="2$chU36b11P" role="3cqZAp">
-                            <node concept="l8MVK" id="2$chU36b11R" role="lcghm" />
-                          </node>
-                        </node>
-                        <node concept="3clFbC" id="2pxN2iW3a1X" role="3clFbw">
-                          <node concept="3cmrfG" id="2pxN2iW3a1Y" role="3uHU7w">
-                            <property role="3cmrfH" value="5" />
-                          </node>
-                          <node concept="37vLTw" id="2pxN2iW3a1Z" role="3uHU7B">
-                            <ref role="3cqZAo" node="2pxN2iW38EO" resolve="i" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="2OqwBi" id="2pxN2iW3a22" role="2GsD0m">
-                      <node concept="2GrUjf" id="2pxN2iW3a23" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="2pxN2iW3a1f" resolve="e" />
-                      </node>
-                      <node concept="2qgKlT" id="2pxN2iW3a24" role="2OqNvi">
-                        <ref role="37wK5l" to="oniz:5Erw5yfdx17" resolve="ReturnPersonalData" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="lc7rE" id="SXiEYPJOer" role="3cqZAp">
-                    <node concept="l8MVK" id="SXiEYPJOes" role="lcghm" />
-                  </node>
-                  <node concept="lc7rE" id="2pxN2iW3bJh" role="3cqZAp">
-                    <node concept="la8eA" id="2pxN2iW3bJi" role="lcghm">
-                      <property role="lacIc" value="SO THAT I exercise my right to rectify personal data " />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRCQ" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbH" id="2pxN2iW39HT" role="8Wnug" />
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRCR" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="LHr8hYMCw3" role="8Wnug">
-            <node concept="l8MVK" id="LHr8hYMCw4" role="lcghm" />
-            <node concept="l8MVK" id="LHr8hYMCw5" role="lcghm" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRCS" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3SKdUt" id="LHr8hYMCw6" role="8Wnug">
-            <node concept="1PaTwC" id="LHr8hYMCw7" role="1aUNEU">
-              <node concept="3oM_SD" id="LHr8hYMDMb" role="1PaTwD">
-                <property role="3oM_SC" value="RIGHT" />
-              </node>
-              <node concept="3oM_SD" id="LHr8hYMDO1" role="1PaTwD">
-                <property role="3oM_SC" value="TO" />
-              </node>
-              <node concept="3oM_SD" id="LHr8hYMDO7" role="1PaTwD">
-                <property role="3oM_SC" value="BE" />
-              </node>
-              <node concept="3oM_SD" id="LHr8hYMDOo" role="1PaTwD">
-                <property role="3oM_SC" value="FORGOTTEN" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRCT" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="LHr8hYMCwa" role="8Wnug">
-            <node concept="la8eA" id="LHr8hYMCwb" role="lcghm">
-              <property role="lacIc" value="***************** RIGHT TO BE FORGOTTEN *****************" />
-            </node>
-            <node concept="l8MVK" id="LHr8hYMCwc" role="lcghm" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRCU" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="2Gpval" id="LHr8hYMCwd" role="8Wnug">
-            <node concept="2GrKxI" id="LHr8hYMCwe" role="2Gsz3X">
-              <property role="TrG5h" value="e" />
-            </node>
-            <node concept="2OqwBi" id="2$chU36b2XD" role="2GsD0m">
-              <node concept="2OqwBi" id="LHr8hYMCwf" role="2Oq$k0">
-                <node concept="2OqwBi" id="LHr8hYMCwg" role="2Oq$k0">
-                  <node concept="117lpO" id="LHr8hYMCwh" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="LHr8hYMCwi" role="2OqNvi">
-                    <ref role="3Tt5mk" to="20wa:2pxN2iW2EZ1" resolve="dataAtnnotation" />
-                  </node>
-                </node>
-                <node concept="3Tsc0h" id="LHr8hYMCwj" role="2OqNvi">
-                  <ref role="3TtcxE" to="20wa:3FQc_Nkm_Ez" resolve="dataType" />
-                </node>
-              </node>
-              <node concept="1VAtEI" id="2$chU36b4Kf" role="2OqNvi" />
-            </node>
-            <node concept="3clFbS" id="LHr8hYMCwk" role="2LFqv$">
-              <node concept="lc7rE" id="2$chU36bJZP" role="3cqZAp">
-                <node concept="l8MVK" id="2$chU36bJZQ" role="lcghm" />
-                <node concept="l8MVK" id="2$chU36bJZR" role="lcghm" />
-              </node>
-              <node concept="2Gpval" id="LHr8hYMCwl" role="3cqZAp">
-                <node concept="2GrKxI" id="LHr8hYMCwm" role="2Gsz3X">
-                  <property role="TrG5h" value="f" />
-                </node>
-                <node concept="2OqwBi" id="2$chU36b7d0" role="2GsD0m">
-                  <node concept="2OqwBi" id="LHr8hYMCwn" role="2Oq$k0">
-                    <node concept="2OqwBi" id="LHr8hYMCwo" role="2Oq$k0">
-                      <node concept="3Tsc0h" id="LHr8hYMCwp" role="2OqNvi">
-                        <ref role="3TtcxE" to="20wa:2pxN2iVZd46" resolve="personalData" />
-                      </node>
-                      <node concept="2GrUjf" id="LHr8hYMCwq" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="LHr8hYMCwe" resolve="e" />
-                      </node>
-                    </node>
-                    <node concept="13MTOL" id="LHr8hYMCwr" role="2OqNvi">
-                      <ref role="13MTZf" to="20wa:2pxN2iW2NcB" resolve="dataSubjectCategory" />
-                    </node>
-                  </node>
-                  <node concept="1VAtEI" id="2$chU36b7AZ" role="2OqNvi" />
-                </node>
-                <node concept="3clFbS" id="LHr8hYMCws" role="2LFqv$">
-                  <node concept="lc7rE" id="2$chU36b7Et" role="3cqZAp">
-                    <node concept="l8MVK" id="2$chU36hF9a" role="lcghm" />
-                    <node concept="la8eA" id="2$chU36b7Eu" role="lcghm">
-                      <property role="lacIc" value="-------------" />
-                    </node>
-                    <node concept="l9hG8" id="2$chU36b7Ev" role="lcghm">
-                      <node concept="2OqwBi" id="2$chU36b7Ew" role="lb14g">
-                        <node concept="2GrUjf" id="2$chU36b7Ex" role="2Oq$k0">
-                          <ref role="2Gs0qQ" node="LHr8hYMCwe" resolve="e" />
-                        </node>
-                        <node concept="3TrcHB" id="2$chU36b7Ey" role="2OqNvi">
-                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="la8eA" id="2$chU36b7Ez" role="lcghm">
-                      <property role="lacIc" value="-------------------" />
-                    </node>
-                  </node>
-                  <node concept="lc7rE" id="2$chU36b7E$" role="3cqZAp">
-                    <node concept="la8eA" id="2$chU36b7E_" role="lcghm">
-                      <property role="lacIc" value="     " />
-                    </node>
-                    <node concept="l8MVK" id="2$chU36b7EA" role="lcghm" />
-                  </node>
-                  <node concept="lc7rE" id="2$chU36b7EB" role="3cqZAp">
-                    <node concept="la8eA" id="2$chU36b7EC" role="lcghm">
-                      <property role="lacIc" value="AS A " />
-                    </node>
-                    <node concept="l9hG8" id="2$chU36b7ED" role="lcghm">
-                      <node concept="2OqwBi" id="2$chU36b7EE" role="lb14g">
-                        <node concept="2GrUjf" id="2$chU36b7EF" role="2Oq$k0">
-                          <ref role="2Gs0qQ" node="LHr8hYMCwm" resolve="f" />
-                        </node>
-                        <node concept="3TrcHB" id="2$chU36b7EG" role="2OqNvi">
-                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="l8MVK" id="2$chU36b7EH" role="lcghm" />
-                  </node>
-                  <node concept="lc7rE" id="LHr8hYMCw$" role="3cqZAp">
-                    <node concept="la8eA" id="LHr8hYMCw_" role="lcghm">
-                      <property role="lacIc" value="I want to erase any of my personal data " />
-                    </node>
-                    <node concept="l8MVK" id="LHr8hYMCwA" role="lcghm" />
-                  </node>
-                  <node concept="2Gpval" id="LHr8hYMCwB" role="3cqZAp">
-                    <node concept="2GrKxI" id="LHr8hYMCwC" role="2Gsz3X">
-                      <property role="TrG5h" value="g" />
-                    </node>
-                    <node concept="3clFbS" id="LHr8hYMCwD" role="2LFqv$">
-                      <node concept="lc7rE" id="LHr8hYMCwE" role="3cqZAp">
-                        <node concept="la8eA" id="2$chU36jE4N" role="lcghm">
-                          <property role="lacIc" value="     " />
-                        </node>
-                        <node concept="l9hG8" id="LHr8hYMCwF" role="lcghm">
-                          <node concept="2GrUjf" id="LHr8hYMCwG" role="lb14g">
-                            <ref role="2Gs0qQ" node="LHr8hYMCwC" resolve="g" />
-                          </node>
-                        </node>
-                        <node concept="la8eA" id="LHr8hYMCwH" role="lcghm">
-                          <property role="lacIc" value=",  " />
-                        </node>
-                      </node>
-                      <node concept="3clFbF" id="LHr8hYMCwI" role="3cqZAp">
-                        <node concept="37vLTI" id="LHr8hYMCwJ" role="3clFbG">
-                          <node concept="3cpWs3" id="LHr8hYMCwK" role="37vLTx">
-                            <node concept="3cmrfG" id="LHr8hYMCwL" role="3uHU7w">
-                              <property role="3cmrfH" value="1" />
-                            </node>
-                            <node concept="37vLTw" id="LHr8hYMCwM" role="3uHU7B">
-                              <ref role="3cqZAo" node="2pxN2iW38EO" resolve="i" />
-                            </node>
-                          </node>
-                          <node concept="37vLTw" id="LHr8hYMCwN" role="37vLTJ">
-                            <ref role="3cqZAo" node="2pxN2iW38EO" resolve="i" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3clFbJ" id="LHr8hYMCwO" role="3cqZAp">
-                        <node concept="3clFbS" id="LHr8hYMCwP" role="3clFbx">
-                          <node concept="3clFbF" id="LHr8hYMCwQ" role="3cqZAp">
-                            <node concept="37vLTI" id="LHr8hYMCwR" role="3clFbG">
-                              <node concept="3cmrfG" id="LHr8hYMCwS" role="37vLTx">
-                                <property role="3cmrfH" value="1" />
-                              </node>
-                              <node concept="37vLTw" id="LHr8hYMCwT" role="37vLTJ">
-                                <ref role="3cqZAo" node="2pxN2iW38EO" resolve="i" />
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="lc7rE" id="2$chU36b7W6" role="3cqZAp">
-                            <node concept="l8MVK" id="2$chU36b7W8" role="lcghm" />
-                          </node>
-                        </node>
-                        <node concept="3clFbC" id="LHr8hYMCwX" role="3clFbw">
-                          <node concept="3cmrfG" id="LHr8hYMCwY" role="3uHU7w">
-                            <property role="3cmrfH" value="5" />
-                          </node>
-                          <node concept="37vLTw" id="LHr8hYMCwZ" role="3uHU7B">
-                            <ref role="3cqZAo" node="2pxN2iW38EO" resolve="i" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="2OqwBi" id="LHr8hYMCx4" role="2GsD0m">
-                      <node concept="2GrUjf" id="LHr8hYMCx5" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="LHr8hYMCwe" resolve="e" />
-                      </node>
-                      <node concept="2qgKlT" id="LHr8hYMCx6" role="2OqNvi">
-                        <ref role="37wK5l" to="oniz:5Erw5yfdx17" resolve="ReturnPersonalData" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="lc7rE" id="LHr8hYMCx0" role="3cqZAp">
-                    <node concept="l8MVK" id="LHr8hYMCx1" role="lcghm" />
-                  </node>
-                  <node concept="lc7rE" id="LHr8hYMCx2" role="3cqZAp">
-                    <node concept="la8eA" id="LHr8hYMCx3" role="lcghm">
-                      <property role="lacIc" value="SO THAT I exercise my right to be forgotten " />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRCV" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbH" id="LHr8hYMCx8" role="8Wnug" />
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRCW" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="LHr8hYME_O" role="8Wnug">
-            <node concept="l8MVK" id="LHr8hYME_P" role="lcghm" />
-            <node concept="l8MVK" id="LHr8hYME_Q" role="lcghm" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRCX" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3SKdUt" id="LHr8hYME_R" role="8Wnug">
-            <node concept="1PaTwC" id="LHr8hYME_S" role="1aUNEU">
-              <node concept="3oM_SD" id="LHr8hYMFZI" role="1PaTwD">
-                <property role="3oM_SC" value="DATA" />
-              </node>
-              <node concept="3oM_SD" id="LHr8hYMG1U" role="1PaTwD">
-                <property role="3oM_SC" value="PORTABILITY" />
-              </node>
-              <node concept="3oM_SD" id="LHr8hYMG0e" role="1PaTwD">
-                <property role="3oM_SC" value="RIGHT" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRCY" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="LHr8hYME_X" role="8Wnug">
-            <node concept="la8eA" id="LHr8hYME_Y" role="lcghm">
-              <property role="lacIc" value="***************** DATA PORTABILITY RIGHT *****************" />
-            </node>
-            <node concept="l8MVK" id="LHr8hYME_Z" role="lcghm" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRCZ" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="2Gpval" id="LHr8hYMEA0" role="8Wnug">
-            <node concept="2GrKxI" id="LHr8hYMEA1" role="2Gsz3X">
-              <property role="TrG5h" value="e" />
-            </node>
-            <node concept="2OqwBi" id="2$chU36b9Mg" role="2GsD0m">
-              <node concept="2OqwBi" id="LHr8hYMEA2" role="2Oq$k0">
-                <node concept="2OqwBi" id="LHr8hYMEA3" role="2Oq$k0">
-                  <node concept="117lpO" id="LHr8hYMEA4" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="LHr8hYMEA5" role="2OqNvi">
-                    <ref role="3Tt5mk" to="20wa:2pxN2iW2EZ1" resolve="dataAtnnotation" />
-                  </node>
-                </node>
-                <node concept="3Tsc0h" id="LHr8hYMEA6" role="2OqNvi">
-                  <ref role="3TtcxE" to="20wa:3FQc_Nkm_Ez" resolve="dataType" />
-                </node>
-              </node>
-              <node concept="1VAtEI" id="2$chU36bb$Q" role="2OqNvi" />
-            </node>
-            <node concept="3clFbS" id="LHr8hYMEA7" role="2LFqv$">
-              <node concept="3clFbH" id="2$chU36bK4o" role="3cqZAp" />
-              <node concept="2Gpval" id="LHr8hYMEA8" role="3cqZAp">
-                <node concept="2GrKxI" id="LHr8hYMEA9" role="2Gsz3X">
-                  <property role="TrG5h" value="f" />
-                </node>
-                <node concept="2OqwBi" id="2$chU36be1B" role="2GsD0m">
-                  <node concept="2OqwBi" id="LHr8hYMEAa" role="2Oq$k0">
-                    <node concept="2OqwBi" id="LHr8hYMEAb" role="2Oq$k0">
-                      <node concept="3Tsc0h" id="LHr8hYMEAc" role="2OqNvi">
-                        <ref role="3TtcxE" to="20wa:2pxN2iVZd46" resolve="personalData" />
-                      </node>
-                      <node concept="2GrUjf" id="LHr8hYMEAd" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="LHr8hYMEA1" resolve="e" />
-                      </node>
-                    </node>
-                    <node concept="13MTOL" id="LHr8hYMEAe" role="2OqNvi">
-                      <ref role="13MTZf" to="20wa:2pxN2iW2NcB" resolve="dataSubjectCategory" />
-                    </node>
-                  </node>
-                  <node concept="1VAtEI" id="2$chU36benJ" role="2OqNvi" />
-                </node>
-                <node concept="3clFbS" id="LHr8hYMEAf" role="2LFqv$">
-                  <node concept="lc7rE" id="2$chU36berd" role="3cqZAp">
-                    <node concept="l8MVK" id="2$chU36hF9r" role="lcghm" />
-                    <node concept="la8eA" id="2$chU36bere" role="lcghm">
-                      <property role="lacIc" value="-------------" />
-                    </node>
-                    <node concept="l9hG8" id="2$chU36berf" role="lcghm">
-                      <node concept="2OqwBi" id="2$chU36berg" role="lb14g">
-                        <node concept="2GrUjf" id="2$chU36berh" role="2Oq$k0">
-                          <ref role="2Gs0qQ" node="LHr8hYMEA1" resolve="e" />
-                        </node>
-                        <node concept="3TrcHB" id="2$chU36beri" role="2OqNvi">
-                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="la8eA" id="2$chU36berj" role="lcghm">
-                      <property role="lacIc" value="-------------------" />
-                    </node>
-                  </node>
-                  <node concept="lc7rE" id="2$chU36berk" role="3cqZAp">
-                    <node concept="la8eA" id="2$chU36berl" role="lcghm">
-                      <property role="lacIc" value="     " />
-                    </node>
-                    <node concept="l8MVK" id="2$chU36berm" role="lcghm" />
-                  </node>
-                  <node concept="lc7rE" id="2$chU36bern" role="3cqZAp">
-                    <node concept="la8eA" id="2$chU36bero" role="lcghm">
-                      <property role="lacIc" value="AS A " />
-                    </node>
-                    <node concept="l9hG8" id="2$chU36berp" role="lcghm">
-                      <node concept="2OqwBi" id="2$chU36berq" role="lb14g">
-                        <node concept="2GrUjf" id="2$chU36berr" role="2Oq$k0">
-                          <ref role="2Gs0qQ" node="LHr8hYMEA9" resolve="f" />
-                        </node>
-                        <node concept="3TrcHB" id="2$chU36bers" role="2OqNvi">
-                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="l8MVK" id="2$chU36bert" role="lcghm" />
-                  </node>
-                  <node concept="lc7rE" id="LHr8hYMEAn" role="3cqZAp">
-                    <node concept="la8eA" id="LHr8hYMEAo" role="lcghm">
-                      <property role="lacIc" value="I want to obtain any of my personal data " />
-                    </node>
-                    <node concept="l8MVK" id="LHr8hYMEAp" role="lcghm" />
-                  </node>
-                  <node concept="2Gpval" id="LHr8hYMEAq" role="3cqZAp">
-                    <node concept="2GrKxI" id="LHr8hYMEAr" role="2Gsz3X">
-                      <property role="TrG5h" value="g" />
-                    </node>
-                    <node concept="3clFbS" id="LHr8hYMEAs" role="2LFqv$">
-                      <node concept="lc7rE" id="LHr8hYMEAt" role="3cqZAp">
-                        <node concept="la8eA" id="2$chU36jE54" role="lcghm">
-                          <property role="lacIc" value="     " />
-                        </node>
-                        <node concept="l9hG8" id="LHr8hYMEAu" role="lcghm">
-                          <node concept="2GrUjf" id="LHr8hYMEAv" role="lb14g">
-                            <ref role="2Gs0qQ" node="LHr8hYMEAr" resolve="g" />
-                          </node>
-                        </node>
-                        <node concept="la8eA" id="LHr8hYMEAw" role="lcghm">
-                          <property role="lacIc" value=",  " />
-                        </node>
-                      </node>
-                      <node concept="3clFbF" id="LHr8hYMEAx" role="3cqZAp">
-                        <node concept="37vLTI" id="LHr8hYMEAy" role="3clFbG">
-                          <node concept="3cpWs3" id="LHr8hYMEAz" role="37vLTx">
-                            <node concept="3cmrfG" id="LHr8hYMEA$" role="3uHU7w">
-                              <property role="3cmrfH" value="1" />
-                            </node>
-                            <node concept="37vLTw" id="LHr8hYMEA_" role="3uHU7B">
-                              <ref role="3cqZAo" node="2pxN2iW38EO" resolve="i" />
-                            </node>
-                          </node>
-                          <node concept="37vLTw" id="LHr8hYMEAA" role="37vLTJ">
-                            <ref role="3cqZAo" node="2pxN2iW38EO" resolve="i" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3clFbJ" id="LHr8hYMEAB" role="3cqZAp">
-                        <node concept="3clFbS" id="LHr8hYMEAC" role="3clFbx">
-                          <node concept="3clFbF" id="LHr8hYMEAD" role="3cqZAp">
-                            <node concept="37vLTI" id="LHr8hYMEAE" role="3clFbG">
-                              <node concept="3cmrfG" id="LHr8hYMEAF" role="37vLTx">
-                                <property role="3cmrfH" value="1" />
-                              </node>
-                              <node concept="37vLTw" id="LHr8hYMEAG" role="37vLTJ">
-                                <ref role="3cqZAo" node="2pxN2iW38EO" resolve="i" />
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="lc7rE" id="2$chU36beRo" role="3cqZAp">
-                            <node concept="l8MVK" id="2$chU36beRq" role="lcghm" />
-                          </node>
-                        </node>
-                        <node concept="3clFbC" id="LHr8hYMEAK" role="3clFbw">
-                          <node concept="3cmrfG" id="LHr8hYMEAL" role="3uHU7w">
-                            <property role="3cmrfH" value="5" />
-                          </node>
-                          <node concept="37vLTw" id="LHr8hYMEAM" role="3uHU7B">
-                            <ref role="3cqZAo" node="2pxN2iW38EO" resolve="i" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="2OqwBi" id="LHr8hYMEAR" role="2GsD0m">
-                      <node concept="2GrUjf" id="LHr8hYMEAS" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="LHr8hYMEA1" resolve="e" />
-                      </node>
-                      <node concept="2qgKlT" id="LHr8hYMEAT" role="2OqNvi">
-                        <ref role="37wK5l" to="oniz:5Erw5yfdx17" resolve="ReturnPersonalData" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="lc7rE" id="LHr8hYMEAN" role="3cqZAp">
-                    <node concept="l8MVK" id="LHr8hYMEAO" role="lcghm" />
-                  </node>
-                  <node concept="lc7rE" id="LHr8hYMEAP" role="3cqZAp">
-                    <node concept="la8eA" id="LHr8hYMEAQ" role="lcghm">
-                      <property role="lacIc" value="SO THAT I exercise my right to personal data portability" />
-                    </node>
-                  </node>
-                  <node concept="3clFbH" id="506pcQt__u7" role="3cqZAp" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRD0" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbH" id="506pcQtxoiD" role="8Wnug" />
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRD1" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbH" id="506pcQtxoEg" role="8Wnug" />
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRD2" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="506pcQt$UMT" role="8Wnug">
-            <node concept="l8MVK" id="506pcQt_yKQ" role="lcghm" />
-            <node concept="l8MVK" id="506pcQtAKSe" role="lcghm" />
-            <node concept="l8MVK" id="506pcQtAL8U" role="lcghm" />
-            <node concept="la8eA" id="506pcQt$VdU" role="lcghm">
-              <property role="lacIc" value="              ********** Processing Right **********" />
-            </node>
-            <node concept="l8MVK" id="506pcQt_z1u" role="lcghm" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRD3" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3SKdUt" id="506pcQt_zI9" role="8Wnug">
-            <node concept="1PaTwC" id="506pcQt_zIa" role="1aUNEU">
-              <node concept="3oM_SD" id="506pcQt_zNV" role="1PaTwD">
-                <property role="3oM_SC" value="" />
-              </node>
-              <node concept="3oM_SD" id="506pcQt_$8P" role="1PaTwD">
-                <property role="3oM_SC" value="KNOWLEDGE" />
-              </node>
-              <node concept="3oM_SD" id="506pcQt_$b9" role="1PaTwD">
-                <property role="3oM_SC" value="RIGHT" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRD4" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="506pcQt_$bt" role="8Wnug">
-            <node concept="la8eA" id="506pcQt_$JY" role="lcghm">
-              <property role="lacIc" value="****** KNOWLEDGE RIGHT **********" />
-            </node>
-            <node concept="l8MVK" id="506pcQtAKvf" role="lcghm" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRD5" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbH" id="506pcQtAJC$" role="8Wnug" />
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRD6" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="1_o_46" id="506pcQt__xb" role="8Wnug">
-            <node concept="1_o_bx" id="506pcQt__xd" role="1_o_by">
-              <node concept="1_o_bG" id="506pcQt__xf" role="1_o_aQ">
-                <property role="TrG5h" value="e" />
-              </node>
-              <node concept="2OqwBi" id="506pcQtGcdA" role="1_o_bz">
-                <node concept="2OqwBi" id="506pcQt_AA0" role="2Oq$k0">
-                  <node concept="2OqwBi" id="506pcQt_Aec" role="2Oq$k0">
-                    <node concept="117lpO" id="506pcQt_A6D" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="506pcQt_Alv" role="2OqNvi">
-                      <ref role="3Tt5mk" to="20wa:506pcQtxmXV" resolve="processingAnnotation" />
-                    </node>
-                  </node>
-                  <node concept="3Tsc0h" id="506pcQt_AJ4" role="2OqNvi">
-                    <ref role="3TtcxE" to="20wa:506pcQtus8w" resolve="processing" />
-                  </node>
-                </node>
-                <node concept="1VAtEI" id="506pcQtGe4l" role="2OqNvi" />
-              </node>
-            </node>
-            <node concept="3clFbS" id="506pcQt__xj" role="2LFqv$">
-              <node concept="lc7rE" id="506pcQt_DA0" role="3cqZAp">
-                <node concept="l8MVK" id="506pcQt_DAB" role="lcghm" />
-              </node>
-              <node concept="3clFbH" id="506pcQtJoRU" role="3cqZAp" />
-              <node concept="3clFbH" id="506pcQtJoSH" role="3cqZAp" />
-              <node concept="1_o_46" id="506pcQtEKbP" role="3cqZAp">
-                <node concept="1_o_bx" id="506pcQtEKbR" role="1_o_by">
-                  <node concept="1_o_bG" id="506pcQtEKbT" role="1_o_aQ">
-                    <property role="TrG5h" value="f" />
-                  </node>
-                  <node concept="2OqwBi" id="506pcQtKS8x" role="1_o_bz">
-                    <node concept="2OqwBi" id="506pcQtKRxX" role="2Oq$k0">
-                      <node concept="2OqwBi" id="506pcQtEKJU" role="2Oq$k0">
-                        <node concept="3M$PaV" id="506pcQtEKdg" role="2Oq$k0">
-                          <ref role="3M$S_o" node="506pcQt__xf" resolve="e" />
-                        </node>
-                        <node concept="3TrEf2" id="506pcQtKNPa" role="2OqNvi">
-                          <ref role="3Tt5mk" to="20wa:424h5AVfh_Z" resolve="processing" />
-                        </node>
-                      </node>
-                      <node concept="13MTOL" id="506pcQtKRK9" role="2OqNvi">
-                        <ref role="13MTZf" to="20wa:2pxN2iW2NcB" resolve="dataSubjectCategory" />
-                      </node>
-                    </node>
-                    <node concept="1VAtEI" id="506pcQtKSuy" role="2OqNvi" />
-                  </node>
-                </node>
-                <node concept="3clFbS" id="506pcQtEKbX" role="2LFqv$">
-                  <node concept="lc7rE" id="506pcQtEPFw" role="3cqZAp">
-                    <node concept="la8eA" id="506pcQtEPFO" role="lcghm">
-                      <property role="lacIc" value="as a " />
-                    </node>
-                    <node concept="l9hG8" id="506pcQtEPGD" role="lcghm">
-                      <node concept="2OqwBi" id="506pcQtEPOc" role="lb14g">
-                        <node concept="3M$PaV" id="506pcQtEPHw" role="2Oq$k0">
-                          <ref role="3M$S_o" node="506pcQtEKbT" resolve="f" />
-                        </node>
-                        <node concept="3TrcHB" id="506pcQtEQ8p" role="2OqNvi">
-                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="l8MVK" id="506pcQtEQfs" role="lcghm" />
-                  </node>
-                  <node concept="lc7rE" id="506pcQtEQgx" role="3cqZAp">
-                    <node concept="la8eA" id="506pcQtERlf" role="lcghm">
-                      <property role="lacIc" value="     " />
-                    </node>
-                    <node concept="la8eA" id="506pcQtEQgy" role="lcghm">
-                      <property role="lacIc" value="I want to know all information about &quot;" />
-                    </node>
-                  </node>
-                  <node concept="lc7rE" id="506pcQtEQhu" role="3cqZAp">
-                    <node concept="l9hG8" id="506pcQtEQkR" role="lcghm">
-                      <node concept="2OqwBi" id="506pcQtEQVd" role="lb14g">
-                        <node concept="2OqwBi" id="506pcQtEQrJ" role="2Oq$k0">
-                          <node concept="3M$PaV" id="506pcQtEQlH" role="2Oq$k0">
-                            <ref role="3M$S_o" node="506pcQt__xf" resolve="e" />
-                          </node>
-                          <node concept="3TrEf2" id="506pcQtEQJu" role="2OqNvi">
-                            <ref role="3Tt5mk" to="20wa:424h5AVfh_Z" resolve="processing" />
-                          </node>
-                        </node>
-                        <node concept="3TrcHB" id="506pcQtER7D" role="2OqNvi">
-                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="la8eA" id="506pcQtERb7" role="lcghm">
-                      <property role="lacIc" value="&quot;" />
-                    </node>
-                    <node concept="l8MVK" id="506pcQtFxV7" role="lcghm" />
-                  </node>
-                  <node concept="lc7rE" id="506pcQtERcJ" role="3cqZAp">
-                    <node concept="la8eA" id="506pcQtERm6" role="lcghm">
-                      <property role="lacIc" value="     " />
-                    </node>
-                    <node concept="la8eA" id="506pcQtERdo" role="lcghm">
-                      <property role="lacIc" value="such as : Purposes, personal data used, provider and datareceivers information" />
-                    </node>
-                    <node concept="l8MVK" id="506pcQtERkC" role="lcghm" />
-                  </node>
-                  <node concept="lc7rE" id="506pcQtERmT" role="3cqZAp">
-                    <node concept="la8eA" id="506pcQtERnB" role="lcghm">
-                      <property role="lacIc" value="SO THAT I exercise my right to knowledge" />
-                    </node>
-                    <node concept="l8MVK" id="506pcQtFxVO" role="lcghm" />
-                  </node>
-                  <node concept="3clFbH" id="506pcQtEQfO" role="3cqZAp" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRD7" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbH" id="506pcQtMNFf" role="8Wnug" />
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRD8" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3SKdUt" id="506pcQtMOV6" role="8Wnug">
-            <node concept="1PaTwC" id="506pcQtMOV7" role="1aUNEU">
-              <node concept="3oM_SD" id="506pcQtMPI1" role="1PaTwD">
-                <property role="3oM_SC" value="" />
-              </node>
-              <node concept="3oM_SD" id="506pcQtMPI3" role="1PaTwD">
-                <property role="3oM_SC" value="DATASUBJECT'" />
-              </node>
-              <node concept="3oM_SD" id="506pcQtMPK8" role="1PaTwD">
-                <property role="3oM_SC" value="RIGHT" />
-              </node>
-              <node concept="3oM_SD" id="506pcQtMPL0" role="1PaTwD">
-                <property role="3oM_SC" value="TO" />
-              </node>
-              <node concept="3oM_SD" id="506pcQtMPLe" role="1PaTwD">
-                <property role="3oM_SC" value="GIVE" />
-              </node>
-              <node concept="3oM_SD" id="506pcQtMPLT" role="1PaTwD">
-                <property role="3oM_SC" value="AND" />
-              </node>
-              <node concept="3oM_SD" id="506pcQtMPNs" role="1PaTwD">
-                <property role="3oM_SC" value="WITHDRAW" />
-              </node>
-              <node concept="3oM_SD" id="506pcQtMPPZ" role="1PaTwD">
-                <property role="3oM_SC" value="CONSENT" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRD9" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="506pcQtMOVb" role="8Wnug">
-            <node concept="l8MVK" id="506pcQtOW4D" role="lcghm" />
-            <node concept="l8MVK" id="506pcQtOW_E" role="lcghm" />
-            <node concept="la8eA" id="506pcQtMOVc" role="lcghm">
-              <property role="lacIc" value="****** RIGHT TO GIVE AND WITHDRAW CONSENT **********" />
-            </node>
-            <node concept="l8MVK" id="506pcQtMOVd" role="lcghm" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDa" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbH" id="506pcQtMOVe" role="8Wnug" />
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDb" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="1_o_46" id="506pcQtMOVf" role="8Wnug">
-            <node concept="1_o_bx" id="506pcQtMOVg" role="1_o_by">
-              <node concept="1_o_bG" id="506pcQtMOVh" role="1_o_aQ">
-                <property role="TrG5h" value="e" />
-              </node>
-              <node concept="2OqwBi" id="506pcQtMOVi" role="1_o_bz">
-                <node concept="2OqwBi" id="506pcQtMOVj" role="2Oq$k0">
-                  <node concept="2OqwBi" id="506pcQtMOVk" role="2Oq$k0">
-                    <node concept="117lpO" id="506pcQtMOVl" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="506pcQtMOVm" role="2OqNvi">
-                      <ref role="3Tt5mk" to="20wa:506pcQtxmXV" resolve="processingAnnotation" />
-                    </node>
-                  </node>
-                  <node concept="3Tsc0h" id="506pcQtMOVn" role="2OqNvi">
-                    <ref role="3TtcxE" to="20wa:506pcQtus8w" resolve="processing" />
-                  </node>
-                </node>
-                <node concept="1VAtEI" id="506pcQtMOVo" role="2OqNvi" />
-              </node>
-            </node>
-            <node concept="3clFbS" id="506pcQtMOVp" role="2LFqv$">
-              <node concept="lc7rE" id="506pcQtMOVq" role="3cqZAp">
-                <node concept="l8MVK" id="506pcQtMOVr" role="lcghm" />
-              </node>
-              <node concept="3clFbJ" id="506pcQtMPQk" role="3cqZAp">
-                <node concept="3clFbS" id="506pcQtMPQm" role="3clFbx">
-                  <node concept="1_o_46" id="506pcQtMOVu" role="3cqZAp">
-                    <node concept="1_o_bx" id="506pcQtMOVv" role="1_o_by">
-                      <node concept="1_o_bG" id="506pcQtMOVw" role="1_o_aQ">
-                        <property role="TrG5h" value="f" />
-                      </node>
-                      <node concept="2OqwBi" id="506pcQtMOVx" role="1_o_bz">
-                        <node concept="2OqwBi" id="506pcQtMOVy" role="2Oq$k0">
-                          <node concept="2OqwBi" id="506pcQtMOV_" role="2Oq$k0">
-                            <node concept="3M$PaV" id="506pcQtMOVA" role="2Oq$k0">
-                              <ref role="3M$S_o" node="506pcQtMOVh" resolve="e" />
-                            </node>
-                            <node concept="3TrEf2" id="506pcQtMOVB" role="2OqNvi">
-                              <ref role="3Tt5mk" to="20wa:424h5AVfh_Z" resolve="processing" />
-                            </node>
-                          </node>
-                          <node concept="13MTOL" id="506pcQtMOVE" role="2OqNvi">
-                            <ref role="13MTZf" to="20wa:2pxN2iW2NcB" resolve="dataSubjectCategory" />
-                          </node>
-                        </node>
-                        <node concept="1VAtEI" id="506pcQtMOVF" role="2OqNvi" />
-                      </node>
-                    </node>
-                    <node concept="3clFbS" id="506pcQtMOVG" role="2LFqv$">
-                      <node concept="lc7rE" id="506pcQtMOVH" role="3cqZAp">
-                        <node concept="la8eA" id="506pcQtMOVI" role="lcghm">
-                          <property role="lacIc" value="as a " />
-                        </node>
-                        <node concept="l9hG8" id="506pcQtMOVJ" role="lcghm">
-                          <node concept="2OqwBi" id="506pcQtMOVK" role="lb14g">
-                            <node concept="3M$PaV" id="506pcQtMOVL" role="2Oq$k0">
-                              <ref role="3M$S_o" node="506pcQtMOVw" resolve="f" />
-                            </node>
-                            <node concept="3TrcHB" id="506pcQtMOVM" role="2OqNvi">
-                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="l8MVK" id="506pcQtMOVN" role="lcghm" />
-                      </node>
-                      <node concept="lc7rE" id="506pcQtMOVO" role="3cqZAp">
-                        <node concept="la8eA" id="506pcQtMOVP" role="lcghm">
-                          <property role="lacIc" value="     " />
-                        </node>
-                        <node concept="la8eA" id="506pcQtMOVQ" role="lcghm">
-                          <property role="lacIc" value="I want to give or not and withdraw my consent anytime for &quot;" />
-                        </node>
-                      </node>
-                      <node concept="lc7rE" id="506pcQtMOVR" role="3cqZAp">
-                        <node concept="l9hG8" id="506pcQtMOVS" role="lcghm">
-                          <node concept="2OqwBi" id="506pcQtMOVT" role="lb14g">
-                            <node concept="2OqwBi" id="506pcQtMOVU" role="2Oq$k0">
-                              <node concept="3M$PaV" id="506pcQtMOVV" role="2Oq$k0">
-                                <ref role="3M$S_o" node="506pcQtMOVh" resolve="e" />
-                              </node>
-                              <node concept="3TrEf2" id="506pcQtMOVW" role="2OqNvi">
-                                <ref role="3Tt5mk" to="20wa:424h5AVfh_Z" resolve="processing" />
-                              </node>
-                            </node>
-                            <node concept="3TrcHB" id="506pcQtMOVX" role="2OqNvi">
-                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="la8eA" id="506pcQtMOVY" role="lcghm">
-                          <property role="lacIc" value="&quot;" />
-                        </node>
-                        <node concept="l8MVK" id="506pcQtMOVZ" role="lcghm" />
-                      </node>
-                      <node concept="lc7rE" id="506pcQtMOW4" role="3cqZAp">
-                        <node concept="la8eA" id="506pcQtMOW5" role="lcghm">
-                          <property role="lacIc" value="SO THAT I exercise my right to consent" />
-                        </node>
-                        <node concept="l8MVK" id="506pcQtMOW6" role="lcghm" />
-                      </node>
-                      <node concept="3clFbH" id="506pcQtMOW7" role="3cqZAp" />
-                    </node>
-                  </node>
-                  <node concept="3clFbH" id="506pcQtMPQl" role="3cqZAp" />
-                </node>
-                <node concept="3clFbC" id="506pcQtNBLS" role="3clFbw">
-                  <node concept="Xl_RD" id="506pcQtNBQf" role="3uHU7w">
-                    <property role="Xl_RC" value="Consent_Contract" />
-                  </node>
-                  <node concept="2OqwBi" id="506pcQtMTXa" role="3uHU7B">
-                    <node concept="2OqwBi" id="506pcQtMQzJ" role="2Oq$k0">
-                      <node concept="2OqwBi" id="506pcQtMQ0n" role="2Oq$k0">
-                        <node concept="3M$PaV" id="506pcQtMPRt" role="2Oq$k0">
-                          <ref role="3M$S_o" node="506pcQtMOVh" resolve="e" />
-                        </node>
-                        <node concept="3TrEf2" id="506pcQtMQlS" role="2OqNvi">
-                          <ref role="3Tt5mk" to="20wa:424h5AVfh_Z" resolve="processing" />
-                        </node>
-                      </node>
-                      <node concept="3TrcHB" id="506pcQtMQM7" role="2OqNvi">
-                        <ref role="3TsBF5" to="20wa:5VnHNHVgh99" resolve="pc" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="506pcQtMVZL" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbH" id="506pcQtMOVt" role="3cqZAp" />
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDc" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbH" id="506pcQtMNM1" role="8Wnug" />
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDd" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3SKdUt" id="506pcQtOWIE" role="8Wnug">
-            <node concept="1PaTwC" id="506pcQtOWIF" role="1aUNEU">
-              <node concept="3oM_SD" id="506pcQtOWIG" role="1PaTwD">
-                <property role="3oM_SC" value="" />
-              </node>
-              <node concept="3oM_SD" id="506pcQtOWIH" role="1PaTwD">
-                <property role="3oM_SC" value="OPPOSITION" />
-              </node>
-              <node concept="3oM_SD" id="506pcQtOWII" role="1PaTwD">
-                <property role="3oM_SC" value="RIGHT" />
-              </node>
-              <node concept="3oM_SD" id="506pcQtOXNM" role="1PaTwD">
-                <property role="3oM_SC" value="" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDe" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="506pcQtOWIO" role="8Wnug">
-            <node concept="l8MVK" id="506pcQtOWIP" role="lcghm" />
-            <node concept="l8MVK" id="506pcQtOWIQ" role="lcghm" />
-            <node concept="la8eA" id="506pcQtOWIR" role="lcghm">
-              <property role="lacIc" value="****** OPPOSITION RIGHT **********" />
-            </node>
-            <node concept="l8MVK" id="506pcQtOWIS" role="lcghm" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDf" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbH" id="506pcQtOWIT" role="8Wnug" />
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDg" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="1_o_46" id="506pcQtOWIU" role="8Wnug">
-            <node concept="1_o_bx" id="506pcQtOWIV" role="1_o_by">
-              <node concept="1_o_bG" id="506pcQtOWIW" role="1_o_aQ">
-                <property role="TrG5h" value="e" />
-              </node>
-              <node concept="2OqwBi" id="506pcQtOWIX" role="1_o_bz">
-                <node concept="2OqwBi" id="506pcQtOWIY" role="2Oq$k0">
-                  <node concept="2OqwBi" id="506pcQtOWIZ" role="2Oq$k0">
-                    <node concept="117lpO" id="506pcQtOWJ0" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="506pcQtOWJ1" role="2OqNvi">
-                      <ref role="3Tt5mk" to="20wa:506pcQtxmXV" resolve="processingAnnotation" />
-                    </node>
-                  </node>
-                  <node concept="3Tsc0h" id="506pcQtOWJ2" role="2OqNvi">
-                    <ref role="3TtcxE" to="20wa:506pcQtus8w" resolve="processing" />
-                  </node>
-                </node>
-                <node concept="1VAtEI" id="506pcQtOWJ3" role="2OqNvi" />
-              </node>
-            </node>
-            <node concept="3clFbS" id="506pcQtOWJ4" role="2LFqv$">
-              <node concept="lc7rE" id="506pcQtOWJ5" role="3cqZAp">
-                <node concept="l8MVK" id="506pcQtOWJ6" role="lcghm" />
-              </node>
-              <node concept="3clFbJ" id="506pcQtOWJ7" role="3cqZAp">
-                <node concept="3clFbS" id="506pcQtOWJ8" role="3clFbx">
-                  <node concept="1_o_46" id="506pcQtOWJ9" role="3cqZAp">
-                    <node concept="1_o_bx" id="506pcQtOWJa" role="1_o_by">
-                      <node concept="1_o_bG" id="506pcQtOWJb" role="1_o_aQ">
-                        <property role="TrG5h" value="f" />
-                      </node>
-                      <node concept="2OqwBi" id="506pcQtOWJc" role="1_o_bz">
-                        <node concept="2OqwBi" id="506pcQtOWJd" role="2Oq$k0">
-                          <node concept="2OqwBi" id="506pcQtOWJe" role="2Oq$k0">
-                            <node concept="2OqwBi" id="506pcQtOWJf" role="2Oq$k0">
-                              <node concept="2OqwBi" id="506pcQtOWJg" role="2Oq$k0">
-                                <node concept="3M$PaV" id="506pcQtOWJh" role="2Oq$k0">
-                                  <ref role="3M$S_o" node="506pcQtOWIW" resolve="e" />
-                                </node>
-                                <node concept="3TrEf2" id="506pcQtOWJi" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="20wa:424h5AVfh_Z" resolve="processing" />
-                                </node>
-                              </node>
-                              <node concept="3Tsc0h" id="506pcQtOWJj" role="2OqNvi">
-                                <ref role="3TtcxE" to="20wa:5VnHNHVgh9G" resolve="dataUsedPd" />
-                              </node>
-                            </node>
-                            <node concept="13MTOL" id="506pcQtOWJk" role="2OqNvi">
-                              <ref role="13MTZf" to="20wa:2olOl3C1TdP" resolve="dataref1" />
-                            </node>
-                          </node>
-                          <node concept="13MTOL" id="506pcQtOWJl" role="2OqNvi">
-                            <ref role="13MTZf" to="20wa:2pxN2iW2NcB" resolve="dataSubjectCategory" />
-                          </node>
-                        </node>
-                        <node concept="1VAtEI" id="506pcQtOWJm" role="2OqNvi" />
-                      </node>
-                    </node>
-                    <node concept="3clFbS" id="506pcQtOWJn" role="2LFqv$">
-                      <node concept="lc7rE" id="506pcQtOWJo" role="3cqZAp">
-                        <node concept="la8eA" id="506pcQtOWJp" role="lcghm">
-                          <property role="lacIc" value="as a " />
-                        </node>
-                        <node concept="l9hG8" id="506pcQtOWJq" role="lcghm">
-                          <node concept="2OqwBi" id="506pcQtOWJr" role="lb14g">
-                            <node concept="3M$PaV" id="506pcQtOWJs" role="2Oq$k0">
-                              <ref role="3M$S_o" node="506pcQtOWJb" resolve="f" />
-                            </node>
-                            <node concept="3TrcHB" id="506pcQtOWJt" role="2OqNvi">
-                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="l8MVK" id="506pcQtOWJu" role="lcghm" />
-                      </node>
-                      <node concept="lc7rE" id="506pcQtOWJv" role="3cqZAp">
-                        <node concept="la8eA" id="506pcQtOWJw" role="lcghm">
-                          <property role="lacIc" value="     " />
-                        </node>
-                        <node concept="la8eA" id="506pcQtOWJx" role="lcghm">
-                          <property role="lacIc" value="I want oppose to &quot;" />
-                        </node>
-                      </node>
-                      <node concept="lc7rE" id="506pcQtOWJy" role="3cqZAp">
-                        <node concept="l9hG8" id="506pcQtOWJz" role="lcghm">
-                          <node concept="2OqwBi" id="506pcQtOWJ$" role="lb14g">
-                            <node concept="2OqwBi" id="506pcQtOWJ_" role="2Oq$k0">
-                              <node concept="3M$PaV" id="506pcQtOWJA" role="2Oq$k0">
-                                <ref role="3M$S_o" node="506pcQtOWIW" resolve="e" />
-                              </node>
-                              <node concept="3TrEf2" id="506pcQtOWJB" role="2OqNvi">
-                                <ref role="3Tt5mk" to="20wa:424h5AVfh_Z" resolve="processing" />
-                              </node>
-                            </node>
-                            <node concept="3TrcHB" id="506pcQtOWJC" role="2OqNvi">
-                              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="la8eA" id="506pcQtOWJD" role="lcghm">
-                          <property role="lacIc" value="&quot;" />
-                        </node>
-                        <node concept="l8MVK" id="506pcQtOWJE" role="lcghm" />
-                      </node>
-                      <node concept="lc7rE" id="506pcQtOWJF" role="3cqZAp">
-                        <node concept="la8eA" id="506pcQtOWJG" role="lcghm">
-                          <property role="lacIc" value="SO THAT I exercise my right of opposition" />
-                        </node>
-                        <node concept="l8MVK" id="506pcQtOWJH" role="lcghm" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3y3z36" id="506pcQtOXP6" role="3clFbw">
-                  <node concept="2OqwBi" id="506pcQtOWJM" role="3uHU7B">
-                    <node concept="2OqwBi" id="506pcQtOWJN" role="2Oq$k0">
-                      <node concept="2OqwBi" id="506pcQtOWJO" role="2Oq$k0">
-                        <node concept="3M$PaV" id="506pcQtOWJP" role="2Oq$k0">
-                          <ref role="3M$S_o" node="506pcQtOWIW" resolve="e" />
-                        </node>
-                        <node concept="3TrEf2" id="506pcQtOWJQ" role="2OqNvi">
-                          <ref role="3Tt5mk" to="20wa:424h5AVfh_Z" resolve="processing" />
-                        </node>
-                      </node>
-                      <node concept="3TrcHB" id="506pcQtOWJR" role="2OqNvi">
-                        <ref role="3TsBF5" to="20wa:5VnHNHVgh99" resolve="pc" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="506pcQtOWJS" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Object.toString()" resolve="toString" />
-                    </node>
-                  </node>
-                  <node concept="Xl_RD" id="506pcQtOWJL" role="3uHU7w">
-                    <property role="Xl_RC" value="Consent_Contract" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbH" id="506pcQtOWJT" role="3cqZAp" />
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDh" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbH" id="59Rn7sUykA9" role="8Wnug" />
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDi" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3SKdUt" id="59Rn7sUynof" role="8Wnug">
-            <node concept="1PaTwC" id="59Rn7sUynog" role="1aUNEU">
-              <node concept="3oM_SD" id="59Rn7sUyooY" role="1PaTwD">
-                <property role="3oM_SC" value="Data" />
-              </node>
-              <node concept="3oM_SD" id="59Rn7sUyop4" role="1PaTwD">
-                <property role="3oM_SC" value="subject" />
-              </node>
-              <node concept="3oM_SD" id="59Rn7sUyopf" role="1PaTwD">
-                <property role="3oM_SC" value="notification" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDj" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="59Rn7sUyCMj" role="8Wnug">
-            <node concept="l8MVK" id="59Rn7sUyCMk" role="lcghm" />
-            <node concept="l8MVK" id="59Rn7sUyCMl" role="lcghm" />
-            <node concept="la8eA" id="59Rn7sUyCMm" role="lcghm">
-              <property role="lacIc" value="******* NOTIFICATION RIGHT **********" />
-            </node>
-            <node concept="l8MVK" id="59Rn7sUyCMn" role="lcghm" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDk" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbH" id="59Rn7sUyCMo" role="8Wnug" />
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDl" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="1_o_46" id="59Rn7sUyCMp" role="8Wnug">
-            <node concept="1_o_bx" id="59Rn7sUyCMq" role="1_o_by">
-              <node concept="1_o_bG" id="59Rn7sUyCMr" role="1_o_aQ">
-                <property role="TrG5h" value="e" />
-              </node>
-              <node concept="2OqwBi" id="59Rn7sUyCMs" role="1_o_bz">
-                <node concept="2OqwBi" id="59Rn7sUyCMt" role="2Oq$k0">
-                  <node concept="2OqwBi" id="59Rn7sUyCMu" role="2Oq$k0">
-                    <node concept="117lpO" id="59Rn7sUyCMv" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="59Rn7sUyCMw" role="2OqNvi">
-                      <ref role="3Tt5mk" to="20wa:506pcQtxmXV" resolve="processingAnnotation" />
-                    </node>
-                  </node>
-                  <node concept="3Tsc0h" id="59Rn7sUyCMx" role="2OqNvi">
-                    <ref role="3TtcxE" to="20wa:506pcQtus8w" resolve="processing" />
-                  </node>
-                </node>
-                <node concept="1VAtEI" id="59Rn7sUyCMy" role="2OqNvi" />
-              </node>
-            </node>
-            <node concept="3clFbS" id="59Rn7sUyCMz" role="2LFqv$">
-              <node concept="lc7rE" id="59Rn7sUyCM$" role="3cqZAp">
-                <node concept="l8MVK" id="59Rn7sUyCM_" role="lcghm" />
-              </node>
-              <node concept="1_o_46" id="59Rn7sUyCMC" role="3cqZAp">
-                <node concept="1_o_bx" id="59Rn7sUyCMD" role="1_o_by">
-                  <node concept="1_o_bG" id="59Rn7sUyCME" role="1_o_aQ">
-                    <property role="TrG5h" value="f" />
-                  </node>
-                  <node concept="2OqwBi" id="59Rn7sUyCMF" role="1_o_bz">
-                    <node concept="2OqwBi" id="59Rn7sUyCMG" role="2Oq$k0">
-                      <node concept="2OqwBi" id="59Rn7sUyCMH" role="2Oq$k0">
-                        <node concept="2OqwBi" id="59Rn7sUyCMI" role="2Oq$k0">
-                          <node concept="2OqwBi" id="59Rn7sUyCMJ" role="2Oq$k0">
-                            <node concept="3M$PaV" id="59Rn7sUyCMK" role="2Oq$k0">
-                              <ref role="3M$S_o" node="59Rn7sUyCMr" resolve="e" />
-                            </node>
-                            <node concept="3TrEf2" id="59Rn7sUyCML" role="2OqNvi">
-                              <ref role="3Tt5mk" to="20wa:424h5AVfh_Z" resolve="processing" />
-                            </node>
-                          </node>
-                          <node concept="3Tsc0h" id="59Rn7sUyCMM" role="2OqNvi">
-                            <ref role="3TtcxE" to="20wa:5VnHNHVgh9G" resolve="dataUsedPd" />
-                          </node>
-                        </node>
-                        <node concept="13MTOL" id="59Rn7sUyCMN" role="2OqNvi">
-                          <ref role="13MTZf" to="20wa:2olOl3C1TdP" resolve="dataref1" />
-                        </node>
-                      </node>
-                      <node concept="13MTOL" id="59Rn7sUyCMO" role="2OqNvi">
-                        <ref role="13MTZf" to="20wa:2pxN2iW2NcB" resolve="dataSubjectCategory" />
-                      </node>
-                    </node>
-                    <node concept="1VAtEI" id="59Rn7sUyCMP" role="2OqNvi" />
-                  </node>
-                </node>
-                <node concept="3clFbS" id="59Rn7sUyCMQ" role="2LFqv$">
-                  <node concept="lc7rE" id="59Rn7sUyCMR" role="3cqZAp">
-                    <node concept="la8eA" id="59Rn7sUyCMS" role="lcghm">
-                      <property role="lacIc" value="as a " />
-                    </node>
-                    <node concept="l9hG8" id="59Rn7sUyCMT" role="lcghm">
-                      <node concept="2OqwBi" id="59Rn7sUyCMU" role="lb14g">
-                        <node concept="3M$PaV" id="59Rn7sUyCMV" role="2Oq$k0">
-                          <ref role="3M$S_o" node="59Rn7sUyCME" resolve="f" />
-                        </node>
-                        <node concept="3TrcHB" id="59Rn7sUyCMW" role="2OqNvi">
-                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="l8MVK" id="59Rn7sUyCMX" role="lcghm" />
-                  </node>
-                  <node concept="lc7rE" id="59Rn7sUyCMY" role="3cqZAp">
-                    <node concept="la8eA" id="59Rn7sUyCMZ" role="lcghm">
-                      <property role="lacIc" value="     " />
-                    </node>
-                    <node concept="la8eA" id="59Rn7sUyCN0" role="lcghm">
-                      <property role="lacIc" value="I want to be notified when changes are made to &quot;" />
-                    </node>
-                  </node>
-                  <node concept="lc7rE" id="59Rn7sUyCN1" role="3cqZAp">
-                    <node concept="l9hG8" id="59Rn7sUyCN2" role="lcghm">
-                      <node concept="2OqwBi" id="59Rn7sUyCN3" role="lb14g">
-                        <node concept="2OqwBi" id="59Rn7sUyCN4" role="2Oq$k0">
-                          <node concept="3M$PaV" id="59Rn7sUyCN5" role="2Oq$k0">
-                            <ref role="3M$S_o" node="59Rn7sUyCMr" resolve="e" />
-                          </node>
-                          <node concept="3TrEf2" id="59Rn7sUyCN6" role="2OqNvi">
-                            <ref role="3Tt5mk" to="20wa:424h5AVfh_Z" resolve="processing" />
-                          </node>
-                        </node>
-                        <node concept="3TrcHB" id="59Rn7sUyCN7" role="2OqNvi">
-                          <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="la8eA" id="59Rn7sUyCN8" role="lcghm">
-                      <property role="lacIc" value="&quot;" />
-                    </node>
-                    <node concept="la8eA" id="59Rn7sUzZY7" role="lcghm">
-                      <property role="lacIc" value="processing" />
-                    </node>
-                    <node concept="l8MVK" id="59Rn7sU$0qM" role="lcghm" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbH" id="59Rn7sUyEc6" role="3cqZAp" />
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDm" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbH" id="59Rn7sUyBDW" role="8Wnug" />
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDn" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbH" id="59Rn7sUyopx" role="8Wnug" />
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDo" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3SKdUt" id="59Rn7sUy3Wb" role="8Wnug">
-            <node concept="1PaTwC" id="59Rn7sUy3Wc" role="1aUNEU">
-              <node concept="3oM_SD" id="59Rn7sUy45t" role="1PaTwD">
-                <property role="3oM_SC" value="" />
-              </node>
-              <node concept="3oM_SD" id="59Rn7sUy5m6" role="1PaTwD">
-                <property role="3oM_SC" value="Provider" />
-              </node>
-              <node concept="3oM_SD" id="59Rn7sUy5mk" role="1PaTwD">
-                <property role="3oM_SC" value="user" />
-              </node>
-              <node concept="3oM_SD" id="59Rn7sUy5mL" role="1PaTwD">
-                <property role="3oM_SC" value="stories" />
-              </node>
-              <node concept="3oM_SD" id="59Rn7sUy5mY" role="1PaTwD">
-                <property role="3oM_SC" value="" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDp" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="59Rn7sUyaI1" role="8Wnug">
-            <node concept="l8MVK" id="59Rn7sUyaI2" role="lcghm" />
-            <node concept="l8MVK" id="59Rn7sUyaI3" role="lcghm" />
-            <node concept="la8eA" id="59Rn7sUyaI4" role="lcghm">
-              <property role="lacIc" value="******* Provider user stories **********" />
-            </node>
-            <node concept="l8MVK" id="59Rn7sUyaI5" role="lcghm" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDq" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbH" id="59Rn7sUy9kW" role="8Wnug" />
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDr" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="59Rn7sUy6Kf" role="8Wnug">
-            <node concept="la8eA" id="59Rn7sUy6Kg" role="lcghm">
-              <property role="lacIc" value="as a Provider " />
-            </node>
-            <node concept="l8MVK" id="59Rn7sUy6Kl" role="lcghm" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDs" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="59Rn7sUy6Km" role="8Wnug">
-            <node concept="la8eA" id="59Rn7sUy9aU" role="lcghm">
-              <property role="lacIc" value="I want to be able to edit any information about a data item, such as the category, the category of the person involved. " />
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDt" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="59Rn7sUydjE" role="8Wnug">
-            <node concept="l8MVK" id="59Rn7sUyffM" role="lcghm" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDu" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="59Rn7sUygM5" role="8Wnug">
-            <node concept="l8MVK" id="59Rn7sUygM6" role="lcghm" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDv" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbH" id="59Rn7sUyfCY" role="8Wnug" />
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDw" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="59Rn7sUybTJ" role="8Wnug">
-            <node concept="la8eA" id="59Rn7sUybTK" role="lcghm">
-              <property role="lacIc" value="as a Provider " />
-            </node>
-            <node concept="l8MVK" id="59Rn7sUybTL" role="lcghm" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDx" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="59Rn7sUybTM" role="8Wnug">
-            <node concept="la8eA" id="59Rn7sUybTN" role="lcghm">
-              <property role="lacIc" value="I want to be able to edit any information about a processing, such as category, type, purposes and data used " />
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDy" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbH" id="59Rn7sUybKe" role="8Wnug" />
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDz" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="59Rn7sUyjb1" role="8Wnug">
-            <node concept="l8MVK" id="59Rn7sUyjb2" role="lcghm" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRD$" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="59Rn7sUyjb3" role="8Wnug">
-            <node concept="l8MVK" id="59Rn7sUyjb4" role="lcghm" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRD_" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbH" id="59Rn7sUyjb5" role="8Wnug" />
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDA" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="59Rn7sUyjb6" role="8Wnug">
-            <node concept="la8eA" id="59Rn7sUyjb7" role="lcghm">
-              <property role="lacIc" value="as a Provider " />
-            </node>
-            <node concept="l8MVK" id="59Rn7sUyjb8" role="lcghm" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDB" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="59Rn7sUyjb9" role="8Wnug">
-            <node concept="la8eA" id="59Rn7sUyjba" role="lcghm">
-              <property role="lacIc" value="I want to be able to respond to requests from data subjects." />
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDC" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbH" id="59Rn7sUyhMB" role="8Wnug" />
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDD" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="59Rn7sU$SCu" role="8Wnug">
-            <node concept="l8MVK" id="59Rn7sU$SCv" role="lcghm" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDE" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="59Rn7sU$SCw" role="8Wnug">
-            <node concept="l8MVK" id="59Rn7sU$SCx" role="lcghm" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDF" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbH" id="59Rn7sU$SCy" role="8Wnug" />
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDG" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="59Rn7sU$SCz" role="8Wnug">
-            <node concept="la8eA" id="59Rn7sU$SC$" role="lcghm">
-              <property role="lacIc" value="as a Provider " />
-            </node>
-            <node concept="l8MVK" id="59Rn7sU$SC_" role="lcghm" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="6LjtZeQRRDH" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="lc7rE" id="59Rn7sU$SCA" role="8Wnug">
-            <node concept="la8eA" id="59Rn7sU$SCB" role="lcghm">
-              <property role="lacIc" value="I want to be able to generate the register." />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="59Rn7sU$R8L" role="3cqZAp" />
       </node>
     </node>

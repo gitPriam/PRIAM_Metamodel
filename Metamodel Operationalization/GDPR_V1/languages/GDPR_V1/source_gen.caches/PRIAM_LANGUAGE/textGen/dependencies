@@ -129,6 +129,8 @@
   </dependency>
   <dependency className="PRIAM_LANGUAGE.textGen.Requirements_TextGen">
     <classNode dependClassName="PRIAM_LANGUAGE.behavior.DataAnnotation__BehaviorDescriptor" />
+    <classNode dependClassName="PRIAM_LANGUAGE.behavior.ProcessingAnnotation__BehaviorDescriptor" />
+    <classNode dependClassName="PRIAM_LANGUAGE.behavior.Requirements__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.List" />

@@ -11,6 +11,8 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import java.util.List;
 import PRIAM_LANGUAGE.behavior.DataAnnotation__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import PRIAM_LANGUAGE.behavior.Requirements__BehaviorDescriptor;
+import PRIAM_LANGUAGE.behavior.ProcessingAnnotation__BehaviorDescriptor;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -49,7 +51,7 @@ public class Requirements_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     for (SNode dsc : ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.actorAnnotation$$uzY), LINKS.dataSubjectCategories$$YXS)).distinct()) {
       List<String> listDataByDSC = DataAnnotation__BehaviorDescriptor.getDataListByDSCategory_id2W9GWXMd5x9.invoke(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.dataAtnnotation$NG_c), SPropertyOperations.getString(dsc, PROPS.name$MnvL));
-      String dataList = DataAnnotation__BehaviorDescriptor.Display_id2W9GWXMeA2H.invoke(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.dataAtnnotation$NG_c), listDataByDSC);
+      String dataList = Requirements__BehaviorDescriptor.Display_idzICRpkL01v.invoke(ctx.getPrimaryInput(), listDataByDSC);
 
       tgs.append("Data subject ");
       tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));
@@ -78,36 +80,6 @@ public class Requirements_TextGen extends TextGenDescriptorBase {
 
     }
 
-    tgs.append("Data controller: ");
-    tgs.newLine();
-    tgs.append("As a data controller, I want to ensure that my organization has mechanisms in place to keep personal data up to date and accurate.");
-    tgs.newLine();
-    tgs.append("As data controller, I want to list the data in my application and their status (personal or non-personal).");
-    tgs.newLine();
-    tgs.append("As a data controller, I want to document for each piece of personal data, its retention period, its source, its category, as well as the category \nof data subject to which it belongs that ensure adequate and transparent documentation.\"");
-    tgs.newLine();
-
-    tgs.append("--------------------------- Processing part -----------------------------");
-    tgs.newLine();
-    tgs.newLine();
-    tgs.append("Data subject: ");
-    tgs.newLine();
-    tgs.append("As a data subject, I want to be informed of any personal processing performed on my personal data.");
-    tgs.newLine();
-    tgs.append("As a data subject, I want to be informed of the legal basis for my processings.");
-    tgs.newLine();
-    tgs.append("As a data subject, I want to be informed of the purposes for which my personal processing has been performed.");
-    tgs.newLine();
-    tgs.append("As a data subject, I want to be informed about the transfer of my personal data within or outside the European Union, including the data transferred, \nthe purpose of the transfer and the receiving entity\"");
-    tgs.newLine();
-    tgs.append("As a data subject I must be informed of the technical and organizational measures taken to guarantee the protection of my personal data. ");
-    tgs.newLine();
-    tgs.append("As a data subject, I want to be informed of any further processing of my personal data, including the purposes of such processing");
-    tgs.newLine();
-    tgs.append("As a data subject I want to be notified of any changes concerning my personal data and data processing");
-    tgs.newLine();
-    tgs.append("\"As a data subject, I want to understand whether providing my personal data is a legal or contractual obligation, and what the consequences are if I choose not to\n provide this data, so that I can make decisions about disclosing my personal data.\"");
-    tgs.newLine();
     tgs.newLine();
     tgs.append("Data controller: ");
     tgs.newLine();
@@ -125,21 +97,152 @@ public class Requirements_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     tgs.append("As a data controller, I want to ensure that my organization carries out Data Protection Impact Assessments (DPIA)");
     tgs.newLine();
+
+
+    tgs.append("Data controller: ");
+    tgs.newLine();
+    tgs.append("As a data controller, I want to ensure that my organization has mechanisms in place to keep personal data up to date and accurate.");
+    tgs.newLine();
+    tgs.append("As data controller, I want to list the data in my application and their status (personal or non-personal).");
+    tgs.newLine();
+    tgs.append("As a data controller, I want to document for each piece of personal data, its retention period, its source, its category, as well as the category \nof data subject to which it belongs that ensure adequate and transparent documentation.\"");
+    tgs.newLine();
+
+    tgs.append("--------------------------- Processing part -----------------------------");
+    tgs.newLine();
+    tgs.append("Data subject: ");
+    tgs.newLine();
+    for (SNode dsc : ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.actorAnnotation$$uzY), LINKS.dataSubjectCategories$$YXS)).distinct()) {
+      List<String> listDataByDSC = DataAnnotation__BehaviorDescriptor.getDataListByDSCategory_id2W9GWXMd5x9.invoke(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.dataAtnnotation$NG_c), SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      String dataList = Requirements__BehaviorDescriptor.Display_idzICRpkL01v.invoke(ctx.getPrimaryInput(), listDataByDSC);
+
+      List<String> processings = ProcessingAnnotation__BehaviorDescriptor.listProcessingName_idzICRpkHbQu.invoke(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.processingAnnotation$w9tJ), SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      String processingList = Requirements__BehaviorDescriptor.Display_idzICRpkL01v.invoke(ctx.getPrimaryInput(), processings);
+
+      List<String> processingsTransfer = ProcessingAnnotation__BehaviorDescriptor.listProcessingTransfer_idzICRpl1aIT.invoke(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.processingAnnotation$w9tJ), SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      String processingTransferList = Requirements__BehaviorDescriptor.Display_idzICRpkL01v.invoke(ctx.getPrimaryInput(), processingsTransfer);
+
+      List<String> furtherProcessings = ProcessingAnnotation__BehaviorDescriptor.listFurtherProcessing_idzICRplhHpG.invoke(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.processingAnnotation$w9tJ), SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      String furtherProcessingList = Requirements__BehaviorDescriptor.Display_idzICRpkL01v.invoke(ctx.getPrimaryInput(), furtherProcessings);
+
+      tgs.newLine();
+      tgs.append("As a ");
+      tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      tgs.append(", I want to be informed of any personal processing performed on my personal data (");
+      tgs.append(dataList);
+      tgs.append(")");
+      tgs.newLine();
+
+      tgs.append("As a ");
+      tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      tgs.append(", I want to be informed of the legal basis for my processings (");
+      tgs.append(processingList);
+      tgs.append(")");
+      tgs.newLine();
+
+      tgs.append("As a ");
+      tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      tgs.append(" , I want to be informed of the purposes for which my personal processing (");
+      tgs.append(processingList);
+      tgs.append(")  has been performed");
+      tgs.newLine();
+
+      tgs.append("As a ");
+      tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      tgs.append(", I want to be informed of any processing ( ");
+      tgs.append(processingTransferList);
+      tgs.append(") related to the transfer of my personal data within or outside the European Union, including the data transferred, \nthe purpose of the transfer and the receiving entity");
+      tgs.newLine();
+
+      tgs.append("As a data subject,  ");
+      tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      tgs.append("I must be informed of the technical and organizational measures taken to guarantee the protection of my personal data (");
+      tgs.append(dataList);
+      tgs.append(" )");
+      tgs.newLine();
+
+      tgs.append("As a ");
+      tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      tgs.append(", I want to be informed of any further processing (");
+      tgs.append(furtherProcessingList);
+      tgs.append(") of my personal data, including the purposes of such processing");
+      tgs.newLine();
+
+      tgs.append("As a ");
+      tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      tgs.append(", I want to be notified of any changes concerning my personal data (");
+      tgs.append(dataList);
+      tgs.append(") and data processing (");
+      tgs.append(processingList);
+      tgs.append(" )");
+      tgs.newLine();
+
+      tgs.append("\"As a ");
+      tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      tgs.append(", I want to understand whether providing my personal data ( ");
+      tgs.append(dataList);
+      tgs.append(") is a legal or contractual obligation, and what the consequences are if I choose not to\n provide this data, so that I can make decisions about disclosing my personal data.");
+      tgs.newLine();
+    }
+
+    tgs.newLine();
+    tgs.append("Data controller: ");
+    tgs.newLine();
+    tgs.append("As a data controller, I want to ensure that my organization complies with the data minimization principles by collecting only the information that is \nstrictly necessary for the specific purposes of the processing. purposes of the processing.\"");
+    tgs.newLine();
+    tgs.append("As a data controller, I want to be able to document the details of each data processing operation, including its legal basis, its purpose(s) and \nthe associated technical and organizational measures.\"\n\n");
+    tgs.newLine();
+    tgs.append("As a data controller, I want to be able to document the data required for each processing operation (data usage table)");
+    tgs.newLine();
+    tgs.append("As a data controller I want to be able to document all transfers, including the data consumer and the data to be transferred.");
+    tgs.newLine();
+    tgs.append("\"As a data controller, I want to be able to add and perform a processing operation with the same purpose as another, where further\n processing is necessary, without obtaining additional consent from data subjects.\"");
+    tgs.newLine();
+    tgs.append("\"As a controller, I want to ensure that my organization has complete documentation of processing activities, including purposes, \ncategories of data, and recipients (processing record).\"");
+    tgs.newLine();
+    tgs.append("As a data controller, I want to ensure that my organization carries out Data Protection Impact Assessments (DPIA)");
+    tgs.newLine();
+
+
     tgs.newLine();
     tgs.append("--------------------------- Consent part -----------------------------");
     tgs.append("Data subject: ");
     tgs.newLine();
-    tgs.append("As a data subject I want to give my explicit consent for each specific processing of my personal data");
+
+    tgs.append("Data subject: ");
     tgs.newLine();
-    tgs.append("As a data subject, I want to be able to change my consent preferences at any time.");
-    tgs.newLine();
-    tgs.append("As a data subject, I want to be able to refuse that my data to be used for profiling purposes or to be the subject of automated decisions.");
-    tgs.newLine();
-    tgs.append("As a data subject, I want the process of collecting my consent to be transparent and easy to understand");
-    tgs.newLine();
-    tgs.append("As a data subject I want to access/download my contract");
-    tgs.newLine();
-    tgs.newLine();
+    for (SNode dsc : ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.actorAnnotation$$uzY), LINKS.dataSubjectCategories$$YXS)).distinct()) {
+      List<String> listDataByDSC = DataAnnotation__BehaviorDescriptor.getDataListByDSCategory_id2W9GWXMd5x9.invoke(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.dataAtnnotation$NG_c), SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      String dataList = Requirements__BehaviorDescriptor.Display_idzICRpkL01v.invoke(ctx.getPrimaryInput(), listDataByDSC);
+
+      List<String> processings = ProcessingAnnotation__BehaviorDescriptor.listProcessingName_idzICRpkHbQu.invoke(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.processingAnnotation$w9tJ), SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      String processingList = Requirements__BehaviorDescriptor.Display_idzICRpkL01v.invoke(ctx.getPrimaryInput(), processings);
+
+      tgs.append("As a ");
+      tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      tgs.append(", I want to give my explicit consent for each specific processing of my personal data");
+      tgs.append(processingList);
+      tgs.newLine();
+      tgs.append("As a ");
+      tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      tgs.append(", I want to be able to change my consent preferences at any time.");
+      tgs.newLine();
+      tgs.append("As a ");
+      tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      tgs.append(", I want to be able to refuse that my data to be used for profiling purposes or to be the subject of automated decisions.");
+      tgs.newLine();
+      tgs.append("As a ");
+      tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      tgs.append(", I want the process of collecting my consent to be transparent and easy to understand");
+      tgs.newLine();
+      tgs.append("As a data subject ");
+      tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      tgs.append(", I want to access/download my contract");
+      tgs.newLine();
+      tgs.newLine();
+
+    }
+
     tgs.append("Data controller: ");
     tgs.newLine();
     tgs.append("As a data controller, I want to document and record individuals' consent so that I can demonstrate it if necessary");
@@ -154,34 +257,91 @@ public class Requirements_TextGen extends TextGenDescriptorBase {
     tgs.append("--------------------------- Right part -----------------------------");
     tgs.append("Data subject:");
     tgs.newLine();
-    tgs.append("As a [data subject] I want to acces to all my personal data [data list]");
-    tgs.newLine();
-    tgs.append("As a [data subject], I want to be able to object to processing [processing list].");
-    tgs.newLine();
-    tgs.append("As a [data subject], I want to be able to restrict processing [processing list].");
-    tgs.newLine();
-    tgs.append("As a [data subject] I want to give or not and withdraw my consent anytime for [ ] SO THAT I exercise my right to consent");
-    tgs.newLine();
-    tgs.append("As a  [data subject] I want to rectify any of my personal data [data list] SO THAT I exercise my right to rectify personal data ");
-    tgs.newLine();
-    tgs.append("AS [data subject] I want to erase any of my personal data  [data list] SO THAT I exercise my right to be forgotten ");
-    tgs.newLine();
-    tgs.append("As a [data subject] I want to obtain any of my personal data [data list] SO THAT I exercise my right to personal data portability");
-    tgs.newLine();
-    tgs.append("As a [data subject] I want to know all information about my personal data and their processing SO THAT I enforce my right to knowledge");
-    tgs.newLine();
-    tgs.append("As a [data subject], I want my personal data to be deleted when legally required to do so");
-    tgs.newLine();
-    tgs.append("As a [data subject], I want to be informed of my rights");
-    tgs.newLine();
-    tgs.append("As a data subject, I want to be informed of my right to lodge a complaint with a supervisory authority, ");
-    tgs.newLine();
-    tgs.append("As data subject I want to be notified when the limitation is lifted ");
-    tgs.newLine();
-    tgs.append("As a data subject I want to be notified of responses to my requests to enforce my rights");
-    tgs.newLine();
-    tgs.append("As the data subject, I want to be informed of the answers given to my requests, as well as the date and justification.");
-    tgs.newLine();
+    for (SNode dsc : ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.actorAnnotation$$uzY), LINKS.dataSubjectCategories$$YXS)).distinct()) {
+      List<String> listDataByDSC = DataAnnotation__BehaviorDescriptor.getDataListByDSCategory_id2W9GWXMd5x9.invoke(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.dataAtnnotation$NG_c), SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      String dataList = Requirements__BehaviorDescriptor.Display_idzICRpkL01v.invoke(ctx.getPrimaryInput(), listDataByDSC);
+
+      List<String> listPortableDataByDSC = DataAnnotation__BehaviorDescriptor.getPortableDataListByDSCategory_idzICRpllzna.invoke(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.dataAtnnotation$NG_c), SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      String portableDataList = Requirements__BehaviorDescriptor.Display_idzICRpkL01v.invoke(ctx.getPrimaryInput(), listPortableDataByDSC);
+
+      List<String> processings = ProcessingAnnotation__BehaviorDescriptor.listProcessingName_idzICRpkHbQu.invoke(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.processingAnnotation$w9tJ), SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      String processingList = Requirements__BehaviorDescriptor.Display_idzICRpkL01v.invoke(ctx.getPrimaryInput(), processings);
+
+
+      tgs.append("As a ");
+      tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      tgs.append(", I want to acces to all my personal data (");
+      tgs.append(dataList);
+      tgs.append(" )");
+      tgs.newLine();
+      tgs.append("As a ");
+      tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      tgs.append(", I want to be able to object to processing (");
+      tgs.append(processingList);
+      tgs.append(" )");
+      tgs.newLine();
+      tgs.append("As a ");
+      tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      tgs.append(", I want to be able to restrict processing (");
+      tgs.append(processingList);
+      tgs.append(")");
+      tgs.newLine();
+      tgs.append("As a ");
+      tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      tgs.append(", I want to give or not and withdraw my consent anytime for (");
+      tgs.append(processingList);
+      tgs.append(") SO THAT I exercise my right to consent");
+      tgs.newLine();
+      tgs.append("As a ");
+      tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      tgs.append(", I want to rectify any of my personal data ( ");
+      tgs.append(dataList);
+      tgs.append("SO THAT I exercise my right to rectify personal data");
+      tgs.newLine();
+      tgs.append("As a  ");
+      tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      tgs.append(", I want to erase any of my personal data ( ");
+      tgs.append(dataList);
+      tgs.append(" ) SO THAT I exercise my right to be forgotten");
+      tgs.newLine();
+      tgs.append("As a ");
+      tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      tgs.append(", I want to obtain any of my personal data (");
+      tgs.append(portableDataList);
+      tgs.append("SO THAT I exercise my right to personal data portability");
+      tgs.newLine();
+      tgs.append("As a ");
+      tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      tgs.append(", I want to know all information about my personal data (");
+      tgs.append(dataList);
+      tgs.append(") and their processing SO THAT I enforce my right to knowledge");
+      tgs.newLine();
+      tgs.append("As a ");
+      tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      tgs.append(", I want my personal data (");
+      tgs.append(dataList);
+      tgs.append("to be deleted when legally required to do so");
+      tgs.newLine();
+      tgs.append("As a [data subject], I want to be informed of my rights");
+      tgs.newLine();
+      tgs.append("As a  ");
+      tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      tgs.append(", I want to be informed of my right to lodge a complaint with a supervisory authority");
+      tgs.newLine();
+      tgs.append("As a  ");
+      tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      tgs.append(", I want to be notified when the limitation is lifted");
+      tgs.newLine();
+      tgs.append("As a ");
+      tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      tgs.append(", I want to be notified of responses to my requests to enforce my rights");
+      tgs.newLine();
+      tgs.append("As a ");
+      tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      tgs.append(", I want to be informed of the answers given to my requests, as well as the date and justification.");
+      tgs.newLine();
+    }
+
     tgs.newLine();
     tgs.append("Data controller:");
     tgs.newLine();
@@ -198,13 +358,28 @@ public class Requirements_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     tgs.append("Data subject:");
     tgs.newLine();
-    tgs.append("\"As a data subject I want be informed of the technical and organizational measures taken to guarantee the protection of my personal data \nthat has been breached.\"");
-    tgs.newLine();
-    tgs.append("As a [data subject], I want to be informed of the data that has been breached and the consequences of the breach.");
-    tgs.newLine();
-    tgs.append("As a data subject, I want to be informed in the event of a breach of my personal data.");
-    tgs.newLine();
-    tgs.newLine();
+    for (SNode dsc : ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.actorAnnotation$$uzY), LINKS.dataSubjectCategories$$YXS)).distinct()) {
+      List<String> listDataByDSC = DataAnnotation__BehaviorDescriptor.getDataListByDSCategory_id2W9GWXMd5x9.invoke(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.dataAtnnotation$NG_c), SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      String dataList = Requirements__BehaviorDescriptor.Display_idzICRpkL01v.invoke(ctx.getPrimaryInput(), listDataByDSC);
+
+      List<String> processings = ProcessingAnnotation__BehaviorDescriptor.listProcessingName_idzICRpkHbQu.invoke(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.processingAnnotation$w9tJ), SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      String processingList = Requirements__BehaviorDescriptor.Display_idzICRpkL01v.invoke(ctx.getPrimaryInput(), processings);
+
+      tgs.append("As a ");
+      tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      tgs.append(", I want be informed of the technical and organizational measures taken to guarantee the protection of my personal data \nthat has been breached.\"");
+      tgs.newLine();
+      tgs.append("As a ");
+      tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      tgs.append(", I want to be informed of the data that has been breached and the consequences of the breach.");
+      tgs.newLine();
+      tgs.append("As a ");
+      tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));
+      tgs.append(", I want to be informed in the event of a breach of my personal data");
+      tgs.newLine();
+      tgs.newLine();
+
+    }
     tgs.append("data controller:");
     tgs.newLine();
     tgs.append("As a data controller, I want to to maintain a data breach record.");
@@ -229,6 +404,7 @@ public class Requirements_TextGen extends TextGenDescriptorBase {
     /*package*/ static final SReferenceLink dataAtnnotation$NG_c = MetaAdapterFactory.getReferenceLink(0xe02dfeab630f4f6dL, 0x86a8a0833a3f70fcL, 0x2661cc24bc0aafbfL, 0x2661cc24bc0aafc1L, "dataAtnnotation");
     /*package*/ static final SReferenceLink actorAnnotation$$uzY = MetaAdapterFactory.getReferenceLink(0xe02dfeab630f4f6dL, 0x86a8a0833a3f70fcL, 0x2661cc24bc0aafbfL, 0x2f09b3cf7232109cL, "actorAnnotation");
     /*package*/ static final SContainmentLink dataSubjectCategories$$YXS = MetaAdapterFactory.getContainmentLink(0xe02dfeab630f4f6dL, 0x86a8a0833a3f70fcL, 0x2a509229fff4521eL, 0x2a509229fff45221L, "dataSubjectCategories");
+    /*package*/ static final SReferenceLink processingAnnotation$w9tJ = MetaAdapterFactory.getReferenceLink(0xe02dfeab630f4f6dL, 0x86a8a0833a3f70fcL, 0x2661cc24bc0aafbfL, 0x500664cd9d856f7bL, "processingAnnotation");
   }
 
   private static final class PROPS {

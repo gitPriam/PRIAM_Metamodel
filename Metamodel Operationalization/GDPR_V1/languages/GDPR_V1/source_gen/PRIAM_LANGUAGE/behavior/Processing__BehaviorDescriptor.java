@@ -16,11 +16,13 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import java.util.ArrayList;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
 
 public final class Processing__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xe02dfeab630f4f6dL, 0x86a8a0833a3f70fcL, 0x5ed7b73b7b411242L, "PRIAM_LANGUAGE.structure.Processing");
@@ -28,8 +30,9 @@ public final class Processing__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Boolean> equals_id5C9N56JKss4 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("equals").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).id("5C9N56JKss4").build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Integer> nbMainPurpose_id1DDLnPRj1AY = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("nbMainPurpose").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).id("1DDLnPRj1AY").build();
   public static final SMethod<Boolean> compareString_id4ugbBHvy5WU = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("compareString").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).id("4ugbBHvy5WU").build(SMethodBuilder.createJavaParameter(String.class, ""), SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<List<SNode>> ListDataByProcessing_id3t5Q9dhJ1h0 = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("ListDataByProcessing").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).id("3t5Q9dhJ1h0").build();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(equals_id5C9N56JKss4, nbMainPurpose_id1DDLnPRj1AY, compareString_id4ugbBHvy5WU);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(equals_id5C9N56JKss4, nbMainPurpose_id1DDLnPRj1AY, compareString_id4ugbBHvy5WU, ListDataByProcessing_id3t5Q9dhJ1h0);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -51,6 +54,13 @@ public final class Processing__BehaviorDescriptor extends BaseBHDescriptor {
   }
   /*package*/ static boolean compareString_id4ugbBHvy5WU(@NotNull SNode __thisNode__, String ch1, String ch2) {
     return ch1.compareTo(ch2) < 0;
+  }
+  /*package*/ static List<SNode> ListDataByProcessing_id3t5Q9dhJ1h0(@NotNull SNode __thisNode__) {
+    List<SNode> data = ListSequence.fromList(new ArrayList<SNode>());
+    for (SNode u : ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.dataUsage$IYyr))) {
+      ListSequence.fromList(data).addElement(SLinkOperations.getTarget(u, LINKS.data$IQYy));
+    }
+    return data;
   }
 
   /*package*/ Processing__BehaviorDescriptor() {
@@ -74,6 +84,8 @@ public final class Processing__BehaviorDescriptor extends BaseBHDescriptor {
         return (T) ((Integer) nbMainPurpose_id1DDLnPRj1AY(node));
       case 2:
         return (T) ((Boolean) compareString_id4ugbBHvy5WU(node, (String) parameters[0], (String) parameters[1]));
+      case 3:
+        return (T) ((List<SNode>) ListDataByProcessing_id3t5Q9dhJ1h0(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }
@@ -110,5 +122,7 @@ public final class Processing__BehaviorDescriptor extends BaseBHDescriptor {
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink purposes$76q7 = MetaAdapterFactory.getContainmentLink(0xe02dfeab630f4f6dL, 0x86a8a0833a3f70fcL, 0x5ed7b73b7b411242L, 0x5ed7b73b7b4129b5L, "purposes");
+    /*package*/ static final SReferenceLink data$IQYy = MetaAdapterFactory.getReferenceLink(0xe02dfeab630f4f6dL, 0x86a8a0833a3f70fcL, 0x5ed7b73b7b411277L, 0x3c40a36f21039df9L, "data");
+    /*package*/ static final SContainmentLink dataUsage$IYyr = MetaAdapterFactory.getContainmentLink(0xe02dfeab630f4f6dL, 0x86a8a0833a3f70fcL, 0x5ed7b73b7b411242L, 0x3c40a36f21039e0aL, "dataUsage");
   }
 }

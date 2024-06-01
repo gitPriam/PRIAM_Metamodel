@@ -17,32 +17,58 @@ Data subject trainer :
 
 As a trainer , I want to be informed about which personal data is collected, processed and shared.
 As a trainer, I want to be informed about the categories of my personal data.
-As a trainer , I want to be informed of the source of my personal data: 
-As a trainer, I want to be informed about how long my personal data: [ ] will be kept.(retention period).
+As a trainer , I want to be informed of the source of my personal data: fName
+As a trainer, I want to be informed about how long my personal data: [fName ] will be kept.(retention period).
 Data subject member :
 
 As a member , I want to be informed about which personal data is collected, processed and shared.
 As a member, I want to be informed about the categories of my personal data.
-As a member , I want to be informed of the source of my personal data: fName, Gender
-As a member, I want to be informed about how long my personal data: [fName, Gender ] will be kept.(retention period).
+As a member , I want to be informed of the source of my personal data: Gender
+As a member, I want to be informed about how long my personal data: [Gender ] will be kept.(retention period).
+
+Data controller: 
+As a data controller, I want to ensure that my organization complies with the data minimization principles by collecting only the information that is 
+strictly necessary for the specific purposes of the processing. purposes of the processing."
+As a data controller, I want to be able to document the details of each data processing operation, including its legal basis, its purpose(s) and 
+the associated technical and organizational measures."
+
+
+As a data controller, I want to be able to document the data required for each processing operation (data usage table)
+As a data controller I want to be able to document all transfers, including the data consumer and the data to be transferred.
+"As a data controller, I want to be able to add and perform a processing operation with the same purpose as another, where further
+ processing is necessary, without obtaining additional consent from data subjects."
+"As a controller, I want to ensure that my organization has complete documentation of processing activities, including purposes, 
+categories of data, and recipients (processing record)."
+As a data controller, I want to ensure that my organization carries out Data Protection Impact Assessments (DPIA)
 Data controller: 
 As a data controller, I want to ensure that my organization has mechanisms in place to keep personal data up to date and accurate.
 As data controller, I want to list the data in my application and their status (personal or non-personal).
 As a data controller, I want to document for each piece of personal data, its retention period, its source, its category, as well as the category 
 of data subject to which it belongs that ensure adequate and transparent documentation."
 --------------------------- Processing part -----------------------------
-
 Data subject: 
-As a data subject, I want to be informed of any personal processing performed on my personal data.
-As a data subject, I want to be informed of the legal basis for my processings.
-As a data subject, I want to be informed of the purposes for which my personal processing has been performed.
-As a data subject, I want to be informed about the transfer of my personal data within or outside the European Union, including the data transferred, 
-the purpose of the transfer and the receiving entity"
-As a data subject I must be informed of the technical and organizational measures taken to guarantee the protection of my personal data. 
-As a data subject, I want to be informed of any further processing of my personal data, including the purposes of such processing
-As a data subject I want to be notified of any changes concerning my personal data and data processing
-"As a data subject, I want to understand whether providing my personal data is a legal or contractual obligation, and what the consequences are if I choose not to
- provide this data, so that I can make decisions about disclosing my personal data."
+
+As a trainer, I want to be informed of any personal processing performed on my personal data (fName)
+As a trainer, I want to be informed of the legal basis for my processings (profiling)
+As a trainer , I want to be informed of the purposes for which my personal processing (profiling)  has been performed
+As a trainer, I want to be informed of any processing ( profiling) related to the transfer of my personal data within or outside the European Union, including the data transferred, 
+the purpose of the transfer and the receiving entity
+As a data subject,  trainerI must be informed of the technical and organizational measures taken to guarantee the protection of my personal data (fName )
+As a trainer, I want to be informed of any further processing () of my personal data, including the purposes of such processing
+As a trainer, I want to be notified of any changes concerning my personal data (fName) and data processing (profiling )
+"As a trainer, I want to understand whether providing my personal data ( fName) is a legal or contractual obligation, and what the consequences are if I choose not to
+ provide this data, so that I can make decisions about disclosing my personal data.
+
+As a member, I want to be informed of any personal processing performed on my personal data (Gender)
+As a member, I want to be informed of the legal basis for my processings (statistics)
+As a member , I want to be informed of the purposes for which my personal processing (statistics)  has been performed
+As a member, I want to be informed of any processing ( ) related to the transfer of my personal data within or outside the European Union, including the data transferred, 
+the purpose of the transfer and the receiving entity
+As a data subject,  memberI must be informed of the technical and organizational measures taken to guarantee the protection of my personal data (Gender )
+As a member, I want to be informed of any further processing () of my personal data, including the purposes of such processing
+As a member, I want to be notified of any changes concerning my personal data (Gender) and data processing (statistics )
+"As a member, I want to understand whether providing my personal data ( Gender) is a legal or contractual obligation, and what the consequences are if I choose not to
+ provide this data, so that I can make decisions about disclosing my personal data.
 
 Data controller: 
 As a data controller, I want to ensure that my organization complies with the data minimization principles by collecting only the information that is 
@@ -60,11 +86,18 @@ categories of data, and recipients (processing record)."
 As a data controller, I want to ensure that my organization carries out Data Protection Impact Assessments (DPIA)
 
 --------------------------- Consent part -----------------------------Data subject: 
-As a data subject I want to give my explicit consent for each specific processing of my personal data
-As a data subject, I want to be able to change my consent preferences at any time.
-As a data subject, I want to be able to refuse that my data to be used for profiling purposes or to be the subject of automated decisions.
-As a data subject, I want the process of collecting my consent to be transparent and easy to understand
-As a data subject I want to access/download my contract
+Data subject: 
+As a trainer, I want to give my explicit consent for each specific processing of my personal dataprofiling
+As a trainer, I want to be able to change my consent preferences at any time.
+As a trainer, I want to be able to refuse that my data to be used for profiling purposes or to be the subject of automated decisions.
+As a trainer, I want the process of collecting my consent to be transparent and easy to understand
+As a data subject trainer, I want to access/download my contract
+
+As a member, I want to give my explicit consent for each specific processing of my personal datastatistics
+As a member, I want to be able to change my consent preferences at any time.
+As a member, I want to be able to refuse that my data to be used for profiling purposes or to be the subject of automated decisions.
+As a member, I want the process of collecting my consent to be transparent and easy to understand
+As a data subject member, I want to access/download my contract
 
 Data controller: 
 As a data controller, I want to document and record individuals' consent so that I can demonstrate it if necessary
@@ -73,20 +106,34 @@ As a data controller, I want to access or download a data subject's contract.
 As a data controller I want to generate, in a machine-readable format, the consents of the data subjects to the processing performed by the secondary actors. 
 
 --------------------------- Right part -----------------------------Data subject:
-As a [data subject] I want to acces to all my personal data [data list]
-As a [data subject], I want to be able to object to processing [processing list].
-As a [data subject], I want to be able to restrict processing [processing list].
-As a [data subject] I want to give or not and withdraw my consent anytime for [ ] SO THAT I exercise my right to consent
-As a  [data subject] I want to rectify any of my personal data [data list] SO THAT I exercise my right to rectify personal data 
-AS [data subject] I want to erase any of my personal data  [data list] SO THAT I exercise my right to be forgotten 
-As a [data subject] I want to obtain any of my personal data [data list] SO THAT I exercise my right to personal data portability
-As a [data subject] I want to know all information about my personal data and their processing SO THAT I enforce my right to knowledge
-As a [data subject], I want my personal data to be deleted when legally required to do so
+As a trainer, I want to acces to all my personal data (fName )
+As a trainer, I want to be able to object to processing (profiling )
+As a trainer, I want to be able to restrict processing (profiling)
+As a trainer, I want to give or not and withdraw my consent anytime for (profiling) SO THAT I exercise my right to consent
+As a trainer, I want to rectify any of my personal data ( fNameSO THAT I exercise my right to rectify personal data
+As a  trainer, I want to erase any of my personal data ( fName ) SO THAT I exercise my right to be forgotten
+As a trainer, I want to obtain any of my personal data (fNameSO THAT I exercise my right to personal data portability
+As a trainer, I want to know all information about my personal data (fName) and their processing SO THAT I enforce my right to knowledge
+As a trainer, I want my personal data (fNameto be deleted when legally required to do so
 As a [data subject], I want to be informed of my rights
-As a data subject, I want to be informed of my right to lodge a complaint with a supervisory authority, 
-As data subject I want to be notified when the limitation is lifted 
-As a data subject I want to be notified of responses to my requests to enforce my rights
-As the data subject, I want to be informed of the answers given to my requests, as well as the date and justification.
+As a  trainer, I want to be informed of my right to lodge a complaint with a supervisory authority
+As a  trainer, I want to be notified when the limitation is lifted
+As a trainer, I want to be notified of responses to my requests to enforce my rights
+As a trainer, I want to be informed of the answers given to my requests, as well as the date and justification.
+As a member, I want to acces to all my personal data (Gender )
+As a member, I want to be able to object to processing (statistics )
+As a member, I want to be able to restrict processing (statistics)
+As a member, I want to give or not and withdraw my consent anytime for (statistics) SO THAT I exercise my right to consent
+As a member, I want to rectify any of my personal data ( GenderSO THAT I exercise my right to rectify personal data
+As a  member, I want to erase any of my personal data ( Gender ) SO THAT I exercise my right to be forgotten
+As a member, I want to obtain any of my personal data (GenderSO THAT I exercise my right to personal data portability
+As a member, I want to know all information about my personal data (Gender) and their processing SO THAT I enforce my right to knowledge
+As a member, I want my personal data (Genderto be deleted when legally required to do so
+As a [data subject], I want to be informed of my rights
+As a  member, I want to be informed of my right to lodge a complaint with a supervisory authority
+As a  member, I want to be notified when the limitation is lifted
+As a member, I want to be notified of responses to my requests to enforce my rights
+As a member, I want to be informed of the answers given to my requests, as well as the date and justification.
 
 Data controller:
 As a data controller, I want to ensure that the time limits (not exceeding 1 month) for responding to requests to enforce the rights of data subjects are respected.
@@ -96,10 +143,15 @@ As a data controller I want to notify data consumers of any changes that affect 
 
 --------------------------- Breach part -----------------------------
 Data subject:
-"As a data subject I want be informed of the technical and organizational measures taken to guarantee the protection of my personal data 
+As a trainer, I want be informed of the technical and organizational measures taken to guarantee the protection of my personal data 
 that has been breached."
-As a [data subject], I want to be informed of the data that has been breached and the consequences of the breach.
-As a data subject, I want to be informed in the event of a breach of my personal data.
+As a trainer, I want to be informed of the data that has been breached and the consequences of the breach.
+As a trainer, I want to be informed in the event of a breach of my personal data
+
+As a member, I want be informed of the technical and organizational measures taken to guarantee the protection of my personal data 
+that has been breached."
+As a member, I want to be informed of the data that has been breached and the consequences of the breach.
+As a member, I want to be informed in the event of a breach of my personal data
 
 data controller:
 As a data controller, I want to to maintain a data breach record.

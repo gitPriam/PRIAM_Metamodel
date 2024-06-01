@@ -11,10 +11,10 @@ insert into Representative(representative_id, representative_name, representativ
 insert into DataSubjectCategory(data_subject_category_id, data_subject_category_name, location_id) values (1, 'trainer' , 'Trainer_ID');
 insert into DataSubjectCategory(data_subject_category_id, data_subject_category_name, location_id) values (2, 'member' , 'ID');
 /* insert secondary actor categories */
-insert into SecondaryActorCategory(secondary_actor_category_id, secondary_actor_category_name) values (0, 'ee');
 insert into SecondaryActorCategory(secondary_actor_category_id, secondary_actor_category_name) values (1, 'supervisory authority');
+insert into SecondaryActorCategory(secondary_actor_category_id, secondary_actor_category_name) values (2, 'business partner');
 /* insert secondary actors */
 insert into Address(address_id, street_number, street_name, postal_code, city, complement ) values (6, '12' , 's' , 's' , 's' , 's');
 insert into SecondaryActor(secondary_actor_id, secondary_actor_type, secondary_actor_name, secondary_actor_address, secondary_actor_phone, secondary_actor_email,safeguard_type, secondary_actor_category_id, country_id) values (3, 'DataConsumer' , 'supervisory authority' , '6' , 'x' , 'x' , 'AdequacyDecision' , '1' , '213');
 insert into Address(address_id, street_number, street_name, postal_code, city, complement ) values (7, '1234' , 'z' , 'z' , 'z' , 'z');
-insert into SecondaryActor(secondary_actor_id, secondary_actor_type, secondary_actor_name, secondary_actor_address, secondary_actor_phone, secondary_actor_email,safeguard_type, secondary_actor_category_id, country_id) values (4, 'DataProcessor' , 'supervisory authority' , '7' , 'c' , 'c' , 'No' , '0' , '33');
+insert into SecondaryActor(secondary_actor_id, secondary_actor_type, secondary_actor_name, secondary_actor_address, secondary_actor_phone, secondary_actor_email,safeguard_type, secondary_actor_category_id, country_id) values (4, 'DataProcessor' , 'supervisory authority' , '7' , 'c' , 'c' , 'No' , '2' , '33');

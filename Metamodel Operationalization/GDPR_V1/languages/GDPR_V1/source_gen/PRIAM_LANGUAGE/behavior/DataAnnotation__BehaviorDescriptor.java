@@ -31,10 +31,10 @@ public final class DataAnnotation__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Integer> getDataId_id16kP2nXZF8H = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getDataId").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).id("16kP2nXZF8H").build();
   public static final SMethod<Integer> getPersonalDataCategory_id16kP2nXZG72 = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getPersonalDataCategory").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).id("16kP2nXZG72").build();
   public static final SMethod<List<String>> getDataListByDSCategory_id2W9GWXMd5x9 = new SMethodBuilder<List<String>>(new SJavaCompoundTypeImpl((Class<List<String>>) ((Class) Object.class))).name("getDataListByDSCategory").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).id("2W9GWXMd5x9").build(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<String> Display_id2W9GWXMeA2H = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("Display").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).id("2W9GWXMeA2H").build(SMethodBuilder.createJavaParameter((Class<List<String>>) ((Class) Object.class), ""));
   public static final SMethod<List<SNode>> getAllPortableData_id593wPfQu7tL = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getAllPortableData").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).id("593wPfQu7tL").build();
+  public static final SMethod<List<String>> getPortableDataListByDSCategory_idzICRpllzna = new SMethodBuilder<List<String>>(new SJavaCompoundTypeImpl((Class<List<String>>) ((Class) Object.class))).name("getPortableDataListByDSCategory").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).id("zICRpllzna").build(SMethodBuilder.createJavaParameter(String.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDataId_id16kP2nXZF8H, getPersonalDataCategory_id16kP2nXZG72, getDataListByDSCategory_id2W9GWXMd5x9, Display_id2W9GWXMeA2H, getAllPortableData_id593wPfQu7tL);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDataId_id16kP2nXZF8H, getPersonalDataCategory_id16kP2nXZG72, getDataListByDSCategory_id2W9GWXMd5x9, getAllPortableData_id593wPfQu7tL, getPortableDataListByDSCategory_idzICRpllzna);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -56,17 +56,6 @@ public final class DataAnnotation__BehaviorDescriptor extends BaseBHDescriptor {
     }
     return dataList;
   }
-  /*package*/ static String Display_id2W9GWXMeA2H(@NotNull SNode __thisNode__, List<String> elements) {
-    String e = "";
-    for (String s : elements) {
-      if (e == "") {
-        e = e + s;
-      } else {
-        e = e + ", " + s;
-      }
-    }
-    return e;
-  }
   /*package*/ static List<SNode> getAllPortableData_id593wPfQu7tL(@NotNull SNode __thisNode__) {
     List<SNode> data = new ArrayList<SNode>();
     for (SNode d : Sequence.fromIterable(SLinkOperations.collectMany(SLinkOperations.getChildren(__thisNode__, LINKS.dataType$ZYrm), LINKS.data$keO4))) {
@@ -76,6 +65,17 @@ public final class DataAnnotation__BehaviorDescriptor extends BaseBHDescriptor {
     }
     return data;
 
+  }
+  /*package*/ static List<String> getPortableDataListByDSCategory_idzICRpllzna(@NotNull SNode __thisNode__, String dscName) {
+    List<String> dataList = ListSequence.fromList(new ArrayList<String>());
+    for (SNode d : ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.dataType$ZYrm)).distinct()) {
+      for (SNode data : ListSequence.fromList(SLinkOperations.getChildren(d, LINKS.data$keO4))) {
+        if (SPropertyOperations.getBoolean(data, PROPS.isPersonal$gtJN) && SPropertyOperations.getBoolean(data, PROPS.isPortable$g$kf) && SPropertyOperations.getString(SLinkOperations.getTarget(data, LINKS.dataSubjectCategory$gFmH), PROPS.name$MnvL).equals(dscName)) {
+          ListSequence.fromList(dataList).addElement(SPropertyOperations.getString(data, PROPS.name$MnvL));
+        }
+      }
+    }
+    return dataList;
   }
 
   /*package*/ DataAnnotation__BehaviorDescriptor() {
@@ -100,9 +100,9 @@ public final class DataAnnotation__BehaviorDescriptor extends BaseBHDescriptor {
       case 2:
         return (T) ((List<String>) getDataListByDSCategory_id2W9GWXMd5x9(node, (String) parameters[0]));
       case 3:
-        return (T) ((String) Display_id2W9GWXMeA2H(node, (List<String>) parameters[0]));
-      case 4:
         return (T) ((List<SNode>) getAllPortableData_id593wPfQu7tL(node));
+      case 4:
+        return (T) ((List<String>) getPortableDataListByDSCategory_idzICRpllzna(node, (String) parameters[0]));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

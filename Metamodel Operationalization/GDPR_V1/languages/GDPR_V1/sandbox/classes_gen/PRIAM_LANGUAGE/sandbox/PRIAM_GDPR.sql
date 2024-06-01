@@ -16,7 +16,7 @@ insert into Country(country_id, country_name, minor_age, adequate) values (54, '
 insert into Country(country_id, country_name, minor_age, adequate) values (23, 'Guernsey' , '14' , 'true');
 insert into Country(country_id, country_name, minor_age, adequate) values (17, 'Japan' , '15' , 'true');
 insert into Country(country_id, country_name, minor_age, adequate) values (345, 'New Zealand' , '13' , 'true');
-insert into Country(country_id, country_name, minor_age, adequate) values (213, 'Algeria' , '16' , 'false');
+insert into Country(country_id, country_name, minor_age, adequate) values (213, 'Algeria' , '15' , 'false');
 
 -- Creation table Address --
 CREATE TABLE Address (address_id INT PRIMARY KEY,street_number VARCHAR(10),street_name VARCHAR(255),postal_code VARCHAR(10),city VARCHAR(255),complement VARCHAR(255));

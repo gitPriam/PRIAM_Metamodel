@@ -59,6 +59,9 @@
         <property id="6834132425656835444" name="type" index="__EDf" />
         <property id="2276569262448908207" name="purposeId" index="2Hgew1" />
       </concept>
+      <concept id="2801828014617315133" name="PRIAM_LANGUAGE.structure.ProcessingRef" flags="ng" index="FSH21">
+        <reference id="2801828014617406486" name="processing" index="FS3IE" />
+      </concept>
       <concept id="2276569262451793089" name="PRIAM_LANGUAGE.structure.MainActorRef" flags="ng" index="2G_edJ">
         <reference id="2276569262451793090" name="actor" index="2G_edG" />
       </concept>
@@ -73,12 +76,24 @@
       <concept id="586614309276224451" name="PRIAM_LANGUAGE.structure.PRIAM_DB" flags="ng" index="WHx_o">
         <reference id="3562240872155221494" name="countries" index="GnLb5" />
       </concept>
+      <concept id="9086395038182229789" name="PRIAM_LANGUAGE.structure.DataRef" flags="ng" index="15C1GS">
+        <reference id="9086395038182229792" name="dataRef" index="15C1G5" />
+      </concept>
+      <concept id="9086395038182509770" name="PRIAM_LANGUAGE.structure.SecondaryActorRef" flags="ng" index="15Dd3J">
+        <reference id="9086395038182509771" name="secondaryActorRef" index="15Dd3I" />
+      </concept>
+      <concept id="9086395038181498191" name="PRIAM_LANGUAGE.structure.PersonalDataTransfer" flags="ng" index="15HO5E">
+        <child id="9086395038181949859" name="data" index="15F5Q6" />
+        <child id="9086395038182790231" name="secondaryActor" index="15Q8xM" />
+        <child id="9086395038182790234" name="processingRef" index="15Q8xZ" />
+      </concept>
       <concept id="7072058747586032804" name="PRIAM_LANGUAGE.structure.PersonalDataCategory" flags="ng" index="1aEWHi">
         <property id="7072058747586032806" name="pdcId" index="1aEWHg" />
       </concept>
       <concept id="5766407207167574559" name="PRIAM_LANGUAGE.structure.ProcessingAnnotation" flags="ng" index="3dvUri">
         <child id="4341649738473345220" name="measures" index="sBVeF" />
         <child id="5766407207167574560" name="processing" index="3dvUrH" />
+        <child id="643631525387336220" name="processingTransfer" index="1s6H_E" />
       </concept>
       <concept id="3049097656815342085" name="PRIAM_LANGUAGE.structure.Representative" flags="ng" index="3lDc0G">
         <property id="3049097656815342091" name="repPhone" index="3lDc0y" />
@@ -229,6 +244,17 @@
     <ref role="GnLb5" to="y7dd:2dhRDNWl4OQ" />
   </node>
   <node concept="3dvUri" id="1UFhauzRFlU">
+    <node concept="15HO5E" id="zICRplggzZ" role="1s6H_E">
+      <node concept="15C1GS" id="zICRplgg$0" role="15F5Q6">
+        <ref role="15C1G5" node="4OunnmUkYXu" resolve="fName" />
+      </node>
+      <node concept="15Dd3J" id="zICRplgg$1" role="15Q8xM">
+        <ref role="15Dd3I" node="35JBNct0noj" resolve="supervisory authority" />
+      </node>
+      <node concept="FSH21" id="zICRplgg$2" role="15Q8xZ">
+        <ref role="FS3IE" node="1UFhauzRFlV" resolve="profiling" />
+      </node>
+    </node>
     <node concept="3Jqs0O" id="1UFhauzRFm0" role="sBVeF">
       <property role="3Jqs0b" value="1" />
       <property role="3Jqs09" value="measure1" />
@@ -264,7 +290,7 @@
       </node>
       <node concept="__Elc" id="1UFhauzRFm4" role="tgNP_">
         <property role="1neM5k" value="1" />
-        <ref role="tgNUm" node="4OunnmUkYXu" resolve="Name" />
+        <ref role="tgNUm" node="6Rlqkndceno" resolve="Gender" />
       </node>
       <node concept="1vO6Rq" id="1UFhauzRFm5" role="1vO6Rn">
         <ref role="1vO6Rp" node="1UFhauzRFm0" />
@@ -317,7 +343,7 @@
         <property role="2Hmozj" value="12" />
         <property role="2HmowI" value="true" />
         <ref role="2HmowA" node="zYdDDSdjsF" resolve="Identification data" />
-        <ref role="2HmowB" node="35JBNcsAYmM" resolve="member" />
+        <ref role="2HmowB" node="35JBNcsx7N2" resolve="trainer" />
       </node>
       <node concept="__Eli" id="6Rlqkndceno" role="2HmowQ">
         <property role="EklAG" value="3" />

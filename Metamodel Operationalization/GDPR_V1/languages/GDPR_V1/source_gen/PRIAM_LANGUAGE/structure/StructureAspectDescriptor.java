@@ -547,7 +547,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
   private static ConceptDescriptor createDescriptorForPersonalDataTransfer() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("PRIAM_LANGUAGE", "PersonalDataTransfer", 0xe02dfeab630f4f6dL, 0x86a8a0833a3f70fcL, 0x7e195c253bae1d4fL);
-    b.class_(false, false, true);
+    b.class_(false, false, false);
     b.origin("r:515d5f51-79c9-42c9-bba4-54c97b772d5b(PRIAM_LANGUAGE.structure)/9086395038181498191");
     b.version(3);
     b.property("transferId", 0x7e195c253bae1d50L).type(PrimitiveTypeId.INTEGER).origin("9086395038181498192").done();
@@ -583,6 +583,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(3);
     b.aggregate("measures", 0x3c40a36f20df10c4L).target(0xe02dfeab630f4f6dL, 0x86a8a0833a3f70fcL, 0x5e5ebbabb1377b9fL).optional(true).ordered(true).multiple(true).origin("4341649738473345220").done();
     b.aggregate("processing", 0x500664cd9d79c220L).target(0xe02dfeab630f4f6dL, 0x86a8a0833a3f70fcL, 0x5ed7b73b7b411242L).optional(false).ordered(true).multiple(true).origin("5766407207167574560").done();
+    b.aggregate("processingTransfer", 0x8eea37654f47a1cL).target(0xe02dfeab630f4f6dL, 0x86a8a0833a3f70fcL, 0x7e195c253bae1d4fL).optional(true).ordered(true).multiple(true).origin("643631525387336220").done();
     b.alias("processingAnnotation");
     return b.create();
   }
