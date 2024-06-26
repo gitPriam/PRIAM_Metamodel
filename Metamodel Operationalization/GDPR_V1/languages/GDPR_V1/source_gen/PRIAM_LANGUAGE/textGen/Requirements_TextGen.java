@@ -206,9 +206,7 @@ public class Requirements_TextGen extends TextGenDescriptorBase {
 
     tgs.newLine();
     tgs.append("--------------------------- Consent part -----------------------------");
-    tgs.append("Data subject: ");
     tgs.newLine();
-
     tgs.append("Data subject: ");
     tgs.newLine();
     for (SNode dsc : ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.actorAnnotation$$uzY), LINKS.dataSubjectCategories$$YXS)).distinct()) {
@@ -255,6 +253,7 @@ public class Requirements_TextGen extends TextGenDescriptorBase {
     tgs.newLine();
     tgs.newLine();
     tgs.append("--------------------------- Right part -----------------------------");
+    tgs.newLine();
     tgs.append("Data subject:");
     tgs.newLine();
     for (SNode dsc : ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.actorAnnotation$$uzY), LINKS.dataSubjectCategories$$YXS)).distinct()) {
@@ -266,7 +265,6 @@ public class Requirements_TextGen extends TextGenDescriptorBase {
 
       List<String> processings = ProcessingAnnotation__BehaviorDescriptor.listProcessingName_idzICRpkHbQu.invoke(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.processingAnnotation$w9tJ), SPropertyOperations.getString(dsc, PROPS.name$MnvL));
       String processingList = Requirements__BehaviorDescriptor.Display_idzICRpkL01v.invoke(ctx.getPrimaryInput(), processings);
-
 
       tgs.append("As a ");
       tgs.append(SPropertyOperations.getString(dsc, PROPS.name$MnvL));

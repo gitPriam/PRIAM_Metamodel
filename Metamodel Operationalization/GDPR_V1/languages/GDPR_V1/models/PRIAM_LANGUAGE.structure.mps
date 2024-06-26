@@ -923,7 +923,7 @@
   <node concept="1TIwiD" id="2pxN2iW2EYZ">
     <property role="EcuMT" value="2765716104327901119" />
     <property role="TrG5h" value="Requirements" />
-    <property role="34LRSv" value="requirement" />
+    <property role="34LRSv" value="Requirements" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2pxN2iW2EZ1" role="1TKVEi">

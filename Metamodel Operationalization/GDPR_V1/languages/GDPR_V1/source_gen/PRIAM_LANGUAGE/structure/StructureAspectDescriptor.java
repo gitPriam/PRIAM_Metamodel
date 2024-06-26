@@ -672,7 +672,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.associate("dataAtnnotation", 0x2661cc24bc0aafc1L).target(0xe02dfeab630f4f6dL, 0x86a8a0833a3f70fcL, 0x3af6325cd45a5aa2L).optional(false).origin("2765716104327901121").done();
     b.associate("processingAnnotation", 0x500664cd9d856f7bL).target(0xe02dfeab630f4f6dL, 0x86a8a0833a3f70fcL, 0x500664cd9d79c21fL).optional(false).origin("5766407207168339835").done();
     b.associate("actorAnnotation", 0x2f09b3cf7232109cL).target(0xe02dfeab630f4f6dL, 0x86a8a0833a3f70fcL, 0x2a509229fff4521eL).optional(false).origin("3389437898128494748").done();
-    b.alias("requirement");
+    b.alias("Requirements");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSecondaryActor() {

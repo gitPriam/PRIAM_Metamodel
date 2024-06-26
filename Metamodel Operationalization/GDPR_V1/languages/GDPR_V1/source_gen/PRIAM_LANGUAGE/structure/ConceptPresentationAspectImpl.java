@@ -341,7 +341,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Requirements:
         if (props_Requirements == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("requirement");
+          cpb.rawPresentation("Requirements");
           props_Requirements = cpb.create();
         }
         return props_Requirements;
