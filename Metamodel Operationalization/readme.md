@@ -23,5 +23,5 @@ From this annotation the DSL **automatically** generates:
 ### Case example
 We illustrate the use of our DSL through an example application for a sports center. Part of the database schema was taken from https://github.com/redhawk96/Fire_Fitness/blob/master/project1.sql
 
-We illustrate an example (see file ``illustration_usage_DSL_sport_center'') to show the use of DSL.
+We illustrate an example (see file **``illustration_usage_DSL_sport_center''**) to show the use of DSL.
 
