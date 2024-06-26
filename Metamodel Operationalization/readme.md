@@ -21,6 +21,6 @@ From this annotation the DSL **automatically** generates:
   - the instantiation script which allows populate PRIAM database with application-specific privacy enforcement data such as the list of processings.
 
 ### Case example
-We illustrate the use of our DSL through an example application for a sports center. Figure 1 shows an extract from the database and Figure 2 a processing proposed by this application.
+We illustrate the use of our DSL through an example application for a sports center. Part of the database schema was taken from https://github.com/redhawk96/Fire_Fitness/blob/master/project1.sql
 
 
