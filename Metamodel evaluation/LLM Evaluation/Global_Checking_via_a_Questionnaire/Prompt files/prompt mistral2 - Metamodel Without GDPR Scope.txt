@@ -1,0 +1,51 @@
+This is our metamodel:
+[
+Animal Interaction Package:
+
+Description,
+"Animal: A living organism that is capable of independent movement and is part of the animal kingdom.
+animalId: Unique identifier for each animal
+species: Species the animal belongs to
+name: Animal's given name
+birthDate: Date the animal was born
+lastCheckupDate: Date of the animal's last health checkup"
+
+Description,
+"Enclosure: A designated space or habitat where animals are housed in a zoo, farm, or sanctuary.
+enclosureId: Unique identifier for the enclosure
+name: Name of the enclosure
+type: Type of the enclosure (e.g., aquatic, forest, desert, etc.)
+capacity: Maximum number of animals the enclosure can accommodate"
+
+Description,
+"Animal Interaction: An event where humans interact with animals, either through observation, care, or other activities.
+interactionId: Unique identifier for the interaction
+interactionType: Type of interaction (e.g., feeding, training, observation)
+interactionDate: Date of the interaction
+animalId: The animal involved in the interaction
+staffId: The staff member conducting the interaction"
+
+User Stories:
+
+UserStory, "As an [animal caretaker], I want to ensure that animals receive regular health checkups to monitor their well-being."
+UserStory, "As an [animal caretaker], I want to keep records of all animal interactions for future reference."
+UserStory, "As an [animal caretaker], I want to ensure that the enclosure I manage is safe and meets the needs of the animals living there."
+UserStory, "As an [zoo visitor], I want to observe animals in naturalistic environments that reflect their native habitats."
+UserStory, "As an [zoo visitor], I want to know the schedule of animal interactions so I can participate or watch them."
+UserStory, "As a [staff member], I want to track all interactions with animals to improve animal care and training programs."
+UserStory, "As a [zoo manager], I want to track the capacity and utilization of each enclosure to optimize animal welfare."
+
+Associations: These associations are written in plantUML.
+Animal "1" -- "0.." Enclosure
+Animal "1" -- "0.." Animal Interaction
+Enclosure "1" -- "0..*" Animal Interaction
+
+Constraints:
+
+Constraint, "The animal's birth date must be earlier than or equal to the interaction date for any record."
+Constraint, "The interaction date must fall within the animal's active period in the enclosure."
+Constraint, "Enclosures should not exceed their maximum capacity to ensure the welfare of the animals."
+]
+
+- Carefully reads the question, the entire metamodel and the instructions before answering.
+- Read the entire prompt, including the definitions of the answer options, before answering.

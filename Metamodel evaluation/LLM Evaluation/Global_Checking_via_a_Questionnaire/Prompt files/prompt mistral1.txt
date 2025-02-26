@@ -1,0 +1,52 @@
+The aim of is to check whether our metamodel contains the information required to answer the questions raised by the General Data Protection Regulation.
+
+Task: classify each question in one of these options. There are four possible answers:
+-Fully modeled: the metamodel supports all possible concepts to be modeled;
+-Partially modeled: the metamodel represents part of a concept but lacks essential structural elements (classes, attributes, or associations) to fully model it. On the other hand, a concept should not be classified as partially modeled simply because procedures or implementation mechanisms are missing; Only classify the question as Partially Modeled if key concepts are missing or incomplete. Missing or insufficient representation of concepts (such as missing classes or associations) is the only valid reason to consider the question as partially modeled.
+-Not modeled: The question includes modelable aspects of GDPR, but the metamodel does not support any significant structural representation of these aspects.
+-Should not be modeled: The question concerns 100% aspects that cannot be conceptually represented in the metamodel (e.g., organizational rules, human decisions, governance policies). 
+
+CRITICAL ANALYSIS RULE :
+
+1. NEVER classify a question based solely on the presence of words like “procedures”, “verify”, “check”, etc.
+
+2. For EACH question, you MUST:
+   a- Break down the question to identify all the underlying CONCEPTS that could be modeled, even if the question is about procedures or checks
+   b- Ask yourself for each concept: “Can it be represented by classes/attributes/associations/user stories/constraints?”
+
+3. If the question contains AT LEAST ONE modelable concept:
+   - It CANNOT be classified as “Should not be modeled”.
+   - It must be classified Fully/Partially/Not according to the content of the metamodel.
+
+4. “Should not be modeled” applies ONLY if NONE of the question's concepts can be represented by classes/attributes/relationships.
+
+Examples of what should NOT be considered for modeling (implementation and organizational aspects):
+- Ways to verify by humains (e.g., verify user identity)
+- Interface display rules (e.g., how to show privacy notices)
+- Notification delivery mechanisms
+- Security measure implementations
+- Staff training procedures
+- Process execution
+- All other organizational and procedural aspects and mechanisms
+
+5. - Don't downgrade an article from “Fully modeled” to “Partially modeled” because of its organizational aspects. Remember, these aspects are ignored. Only the LACK of non-modeled aspects can make the issue partially modeled.
+
+Important Instructions:
+- Ensure that for each question, you only consider whether everything that can be modeled has been modeled. Ignore any aspects related to procedures or organizational processes.
+- Analyse carefully the description of the metamodel in particular those of the attrbituts, certain concepts of the GDPR can be named differently in the metamodel it is thus necessary to refer to the descriptions.
+- You do not necessarily need to find the concepts explicitly; take into account the semantics, classes, associations between classes, user stories, and constraints.
+
+- Check all of the classes, attributes, associations, user stories and constraints before responding to the question. Examine each package of the metamodel to ensure that all relevant concepts are considered.
+- Respect the output format strictly.
+- Do not make assumptions beyond the provided information. 
+
+Output format: 
+	This question is:[response] \n
+	Justification:[justification]\n
+	Package of metamodel: [package]\n
+
+For each question, if the answer is full or partial, specify which package of the metamodel has processed the question.
+
+Note: In your evaluation, consider only the content of the metamodel given between [  and  ].
+
+The question to evaluate: 

@@ -1,0 +1,432 @@
+Question 1: Have you reviewed your organisation’s mechanisms for collecting consent to ensure that it is freely given, specific, informed and that it is a clear indication that an individual has chosen to agree to the processing of their data by way of statement or a clear affirmative action ?
+This question is: Not modeled
+
+Justification: The question pertains to the mechanisms for collecting consent, ensuring it is freely given, specific, informed, and a clear indication of agreement to data processing. These concepts involve consent management, data processing agreements, and user actions, which are not represented in the metamodel. The metamodel focuses on animals, enclosures, and interactions related to animal care and zoo management, with no structural elements related to GDPR concepts such as consent, data processing, or user agreements.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 2: If personal data that you currently hold on the basis of consent does not meet the required standard under the GDPR, have you re-sought the individual’s consent to ensure compliance with the GDPR ?
+This question is: Not modeled
+
+Justification: The question involves concepts related to personal data, consent, and compliance with GDPR standards. These concepts are not represented in the metamodel, which focuses solely on animals, enclosures, and interactions between animals and humans in a zoo or similar setting. There are no classes, attributes, associations, user stories, or constraints in the metamodel that address personal data, consent, or GDPR compliance.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 3: Are procedures in place to demonstrate that an individual has consented to their data being processed ?
+This question is: Not modeled
+
+Justification: The question asks about procedures to demonstrate that an individual has consented to their data being processed. This involves concepts such as "consent," "data processing," and "individual." None of these concepts are represented in the metamodel. The metamodel focuses on animals, enclosures, and interactions related to animal care, which do not cover the GDPR-related concepts mentioned in the question.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 4: Are procedures in place to allow an individual to withdraw their consent to the processing of their personal data ?
+This question is: Not modeled
+
+Justification: The question asks about procedures for allowing an individual to withdraw their consent to the processing of their personal data. This involves concepts such as "consent," "personal data," and "processing of personal data," which are central to GDPR. However, the metamodel provided focuses entirely on animals, enclosures, and interactions related to animal care and zoo management. There are no classes, attributes, associations, user stories, or constraints in the metamodel that address the concepts of consent, personal data, or data processing. Therefore, the metamodel does not support any significant structural representation of these GDPR-related aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 5: Where online services are provided to a child, are procedures in place to verify age and get consent of a parent  /  legal guardian, where required ?
+This question is: Not modeled
+
+Justification: The question involves concepts such as "online services," "child," "age verification," "consent," and "parent/legal guardian." None of these concepts are represented in the metamodel. The metamodel focuses entirely on animals, enclosures, and interactions related to animal care and zoo management, with no mention of any GDPR-related concepts or user data management.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 6: If legitimate interest is a legal basis on which personal data is processed, has an appropriate analysis been carried out to ensure that the use of this legal basis is appropriate ?
+This question is: Not modeled
+
+Justification: The question involves the concept of "legitimate interest" as a legal basis for processing personal data and the need for an appropriate analysis to ensure its appropriateness. These concepts are not represented in the metamodel, which focuses solely on animals, enclosures, and interactions related to animal care and zoo management. There are no classes, attributes, associations, user stories, or constraints in the metamodel that address GDPR-related concepts such as legal bases for data processing, analyses, or appropriateness checks.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 7: Is there a documented policy / procedure for handling Subject Access Requests (SARs) ?
+This question is: Not modeled
+
+Justification: The question asks about the documentation of policies or procedures for handling Subject Access Requests (SARs). While the metamodel includes various concepts related to animals, enclosures, and interactions, it does not contain any structural elements (classes, attributes, or associations) that represent policies, procedures, or any aspects related to handling Subject Access Requests. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 8: Is your organisation able to respond to SARs within one month ?
+This question is: Not modeled
+
+Justification: The question asks whether the organization can respond to Subject Access Requests (SARs) within one month. This involves concepts such as "organization," "SARs," and "response time," which are related to data protection and compliance. The metamodel provided focuses entirely on animals, enclosures, and interactions related to animal care and zoo management. There are no classes, attributes, associations, user stories, or constraints in the metamodel that address data protection, compliance, or response times to SARs. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 9: Are procedures in place to provide individuals with their personal data in a structured, commonly used and machine readable format ?
+This question is: Not modeled
+
+Justification: The question asks about procedures to provide individuals with their personal data in a structured, commonly used, and machine-readable format. This involves concepts related to personal data, data formats, and data provision mechanisms. The metamodel provided focuses entirely on animals, enclosures, and interactions related to animal care and zoo management. There are no classes, attributes, associations, user stories, or constraints that address the concept of personal data, data formats, or data provision mechanisms. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 10: Are there controls and procedures in place to allow personal data to be deleted or rectified (where applicable) ?
+This question is: Not modeled
+
+Justification: The question asks about controls and procedures for deleting or rectifying personal data. While the metamodel includes concepts related to animals, enclosures, and interactions, it does not contain any structural elements (classes, attributes, associations) related to personal data, deletion, or rectification. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 11: Are there controls and procedures in place to halt the processing of personal data where an individual has on valid grounds sought the restriction of processing ?
+This question is: Not modeled
+
+Justification: The question involves the concept of "processing of personal data" and "restriction of processing," which are key concepts in GDPR. However, the metamodel provided focuses entirely on animals, enclosures, and interactions related to animal care and zoo management. There are no classes, attributes, associations, user stories, or constraints that address the handling of personal data, the processing of such data, or the restriction of processing. Therefore, the metamodel does not support any significant structural representation of these GDPR-related aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 12: Are individuals told about their right to object to certain types of processing such as direct marketing or where the legal basis of the processing is legitimate interests or necessary for a task carried out in the public interest ?
+This question is: Not modeled
+
+Justification: The question pertains to informing individuals about their rights under GDPR, specifically the right to object to certain types of processing. This involves concepts such as "individuals," "rights," "processing types," "legal basis," and "notification of rights." None of these concepts are represented in the metamodel, which focuses solely on animals, enclosures, and interactions related to animal care and zoo management. There are no classes, attributes, associations, user stories, or constraints in the metamodel that address GDPR-related concepts or the notification of individuals about their rights.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 13: Are there controls and procedures in place to halt the processing of personal data where an individual has objected to the processing ?
+This question is: Not modeled
+
+Justification: The question asks about controls and procedures to halt the processing of personal data when an individual objects. This involves concepts such as "controls," "procedures," "processing of personal data," and "objection by an individual." None of these concepts are represented in the metamodel. The metamodel focuses on animals, enclosures, and interactions related to animal care and zoo management, which do not cover any aspects of personal data processing or individual objections.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 14: If automated decision making, which has a legal or significant similar affect for an individual, is based on consent, has explicit consent been collected ?
+This question is: Not modeled
+
+Justification: The question involves concepts related to automated decision-making, legal or significant effects on individuals, and explicit consent. None of these concepts are represented in the metamodel, which focuses solely on animals, enclosures, and interactions between animals and humans in a zoo or similar setting. The metamodel does not include any classes, attributes, associations, user stories, or constraints that address GDPR-related concepts such as consent, automated decision-making, or legal effects on individuals.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 15: Where an automated decision is made which is necessary for entering into, or performance of, a contract, or based on the explicit consent of an individual, are procedures in place to facilitate an individual’s right to obtain human intervention and to contest the decision ?
+This question is: Not modeled
+
+Justification: The question involves concepts related to automated decisions, human intervention, and the right to contest decisions, which are central to GDPR compliance. However, the provided metamodel focuses exclusively on animals, enclosures, and interactions between animals and staff. There are no classes, attributes, associations, user stories, or constraints in the metamodel that address automated decisions, human intervention, or the right to contest decisions. Therefore, the metamodel does not support any significant structural representation of these GDPR-related aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 16: Have the circumstances been documented in which an individual’s data protection rights may be lawfully restricted ?
+This question is: Not modeled
+
+Justification: The question asks whether the circumstances in which an individual’s data protection rights may be lawfully restricted have been documented. This involves concepts such as "data protection rights," "lawful restrictions," and "documentation of circumstances." None of these concepts are represented in the metamodel, which focuses solely on animals, enclosures, and interactions related to animal care and zoo management. There are no classes, attributes, associations, user stories, or constraints that address data protection rights or legal restrictions.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 17: Is personal data only used for the purposes for which it was originally collected ?
+This question is: Not modeled
+
+Justification: The question asks whether personal data is only used for the purposes for which it was originally collected. This involves concepts such as "personal data," "purpose of collection," and "usage of data." The metamodel provided focuses entirely on animals, enclosures, and interactions related to animal care and zoo management. There are no classes, attributes, associations, user stories, or constraints that address the concept of personal data, its purposes, or its usage. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 18: Is the personal data collected limited to what is necessary for the purposes for which it is processed ?
+This question is: Not modeled
+
+Justification: The question asks whether the personal data collected is limited to what is necessary for the purposes for which it is processed. This involves concepts such as "personal data," "collection," "purpose," and "processing." None of these concepts are represented in the metamodel. The metamodel focuses on animals, enclosures, and interactions related to animal care and zoo management, which do not address the GDPR-related concepts mentioned in the question.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 19: Are procedures in place to ensure personal data is kept up to date and accurate and where a correction is required, the necessary changes are made without delay ?
+This question is: Not modeled
+
+Justification: The question asks about procedures to ensure personal data is kept up to date and accurate, and whether necessary changes are made without delay. The key concepts here are "personal data," "up to date," "accurate," and "changes made without delay." None of these concepts are represented in the metamodel. The metamodel focuses on animals, enclosures, and interactions, with no mention of personal data or the processes to ensure its accuracy and timely updates.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 20: Are retention policies and procedures in place to ensure data is held for no longer than is necessary for the purposes for which it was collected ?
+This question is: Not modeled
+
+Justification: The question asks about retention policies and procedures to ensure data is held for no longer than necessary. The key concepts here are "retention policies," "data," and "duration of retention." None of these concepts are represented in the metamodel. The metamodel focuses on animals, enclosures, and interactions, but it does not include any structural elements related to data retention policies or the duration for which data should be kept.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 21: Is your business subject to other rules that require a minimum retention period ?
+This question is: Not modeled
+
+Justification: The question asks whether the business is subject to other rules that require a minimum retention period. This involves concepts related to regulatory compliance and data retention periods, which are not represented in the metamodel. The metamodel focuses on animals, enclosures, and interactions, but it does not include any classes, attributes, or associations related to regulatory compliance, data retention, or business rules.
+
+Package of metamodel: None
+
+--------------------------------------------------
+Question 22: Do you have procedures in place to ensure data is destroyed securely, in accordance with your retention policies ?
+This question is: Not modeled
+
+Justification: The question asks about procedures for secure data destruction and retention policies. While the metamodel includes concepts related to animals, enclosures, and interactions, it does not contain any structural elements (classes, attributes, or associations) related to data management, retention policies, or data destruction. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 23: Are procedures in place to ensure that there is no unnecessary or unregulated duplication of records ?
+This question is: Not modeled
+
+Justification: The question asks about procedures to ensure there is no unnecessary or unregulated duplication of records. While the metamodel includes concepts related to animals, enclosures, and interactions, it does not address the concept of record duplication or the regulation of such duplication. There are no classes, attributes, associations, user stories, or constraints that directly or indirectly model the concept of record duplication or its regulation.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 24: Are service users / employees fully informed of how you use their data in a concise, transparent, intelligible and easily accessible form using clear and plain language ?
+This question is: Not modeled
+
+Justification: The question asks whether service users or employees are fully informed about how their data is used in a concise, transparent, intelligible, and easily accessible form using clear and plain language. This involves concepts such as data usage, transparency, and communication with users/employees, which are not represented in the metamodel. The metamodel focuses on animals, enclosures, and interactions related to animal care and zoo management, but it does not include any structural elements related to data usage, transparency, or communication with users/employees.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 25: Where personal data is collected directly from the individuals, are procedures in place to provide the information listed at Article 13 of the GDPR ?
+This question is: Not modeled
+
+Justification: The question pertains to the collection of personal data directly from individuals and the provision of information as listed in Article 13 of the GDPR. The metamodel provided focuses entirely on animals, enclosures, and interactions related to animal care and zoo management. There are no classes, attributes, associations, user stories, or constraints that address the concepts of personal data collection, GDPR compliance, or the provision of information to individuals. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 26: If personal data is not collected from the subject but from a third party (e.g. acquired as part of a merger) are procedures in place to provide the information listed at Article 14 of the GDPR ?
+This question is: Not modeled
+
+Justification: The question involves concepts related to personal data collection, third-party data acquisition, and the provision of information as per Article 14 of the GDPR. These concepts include personal data, data collection methods, third-party sources, and the specific information requirements of Article 14. None of these concepts are represented in the metamodel, which focuses solely on animals, enclosures, and animal interactions. There are no classes, attributes, associations, user stories, or constraints in the metamodel that address personal data or GDPR requirements.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 27: When engaging with individuals, such as when providing a service, sale of a good or CCTV monitoring, are procedures in place to proactively inform individuals of their GDPR rights ?
+This question is: Not modeled
+
+Justification: The question involves concepts related to GDPR rights, individuals, services, goods, CCTV monitoring, and informing individuals about their rights. None of these concepts are represented in the metamodel. The metamodel focuses solely on animals, enclosures, and interactions with animals, which do not cover any aspects of GDPR or the concepts mentioned in the question.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 28: Is information on how the organisation facilitates individuals exercising their GDPR rights published in an easily accessible and readable format ?
+This question is: Not modeled
+
+Justification: The question asks whether information on how the organization facilitates individuals exercising their GDPR rights is published in an easily accessible and readable format. This involves concepts such as "GDPR rights," "publication of information," "accessibility," and "readability." None of these concepts are represented in the metamodel, which focuses solely on animals, enclosures, and animal interactions. There are no classes, attributes, associations, user stories, or constraints in the metamodel that address GDPR rights or the publication of information.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 29: Have agreements with suppliers and other third parties processing personal data on your behalf been reviewed to ensure all appropriate data protection requirements are included ?
+This question is: Not modeled
+
+Justification: The question involves concepts related to agreements with suppliers and third parties, data protection requirements, and review processes. None of these concepts are represented in the metamodel, which focuses solely on animals, enclosures, and interactions within a zoo or similar setting. There are no classes, attributes, associations, user stories, or constraints that address data protection agreements or third-party processing of personal data.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 30: Do you need to appoint a DPO as per Article 37 of the GDPR ?
+This question is: Not modeled
+
+Justification: The question asks whether a Data Protection Officer (DPO) needs to be appointed as per Article 37 of the GDPR. The concept of a DPO, which is a role related to data protection and compliance, is not represented in the metamodel. The metamodel focuses on animals, enclosures, and interactions, and does not include any classes, attributes, associations, user stories, or constraints related to data protection, compliance, or the appointment of a DPO.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 31: If it is decided that a DPO is not required, have you documented the reasons why ?
+This question is: Should not be modeled
+
+Justification: The question asks about documenting reasons for not requiring a Data Protection Officer (DPO), which is an organizational decision and governance policy. There are no modelable concepts in this question that can be represented by classes, attributes, associations, user stories, or constraints. The metamodel provided focuses on animals, enclosures, and interactions, which do not relate to GDPR compliance or organizational decisions regarding a DPO.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 32: Where a DPO is appointed, are escalation and reporting lines in place ? Are these procedures documented ?
+This question is: Should not be modeled
+
+Justification: The question asks about the appointment of a Data Protection Officer (DPO), escalation and reporting lines, and whether these procedures are documented. All these aspects are organizational and procedural, which cannot be conceptually represented in the metamodel. The metamodel provided focuses on animals, enclosures, and interactions, and does not include any concepts related to DPOs, escalation, reporting, or documentation procedures.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 33: Have you published the contact details of your DPO to facilitate your customers /  employees in making contact with them ?
+This question is: Not modeled
+
+Justification: The question asks about publishing the contact details of a Data Protection Officer (DPO), which involves concepts such as "DPO," "contact details," and "publication." None of these concepts are represented in the metamodel. The metamodel focuses on animals, enclosures, and interactions, with no mention of DPOs, contact details, or any form of publication.
+
+Package of metamodel: None
+
+--------------------------------------------------
+Question 34: If your data processing is considered high risk, do you have a process for identifying the need for, and conducting of, DPIAs ? Are these procedures documented ?
+This question is: Not modeled
+
+Justification: The question involves concepts related to data processing, risk assessment, and the need for Data Protection Impact Assessments (DPIAs). These concepts are not represented in the metamodel, which focuses solely on animals, enclosures, and interactions between animals and humans. There are no classes, attributes, associations, user stories, or constraints in the metamodel that address data processing, risk assessment, or DPIAs.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 35: Have you assessed the risks involved in processing personal data and put measures in place to mitigate against them ?
+This question is: Not modeled
+
+Justification: The question involves assessing risks related to processing personal data and implementing measures to mitigate those risks. The metamodel provided focuses entirely on animals, enclosures, and interactions related to animal care and zoo management. There are no concepts, classes, attributes, associations, user stories, or constraints in the metamodel that address personal data processing, risk assessment, or mitigation measures. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 36: Is there a documented security programme that specifies the technical, administrative and physical safeguards for personal data ?
+This question is: Not modeled
+
+Justification: The question asks about the existence of a documented security program that specifies technical, administrative, and physical safeguards for personal data. This involves concepts such as "security program," "technical safeguards," "administrative safeguards," and "physical safeguards." None of these concepts are represented in the metamodel, which focuses solely on animals, enclosures, and animal interactions. There are no classes, attributes, associations, user stories, or constraints in the metamodel that address security measures or safeguards for personal data.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 37: Is there a documented process for resolving security related complaints and issues ?
+This question is: Not modeled
+
+Justification: The question asks about the documentation of a process for resolving security-related complaints and issues. While the metamodel includes concepts related to animals, enclosures, and interactions, it does not include any structural elements (classes, attributes, or associations) related to security, complaints, issues, or their resolution. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 38: Is there a designated individual who is responsible for preventing and investigating security breaches ?
+This question is: Not modeled
+
+Justification: The question asks about the designation of an individual responsible for preventing and investigating security breaches. This involves the concept of a designated role or responsibility, which is not represented in the metamodel. The metamodel focuses on animals, enclosures, and interactions but does not include any classes, attributes, or associations related to security roles or responsibilities.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 39: Are industry standard encryption technologies employed for transferring, storing, and receiving individuals' sensitive personal information ?
+This question is: Not modeled
+
+Justification: The question asks about the employment of industry standard encryption technologies for transferring, storing, and receiving individuals' sensitive personal information. This involves concepts such as encryption technologies, data transfer, data storage, and sensitive personal information. None of these concepts are represented in the metamodel, which focuses solely on animals, enclosures, and animal interactions. There are no classes, attributes, associations, user stories, or constraints in the metamodel that address encryption, data handling, or personal information.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 40: Is personal information systematically destroyed, erased, or anonymised when it is no longer legally required to be retained ?
+This question is: Not modeled
+
+Justification: The question involves the concept of personal information, its retention, and its systematic destruction, erasure, or anonymization. These concepts are not represented in the metamodel. The metamodel focuses on animals, enclosures, and interactions, with no mention of personal information or data retention policies.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 41: Can access to personal data be restored in a timely manner in the event of a physical or technical incident ?
+This question is: Not modeled
+
+Justification: The question asks about the ability to restore access to personal data in a timely manner in the event of a physical or technical incident. This involves concepts such as "personal data," "access restoration," "timely manner," and "physical or technical incident." None of these concepts are represented in the metamodel. The metamodel focuses on animals, enclosures, and interactions, which do not cover the aspects of data access, restoration, or incident management.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 42: Does the organisation have a documented privacy and security incident response plan ?
+This question is: Not modeled
+
+Justification: The question asks whether the organization has a documented privacy and security incident response plan. This involves concepts related to documentation, privacy, security, and incident response plans. None of these concepts are represented in the metamodel. The metamodel focuses on animals, enclosures, and interactions, with no mention of privacy, security, or incident response plans.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 43: Are plans and procedures regularly reviewed ?
+This question is: Should not be modeled
+
+Justification: The question "Are plans and procedures regularly reviewed?" pertains to organizational rules and governance policies, which are explicitly stated as non-modelable aspects. The metamodel provided focuses on animals, enclosures, and interactions, and does not include any concepts related to plans, procedures, or their review. Therefore, there are no modelable concepts in this question that can be represented by classes, attributes, associations, user stories, or constraints within the given metamodel.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 44: Are there procedures in place to notify the office of the Data Protection Commissioner of a data breach ?
+This question is: Not modeled
+
+Justification: The question asks about procedures to notify the office of the Data Protection Commissioner of a data breach. While the metamodel includes concepts related to animals, enclosures, and interactions, it does not contain any structural elements (classes, attributes, associations) related to data breaches, notifications, or the office of the Data Protection Commissioner. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 45: Are there procedures in place to notify data subjects of a data breach (where applicable) ?
+This question is: Not modeled
+
+Justification: The question asks about procedures to notify data subjects of a data breach. While the metamodel includes concepts related to animals, enclosures, and interactions, it does not contain any structural elements (classes, attributes, associations) related to data subjects, data breaches, or notifications. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 46: Are all data breaches fully documented ?
+This question is: Not modeled
+
+Justification: The question asks whether all data breaches are fully documented. To model this, we need concepts related to data breaches, documentation, and possibly logging or recording mechanisms. The metamodel provided focuses entirely on animals, enclosures, and interactions between animals and humans. There are no classes, attributes, associations, user stories, or constraints that deal with data breaches or documentation of such events. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 47: Are there cooperation procedures in place between data controllers, suppliers and other partners to deal with data breaches ?
+This question is: Not modeled
+
+Justification: The question asks about cooperation procedures between data controllers, suppliers, and other partners to deal with data breaches. This involves concepts such as "data controllers," "suppliers," "partners," "data breaches," and "cooperation procedures." None of these concepts are represented in the metamodel, which focuses solely on animals, enclosures, and animal interactions. There are no classes, attributes, associations, user stories, or constraints in the metamodel that address data breaches or cooperation procedures between different entities.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 48: Is personal data transferred outside the EEA, e.g. to the US or other countries ?
+This question is: Not modeled
+
+Justification: The question asks whether personal data is transferred outside the EEA, which involves concepts such as "personal data," "transfer," and "geographical location" (e.g., EEA, US, other countries). None of these concepts are represented in the metamodel. The metamodel focuses entirely on animals, enclosures, and interactions related to animal care, without any mention of data handling, transfer, or geographical locations relevant to GDPR.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 49: Does this include any special categories of personal data ?
+This question is: Not modeled
+
+Justification: The question asks about "special categories of personal data," which is a concept related to personal data and its categorization. The metamodel provided focuses entirely on animals, enclosures, and interactions related to animal care and zoo management. There are no classes, attributes, associations, user stories, or constraints that deal with personal data or its categorization. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 50: What is the purpose(s) of the transfer ?
+This question is: Not modeled
+
+Justification: The question "What is the purpose(s) of the transfer?" involves the concept of "transfer" and its "purpose(s)." The metamodel provided does not include any classes, attributes, associations, user stories, or constraints that represent the concept of "transfer" or its purposes. The metamodel focuses on animals, enclosures, and interactions, but it does not address the transfer of data or any other entity, nor does it include any attributes or associations that could represent the purpose of such a transfer.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 51: Who is the transfer to ?
+This question is: Not modeled
+
+Justification: The question "Who is the transfer to?" implies the concept of data transfer, which involves identifying the recipient of the data. The metamodel provided does not contain any classes, attributes, associations, user stories, or constraints that represent the concept of data transfer or the recipient of such a transfer. The metamodel focuses on animals, enclosures, and interactions related to animal care and observation, but it does not include any elements related to data transfer or recipients.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 52: Are all transfers listed - including answers to the previous questions (e.g. the nature of the data, the purpose of the processing, from which country the data is exported and which country receives the data and who the recipient of the transfer is ?)
+This question is: Not modeled
+
+Justification: The question pertains to the transfer of data, including details such as the nature of the data, the purpose of the processing, the countries involved in the data transfer, and the recipient of the transfer. The metamodel provided focuses exclusively on animals, enclosures, and interactions within a zoo or similar setting. There are no classes, attributes, associations, user stories, or constraints that address any aspect of data transfer, data processing, or GDPR-related concepts. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 53: Is there a legal basis for the transfer, e.g. EU Commission adequacy decision; standard contractual clauses. Are these bases documented ?
+This question is: Not modeled
+
+Justification: The question involves concepts related to legal bases for data transfer and documentation, which are not represented in the metamodel. The metamodel focuses on animals, enclosures, and interactions, and does not include any classes, attributes, or associations related to legal bases, adequacy decisions, contractual clauses, or documentation of these bases.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 54: Are data subjects fully informed about any intended international transfers of their personal data ?
+This question is: Not modeled
+
+Justification: The question asks whether data subjects are fully informed about any intended international transfers of their personal data. This involves concepts such as "data subjects," "personal data," "international transfers," and "informing data subjects." None of these concepts are represented in the metamodel, which focuses solely on animals, enclosures, and animal interactions. There are no classes, attributes, associations, user stories, or constraints in the metamodel that address any aspect of data protection, personal data, or informing data subjects about data transfers.
+
+Package of metamodel: N/A
+
+--------------------------------------------------

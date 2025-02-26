@@ -1,0 +1,25 @@
+The age of the data subject must be greater than 0.
+The minor age of the data subject must be between 13 and 16.
+A minor data subject must have a guardian (responsible parent).
+The contact details of the control authority must be known to the data subject. There must therefore be exactly one secondary actor whose category is "supervisory authority".
+If the country associated with the secondary actor is not adequate then the secondary actor must provide a guarantee.
+If the data is personal then the data subject and personal data categories must not be empty the source must not be "No" and the data retention period must not be zero.
+If the data source is "Direct" then the data must be portable.
+If the data source is "Generated" then the data must not be portable.
+If the data source is "Indirect" then the source details must be filled in.
+The modification date (modifiedAt) must be equal to or later than the creation date (createdAt).
+The end date (endedAt) must be equal to or later than the modification date (modifiedAt).
+There must be exactly one main purpose in the list of purposes associated with data processing.
+If the processing type (pt) is "Optional" or "Necessary" then the processing category (pc) must be "Consent/Contract".
+If the category of processing (pc) is "VitalInterest" "LegalObligation" or "PublicInterest" then the type of processing (pt) must be "Mandatory".
+The consent start date must be greater than or equal to the contract signature date and the consent end date must be less than or equal to the contract expiry date.
+The consent start date must be equal to or later than the processing start date and the consent end date must be equal to or earlier than the processing end date.
+The date of the response (issuedAt) must be equal to or later than the date of the request (issuedAt).
+If the type of data request is "Rectification" then the new value (newValue) must not be null.
+If the type of data request is "Deletion" or "Rectification" then there must be exactly one piece of data associated with this request.
+If a data request is of type Portability all data included in this request must be marked as portable (isPortable = true).
+When creating a data request the isPersonal attribute of the associated data must be set to true (data must be personal).
+To create a data request (DataRequest) of type Rectification (GDPR right of rectification) the request must first be of this type (precondition). Once the request has been created the isIsolated field is set to true (postcondition) meaning that the data concerned by the request will be isolated.
+In the context of a Breach all data involved must be personal (isPersonal = true). If data is not personal it must not be included in the breach.
+If the risk level of the data breach is "No risk" then the reasons for non-notification to the data protection authority (sprvAuthNonNotifReasons) and the reasons for non-notification to the data subject (dataSubjNonNotifReasons) must be entered.
+If the risk level of the data breach is "Medium" then the reasons for non-notification (dataSubjNonNotifReasons) must be entered.

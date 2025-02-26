@@ -1,0 +1,7 @@
+This is our metamodel:
+[
+
+]
+
+- Carefully reads the question, the entire metamodel and the instructions before answering.
+- Read the entire prompt, including the definitions of the answer options, before answering.

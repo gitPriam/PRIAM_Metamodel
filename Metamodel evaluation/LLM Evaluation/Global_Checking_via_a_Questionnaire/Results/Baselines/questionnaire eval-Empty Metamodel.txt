@@ -1,0 +1,449 @@
+Question 1: Have you reviewed your organisation’s mechanisms for collecting consent to ensure that it is freely given, specific, informed and that it is a clear indication that an individual has chosen to agree to the processing of their data by way of statement or a clear affirmative action ?
+This question is: Not modeled
+
+Justification: The question involves several concepts that could potentially be modeled, such as "consent," "freely given," "specific," "informed," and "clear indication." However, the metamodel provided does not contain any structural elements (classes, attributes, associations) that represent these concepts. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 2: If personal data that you currently hold on the basis of consent does not meet the required standard under the GDPR, have you re-sought the individual’s consent to ensure compliance with the GDPR ?
+This question is: Not modeled
+
+Justification: The question involves the concept of "consent" and the process of re-seeking consent to ensure compliance with the GDPR. While "consent" is a modelable concept, the metamodel provided does not contain any structural elements (classes, attributes, associations) that represent the concept of consent or the process of re-seeking consent. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 3: Are procedures in place to demonstrate that an individual has consented to their data being processed ?
+This question is: Not modeled
+
+Justification: The question asks about procedures to demonstrate consent, which involves the concept of "consent" and the ability to "demonstrate" it. While "consent" is a modelable concept (it could be represented by classes, attributes, or associations), the metamodel provided is empty and does not contain any structures to represent "consent" or the ability to demonstrate it. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A (the metamodel is empty)
+
+--------------------------------------------------
+Question 4: Are procedures in place to allow an individual to withdraw their consent to the processing of their personal data ?
+This question is: Not modeled
+
+Justification: The question asks about procedures for allowing an individual to withdraw their consent to the processing of their personal data. While the concept of "consent" and "processing of personal data" are modelable, the metamodel provided does not contain any structural elements (classes, attributes, associations) that represent these concepts. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: [Not applicable, as the metamodel does not contain relevant packages]
+
+--------------------------------------------------
+Question 5: Where online services are provided to a child, are procedures in place to verify age and get consent of a parent  /  legal guardian, where required ?
+This question is: Not modeled
+
+Justification: The question involves several modelable concepts such as "online services," "child," "age verification," "consent," and "parent/legal guardian." However, the metamodel provided does not contain any structural representation of these concepts. There are no classes, attributes, associations, user stories, or constraints that address these elements.
+
+Package of metamodel: [None]
+
+--------------------------------------------------
+Question 6: If legitimate interest is a legal basis on which personal data is processed, has an appropriate analysis been carried out to ensure that the use of this legal basis is appropriate ?
+This question is: Not modeled
+
+Justification: The question involves the concept of "legitimate interest" as a legal basis for processing personal data and the need for an appropriate analysis to ensure its appropriateness. While "legitimate interest" and "legal basis" are modelable concepts, the metamodel provided does not contain any structural representation of these concepts. There are no classes, attributes, associations, user stories, or constraints that address the concept of "legitimate interest" or the analysis required to validate its use.
+
+Package of metamodel: [None]
+
+--------------------------------------------------
+Question 7: Is there a documented policy / procedure for handling Subject Access Requests (SARs) ?
+This question is: Not modeled
+
+Justification: The question asks about the existence of a documented policy or procedure for handling Subject Access Requests (SARs). While the concept of Subject Access Requests (SARs) could potentially be modeled, the metamodel provided does not contain any structural representation of SARs, policies, or procedures. Since the metamodel does not support any significant structural representation of these aspects, the question is classified as "Not modeled."
+
+Package of metamodel: [None]
+
+--------------------------------------------------
+Question 8: Is your organisation able to respond to SARs within one month ?
+This question is: Not modeled
+
+Justification: The question asks about the organization's ability to respond to Subject Access Requests (SARs) within one month. This involves a procedural aspect (responding within a timeframe) and an organizational capability (ability to respond). While the concept of SARs could potentially be modeled, the specific aspect of responding within one month is a procedural detail that cannot be represented by classes, attributes, associations, user stories, or constraints. Since the metamodel provided is empty and does not contain any structural elements related to SARs or response times, the question is not modeled.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 9: Are procedures in place to provide individuals with their personal data in a structured, commonly used and machine readable format ?
+This question is: Not modeled
+
+Justification: The question asks about procedures to provide individuals with their personal data in a structured, commonly used, and machine-readable format. While the question includes the concept of "personal data," which is modelable, it also involves the concept of providing data in a specific format. The metamodel does not contain any classes, attributes, associations, user stories, or constraints that represent the concept of providing data in a structured, commonly used, and machine-readable format. Therefore, the metamodel does not support the structural representation of this aspect of GDPR.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 10: Are there controls and procedures in place to allow personal data to be deleted or rectified (where applicable) ?
+This question is: Not modeled
+
+Justification: The question asks about controls and procedures for deleting or rectifying personal data. While the procedural aspects ("controls and procedures") should not be considered for modeling, the underlying concepts of "deletion" and "rectification" of personal data are modelable. However, the metamodel provided does not contain any structural elements (classes, attributes, associations) that represent these concepts. Therefore, the question is classified as "Not modeled."
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 11: Are there controls and procedures in place to halt the processing of personal data where an individual has on valid grounds sought the restriction of processing ?
+This question is: Not modeled
+
+Justification: The question asks about controls and procedures to halt the processing of personal data when an individual has requested a restriction of processing. Breaking down the question, the key concepts that could be modeled are:
+1. Controls and procedures (which are organizational aspects and should not be considered for modeling).
+2. Halting the processing of personal data.
+3. Individual requesting a restriction of processing.
+
+While the concepts of "halting the processing of personal data" and "individual requesting a restriction of processing" are modelable, the metamodel provided does not contain any structural representation of these aspects. Therefore, the question is classified as "Not modeled."
+
+Package of metamodel: [None, as the metamodel is empty]
+
+--------------------------------------------------
+Question 12: Are individuals told about their right to object to certain types of processing such as direct marketing or where the legal basis of the processing is legitimate interests or necessary for a task carried out in the public interest ?
+This question is: Not modeled
+
+Justification: The question asks whether individuals are informed about their right to object to certain types of processing, such as direct marketing or processing based on legitimate interests or public interest. This involves concepts such as "right to object," "types of processing," "legal basis of processing," and "notification to individuals." These are all modelable concepts that could be represented by classes, attributes, associations, or constraints. However, the metamodel provided does not contain any structural elements that represent these concepts.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 13: Are there controls and procedures in place to halt the processing of personal data where an individual has objected to the processing ?
+This question is: Not modeled
+
+Justification: The question asks about controls and procedures to halt the processing of personal data when an individual objects. Breaking down the question, the key concepts that could be modeled are:
+1. Controls and procedures (which are organizational aspects and should not be considered for modeling).
+2. Halting the processing of personal data.
+3. Individual objection to processing.
+
+While the concepts of "halting the processing of personal data" and "individual objection to processing" are modelable, the metamodel provided does not contain any structural representation of these aspects. There are no classes, attributes, associations, user stories, or constraints that address these concepts.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 14: If automated decision making, which has a legal or significant similar affect for an individual, is based on consent, has explicit consent been collected ?
+This question is: Not modeled
+
+Justification: The question involves the concept of "automated decision making," "legal or significant similar affect," "consent," and "explicit consent." These are all modelable concepts that could be represented by classes, attributes, associations, or constraints. However, the metamodel provided does not contain any structural elements that represent these concepts. Therefore, the question is classified as "Not modeled."
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 15: Where an automated decision is made which is necessary for entering into, or performance of, a contract, or based on the explicit consent of an individual, are procedures in place to facilitate an individual’s right to obtain human intervention and to contest the decision ?
+This question is: Not modeled
+
+Justification: The question involves several concepts that could potentially be modeled, such as "automated decision," "contract," "explicit consent," "individual's right," "human intervention," and "contest the decision." However, the metamodel provided does not contain any structural elements (classes, attributes, associations) that represent these concepts. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 16: Have the circumstances been documented in which an individual’s data protection rights may be lawfully restricted ?
+This question is: Not modeled
+
+Justification: The question asks whether the circumstances in which an individual’s data protection rights may be lawfully restricted have been documented. This involves the concept of "data protection rights," "lawful restrictions," and "documentation of circumstances." These are all modelable concepts that could be represented by classes, attributes, or associations. However, the metamodel provided does not contain any structural elements that represent these concepts. Therefore, the question is classified as "Not modeled."
+
+Package of metamodel: [None]
+
+--------------------------------------------------
+Question 17: Is personal data only used for the purposes for which it was originally collected ?
+This question is: Not modeled
+
+Justification: The question asks whether personal data is used only for the purposes for which it was originally collected. This involves the concepts of "personal data," "purpose of collection," and the relationship between the two. However, the metamodel provided does not contain any structural elements (classes, attributes, associations) that represent these concepts. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: [None]
+
+--------------------------------------------------
+Question 18: Is the personal data collected limited to what is necessary for the purposes for which it is processed ?
+This question is: Not modeled
+
+Justification: The question asks whether the personal data collected is limited to what is necessary for the purposes for which it is processed. This involves the concepts of "personal data," "collection," "purpose," and the relationship between them. However, the metamodel provided does not contain any structural elements (classes, attributes, associations) that represent these concepts. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: [Not applicable, as the metamodel does not contain relevant packages]
+
+--------------------------------------------------
+Question 19: Are procedures in place to ensure personal data is kept up to date and accurate and where a correction is required, the necessary changes are made without delay ?
+This question is: Not modeled
+
+Justification: The question asks about procedures to ensure personal data is kept up to date and accurate, and that corrections are made without delay. While the concepts of "personal data," "accuracy," and "updates" are modelable, the metamodel provided does not contain any structural elements (classes, attributes, associations) that represent these concepts. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: [Not applicable, as the metamodel does not contain relevant packages]
+
+--------------------------------------------------
+Question 20: Are retention policies and procedures in place to ensure data is held for no longer than is necessary for the purposes for which it was collected ?
+This question is: Not modeled
+
+Justification: The question asks about retention policies and procedures to ensure data is held for no longer than necessary. While the concept of "data retention" and "purposes for which it was collected" are modelable, the metamodel provided does not contain any structural representation of these concepts. There are no classes, attributes, associations, user stories, or constraints that address data retention policies or the purposes for data collection.
+
+Package of metamodel: [None]
+
+--------------------------------------------------
+Question 21: Is your business subject to other rules that require a minimum retention period ?
+This question is: Not modeled
+
+Justification: The question asks whether the business is subject to other rules that require a minimum retention period. This involves the concept of "retention period" and "other rules" which could be modeled as classes, attributes, or associations. However, the metamodel provided does not contain any elements that represent these concepts.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 22: Do you have procedures in place to ensure data is destroyed securely, in accordance with your retention policies ?
+This question is: Not modeled
+
+Justification: The question asks about procedures for secure data destruction and retention policies. While the concept of data destruction and retention policies could potentially be modeled using classes, attributes, or associations, the metamodel provided does not contain any structural elements that represent these concepts. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 23: Are procedures in place to ensure that there is no unnecessary or unregulated duplication of records ?
+This question is: Not modeled
+
+Justification: The question asks about procedures to prevent unnecessary or unregulated duplication of records. While the concept of "records" and "duplication" could potentially be modeled, the metamodel provided does not contain any classes, attributes, associations, user stories, or constraints that represent these concepts. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: [Not applicable, as the metamodel is empty]
+
+--------------------------------------------------
+Question 24: Are service users / employees fully informed of how you use their data in a concise, transparent, intelligible and easily accessible form using clear and plain language ?
+This question is: Not modeled
+
+Justification: The question involves several concepts that could potentially be modeled, such as "service users," "employees," "data usage," "concise, transparent, intelligible and easily accessible form," and "clear and plain language." However, the metamodel provided does not contain any structural elements (classes, attributes, associations, user stories, or constraints) that represent these concepts. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 25: Where personal data is collected directly from the individuals, are procedures in place to provide the information listed at Article 13 of the GDPR ?
+This question is: Not modeled
+
+Justification: The question asks about the procedures in place to provide information listed in Article 13 of the GDPR when personal data is collected directly from individuals. While the question mentions "procedures," which we are instructed to ignore, the core concept here is the provision of specific information to individuals when their personal data is collected. This involves the concept of "personal data," "individuals," and the "information" that needs to be provided as per Article 13 of the GDPR.
+
+Since the metamodel provided is empty, it does not contain any classes, attributes, associations, user stories, or constraints that could represent these concepts. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 26: If personal data is not collected from the subject but from a third party (e.g. acquired as part of a merger) are procedures in place to provide the information listed at Article 14 of the GDPR ?
+This question is: Not modeled
+
+Justification: The question involves the concept of collecting personal data from a third party and providing information as per Article 14 of the GDPR. While the metamodel might include concepts related to personal data and data collection, it does not explicitly address the scenario of data collection from a third party or the specific requirements of Article 14. Therefore, the metamodel does not support the structural representation of these aspects.
+
+Package of metamodel: [Not applicable, as the concept is not modeled]
+
+--------------------------------------------------
+Question 27: When engaging with individuals, such as when providing a service, sale of a good or CCTV monitoring, are procedures in place to proactively inform individuals of their GDPR rights ?
+This question is: Not modeled
+
+Justification: The question asks about procedures to inform individuals of their GDPR rights. While the concept of "GDPR rights" and "individuals" can be modeled, the metamodel does not contain any structural representation of these concepts or the process of informing individuals about their rights. There are no classes, attributes, or associations that represent GDPR rights, individuals, or the communication process.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 28: Is information on how the organisation facilitates individuals exercising their GDPR rights published in an easily accessible and readable format ?
+This question is: Not modeled
+
+Justification: The question asks whether information on how the organization facilitates individuals exercising their GDPR rights is published in an easily accessible and readable format. This involves concepts such as "information," "publication," "accessibility," and "readability." However, the metamodel provided does not contain any structural elements (classes, attributes, associations) that represent these concepts. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: [None]
+
+--------------------------------------------------
+Question 29: Have agreements with suppliers and other third parties processing personal data on your behalf been reviewed to ensure all appropriate data protection requirements are included ?
+This question is: Not modeled
+
+Justification: The question involves the concept of "agreements with suppliers and other third parties" and "data protection requirements." These concepts are modelable as they can be represented by classes, attributes, and associations. For example, an "Agreement" class could have attributes like "supplier," "thirdParty," and "dataProtectionRequirements." However, since the metamodel provided is empty and does not contain any classes, attributes, or associations, it does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 30: Do you need to appoint a DPO as per Article 37 of the GDPR ?
+This question is: Not modeled
+
+Justification: The question asks whether a Data Protection Officer (DPO) needs to be appointed as per Article 37 of the GDPR. The concept of appointing a DPO involves organizational and procedural aspects that are not typically represented in a metamodel. However, the concept of a DPO itself is a modelable aspect, as it could be represented by a class, attributes, or associations. Since the metamodel does not contain any structural representation of the DPO concept or related aspects, the question is classified as "Not modeled."
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 31: If it is decided that a DPO is not required, have you documented the reasons why ?
+This question is: Not modeled
+
+Justification: The question asks about documenting the reasons for not requiring a Data Protection Officer (DPO). While the concept of a DPO and the decision-making process around appointing one are organizational and procedural aspects that should not be modeled, the documentation of reasons is a modelable concept. However, the metamodel does not contain any structural elements (classes, attributes, associations) that represent the documentation of reasons for not appointing a DPO.
+
+Package of metamodel: [Not applicable, as the concept is not modeled]
+
+--------------------------------------------------
+Question 32: Where a DPO is appointed, are escalation and reporting lines in place ? Are these procedures documented ?
+This question is: Not modeled
+
+Justification: The question asks about the presence of escalation and reporting lines for a Data Protection Officer (DPO) and whether these procedures are documented. While the concept of a DPO can be modeled, the concepts of "escalation and reporting lines" and "documented procedures" are not represented in the metamodel. These are organizational and procedural aspects that are not captured by classes, attributes, associations, user stories, or constraints in the provided metamodel.
+
+Package of metamodel: [Not applicable, as the concepts are not modeled]
+
+--------------------------------------------------
+Question 33: Have you published the contact details of your DPO to facilitate your customers /  employees in making contact with them ?
+This question is: Not modeled
+
+Justification: The question asks about the publication of contact details for the Data Protection Officer (DPO), which involves the concept of a DPO and their contact details. While the concept of a DPO and their contact details could be modeled using classes and attributes, the metamodel provided does not contain any structural representation of these concepts. Therefore, the question is classified as "Not modeled."
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 34: If your data processing is considered high risk, do you have a process for identifying the need for, and conducting of, DPIAs ? Are these procedures documented ?
+This question is: Should not be modeled
+
+Justification: The question primarily concerns organizational rules, human decisions, and governance policies, specifically the process for identifying the need for and conducting Data Protection Impact Assessments (DPIAs) and whether these procedures are documented. These aspects are not conceptually representable by classes, attributes, associations, user stories, or constraints in a metamodel. The focus is on procedural and organizational aspects, which are explicitly excluded from modeling according to the instructions.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 35: Have you assessed the risks involved in processing personal data and put measures in place to mitigate against them ?
+This question is: Not modeled
+
+Justification: The question involves two main concepts: assessing risks involved in processing personal data and putting measures in place to mitigate those risks. While the concept of "processing personal data" could potentially be modeled, the metamodel does not contain any classes, attributes, or associations that represent the concepts of "risk assessment" or "mitigation measures." These are critical aspects of the question that are not supported by the metamodel.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 36: Is there a documented security programme that specifies the technical, administrative and physical safeguards for personal data ?
+This question is: Not modeled
+
+Justification: The question asks about the existence of a documented security program that specifies technical, administrative, and physical safeguards for personal data. While the concepts of "security program," "technical safeguards," "administrative safeguards," and "physical safeguards" are all modelable, the metamodel provided does not contain any classes, attributes, associations, user stories, or constraints that represent these concepts. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: [None]
+
+--------------------------------------------------
+Question 37: Is there a documented process for resolving security related complaints and issues ?
+This question is: Not modeled
+
+Justification: The question asks about the existence of a documented process for resolving security-related complaints and issues. While the concept of "security-related complaints and issues" could potentially be modeled, the metamodel provided does not contain any classes, attributes, associations, user stories, or constraints that represent these concepts. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 38: Is there a designated individual who is responsible for preventing and investigating security breaches ?
+This question is: Not modeled
+
+Justification: The question asks about the designation of an individual responsible for preventing and investigating security breaches. This involves the concept of a role or responsibility within an organization, which is an organizational aspect and typically involves human decisions and governance policies. However, the concept of a "designated individual" and their responsibilities could potentially be modeled if the metamodel included classes or attributes related to roles and responsibilities. Since the metamodel provided is empty, it does not support any structural representation of these aspects.
+
+Package of metamodel: [None, as the metamodel is empty]
+
+--------------------------------------------------
+Question 39: Are industry standard encryption technologies employed for transferring, storing, and receiving individuals' sensitive personal information ?
+This question is: Not modeled
+
+Justification: The question asks about the use of industry standard encryption technologies for transferring, storing, and receiving individuals' sensitive personal information. While the concepts of "transferring," "storing," and "receiving" sensitive personal information can be modeled, the specific aspect of "industry standard encryption technologies" is not represented in the metamodel. The metamodel does not include any classes, attributes, or associations that describe encryption technologies or standards.
+
+Package of metamodel: [None]
+
+--------------------------------------------------
+Question 40: Is personal information systematically destroyed, erased, or anonymised when it is no longer legally required to be retained ?
+This question is: Not modeled
+
+Justification: The question involves the concept of personal information being destroyed, erased, or anonymised when it is no longer legally required to be retained. This concept involves the lifecycle management of personal data, including its retention and disposal. However, the metamodel provided does not contain any classes, attributes, associations, user stories, or constraints that represent these concepts. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: [None]
+
+--------------------------------------------------
+Question 41: Can access to personal data be restored in a timely manner in the event of a physical or technical incident ?
+This question is: Not modeled
+
+Justification: The question asks about the ability to restore access to personal data in the event of a physical or technical incident. This involves concepts such as "personal data," "access," "physical or technical incident," and "timely manner." While "personal data" and "access" are modelable concepts, the metamodel does not contain any structural elements (classes, attributes, associations) that represent these concepts or their relationships. Additionally, the concepts of "physical or technical incident" and "timely manner" are not represented in the metamodel.
+
+Package of metamodel: [None]
+
+--------------------------------------------------
+Question 42: Does the organisation have a documented privacy and security incident response plan ?
+This question is: Not modeled
+
+Justification: The question asks about the existence of a documented privacy and security incident response plan. While the concept of a "privacy and security incident response plan" could potentially be modeled using classes, attributes, or associations, the provided metamodel does not contain any structural representation of this concept. There are no classes, attributes, or associations that represent or relate to a privacy and security incident response plan.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 43: Are plans and procedures regularly reviewed ?
+This question is: Should not be modeled
+
+Justification: The question "Are plans and procedures regularly reviewed?" pertains to organizational rules and governance policies, which are aspects that cannot be conceptually represented in the metamodel. The question does not involve any modelable concepts such as classes, attributes, associations, user stories, or constraints. It solely concerns procedural and organizational aspects, which are explicitly excluded from modeling considerations according to the critical analysis rules.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 44: Are there procedures in place to notify the office of the Data Protection Commissioner of a data breach ?
+This question is: Not modeled
+
+Justification: The question asks about procedures to notify the office of the Data Protection Commissioner of a data breach. While the notification process itself is an organizational procedure and should not be modeled, the concept of a "data breach" and the entity "Data Protection Commissioner" are modelable concepts. However, since the metamodel provided is empty and does not contain any classes, attributes, or associations, it does not support any structural representation of these aspects.
+
+Package of metamodel: N/A (the metamodel is empty)
+
+--------------------------------------------------
+Question 45: Are there procedures in place to notify data subjects of a data breach (where applicable) ?
+This question is: Not modeled
+
+Justification: The question asks about procedures to notify data subjects of a data breach. While the notification process itself is an organizational procedure and should not be modeled, the concept of a "data breach" and "data subjects" are modelable. However, since the metamodel provided is empty and does not contain any classes, attributes, or associations, it does not support any structural representation of these concepts. Therefore, the question is not modeled.
+
+Package of metamodel: [Not Applicable, as the metamodel is empty]
+
+--------------------------------------------------
+Question 46: Are all data breaches fully documented ?
+This question is: Not modeled
+
+Justification: The question asks whether all data breaches are fully documented. To model this, we need concepts such as "Data Breach" and attributes or associations that indicate documentation status. Since the metamodel provided is empty and does not contain any classes, attributes, or associations related to data breaches or their documentation, it does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 47: Are there cooperation procedures in place between data controllers, suppliers and other partners to deal with data breaches ?
+This question is: Not modeled
+
+Justification: The question asks about cooperation procedures between data controllers, suppliers, and other partners to deal with data breaches. While the concept of "data breaches" could potentially be modeled, the metamodel provided does not contain any structural representation of data breaches, cooperation procedures, data controllers, suppliers, or partners. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 48: Is personal data transferred outside the EEA, e.g. to the US or other countries ?
+This question is: Not modeled
+
+Justification: The question asks whether personal data is transferred outside the EEA, which involves the concept of data transfer and geographical locations. However, the metamodel provided does not contain any classes, attributes, associations, user stories, or constraints that represent the concept of data transfer or geographical locations. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: [Not applicable, as the metamodel does not contain relevant information]
+
+--------------------------------------------------
+Question 49: Does this include any special categories of personal data ?
+This question is: Not modeled
+
+Justification: The question asks about "special categories of personal data," which is a concept defined by the GDPR. However, the metamodel provided does not contain any classes, attributes, or associations that represent or categorize personal data, let alone special categories of personal data. Therefore, the metamodel does not support the structural representation of this concept.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 50: What is the purpose(s) of the transfer ?
+This question is: Not modeled
+
+Justification: The question asks about the purpose(s) of the transfer, which is a concept that can be modeled using classes, attributes, or associations. However, the provided metamodel does not contain any elements that represent the concept of "purpose" or "transfer." Since there are no relevant structural elements in the metamodel to support this concept, the question is classified as "Not modeled."
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 51: Who is the transfer to ?
+This question is: Not modeled
+
+Justification: The question "Who is the transfer to?" involves the concept of data transfer and the recipient of the data. However, the metamodel provided does not contain any classes, attributes, associations, user stories, or constraints that represent the concept of data transfer or the recipient of the data. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 52: Are all transfers listed - including answers to the previous questions (e.g. the nature of the data, the purpose of the processing, from which country the data is exported and which country receives the data and who the recipient of the transfer is ?)
+This question is: Not modeled
+
+Justification: The question asks whether all transfers are listed, including details such as the nature of the data, the purpose of the processing, the countries involved in the data export and import, and the recipient of the transfer. These are all modelable concepts that could be represented by classes, attributes, and associations. However, the metamodel provided does not contain any structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 53: Is there a legal basis for the transfer, e.g. EU Commission adequacy decision; standard contractual clauses. Are these bases documented ?
+This question is: Not modeled
+
+Justification: The question asks about the legal basis for data transfer and whether these bases are documented. The concepts involved here are "legal basis for transfer" and "documentation of legal basis." These are modelable concepts that could be represented by classes, attributes, or associations. However, the metamodel provided does not contain any structural elements that represent these concepts. Therefore, the question is classified as "Not modeled."
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 54: Are data subjects fully informed about any intended international transfers of their personal data ?
+This question is: Not modeled
+
+Justification: The question asks whether data subjects are fully informed about any intended international transfers of their personal data. This involves several modelable concepts:
+1. Data subjects
+2. Information provided to data subjects
+3. International transfers of personal data
+
+However, the metamodel provided does not contain any classes, attributes, associations, user stories, or constraints that represent these concepts. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------

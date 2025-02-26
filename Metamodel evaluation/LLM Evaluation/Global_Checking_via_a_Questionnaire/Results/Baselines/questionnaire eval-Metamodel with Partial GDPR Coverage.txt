@@ -1,0 +1,439 @@
+Question 1: Have you reviewed your organisation’s mechanisms for collecting consent to ensure that it is freely given, specific, informed and that it is a clear indication that an individual has chosen to agree to the processing of their data by way of statement or a clear affirmative action ?
+This question is: Not modeled
+
+Justification: The question involves several key concepts related to consent collection mechanisms, including "freely given," "specific," "informed," and "clear indication" of consent. These concepts are central to GDPR compliance and involve attributes and associations that should be modeled. However, the provided metamodel does not include any classes, attributes, or associations that represent these concepts. The metamodel focuses on the Data Protection Officer (DPO) and Country packages, which do not address the specifics of consent collection mechanisms.
+
+Package of metamodel: None
+
+--------------------------------------------------
+Question 2: If personal data that you currently hold on the basis of consent does not meet the required standard under the GDPR, have you re-sought the individual’s consent to ensure compliance with the GDPR ?
+This question is: Not modeled
+
+Justification: The question involves the concept of "consent" for processing personal data, which is a key aspect of GDPR compliance. However, the metamodel provided does not include any classes, attributes, or associations related to "consent," "personal data," or the process of seeking or re-seeking consent. The metamodel focuses on the Data Protection Officer (DPO) and Country packages, which do not cover the necessary structural elements to model the concept of consent and its management.
+
+Package of metamodel: None
+
+--------------------------------------------------
+Question 3: Are procedures in place to demonstrate that an individual has consented to their data being processed ?
+This question is: Not modeled
+
+Justification: The question asks about procedures to demonstrate that an individual has consented to their data being processed. While the concept of "consent" is a key aspect of GDPR, the metamodel provided does not include any structural representation of consent, data processing, or the relationship between individuals and their data. The metamodel focuses on the Data Protection Officer (DPO) and country-specific attributes, but it lacks any classes, attributes, or associations related to consent or data processing.
+
+Package of metamodel: None
+
+--------------------------------------------------
+Question 4: Are procedures in place to allow an individual to withdraw their consent to the processing of their personal data ?
+This question is: Not modeled
+
+Justification: The question asks about procedures for allowing an individual to withdraw their consent to the processing of their personal data. The key concept here is "consent withdrawal," which is a modelable aspect. However, the provided metamodel does not include any classes, attributes, or associations related to consent, consent withdrawal, or the processing of personal data. The metamodel focuses on the Data Protection Officer (DPO) and Country, but it lacks any structural representation of consent management or data processing.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 5: Where online services are provided to a child, are procedures in place to verify age and get consent of a parent  /  legal guardian, where required ?
+This question is: Partially modeled
+
+Justification: The question involves several concepts that could be modeled: age verification, consent from a parent/legal guardian, and the provision of online services to a child. The metamodel includes the concept of `minorAge` within the `Country` package, which can be used to determine the age of majority for consent purposes. However, it lacks explicit classes or attributes for representing the process of verifying age, obtaining parental consent, or the provision of online services to a child. These are key concepts that are missing or incomplete in the metamodel.
+
+Package of metamodel: Country
+
+--------------------------------------------------
+Question 6: If legitimate interest is a legal basis on which personal data is processed, has an appropriate analysis been carried out to ensure that the use of this legal basis is appropriate ?
+This question is: Not modeled
+
+Justification: The question involves the concept of "legitimate interest" as a legal basis for processing personal data and the need for an appropriate analysis to ensure the use of this legal basis is appropriate. The metamodel does not contain any classes, attributes, or associations that represent the concept of "legitimate interest," "legal basis," or the process of carrying out an analysis to ensure the appropriateness of using this legal basis. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: None
+
+--------------------------------------------------
+Question 7: Is there a documented policy / procedure for handling Subject Access Requests (SARs) ?
+This question is: Not modeled
+
+Justification: The question asks about the existence of a documented policy or procedure for handling Subject Access Requests (SARs). While the concept of handling SARs could potentially be modeled, the metamodel provided does not include any structural representation of policies, procedures, or SARs. The metamodel focuses on the Data Protection Officer (DPO) and Country attributes but does not cover the handling of SARs or any related policies/procedures.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 8: Is your organisation able to respond to SARs within one month ?
+This question is: Not modeled
+
+Justification: The question asks whether the organization can respond to Subject Access Requests (SARs) within one month. To model this, we need concepts related to SARs, response times, and possibly the mechanisms or processes for handling SARs. The metamodel provided does not include any classes, attributes, or associations that represent SARs, response times, or the handling of such requests. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: None
+
+--------------------------------------------------
+Question 9: Are procedures in place to provide individuals with their personal data in a structured, commonly used and machine readable format ?
+This question is: Not modeled
+
+Justification: The question asks about procedures to provide individuals with their personal data in a structured, commonly used, and machine-readable format. The key concepts here are "personal data," "structured format," "commonly used format," and "machine-readable format." While the metamodel includes the concept of a Data Protection Officer (DPO) and some attributes related to the DPO, it does not include any representation of personal data, its formats, or the mechanisms for providing it to individuals. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 10: Are there controls and procedures in place to allow personal data to be deleted or rectified (where applicable) ?
+This question is: Not modeled
+
+Justification: The question asks about controls and procedures for deleting or rectifying personal data. While the metamodel includes concepts related to the Data Protection Officer (DPO) and Country, it does not include any structural elements (classes, attributes, or associations) that represent the concepts of personal data, deletion, rectification, or controls and procedures related to these actions. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 11: Are there controls and procedures in place to halt the processing of personal data where an individual has on valid grounds sought the restriction of processing ?
+This question is: Not modeled
+
+Justification: The question involves the concept of "controls and procedures to halt the processing of personal data" based on an individual's request for restriction of processing. While the metamodel includes information about the Data Protection Officer (DPO) and the country, it does not contain any structural elements (classes, attributes, or associations) that represent the concepts of "controls," "procedures," "halt processing," or "restriction of processing." These are key concepts that are missing from the metamodel, making it impossible to fully or partially model this question.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 12: Are individuals told about their right to object to certain types of processing such as direct marketing or where the legal basis of the processing is legitimate interests or necessary for a task carried out in the public interest ?
+This question is: Not modeled
+
+Justification: The question asks whether individuals are informed about their right to object to certain types of processing, such as direct marketing or processing based on legitimate interests or public interest tasks. This involves concepts such as "right to object," "types of processing," "legal basis of processing," and "notification to individuals." None of these concepts are represented in the provided metamodel. The metamodel focuses on the Data Protection Officer (DPO) and Country attributes, but it does not include any structural elements related to the rights of individuals, types of processing, or legal bases for processing.
+
+Package of metamodel: None
+
+--------------------------------------------------
+Question 13: Are there controls and procedures in place to halt the processing of personal data where an individual has objected to the processing ?
+This question is: Not modeled
+
+Justification: The question asks about controls and procedures to halt the processing of personal data when an individual objects. The key concepts here are "controls," "procedures," "halt the processing," and "individual objection." While "individual objection" could be conceptually represented, the metamodel does not include any classes, attributes, or associations related to processing controls, procedures for halting processing, or handling individual objections. The metamodel focuses on the Data Protection Officer (DPO) and country-specific attributes, but it lacks any structural representation of the concepts related to processing controls and objections.
+
+Package of metamodel: None
+
+--------------------------------------------------
+Question 14: If automated decision making, which has a legal or significant similar affect for an individual, is based on consent, has explicit consent been collected ?
+This question is: Not modeled
+
+Justification: The question involves the concept of "automated decision making," "legal or significant similar affect," "consent," and "explicit consent." None of these concepts are represented in the provided metamodel. The metamodel includes details about the Data Protection Officer (DPO) and Country, but it does not cover any aspects related to automated decision making, consent, or the impact on individuals.
+
+Package of metamodel: None
+
+--------------------------------------------------
+Question 15: Where an automated decision is made which is necessary for entering into, or performance of, a contract, or based on the explicit consent of an individual, are procedures in place to facilitate an individual’s right to obtain human intervention and to contest the decision ?
+This question is: Not modeled
+
+Justification: The question involves several modelable concepts related to automated decision-making, human intervention, and the right to contest decisions. However, the provided metamodel does not include any classes, attributes, or associations that represent these concepts. The metamodel focuses on the Data Protection Officer (DPO) and Country packages, which do not cover the aspects of automated decision-making, human intervention, or the right to contest decisions.
+
+Package of metamodel: None
+
+--------------------------------------------------
+Question 16: Have the circumstances been documented in which an individual’s data protection rights may be lawfully restricted ?
+This question is: Not modeled
+
+Justification: The question asks whether the circumstances in which an individual’s data protection rights may be lawfully restricted have been documented. This involves the concept of "circumstances for lawful restriction of data protection rights," which is a modelable concept. However, the metamodel does not include any classes, attributes, or associations that represent these circumstances or the documentation of such restrictions. The metamodel focuses on the Data Protection Officer (DPO) and Country packages, which do not cover the documentation of lawful restrictions on data protection rights.
+
+Package of metamodel: None
+
+--------------------------------------------------
+Question 17: Is personal data only used for the purposes for which it was originally collected ?
+This question is: Not modeled
+
+Justification: The question asks whether personal data is used only for the purposes for which it was originally collected. This involves concepts such as "personal data," "purpose of collection," and "usage of data." The metamodel provided does not contain any classes, attributes, or associations that represent these concepts. There are no elements in the metamodel that address the collection, purpose, or usage of personal data.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 18: Is the personal data collected limited to what is necessary for the purposes for which it is processed ?
+This question is: Not modeled
+
+Justification: The question asks whether the personal data collected is limited to what is necessary for the purposes for which it is processed. This involves concepts such as "personal data," "collection," "purpose," and "processing." The metamodel provided does not include any classes, attributes, or associations that represent these concepts. The metamodel focuses on the Data Protection Officer (DPO) and Country, but it does not cover the aspects related to data collection, purpose, and processing.
+
+Package of metamodel: None
+
+--------------------------------------------------
+Question 19: Are procedures in place to ensure personal data is kept up to date and accurate and where a correction is required, the necessary changes are made without delay ?
+This question is: Not modeled
+
+Justification: The question asks about procedures to ensure personal data is kept up to date and accurate, and whether necessary changes are made without delay. While the concept of personal data is modelable, the metamodel does not include any structural elements (classes, attributes, or associations) that represent the concepts of data accuracy, updates, or the timeliness of corrections. These are key concepts that are missing from the metamodel.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 20: Are retention policies and procedures in place to ensure data is held for no longer than is necessary for the purposes for which it was collected ?
+This question is: Not modeled
+
+Justification: The question asks about retention policies and procedures to ensure data is held for no longer than necessary. The key concepts here are "retention policies," "data," and "purposes for which it was collected." While the metamodel includes concepts related to the Data Protection Officer (DPO) and Country, it does not include any structural representation of data retention policies, data handling, or the purposes for which data is collected. These are essential concepts for answering the question, and they are not modeled in the provided metamodel.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 21: Is your business subject to other rules that require a minimum retention period ?
+This question is: Not modeled
+
+Justification: The question asks whether the business is subject to other rules that require a minimum retention period. This involves the concept of "retention period" and "other rules" which are regulatory requirements. The metamodel does not contain any classes, attributes, or associations that represent the concept of retention periods or other regulatory rules. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 22: Do you have procedures in place to ensure data is destroyed securely, in accordance with your retention policies ?
+This question is: Not modeled
+
+Justification: The question asks about procedures for secure data destruction and retention policies. While the concept of data destruction and retention policies can be modeled, the metamodel provided does not include any classes, attributes, or associations related to data destruction, retention policies, or any related concepts. The metamodel focuses on the Data Protection Officer (DPO) and Country, but does not cover data management practices.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 23: Are procedures in place to ensure that there is no unnecessary or unregulated duplication of records ?
+This question is: Not modeled
+
+Justification: The question asks about procedures to ensure there is no unnecessary or unregulated duplication of records. Breaking down the question, the key concepts that could be modeled are:
+1. Records (or data)
+2. Duplication of records
+3. Regulation of duplication
+
+However, the provided metamodel does not contain any classes, attributes, or associations that represent these concepts. The metamodel focuses on the Data Protection Officer (DPO) and Country, but it does not include any structural elements related to records, duplication, or regulation of duplication.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 24: Are service users / employees fully informed of how you use their data in a concise, transparent, intelligible and easily accessible form using clear and plain language ?
+This question is: Not modeled
+
+Justification: The question asks whether service users or employees are fully informed about how their data is used in a concise, transparent, intelligible, and easily accessible form using clear and plain language. This involves concepts such as "informing users," "data usage," "transparency," "intelligibility," and "accessibility." None of these concepts are represented in the provided metamodel. The metamodel focuses on the Data Protection Officer (DPO) and country-specific attributes but does not include any structural elements related to informing users about data usage or the characteristics of such information.
+
+Package of metamodel: None
+
+--------------------------------------------------
+Question 25: Where personal data is collected directly from the individuals, are procedures in place to provide the information listed at Article 13 of the GDPR ?
+This question is: Not modeled
+
+Justification: The question asks whether procedures are in place to provide the information listed in Article 13 of the GDPR when personal data is collected directly from individuals. Article 13 of the GDPR specifies the information that must be provided to data subjects when their personal data is collected directly from them. This includes information such as the identity and contact details of the controller, the purposes of the processing, the legal basis for the processing, the recipients of the personal data, and the rights of the data subjects.
+
+While the metamodel includes concepts related to the Data Protection Officer (DPO) and Country, it does not include any structural elements (classes, attributes, or associations) that represent the information required by Article 13 of the GDPR. Specifically, there are no classes or attributes that model the collection of personal data, the provision of information to data subjects, or the specific details that must be provided under Article 13.
+
+Package of metamodel: None
+
+--------------------------------------------------
+Question 26: If personal data is not collected from the subject but from a third party (e.g. acquired as part of a merger) are procedures in place to provide the information listed at Article 14 of the GDPR ?
+This question is: Not modeled
+
+Justification: The question involves several key concepts from GDPR Article 14, such as the collection of personal data from a third party, the provision of information to the data subject, and the specific information that needs to be provided. However, the metamodel provided does not include any classes, attributes, or associations that represent these concepts. The metamodel only includes details about the Data Protection Officer (DPO) and the Country, but it lacks any structural representation of personal data collection, third-party data acquisition, or the information requirements specified in Article 14 of the GDPR.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 27: When engaging with individuals, such as when providing a service, sale of a good or CCTV monitoring, are procedures in place to proactively inform individuals of their GDPR rights ?
+This question is: Not modeled
+
+Justification: The question involves the concept of "proactively informing individuals of their GDPR rights" when engaging with them, such as during service provision, sale of goods, or CCTV monitoring. This concept involves the idea of communication and notification of GDPR rights, which are modelable aspects. However, the metamodel provided does not include any classes, attributes, or associations that represent the concept of informing individuals about their GDPR rights or any form of communication regarding GDPR rights. The metamodel focuses on the Data Protection Officer (DPO) and Country, but it lacks any structural representation of the communication or notification of GDPR rights to individuals.
+
+Package of metamodel: None
+
+--------------------------------------------------
+Question 28: Is information on how the organisation facilitates individuals exercising their GDPR rights published in an easily accessible and readable format ?
+This question is: Not modeled
+
+Justification: The question asks whether information on how the organization facilitates individuals exercising their GDPR rights is published in an easily accessible and readable format. This involves concepts such as "information publication," "accessibility," and "readability" of GDPR rights facilitation. None of these concepts are represented in the provided metamodel. The metamodel includes details about the Data Protection Officer (DPO) and country-specific information but does not cover the publication or accessibility of GDPR rights information.
+
+Package of metamodel: None
+
+--------------------------------------------------
+Question 29: Have agreements with suppliers and other third parties processing personal data on your behalf been reviewed to ensure all appropriate data protection requirements are included ?
+This question is: Not modeled
+
+Justification: The question involves the concept of agreements with suppliers and other third parties processing personal data, which includes ensuring that data protection requirements are included. While the metamodel includes concepts related to the Data Protection Officer (DPO) and Country, it does not include any structural representation of agreements, suppliers, third parties, or data protection requirements in agreements. These are key concepts that are missing from the metamodel.
+
+Package of metamodel: None
+
+--------------------------------------------------
+Question 30: Do you need to appoint a DPO as per Article 37 of the GDPR ?
+This question is: Fully modeled
+
+Justification: The question asks whether a Data Protection Officer (DPO) needs to be appointed as per Article 37 of the GDPR. The metamodel includes a package specifically for the DPO, which contains attributes such as `dpoName`, `dpoAddress`, `dpoPhone`, `dpoEmail`, and `reason`. These attributes cover the concept of appointing a DPO and the reasons for not appointing one, which are the key modelable aspects of the question.
+
+Package of metamodel: DPO
+
+--------------------------------------------------
+Question 31: If it is decided that a DPO is not required, have you documented the reasons why ?
+This question is: Fully modeled
+
+Justification: The question asks whether the reasons for not appointing a Data Protection Officer (DPO) have been documented. The metamodel includes the `DPO` package, which contains the attribute `reason` (string): Reason for not appointing a Data Protection Officer. This attribute directly addresses the concept of documenting the reasons for not appointing a DPO.
+
+Package of metamodel: DPO
+
+--------------------------------------------------
+Question 32: Where a DPO is appointed, are escalation and reporting lines in place ? Are these procedures documented ?
+This question is: Partially modeled
+
+Justification: The question asks about the presence of escalation and reporting lines for a Data Protection Officer (DPO) and whether these procedures are documented. The metamodel includes the concept of a DPO with attributes such as `dpoName`, `dpoAddress`, `dpoPhone`, `dpoEmail`, and `reason`. However, it does not include any structural elements (classes, attributes, or associations) that represent escalation and reporting lines or documentation of procedures. These are key concepts that are missing from the metamodel.
+
+Package of metamodel: DPO
+
+--------------------------------------------------
+Question 33: Have you published the contact details of your DPO to facilitate your customers /  employees in making contact with them ?
+This question is: Fully modeled
+
+Justification: The question asks whether the contact details of the Data Protection Officer (DPO) have been published. The metamodel includes the DPO package, which contains attributes such as `dpoName`, `dpoAddress`, `dpoPhone`, and `dpoEmail`. These attributes fully cover the concept of publishing the contact details of the DPO.
+
+Package of metamodel: DPO
+
+--------------------------------------------------
+Question 34: If your data processing is considered high risk, do you have a process for identifying the need for, and conducting of, DPIAs ? Are these procedures documented ?
+This question is: Not modeled
+
+Justification: The question involves the concept of Data Protection Impact Assessments (DPIAs), which are a critical part of GDPR compliance, especially for high-risk data processing activities. The metamodel does not include any classes, attributes, or associations related to DPIAs, risk assessment, or the documentation of procedures for conducting DPIAs. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 35: Have you assessed the risks involved in processing personal data and put measures in place to mitigate against them ?
+This question is: Not modeled
+
+Justification: The question involves assessing risks and putting measures in place to mitigate them, which are concepts that could be modeled. However, the metamodel provided does not include any classes, attributes, or associations related to risk assessment, risk mitigation, or measures for data protection. The metamodel focuses on the Data Protection Officer (DPO) and Country, but it lacks any structural representation of risk management or data protection measures.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 36: Is there a documented security programme that specifies the technical, administrative and physical safeguards for personal data ?
+This question is: Not modeled
+
+Justification: The question asks about the existence of a documented security program that specifies technical, administrative, and physical safeguards for personal data. While the metamodel includes concepts related to the Data Protection Officer (DPO) and Country, it does not contain any structural elements (classes, attributes, or associations) that represent a security program or the safeguards for personal data. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 37: Is there a documented process for resolving security related complaints and issues ?
+This question is: Not modeled
+
+Justification: The question asks about the existence of a documented process for resolving security-related complaints and issues. While the metamodel includes concepts related to the Data Protection Officer (DPO) and Country, it does not include any structural elements (classes, attributes, or associations) that represent processes, complaints, issues, or their resolution. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 38: Is there a designated individual who is responsible for preventing and investigating security breaches ?
+This question is: Partially modeled
+
+Justification: The question asks about the designation of an individual responsible for preventing and investigating security breaches. The metamodel includes the concept of a Data Protection Officer (DPO) in the "DPO" package, which is responsible for enforcing personal data regulations. However, the metamodel does not explicitly include the concept of "security breaches" or the specific responsibilities related to preventing and investigating them. Therefore, while the DPO concept is modeled, the specific aspects related to security breaches are not fully represented.
+
+Package of metamodel: DPO
+
+--------------------------------------------------
+Question 39: Are industry standard encryption technologies employed for transferring, storing, and receiving individuals' sensitive personal information ?
+This question is: Not modeled
+
+Justification: The question asks about the employment of industry standard encryption technologies for transferring, storing, and receiving individuals' sensitive personal information. This involves concepts such as encryption technologies, data transfer, data storage, and data reception, which are all modelable aspects. However, the provided metamodel does not include any classes, attributes, or associations related to encryption technologies, data transfer, data storage, or data reception. The metamodel focuses on the Data Protection Officer (DPO) and Country, but it lacks any structural representation of the concepts mentioned in the question.
+
+Package of metamodel: None
+
+--------------------------------------------------
+Question 40: Is personal information systematically destroyed, erased, or anonymised when it is no longer legally required to be retained ?
+This question is: Not modeled
+
+Justification: The question involves the concept of personal information being systematically destroyed, erased, or anonymised when it is no longer legally required to be retained. This concept involves the handling of personal data, retention periods, and actions taken on data (destruction, erasure, anonymisation). The metamodel provided does not include any classes, attributes, or associations that represent these concepts. The metamodel focuses on the Data Protection Officer (DPO) and Country, but does not cover data handling, retention, or actions on data.
+
+Package of metamodel: None
+
+--------------------------------------------------
+Question 41: Can access to personal data be restored in a timely manner in the event of a physical or technical incident ?
+This question is: Not modeled
+
+Justification: The question asks about the ability to restore access to personal data in a timely manner in the event of a physical or technical incident. This involves concepts such as "access to personal data," "timely manner," "physical or technical incident," and "restoration of access." None of these concepts are represented in the provided metamodel. The metamodel includes information about the Data Protection Officer (DPO) and Country, but it does not cover any aspects related to data access, incidents, or restoration procedures.
+
+Package of metamodel: None
+
+--------------------------------------------------
+Question 42: Does the organisation have a documented privacy and security incident response plan ?
+This question is: Not modeled
+
+Justification: The question asks about the existence of a documented privacy and security incident response plan. This involves the concept of a "documented plan" for incident response, which is a modelable aspect. However, the metamodel provided does not include any classes, attributes, or associations that represent the concept of an incident response plan or any related documentation. The metamodel focuses on the Data Protection Officer (DPO) and Country, but it does not cover incident response plans or any related documentation.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 43: Are plans and procedures regularly reviewed ?
+This question is: Not modeled
+
+Justification: The question asks whether plans and procedures are regularly reviewed. To model this, we would need concepts such as "plans," "procedures," and "review frequency" or "review schedule." The metamodel provided does not contain any classes, attributes, or associations that represent these concepts. The metamodel focuses on the Data Protection Officer (DPO) and Country, but it does not include any structural elements related to plans, procedures, or their review.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 44: Are there procedures in place to notify the office of the Data Protection Commissioner of a data breach ?
+This question is: Not modeled
+
+Justification: The question asks about procedures to notify the office of the Data Protection Commissioner of a data breach. While the metamodel includes concepts related to the Data Protection Officer (DPO) and their contact information, it does not include any structural representation of data breaches, notifications, or the office of the Data Protection Commissioner. These are key concepts that are missing from the metamodel, making it impossible to fully model the question.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 45: Are there procedures in place to notify data subjects of a data breach (where applicable) ?
+This question is: Not modeled
+
+Justification: The question asks about procedures to notify data subjects of a data breach. While the concept of a data breach and notification to data subjects are modelable, the metamodel provided does not contain any structural elements (classes, attributes, or associations) that represent these concepts. The metamodel focuses on the Data Protection Officer (DPO) and Country, but it does not include any information about data breaches, notifications, or data subjects.
+
+Package of metamodel: None
+
+--------------------------------------------------
+Question 46: Are all data breaches fully documented ?
+This question is: Not modeled
+
+Justification: The question asks whether all data breaches are fully documented. To model this, we need concepts related to data breaches, documentation, and possibly the completeness of documentation. However, the provided metamodel does not include any classes, attributes, or associations related to data breaches or documentation. The metamodel focuses on the Data Protection Officer (DPO) and Country, but it lacks any structural representation of data breaches or documentation processes.
+
+Package of metamodel: None
+
+--------------------------------------------------
+Question 47: Are there cooperation procedures in place between data controllers, suppliers and other partners to deal with data breaches ?
+This question is: Not modeled
+
+Justification: The question asks about cooperation procedures between data controllers, suppliers, and other partners to deal with data breaches. While the metamodel includes concepts related to the Data Protection Officer (DPO) and Country, it does not include any structural elements (classes, attributes, or associations) that represent data controllers, suppliers, partners, data breaches, or cooperation procedures between these entities. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 48: Is personal data transferred outside the EEA, e.g. to the US or other countries ?
+This question is: Partially modeled
+
+Justification: The question asks whether personal data is transferred outside the EEA, which involves the concept of countries and their adequacy status regarding data protection. The metamodel includes the `Country` package with an attribute `adequate` that indicates whether personal data protection conditions are at least equivalent to those offered by the GDPR. However, the metamodel does not explicitly model the concept of "transfer" of personal data or the specific identification of countries within the EEA (European Economic Area). Therefore, key concepts related to the transfer of data are missing.
+
+Package of metamodel: Country
+
+--------------------------------------------------
+Question 49: Does this include any special categories of personal data ?
+This question is: Not modeled
+
+Justification: The question asks about "special categories of personal data," which is a concept defined by the GDPR. However, the metamodel provided does not include any classes, attributes, or associations that represent or categorize personal data, let alone special categories of personal data. The metamodel focuses on the Data Protection Officer (DPO) and Country, but it lacks any structural representation of personal data or its categories.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 50: What is the purpose(s) of the transfer ?
+This question is: Not modeled
+
+Justification: The question asks about the purpose(s) of the transfer, which involves concepts related to data transfer and its purpose. The metamodel provided does not include any classes, attributes, or associations that represent the concept of data transfer or its purpose. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 51: Who is the transfer to ?
+This question is: Not modeled
+
+Justification: The question "Who is the transfer to?" involves the concept of data transfer and the recipient of the data. The metamodel provided does not include any classes, attributes, or associations that represent the concept of data transfer or the recipient of the data. Therefore, the metamodel does not support any significant structural representation of these aspects.
+
+Package of metamodel: N/A
+
+--------------------------------------------------
+Question 52: Are all transfers listed - including answers to the previous questions (e.g. the nature of the data, the purpose of the processing, from which country the data is exported and which country receives the data and who the recipient of the transfer is ?)
+This question is: Partially modeled
+
+Justification: The question asks whether all transfers are listed, including details such as the nature of the data, the purpose of the processing, the countries involved in the data transfer, and the recipient of the transfer. The metamodel contains the concept of `Country`, which can represent the countries involved in the data transfer. However, it lacks essential structural elements to fully model the nature of the data, the purpose of the processing, and the recipient of the transfer. These key concepts are missing or incomplete in the metamodel.
+
+Package of metamodel: Country
+
+--------------------------------------------------
+Question 53: Is there a legal basis for the transfer, e.g. EU Commission adequacy decision; standard contractual clauses. Are these bases documented ?
+This question is: Partially modeled
+
+Justification: The question involves two main concepts: the legal basis for data transfer and the documentation of these bases. The metamodel includes the concept of "adequate" under the `Country` package, which can represent whether a country's data protection conditions are equivalent to those of the GDPR. This can partially address the legal basis for transfer, such as an EU Commission adequacy decision. However, the metamodel does not include any representation for standard contractual clauses or the documentation of these legal bases.
+
+Package of metamodel: Country
+
+--------------------------------------------------
+Question 54: Are data subjects fully informed about any intended international transfers of their personal data ?
+This question is: Partially modeled
+
+Justification: The question involves the concept of "international transfers" of personal data and whether data subjects are "fully informed" about these transfers. The metamodel includes the concept of "Country" with an attribute `adequate` that indicates whether personal data protection conditions are equivalent to those offered by the GDPR. This attribute can be used to model the adequacy of data protection in different countries, which is relevant to international transfers. However, the metamodel does not explicitly include concepts related to informing data subjects about these transfers or the process of international data transfers itself. Therefore, key concepts are missing or incomplete.
+
+Package of metamodel: Country
+
+--------------------------------------------------

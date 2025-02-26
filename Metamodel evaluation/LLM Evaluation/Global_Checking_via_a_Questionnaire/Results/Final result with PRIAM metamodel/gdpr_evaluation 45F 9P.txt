@@ -1,0 +1,806 @@
+Question 1: Have you reviewed your organisation’s mechanisms for collecting consent to ensure that it is freely given, specific, informed and that it is a clear indication that an individual has chosen to agree to the processing of their data by way of statement or a clear affirmative action ?
+This question is: Fully modeled
+
+Justification:
+The question asks whether the organization's mechanisms for collecting consent ensure that it is freely given, specific, informed, and a clear indication that an individual has chosen to agree to the processing of their data by way of statement or a clear affirmative action.
+
+Breaking down the question, the key concepts that need to be modeled are:
+1. Consent collection mechanisms.
+2. Consent being freely given.
+3. Consent being specific.
+4. Consent being informed.
+5. Clear indication of agreement.
+6. Statement or clear affirmative action.
+
+The metamodel includes the following relevant elements:
+- The `Consent` class in the Consent Package represents explicit consent given by a data subject.
+- The `Contract` class represents an agreement between the data subject and the data controller, which includes a set of consents.
+- The associations between `DataSubject`, `Contract`, and `Consent` ensure that consent is linked to specific data subjects and processing operations.
+- The user stories in the Consent Package, such as "As a [data subject], I want to give my explicit consent for each specific processing ([processings list]) of my personal data," ensure that consent is specific and informed.
+- The constraints in the Consent Package, such as "The consent start date must be greater than or equal to the contract signature date, and the consent end date must be less than or equal to the contract expiry date," ensure that consent is clearly documented and managed.
+
+Package of metamodel: Consent Package
+
+--------------------------------------------------
+Question 2: If personal data that you currently hold on the basis of consent does not meet the required standard under the GDPR, have you re-sought the individual’s consent to ensure compliance with the GDPR ?
+This question is: Fully modeled
+
+Justification:
+The question asks whether consent has been re-sought to ensure compliance with the GDPR. This involves several modelable concepts:
+1. **Consent**: The metamodel includes the `Consent` class in the Consent Package, which represents the explicit consent given by a data subject.
+2. **Data Subject**: The metamodel includes the `DataSubject` class in the Actor Package, which refers to the person whose personal data is collected.
+3. **Processing**: The metamodel includes the `Processing` class in the Processing Package, which represents operations performed on data.
+4. **Contract**: The metamodel includes the `Contract` class in the Consent Package, which represents an agreement between the data subject and the data controller.
+
+The associations and user stories in the Consent Package cover the relationships between these concepts, including the documentation and recording of individuals' consent.
+
+Package of metamodel: Consent Package, Actor Package, Processing Package
+
+--------------------------------------------------
+Question 3: Are procedures in place to demonstrate that an individual has consented to their data being processed ?
+This question is: Fully modeled
+
+Justification:
+The question asks whether procedures are in place to demonstrate that an individual has consented to their data being processed. To determine if this can be modeled, we need to identify the underlying concepts:
+
+1. **Consent**: The explicit agreement given by a data subject for the processing of their personal data.
+2. **Processing**: The operations performed on personal data.
+3. **Data Subject**: The individual whose personal data is being processed.
+4. **Documentation of Consent**: The ability to document and demonstrate that consent has been given.
+
+The metamodel includes the following relevant classes and associations:
+- **Consent**: Represents the explicit consent given by a data subject to the processing of their personal data.
+- **Processing**: Represents any operation or set of operations performed on personal data.
+- **DataSubject**: Refers to the person whose personal data is collected, processed, transmitted, or stored.
+- **Contract**: An agreement between the data subject and the data controller, representing a set of consents.
+- **Associations**:
+  - DataSubject "1" -- "1..*" Contract
+  - Contract "*" -- "1" Consent
+  - Consent "*" -- "1" Processing
+
+These classes and associations fully cover the concepts required to model the question. The metamodel supports the documentation of consent, the link between consent and processing, and the association of consent with data subjects.
+
+Package of metamodel: Consent Package
+
+--------------------------------------------------
+Question 4: Are procedures in place to allow an individual to withdraw their consent to the processing of their personal data ?
+This question is: Fully modeled
+
+Justification:
+The question asks whether procedures are in place to allow an individual to withdraw their consent to the processing of their personal data. To determine if this can be modeled, we need to identify the underlying concepts:
+
+1. **Consent**: The metamodel includes a `Consent` class with attributes such as `consentId`, `startDate`, and `endDate`.
+2. **Withdrawal of Consent**: The `Consent` class can represent the withdrawal of consent by setting the `endDate` attribute.
+3. **Processing**: The metamodel includes a `Processing` class, which is associated with `Consent`.
+4. **Data Subject**: The metamodel includes a `DataSubject` class, which is associated with `Contract` and `Consent`.
+
+The metamodel supports all these concepts through the `Consent`, `Processing`, and `DataSubject` classes and their associations. The `Consent` class can model the withdrawal of consent by setting the `endDate`, and the associations between `DataSubject`, `Contract`, `Consent`, and `Processing` ensure that the consent withdrawal process is fully represented.
+
+Package of metamodel: Consent Package
+
+--------------------------------------------------
+Question 5: Where online services are provided to a child, are procedures in place to verify age and get consent of a parent  /  legal guardian, where required ?
+This question is: Fully modeled
+
+Justification:
+The question asks whether procedures are in place to verify age and get consent of a parent/legal guardian for online services provided to a child. Breaking down the question, we identify the following modelable concepts:
+1. Age verification of the data subject.
+2. Consent from a parent/legal guardian.
+3. The relationship between a child (data subject) and their guardian.
+
+The metamodel supports these concepts as follows:
+- The `DataSubject` class has an `age` attribute, which can be used to verify the age of the data subject.
+- The `Tutor` class represents the guardian, and there is an association between `DataSubject` and `Tutor` (`DataSubject "1..*" -- "0..1" Tutor`), which models the relationship between a child and their guardian.
+- The `Consent` class in the `Consent Package` represents the explicit consent given by a data subject, which can include consent from a parent/legal guardian.
+- The `Contract` class can represent the agreement between the data subject (child) and the data controller, which includes the consent.
+
+Package of metamodel: Actor Package, Consent Package
+
+--------------------------------------------------
+Question 6: If legitimate interest is a legal basis on which personal data is processed, has an appropriate analysis been carried out to ensure that the use of this legal basis is appropriate ?
+This question is: Partially modeled
+
+Justification: The question asks whether an appropriate analysis has been carried out to ensure that the use of legitimate interest as a legal basis for processing personal data is appropriate. The metamodel contains the concept of `Processing` with an attribute `pc` (enum) that refers to the legal basis in the GDPR, including "Legitimate Interests." However, the metamodel does not explicitly represent the concept of an "appropriate analysis" to ensure the use of this legal basis is appropriate. This analysis could involve documenting the balancing test or other assessments, which are not explicitly modeled.
+
+Package of metamodel: Processing Package
+
+--------------------------------------------------
+Question 7: Is there a documented policy / procedure for handling Subject Access Requests (SARs) ?
+This question is: Fully modeled
+
+Justification: The question asks whether there is a documented policy or procedure for handling Subject Access Requests (SARs). While the question mentions "policy" and "procedure," which are organizational aspects and should not be considered for modeling, the underlying concept here is the handling of SARs, which is a critical aspect of GDPR compliance.
+
+The metamodel includes the `Request` class and its subclasses `DataRequest` and `ProcessingRequest`, which represent formal requests sent by the data subject to exercise their rights. Specifically, `DataRequest` can handle requests for access, rectification, deletion, and portability, which are all types of SARs. Additionally, the `Answer` class represents the response provided by the data controller to these requests.
+
+The `Rights Package` includes user stories that cover the handling of SARs, such as:
+- As a [data subject], I want to access all my personal data ([data list]).
+- As a [data subject], I want to rectify any of my personal data ([data list]) so that I exercise my rectification right.
+- As a [data subject], I want to erase any of my personal data ([data list]) so that I exercise my right to be forgotten.
+- As a [data subject], I want to obtain my personal data ([data list]) in a structured and/or machine-readable format so that I exercise my right to personal data portability.
+
+These user stories indicate that the metamodel supports the concept of handling SARs, including access, rectification, deletion, and portability requests.
+
+Package of metamodel: Rights Package
+
+--------------------------------------------------
+Question 8: Is your organisation able to respond to SARs within one month ?
+This question is: Fully modeled
+
+Justification: The question asks whether the organization can respond to Subject Access Requests (SARs) within one month. To determine if this can be modeled, we need to identify the underlying concepts:
+
+1. **Subject Access Request (SAR)**: This can be represented by the `Request` class in the Rights Package.
+2. **Response Time**: This can be represented by the `issuedAt` attribute in the `Answer` class, which indicates the date of the response.
+3. **Data Subject**: This is represented by the `DataSubject` class in the Actor Package.
+4. **Data Controller**: This is represented by the `ApplicationOwner` class in the Actor Package.
+
+The metamodel includes the `Request` class, which can represent a SAR, and the `Answer` class, which includes the `issuedAt` attribute to track the response time. The association between `ApplicationOwner` and `Answer` indicates that the data controller can provide a response to the request.
+
+Package of metamodel: Rights Package, Actor Package
+
+--------------------------------------------------
+Question 9: Are procedures in place to provide individuals with their personal data in a structured, commonly used and machine readable format ?
+This question is: Fully modeled
+
+Justification: The question asks whether procedures are in place to provide individuals with their personal data in a structured, commonly used, and machine-readable format. This involves several key concepts:
+1. Personal data
+2. Structured format
+3. Commonly used format
+4. Machine-readable format
+5. Providing data to individuals
+
+The metamodel supports these concepts as follows:
+- **Personal data**: The `Data` class has an attribute `isPersonal` which indicates whether the data is personal.
+- **Structured format**: The `Data` class has attributes that describe the data, such as `dataId`, `dataName`, `source`, `sourceDetails`, `dataConservation`, and `isPortable`.
+- **Commonly used format**: The `DataType` class defines the content of the data as a classifier, which can be used to ensure the data is in a commonly used format.
+- **Machine-readable format**: The `Data` class has an attribute `isPortable` which specifies whether personal data is portable, implying it can be provided in a machine-readable format.
+- **Providing data to individuals**: The `Rights Package` includes the `DataRequest` class, which has a type attribute that can be "access" or "portability," indicating that the metamodel supports the concept of providing data to individuals.
+
+Package of metamodel: Data Package, Rights Package
+
+--------------------------------------------------
+Question 10: Are there controls and procedures in place to allow personal data to be deleted or rectified (where applicable) ?
+This question is: Fully modeled
+
+Justification:
+The question asks whether there are controls and procedures in place to allow personal data to be deleted or rectified (where applicable). Breaking down the question, the key concepts that need to be modeled are:
+1. Personal data
+2. Deletion of personal data
+3. Rectification of personal data
+4. Controls and procedures (ignored as per the instructions)
+
+The metamodel supports these concepts as follows:
+- Personal data is represented by the `Data` class with the attribute `isPersonal` indicating whether the data is personal.
+- Deletion of personal data is represented by the `DataRequest` class with the attribute `type` which can be "deletion".
+- Rectification of personal data is represented by the `DataRequest` class with the attribute `type` which can be "rectification".
+
+Package of metamodel: Rights Package
+
+The Rights Package contains the `DataRequest` class, which includes attributes for handling deletion and rectification requests for personal data. The `Data` class in the Data Package supports the concept of personal data. Therefore, the metamodel fully supports the modeling of the concepts required to answer the question.
+
+--------------------------------------------------
+Question 11: Are there controls and procedures in place to halt the processing of personal data where an individual has on valid grounds sought the restriction of processing ?
+This question is: Fully modeled
+
+Justification: The question asks whether there are controls and procedures in place to halt the processing of personal data where an individual has on valid grounds sought the restriction of processing. To answer this question, we need to consider the concepts of "controls," "procedures," "processing," "personal data," "individual," "valid grounds," and "restriction of processing."
+
+- **Controls and Procedures**: These are not directly modeled as they fall under organizational and procedural aspects, which are not considered for modeling.
+- **Processing**: The `Processing` class in the Processing Package represents operations performed on data.
+- **Personal Data**: The `Data` class in the Data Package has an attribute `isPersonal` that indicates whether the data is personal.
+- **Individual**: The `DataSubject` class in the Actor Package represents the person whose personal data is processed.
+- **Valid Grounds**: This concept is not explicitly modeled but can be inferred from the `Request` class in the Rights Package, where a data subject can make a formal request to exercise their rights.
+- **Restriction of Processing**: The `ProcessingRequest` class in the Rights Package has an attribute `type` which includes "Restriction," representing a request for the restriction of processing.
+
+The metamodel supports all the necessary concepts to model the restriction of processing based on a valid request from a data subject.
+
+Package of metamodel: Rights Package
+
+--------------------------------------------------
+Question 12: Are individuals told about their right to object to certain types of processing such as direct marketing or where the legal basis of the processing is legitimate interests or necessary for a task carried out in the public interest ?
+This question is: Fully modeled
+
+Justification: The question asks whether individuals are informed about their right to object to certain types of processing, such as direct marketing or processing based on legitimate interests or public interest. This involves several modelable concepts:
+
+1. **Data Subject**: The individual who needs to be informed.
+2. **Processing**: The operations performed on data, including the types of processing mentioned (direct marketing, legitimate interests, public interest).
+3. **Rights**: The right to object to processing.
+4. **Purpose**: The objective of the processing (e.g., direct marketing).
+
+The metamodel supports these concepts:
+- **Data Subject**: Represented by the `DataSubject` class in the Actor Package.
+- **Processing**: Represented by the `Processing` class in the Processing Package.
+- **Rights**: Represented by the `ProcessingRequest` class with the type "Objection" in the Rights Package.
+- **Purpose**: Represented by the `Purpose` class in the Processing Package.
+
+The metamodel includes user stories that cover informing data subjects about their rights and the purposes of processing, such as:
+- "As a [data subject], I want to be informed of the purposes for which my personal processing ([processings list]) has been performed."
+- "As a [data subject], I want to be informed of any personal processing ([processings list]) performed on my personal data."
+- "As a [data subject], I want to be informed of the legal basis for my processings ([processings list])."
+- "As a [data subject], I want to be able to object to processing ([processings list])."
+
+Package of metamodel: Actor Package, Processing Package, Rights Package
+
+--------------------------------------------------
+Question 13: Are there controls and procedures in place to halt the processing of personal data where an individual has objected to the processing ?
+This question is: Fully modeled
+
+Justification: The question asks whether there are controls and procedures in place to halt the processing of personal data where an individual has objected to the processing. To model this, we need to consider the following concepts:
+1. **Processing**: The operation performed on personal data.
+2. **Objection**: The action of a data subject objecting to the processing.
+3. **Controls and Procedures**: Mechanisms to halt the processing.
+
+The metamodel includes:
+- The `Processing` class in the Processing Package, which represents operations performed on data.
+- The `ProcessingRequest` class in the Rights Package, which includes a type for "Objection".
+- The `Answer` class in the Rights Package, which represents the response to a request, including the ability to halt processing.
+
+These elements together fully model the concept of halting the processing of personal data upon objection by a data subject.
+
+Package of metamodel: Processing Package, Rights Package
+
+--------------------------------------------------
+Question 14: If automated decision making, which has a legal or significant similar affect for an individual, is based on consent, has explicit consent been collected ?
+This question is: Fully modeled
+
+Justification: The question asks whether explicit consent has been collected for automated decision-making that has a legal or significant similar effect on an individual. The metamodel includes the concept of "Consent" in the Consent Package, which represents the explicit consent given by a data subject to the processing of their personal data. The "Processing" class in the Processing Package includes attributes such as `processingId`, `processingName`, `pt` (processing type), and `pc` (processing category), which can represent automated decision-making and its legal basis. The associations between `Consent`, `Processing`, and `DataSubject` ensure that the consent given by a data subject for a specific processing operation can be modeled.
+
+Package of metamodel: Consent Package, Processing Package
+
+--------------------------------------------------
+Question 15: Where an automated decision is made which is necessary for entering into, or performance of, a contract, or based on the explicit consent of an individual, are procedures in place to facilitate an individual’s right to obtain human intervention and to contest the decision ?
+This question is: Partially modeled
+
+Justification: The question involves several modelable concepts:
+1. **Automated decision**: This can be represented by the `Processing` class in the Processing Package, where the `pt` attribute can indicate the type of processing, and the `pc` attribute can indicate the legal basis (e.g., consent or contract).
+2. **Individual's right to obtain human intervention**: This can be partially represented by the `Request` class in the Rights Package, where a data subject can make a request concerning the processing of their data.
+3. **Individual's right to contest the decision**: This can be partially represented by the `ProcessingRequest` class in the Rights Package, where a data subject can make a request to object to processing.
+
+However, the metamodel lacks explicit representation of the procedures or mechanisms that facilitate an individual's right to obtain human intervention and contest the decision specifically in the context of automated decisions. While the `Request` and `ProcessingRequest` classes allow for general requests and objections, there is no specific attribute or association that directly links these requests to automated decisions or the right to human intervention.
+
+Package of metamodel: Processing Package, Rights Package
+
+--------------------------------------------------
+Question 16: Have the circumstances been documented in which an individual’s data protection rights may be lawfully restricted ?
+This question is: Fully modeled
+
+Justification:
+The question asks whether the circumstances in which an individual’s data protection rights may be lawfully restricted have been documented. This involves several key concepts:
+1. **Data Protection Rights**: These are represented by the `Rights Package`, specifically the `Request` class and its subclasses `DataRequest` and `ProcessingRequest`.
+2. **Circumstances for Lawful Restriction**: This can be represented by the `Processing` class in the `Processing Package`, particularly the `consequence` attribute, which describes the specific impacts of not providing the data required for a given processing operation.
+3. **Documentation**: The `Document Package` includes the `Document` class and its subclasses, which can represent the documentation of these circumstances.
+
+The metamodel includes all necessary structural elements to model the circumstances under which data protection rights may be lawfully restricted, including the documentation of these circumstances.
+
+Package of metamodel: Rights Package, Processing Package, Document Package
+
+--------------------------------------------------
+Question 17: Is personal data only used for the purposes for which it was originally collected ?
+This question is: Fully modeled
+
+Justification: The question asks whether personal data is only used for the purposes for which it was originally collected. This involves the concepts of "personal data," "purposes," and the relationship between them. The metamodel supports these concepts through the following elements:
+
+1. **Personal Data**: Represented by the `Data` class with the attribute `isPersonal` indicating whether the data is personal.
+2. **Purposes**: Represented by the `Purpose` class, which includes attributes like `purposeId`, `description`, and `type`.
+3. **Relationship Between Data and Purposes**: The `Processing` class links to `Purpose` through an association, indicating that each processing operation has a purpose. The `DataUsage` class links `Processing` to `Data`, showing how data is used in processing operations.
+
+These elements together fully model the concept of ensuring that personal data is used only for the purposes for which it was originally collected.
+
+Package of metamodel: Processing Package
+
+--------------------------------------------------
+Question 18: Is the personal data collected limited to what is necessary for the purposes for which it is processed ?
+This question is: Fully modeled
+
+Justification: The question asks whether the personal data collected is limited to what is necessary for the purposes for which it is processed. This involves several key concepts:
+1. **Personal Data**: The metamodel includes the class `Data` with an attribute `isPersonal` to indicate whether the data is personal.
+2. **Purpose**: The metamodel includes the class `Purpose` which describes the objective of the processing.
+3. **Processing**: The metamodel includes the class `Processing` which represents operations performed on data, including attributes like `processingName`, `pt` (processing type), and `pc` (processing category).
+4. **Associations**: The metamodel includes associations between `Processing` and `Purpose`, and between `Data` and `Processing` through `DataUsage`.
+
+These concepts and their associations allow for the modeling of whether personal data collected is limited to what is necessary for the purposes for which it is processed.
+
+Package of metamodel: Processing Package, Data Package
+
+--------------------------------------------------
+Question 19: Are procedures in place to ensure personal data is kept up to date and accurate and where a correction is required, the necessary changes are made without delay ?
+This question is: Fully modeled
+
+Justification: The question asks whether procedures are in place to ensure personal data is kept up to date and accurate, and whether necessary corrections are made without delay. Breaking down the question, we identify the following modelable concepts:
+1. Personal data.
+2. Updating and accuracy of personal data.
+3. Corrections to personal data.
+4. Timeliness of corrections.
+
+The metamodel supports these concepts as follows:
+- Personal data is represented by the `Data` class in the Data Package, with attributes like `dataId`, `dataName`, `source`, `dataConservation`, `isPersonal`, and `isPortable`.
+- Updating and accuracy of personal data can be managed through the `DataUsage` class in the Processing Package, which links processings to the data they use and assesses their status regarding privacy management.
+- Corrections to personal data are handled by the `DataRequest` class in the Rights Package, specifically with the `type` attribute set to "rectification" and the `newValue` attribute representing the new value of the data to be modified.
+- Timeliness of corrections is ensured by the `issuedAt` attribute in the `Request` class, which records the date of the request and the response.
+
+Package of metamodel: Data Package, Processing Package, Rights Package
+
+--------------------------------------------------
+Question 20: Are retention policies and procedures in place to ensure data is held for no longer than is necessary for the purposes for which it was collected ?
+This question is: Fully modeled
+
+Justification: The question asks whether retention policies and procedures are in place to ensure data is held for no longer than is necessary for the purposes for which it was collected. The key concept here is the retention period of data. The metamodel includes the attribute `dataConservation` in the `Data` class within the Data Package, which represents the retention period for personal data. This attribute directly addresses the concept of retention policies.
+
+Package of metamodel: Data Package
+
+--------------------------------------------------
+Question 21: Is your business subject to other rules that require a minimum retention period ?
+This question is: Fully modeled
+
+Justification: The question asks whether the business is subject to other rules that require a minimum retention period. This concept can be modeled using the `Data` class in the Data Package, which includes the attribute `dataConservation` (date): Retention period, the length of time for which personal data is stored. This attribute directly addresses the concept of a minimum retention period.
+
+Package of metamodel: Data Package
+
+--------------------------------------------------
+Question 22: Do you have procedures in place to ensure data is destroyed securely, in accordance with your retention policies ?
+This question is: Fully modeled
+
+Justification:
+The question asks about procedures to ensure data is destroyed securely in accordance with retention policies. Breaking down the question, the key concepts that could be modeled are:
+1. Data destruction.
+2. Retention policies.
+3. Security measures.
+
+The metamodel supports these concepts as follows:
+- **Data destruction**: The `Data` class in the Data Package includes an attribute `dataConservation` which represents the retention period for personal data. This implies that the metamodel can handle the concept of data retention and, by extension, data destruction after the retention period.
+- **Retention policies**: The `Data` class also includes the `dataConservation` attribute, which directly addresses the retention policies.
+- **Security measures**: The `Measure` class in the Processing Package includes attributes such as `description`, `Mtype`, and `Mcategory`, which can represent security measures taken to protect personal data.
+
+Package of metamodel: Data Package, Processing Package
+
+--------------------------------------------------
+Question 23: Are procedures in place to ensure that there is no unnecessary or unregulated duplication of records ?
+This question is: Partially modeled
+
+Justification:
+The question asks whether procedures are in place to ensure that there is no unnecessary or unregulated duplication of records. Breaking down the question, the key concepts that could be modeled are:
+1. Procedures to ensure no unnecessary duplication.
+2. Procedures to ensure no unregulated duplication.
+3. Records.
+
+The metamodel contains several elements that could partially address these concepts:
+- The `Data` class in the Data Package includes attributes like `dataId`, `dataName`, `source`, `dataConservation`, `isPersonal`, and `isPortable`, which can help identify and manage records.
+- The `Processing` class in the Processing Package includes attributes like `processingId`, `processingName`, `pt`, `pc`, `createdAt`, `modifiedAt`, `endedAt`, and `consequence`, which can help document and manage processing activities.
+- The `Measure` class in the Processing Package includes attributes like `measureId`, `description`, `Mtype`, and `Mcategory`, which can help document measures taken to protect data, including preventing duplication.
+
+However, the metamodel does not explicitly model the concept of "duplication of records" or the procedures to ensure that duplication is neither unnecessary nor unregulated. There are no specific classes, attributes, or associations that directly address the prevention of unnecessary or unregulated duplication of records.
+
+Package of metamodel: Data Package, Processing Package
+
+--------------------------------------------------
+Question 24: Are service users / employees fully informed of how you use their data in a concise, transparent, intelligible and easily accessible form using clear and plain language ?
+This question is: Fully modeled
+
+Justification: The question asks whether service users/employees are fully informed about how their data is used in a concise, transparent, intelligible, and easily accessible form using clear and plain language. This involves several modelable concepts:
+
+1. **Data Subject**: The person whose data is being used.
+2. **Data**: The information being collected and used.
+3. **Processing**: The operations performed on the data.
+4. **Purpose**: The reasons for processing the data.
+5. **Consent**: The explicit agreement given by the data subject for the processing of their data.
+6. **Documentation**: The information provided to the data subject about the data usage.
+
+The metamodel includes classes and associations that cover these concepts:
+- **DataSubject** class represents the person whose data is being used.
+- **Data** class represents the information being collected and used.
+- **Processing** class represents the operations performed on the data.
+- **Purpose** class represents the reasons for processing the data.
+- **Consent** class represents the explicit agreement given by the data subject for the processing of their data.
+- **Document** class and its subclasses (e.g., **RecordProcessingA**) represent the documentation provided to the data subject about the data usage.
+
+The metamodel also includes user stories that address the need for data subjects to be informed about the processing of their data, such as:
+- As a [data subject], I want to be informed of any personal processing ([processings list]) performed on my personal data.
+- As a [data subject], I want to be informed of the legal basis for my processings ([processings list]).
+- As a [data subject], I want to be informed of the purposes for which my personal processing ([processings list]) has been performed.
+
+Package of metamodel: Actor Package, Data Package, Processing Package, Consent Package, Document Package
+
+--------------------------------------------------
+Question 25: Where personal data is collected directly from the individuals, are procedures in place to provide the information listed at Article 13 of the GDPR ?
+This question is: Fully modeled
+
+Justification: The question asks whether procedures are in place to provide the information listed in Article 13 of the GDPR when personal data is collected directly from individuals. Article 13 of the GDPR specifies the information that must be provided to data subjects at the time of data collection, including the identity and contact details of the controller and the DPO, the purposes and legal basis for processing, the recipients of the data, the retention period, the rights of the data subjects, and the right to withdraw consent, among others.
+
+The metamodel contains classes, attributes, associations, user stories, and constraints that cover these aspects:
+
+1. **Identity and contact details of the controller and the DPO**: The `ApplicationOwner` and `DPO` classes include attributes for contact details such as `aoName`, `aoAddress`, `aoPhone`, `aoEmail`, `dpoName`, `dpoAddress`, `dpoPhone`, and `dpoEmail`.
+2. **Purposes and legal basis for processing**: The `Processing` class includes attributes for `processingName`, `pt` (processing type), and `pc` (processing category), which can represent the purposes and legal basis for processing.
+3. **Recipients of the data**: The `SecondaryActor` class and its subclasses (`Processor`, `ThirdParty`) can represent the recipients of the data.
+4. **Retention period**: The `Data` class includes the attribute `dataConservation` for the retention period.
+5. **Rights of the data subjects**: The `Rights` package includes classes like `Request`, `DataRequest`, and `ProcessingRequest`, which represent the rights of data subjects to access, rectify, erase, and object to the processing of their data.
+6. **Right to withdraw consent**: The `Consent` class includes attributes for `startDate` and `endDate`, which can represent the period during which consent is valid and the right to withdraw consent.
+
+Package of metamodel: Actor Package, Data Package, Processing Package, Consent Package, Rights Package
+
+--------------------------------------------------
+Question 26: If personal data is not collected from the subject but from a third party (e.g. acquired as part of a merger) are procedures in place to provide the information listed at Article 14 of the GDPR ?
+This question is: Fully modeled
+
+Justification: The question asks whether procedures are in place to provide the information listed in Article 14 of the GDPR when personal data is not collected from the subject but from a third party. To determine if this is fully modeled, we need to break down the question into its underlying concepts:
+
+1. **Personal Data Collection from a Third Party**: This concept is represented by the `source` attribute in the `Data` class, which can take the value "Indirect" indicating that the data subject is not the source of their data.
+2. **Information Provision**: The metamodel includes user stories and constraints that ensure data subjects are informed about the collection, processing, and sharing of their personal data. For example, user stories in the `Data Package` such as "As a [data subject], I want to be informed about which personal data is collected, processed, and shared" and "As a [data subject], I want to be informed of the source of my personal data ([data list])" cover the provision of information.
+3. **Article 14 Information**: Although the metamodel does not explicitly list Article 14, the user stories and constraints ensure that data subjects are informed about the collection and processing of their data, which aligns with the requirements of Article 14.
+
+Package of metamodel: Data Package
+
+The metamodel supports all possible concepts to be modeled for this question, making it fully modeled.
+
+--------------------------------------------------
+Question 27: When engaging with individuals, such as when providing a service, sale of a good or CCTV monitoring, are procedures in place to proactively inform individuals of their GDPR rights ?
+This question is: Fully modeled
+
+Justification: The question asks whether procedures are in place to proactively inform individuals of their GDPR rights. Breaking down the question, the key concepts that need to be modeled are:
+1. Individuals (Data Subjects)
+2. GDPR rights
+3. Informing individuals of their rights
+
+The metamodel supports these concepts as follows:
+- The `DataSubject` class represents individuals whose personal data is collected, processed, transmitted, or stored.
+- The `Rights` package includes the `Request` class and its subclasses (`DataRequest` and `ProcessingRequest`), which represent the rights of data subjects to access, rectify, delete, and port their personal data, as well as to object to, restrict, and be informed about the processing of their data.
+- The user stories in the `Rights` package explicitly mention the need to inform data subjects about their rights, such as "As a [data subject], I want to be informed of my rights."
+
+Therefore, the metamodel fully supports the concepts required to answer the question.
+
+Package of metamodel: Rights Package
+
+--------------------------------------------------
+Question 28: Is information on how the organisation facilitates individuals exercising their GDPR rights published in an easily accessible and readable format ?
+This question is: Partially modeled
+
+Justification:
+The question asks whether information on how the organization facilitates individuals exercising their GDPR rights is published in an easily accessible and readable format. To answer this, we need to consider the concepts that could be modeled:
+
+1. **Publication of Information**: This involves the concept of making information available to data subjects.
+2. **GDPR Rights**: This involves the rights that data subjects have under GDPR.
+3. **Accessibility and Readability**: This involves the format in which the information is presented.
+
+The metamodel contains classes and associations that represent the rights of data subjects (`Rights Package`) and the documentation of various aspects related to GDPR compliance (`Document Package`). However, it does not explicitly model the concept of publishing this information in an easily accessible and readable format. While the metamodel includes user stories related to informing data subjects about their rights and the processing of their data, it lacks the structural elements to fully represent the publication aspect and the format of accessibility and readability.
+
+Package of metamodel: Rights Package, Document Package
+
+--------------------------------------------------
+Question 29: Have agreements with suppliers and other third parties processing personal data on your behalf been reviewed to ensure all appropriate data protection requirements are included ?
+This question is: Fully modeled
+
+Justification: The question asks whether agreements with suppliers and other third parties processing personal data on your behalf have been reviewed to ensure all appropriate data protection requirements are included. This involves several key concepts:
+
+1. **Agreements**: This can be represented by the `Contract` class in the Consent Package, which includes attributes like `contractId`, `signatureDate`, and `expirationDate`.
+2. **Suppliers and other third parties**: These can be represented by the `SecondaryActor` class, which includes `Processor` and `ThirdParty` as subclasses. The `SecondaryActor` class has attributes like `safeguard` and `safeguardType`, which can represent the data protection requirements.
+3. **Data protection requirements**: These can be represented by the `safeguard` and `safeguardType` attributes in the `SecondaryActor` class, as well as the `Measure` class in the Processing Package, which includes attributes like `description`, `Mtype`, and `Mcategory`.
+
+Package of metamodel: Consent Package, Actor Package, Processing Package
+
+--------------------------------------------------
+Question 30: Do you need to appoint a DPO as per Article 37 of the GDPR ?
+This question is: Fully modeled
+
+Justification: The question asks whether a Data Protection Officer (DPO) needs to be appointed as per Article 37 of the GDPR. The metamodel includes a class `DPO` within the `Actor Package`, which represents the Data Protection Officer. This class includes attributes such as `dpoName`, `dpoAddress`, `dpoPhone`, `dpoEmail`, and `reason` (for not appointing a DPO). These attributes cover the essential structural elements required to model the concept of appointing a DPO.
+
+Package of metamodel: Actor Package
+
+--------------------------------------------------
+Question 31: If it is decided that a DPO is not required, have you documented the reasons why ?
+This question is: Fully modeled
+
+Justification: The question asks whether the reasons for not appointing a Data Protection Officer (DPO) have been documented. The metamodel includes the `DPO` class, which has an attribute `reason` specifically for documenting the reason for not appointing a DPO. This attribute directly addresses the concept of documenting the reasons for not appointing a DPO.
+
+Package of metamodel: Actor Package
+
+--------------------------------------------------
+Question 32: Where a DPO is appointed, are escalation and reporting lines in place ? Are these procedures documented ?
+This question is: Partially modeled
+
+Justification:
+The question asks whether escalation and reporting lines are in place for a DPO and if these procedures are documented. Breaking down the question, we identify the following concepts:
+1. DPO (Data Protection Officer)
+2. Escalation lines
+3. Reporting lines
+4. Documentation of procedures
+
+The metamodel includes the class `DPO` with attributes such as `dpoName`, `dpoAddress`, `dpoPhone`, `dpoEmail`, and `reason`. However, it does not explicitly model the concepts of "escalation lines" or "reporting lines." The metamodel also does not include any attributes or associations that represent the documentation of procedures related to the DPO.
+
+Package of metamodel: Actor Package
+
+The metamodel partially models the question because it includes the concept of a DPO but lacks the structural elements to fully represent escalation and reporting lines, as well as the documentation of these procedures.
+
+--------------------------------------------------
+Question 33: Have you published the contact details of your DPO to facilitate your customers /  employees in making contact with them ?
+This question is: Fully modeled
+
+Justification: The question asks whether the contact details of the DPO (Data Protection Officer) have been published to facilitate contact by customers or employees. The metamodel includes the `DPO` class, which has attributes such as `dpoName`, `dpoAddress`, `dpoPhone`, and `dpoEmail`. These attributes cover the contact details of the DPO, which are the key concepts required to answer the question. Additionally, the user story "As a [data subject], I want to have access to the contact details of the DPO (Data Protection Officer)" directly addresses the need for DPO contact details to be accessible.
+
+Package of metamodel: Actor Package
+
+--------------------------------------------------
+Question 34: If your data processing is considered high risk, do you have a process for identifying the need for, and conducting of, DPIAs ? Are these procedures documented ?
+This question is: Fully modeled
+
+Justification:
+The question asks whether there is a process for identifying the need for, and conducting of, Data Protection Impact Assessments (DPIAs) and if these procedures are documented. The metamodel includes the concept of DPIA in the Document Package, specifically under the class `DPIA`. This class represents the process used to evaluate and mitigate privacy risks when processing personal data, which aligns with the concept of identifying the need for and conducting DPIAs. Additionally, the metamodel includes the `Document` class, which can represent the documentation of these procedures.
+
+Package of metamodel: Document Package
+
+--------------------------------------------------
+Question 35: Have you assessed the risks involved in processing personal data and put measures in place to mitigate against them ?
+This question is: Fully modeled
+
+Justification:
+The question asks whether risks involved in processing personal data have been assessed and whether measures have been put in place to mitigate them. The metamodel supports the concept of assessing risks and putting measures in place through the following elements:
+
+1. **Risk Assessment**: The `Breach` class in the Breach Package includes attributes such as `riskLevel` which indicates the level of risk generated by a breach. This directly addresses the assessment of risks involved in processing personal data.
+2. **Mitigation Measures**: The `Measure` class in the Processing Package represents actions taken to protect personal data and processing against threats, risks, or breaches. This class includes attributes such as `description`, `Mtype`, and `Mcategory`, which detail the measures taken to mitigate risks.
+
+Package of metamodel: Breach Package, Processing Package
+
+--------------------------------------------------
+Question 36: Is there a documented security programme that specifies the technical, administrative and physical safeguards for personal data ?
+This question is: Partially modeled
+
+Justification:
+The question asks whether there is a documented security programme that specifies the technical, administrative, and physical safeguards for personal data. Breaking down the question, we identify the following concepts:
+1. Documented security programme
+2. Technical safeguards
+3. Administrative safeguards
+4. Physical safeguards
+
+The metamodel contains the following relevant elements:
+- The `SecondaryActor` class has an attribute `safeguard` which represents all measures or commitments taken by an organization or data processor to ensure that personal data processing complies with legal protection standards.
+- The `Measure` class in the Processing Package represents actions taken to protect personal data and processing against threats, risks, or breaches. It includes attributes like `description`, `Mtype` (organizational, technical), and `Mcategory` (e.g., encryption, anonymization).
+
+However, the metamodel does not explicitly represent a "documented security programme" or distinguish between "technical," "administrative," and "physical" safeguards. The `safeguard` attribute in `SecondaryActor` and the `Measure` class cover some aspects of safeguards but do not fully capture the concept of a documented security programme or the distinction between different types of safeguards.
+
+Package of metamodel: Actor Package, Processing Package
+
+--------------------------------------------------
+Question 37: Is there a documented process for resolving security related complaints and issues ?
+This question is: Partially modeled
+
+Justification:
+The question asks whether there is a documented process for resolving security-related complaints and issues. To determine if this is fully, partially, or not modeled, we need to break down the question into its underlying concepts:
+
+1. **Documented Process**: This implies that there should be some form of documentation or record-keeping related to the process.
+2. **Security-related Complaints and Issues**: This involves handling complaints and issues specifically related to security.
+
+Examining the metamodel:
+- The **Breach Package** contains classes and associations related to data security breaches, including the `Breach` class, which documents breaches and their consequences.
+- The **Document Package** includes classes like `Document`, `RecordProcessingA`, `RecordBreach`, and `DPIA`, which are used to document various aspects of data processing and breaches.
+- The **Rights Package** includes classes like `Request`, `DataRequest`, and `ProcessingRequest`, which handle requests from data subjects, including complaints and issues.
+
+However, there is no explicit class or association that directly models a "documented process" for resolving security-related complaints and issues. While the metamodel includes documentation of breaches and requests, it lacks a specific structure for documenting the resolution process of security-related complaints and issues.
+
+Package of metamodel: Breach Package, Document Package, Rights Package
+
+--------------------------------------------------
+Question 38: Is there a designated individual who is responsible for preventing and investigating security breaches ?
+This question is: Fully modeled
+
+Justification: The question asks whether there is a designated individual responsible for preventing and investigating security breaches. This can be broken down into two main concepts:
+1. A designated individual responsible for security breaches.
+2. Preventing and investigating security breaches.
+
+The metamodel includes the class `DPO` (Data Protection Officer), which is responsible for enforcing personal data regulations within a company. This class has attributes such as `dpoName`, `dpoAddress`, `dpoPhone`, `dpoEmail`, and `reason`, which cover the concept of a designated individual responsible for security breaches.
+
+Additionally, the `Breach` class in the Breach Package represents a breach in data security and includes attributes such as `nature`, `riskLevel`, `createdAt`, `sprvAuthNonNotifReasons`, and `dataSubjNonNotifReasons`. This class, along with the `Measure` class in the Processing Package, which represents actions taken to protect personal data, covers the concept of preventing and investigating security breaches.
+
+Package of metamodel: Actor Package, Breach Package, Processing Package
+
+--------------------------------------------------
+Question 39: Are industry standard encryption technologies employed for transferring, storing, and receiving individuals' sensitive personal information ?
+This question is: Partially modeled
+
+Justification:
+The question asks whether industry standard encryption technologies are employed for transferring, storing, and receiving individuals' sensitive personal information. To fully model this question, the metamodel should include concepts related to encryption technologies, sensitive personal information, and the processes of transferring, storing, and receiving data.
+
+The metamodel contains the following relevant concepts:
+- `Measure` class in the Processing Package, which includes attributes like `description`, `Mtype`, and `Mcategory`. The `Mcategory` attribute can potentially represent encryption as a measure category.
+- `PersonalDataCategory` class in the Data Package, which can categorize personal data, including sensitive personal information.
+- `PersonalDataTransfer` class in the Processing Package, which represents the transfer of personal data.
+
+However, the metamodel lacks explicit representation of encryption technologies and the processes of storing and receiving data. While the `Measure` class can imply encryption as a measure, it does not explicitly model encryption technologies or the specific processes of storing and receiving data.
+
+Package of metamodel: Processing Package, Data Package
+
+--------------------------------------------------
+Question 40: Is personal information systematically destroyed, erased, or anonymised when it is no longer legally required to be retained ?
+This question is: Fully modeled
+
+Justification:
+The question asks whether personal information is systematically destroyed, erased, or anonymised when it is no longer legally required to be retained. This involves several key concepts:
+1. Personal information (personal data).
+2. Retention period.
+3. Destruction, erasure, or anonymisation of data.
+
+The metamodel supports these concepts:
+- The `Data` class in the Data Package includes attributes such as `dataConservation` (retention period) and `isPersonal` (indicator specifying whether the data is personal).
+- The `Processing` class in the Processing Package includes attributes such as `endedAt` (processing end date), which can be used to determine when data is no longer needed.
+- The `Measure` class in the Processing Package includes attributes such as `Mcategory` (e.g., encryption, anonymization), which can represent the actions taken to destroy, erase, or anonymise data.
+
+Package of metamodel: Data Package, Processing Package
+
+--------------------------------------------------
+Question 41: Can access to personal data be restored in a timely manner in the event of a physical or technical incident ?
+This question is: Fully modeled
+
+Justification: The question asks whether access to personal data can be restored in a timely manner in the event of a physical or technical incident. This involves several modelable concepts:
+
+1. **Personal Data**: The metamodel includes the `Data` class with attributes like `isPersonal` to indicate whether the data is personal.
+2. **Incident**: Although the term "incident" is not explicitly mentioned, the `Breach` class in the Breach Package can represent incidents that affect personal data.
+3. **Timely Manner**: The `Breach` class includes attributes like `createdAt` which can be used to track the timing of incidents and responses.
+4. **Restoration**: The `Measure` class in the Processing Package includes attributes like `description` and `Mtype` (organizational, technical) which can represent actions taken to restore access to personal data.
+
+Package of metamodel: Breach Package, Processing Package, Data Package
+
+--------------------------------------------------
+Question 42: Does the organisation have a documented privacy and security incident response plan ?
+This question is: Fully modeled
+
+Justification: The question asks whether the organization has a documented privacy and security incident response plan. This can be broken down into several concepts:
+1. Documentation: The metamodel includes the `Document` class, which can represent any file containing relevant information about the processing of personal data.
+2. Privacy and Security Incident Response Plan: The `Breach` class in the Breach Package represents a data security breach, and the `Measure` class in the Processing Package represents actions taken to protect personal data and processing against threats, risks, or breaches. The `RecordBreach` class, which inherits from `Document`, can detail a personal data breach, including the data breached and the data subjects affected.
+
+The metamodel supports all possible concepts to be modeled for this question.
+
+Package of metamodel: Breach Package, Document Package
+
+--------------------------------------------------
+Question 43: Are plans and procedures regularly reviewed ?
+This question is: Partially modeled
+
+Justification:
+The question "Are plans and procedures regularly reviewed?" involves several concepts that could be modeled:
+1. **Plans**: This could be represented by documents or records that outline the procedures and policies.
+2. **Procedures**: This could be represented by the actions or measures taken to ensure compliance with GDPR.
+3. **Regular Review**: This could be represented by attributes or associations that indicate the frequency or schedule of reviews.
+
+The metamodel contains some elements that can represent these concepts:
+- The `Document` class in the Document Package can represent plans and procedures.
+- The `Measure` class in the Processing Package can represent procedures or actions taken to protect personal data.
+- The `createdAt` and `modifiedAt` attributes in various classes can indicate when documents or measures were created or last reviewed, which can imply regular reviews.
+
+However, the metamodel lacks explicit representation of the concept of "regular review" as a scheduled or recurring activity. There is no class or attribute that directly indicates the frequency or schedule of reviews for plans and procedures.
+
+Package of metamodel: Document Package, Processing Package
+
+--------------------------------------------------
+Question 44: Are there procedures in place to notify the office of the Data Protection Commissioner of a data breach ?
+This question is: Fully modeled
+
+Justification: The question asks about procedures to notify the office of the Data Protection Commissioner of a data breach. While the question mentions "procedures," which are organizational aspects and should be ignored, the underlying concept of notifying a supervisory authority about a data breach can be modeled. The metamodel includes the `Breach` class, which has attributes such as `sprvAuthNonNotifReasons` that indicate reasons for not notifying a supervisory authority. This implies that the metamodel supports the concept of notifying a supervisory authority in case of a data breach. Additionally, the `SecondaryActorCategory` class includes a category for "supervisory authority," and the `Breach` class is associated with `DataSubject` and `Data`, which are essential for modeling the notification process.
+
+Package of metamodel: Breach Package
+
+--------------------------------------------------
+Question 45: Are there procedures in place to notify data subjects of a data breach (where applicable) ?
+This question is: Fully modeled
+
+Justification: The question asks whether there are procedures in place to notify data subjects of a data breach. While the question mentions "procedures," which is an organizational aspect and should be ignored, the underlying concept is the notification of data subjects in case of a data breach. This concept can be modeled by classes, attributes, and associations.
+
+The metamodel includes the `Breach` class, which represents a data security breach and has attributes such as `dataSubjNonNotifReasons` (reasons why the data subject has not been notified of a breach). Additionally, the `Breach` class is associated with the `DataSubject` class, indicating that data subjects can be linked to breaches. This association implies that the metamodel supports the concept of notifying data subjects about data breaches.
+
+Package of metamodel: Breach Package
+
+--------------------------------------------------
+Question 46: Are all data breaches fully documented ?
+This question is: Fully modeled
+
+Justification: The question "Are all data breaches fully documented?" can be broken down into several key concepts:
+1. Data breaches
+2. Documentation of data breaches
+
+The metamodel contains the following relevant elements:
+- The `Breach` class in the Breach Package represents a data breach and includes attributes such as `breachId`, `nature`, `riskLevel`, `createdAt`, `sprvAuthNonNotifReasons`, and `dataSubjNonNotifReasons`.
+- The `RecordBreach` class in the Document Package represents a document detailing a personal data breach, including the data breached and the data subjects affected.
+- The associations between `Breach` and `DataSubject`, `Data`, `Consequence`, and `Measure` ensure that all relevant information about a data breach is documented.
+- User stories in the Breach Package, such as "As a data controller, I want to document all information related to the breach, including the data subjects affected, the data breached, the consequences, and the measures taken," confirm that the metamodel supports the documentation of data breaches.
+
+Package of metamodel: Breach Package, Document Package
+
+--------------------------------------------------
+Question 47: Are there cooperation procedures in place between data controllers, suppliers and other partners to deal with data breaches ?
+This question is: Fully modeled
+
+Justification:
+The question asks about the existence of cooperation procedures between data controllers, suppliers, and other partners to deal with data breaches. To determine if this is fully modeled, we need to break down the question into its underlying concepts:
+
+1. **Cooperation Procedures**: This can be represented by associations and user stories that describe interactions between different actors (data controllers, suppliers, partners) in the context of data breaches.
+2. **Data Controllers**: Represented by the `ApplicationOwner` class.
+3. **Suppliers and Partners**: Represented by the `SecondaryActor` class, which includes `Processor` and `ThirdParty`.
+4. **Data Breaches**: Represented by the `Breach` class in the Breach Package.
+
+The metamodel includes:
+- The `ApplicationOwner` class to represent data controllers.
+- The `SecondaryActor` class to represent suppliers and partners, with specific subclasses `Processor` and `ThirdParty`.
+- The `Breach` class to represent data breaches.
+- Associations between `Breach` and `DataSubject`, `Data`, `Consequence`, and `Measure`, which cover the aspects of data breaches and their handling.
+- User stories in the Breach Package that describe the actions and documentation required in case of a data breach, including notifying data subjects and supervisory authorities.
+
+These elements together fully model the concept of cooperation procedures between data controllers, suppliers, and partners to deal with data breaches.
+
+Package of metamodel: Breach Package
+
+--------------------------------------------------
+Question 48: Is personal data transferred outside the EEA, e.g. to the US or other countries ?
+This question is: Fully modeled
+
+Justification:
+The question asks whether personal data is transferred outside the EEA, e.g., to the US or other countries. This involves several modelable concepts:
+1. **Personal Data Transfer**: The concept of transferring personal data is explicitly modeled in the `PersonalDataTransfer` class within the Processing Package.
+2. **Country**: The `Country` class in the Actor Package includes an attribute `adequate` which indicates whether personal data protection conditions are equivalent to those offered by the GDPR. This can be used to determine if a country outside the EEA is considered adequate for data transfer.
+3. **SecondaryActor**: The `SecondaryActor` class includes attributes like `safeguard` and `safeguardType`, which can be used to model the measures taken to ensure compliance with data protection standards when transferring data to non-EEA countries.
+
+Package of metamodel: Processing Package, Actor Package
+
+--------------------------------------------------
+Question 49: Does this include any special categories of personal data ?
+This question is: Fully modeled
+
+Justification: The question "Does this include any special categories of personal data?" can be broken down into the concept of "special categories of personal data." This concept can be represented by the `PersonalDataCategory` class in the Data Package of the metamodel. The `PersonalDataCategory` class includes attributes such as `pdcId` and `pdcName`, which can be used to categorize personal data, including special categories.
+
+Package of metamodel: Data Package
+
+--------------------------------------------------
+Question 50: What is the purpose(s) of the transfer ?
+This question is: Fully modeled
+
+Justification: The question "What is the purpose(s) of the transfer?" can be fully modeled within the metamodel. The concept of "purpose" is explicitly represented by the `Purpose` class in the Processing Package. This class includes attributes such as `purposeId`, `description`, and `type`, which can capture the purpose(s) of the transfer. Additionally, the `PersonalDataTransfer` class in the Processing Package includes an association with `Purpose`, indicating that the purpose of a transfer can be documented.
+
+Package of metamodel: Processing Package
+
+--------------------------------------------------
+Question 51: Who is the transfer to ?
+This question is: Fully modeled
+
+Justification: The question "Who is the transfer to?" can be fully modeled using the concepts present in the metamodel. The metamodel includes the class `SecondaryActor`, which represents entities that can receive data transfers, such as `Processor` and `ThirdParty`. The `PersonalDataTransfer` class in the Processing Package specifically tracks data transfers, including the recipient (`SecondaryActor`) and the data being transferred (`Data`). The associations between `SecondaryActor` and `PersonalDataTransfer` and between `Data` and `PersonalDataTransfer` ensure that the recipient of the data transfer can be fully represented.
+
+Package of metamodel: Processing Package
+
+--------------------------------------------------
+Question 52: Are all transfers listed - including answers to the previous questions (e.g. the nature of the data, the purpose of the processing, from which country the data is exported and which country receives the data and who the recipient of the transfer is ?)
+This question is: Fully modeled
+
+Justification: The question asks whether all transfers are listed, including details such as the nature of the data, the purpose of the processing, the countries involved in the transfer, and the recipient of the transfer. The metamodel supports all these concepts:
+- The nature of the data is covered by the `Data` class in the Data Package, which includes attributes like `dataId`, `dataName`, `source`, `sourceDetails`, `dataConservation`, `isPersonal`, and `isPortable`.
+- The purpose of the processing is covered by the `Purpose` class in the Processing Package, which includes attributes like `purposeId`, `description`, and `type`.
+- The countries involved in the transfer are covered by the `Country` class in the Actor Package, which includes attributes like `countryId`, `name`, and `adequate`.
+- The recipient of the transfer is covered by the `SecondaryActor` class in the Actor Package, which includes attributes like `safeguard` and `safeguardType`, and the `PersonalDataTransfer` class in the Processing Package, which includes the association with `SecondaryActor`.
+
+Package of metamodel: Actor Package, Data Package, Processing Package
+
+--------------------------------------------------
+Question 53: Is there a legal basis for the transfer, e.g. EU Commission adequacy decision; standard contractual clauses. Are these bases documented ?
+This question is: Fully modeled
+
+Justification: The question asks about the legal basis for data transfer and whether these bases are documented. The metamodel supports the concept of legal bases for data processing through the `Processing` class, which includes the attribute `pc` (enum) that refers to the legal basis in the GDPR (Consent/Contract, Vital Interests, Legitimate Interests, Legal Obligations, Public Interests). Additionally, the `SecondaryActor` class includes the attribute `safeguardType` (enum), which can represent types of safeguards such as Adequacy decision, Contractual clause, Derogation, and BCR. These attributes cover the legal bases for data transfer mentioned in the question.
+
+Package of metamodel: Processing Package, Actor Package
+
+--------------------------------------------------
+Question 54: Are data subjects fully informed about any intended international transfers of their personal data ?
+This question is: Fully modeled
+
+Justification:
+The question asks whether data subjects are fully informed about any intended international transfers of their personal data. To determine if this is fully modeled, we need to identify the underlying concepts that could be modeled:
+
+1. **Data Subject**: The person whose personal data is being transferred.
+2. **International Transfer**: The action of transferring personal data internationally.
+3. **Information Provision**: The process of informing data subjects about the transfer.
+
+The metamodel includes the following relevant elements:
+
+- **DataSubject**: Represents the data subject.
+- **PersonalDataTransfer**: Represents the transfer of personal data, including international transfers.
+- **SecondaryActor**: Represents entities that may receive the transferred data, including those in different countries.
+- **Country**: Represents the country to which data is being transferred, including the adequacy of data protection.
+- **Processing**: Represents the processing of personal data, which can include transfers.
+- **User Stories**:
+  - As a [data subject], I want to be informed of any processing related to the transfer of my personal data ([list of transferred data]) within or outside the European Union, including the data transferred, the purpose of the transfer, and the receiving entity.
+
+These elements collectively cover the concepts of data subjects, international transfers, and the provision of information about these transfers. Therefore, the metamodel supports all possible concepts to be modeled for this question.
+
+Package of metamodel: Processing Package
+
+--------------------------------------------------

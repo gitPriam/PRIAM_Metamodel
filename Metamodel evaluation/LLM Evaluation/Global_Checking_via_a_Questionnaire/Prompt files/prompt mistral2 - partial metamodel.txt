@@ -1,0 +1,26 @@
+This is our metamodel:
+[
+GDPR Compliance Metamodel
+
+Actor Package: : Represents different types of stakeholders in the application.
+
+ Classes
+
+- DPO: Data Protection Officer, responsible for enforcing personal data regulations within a company.
+  - Attributes:
+    - `dpoName` (string): Name of the Data Protection Officer.
+    - `dpoAddress` (string): Physical address of the Data Protection Officer.
+    - `dpoPhone` (string): Telephone number of the Data Protection Officer.
+    - `dpoEmail` (string): Email address of the Data Protection Officer.
+    - `reason` (string): Reason for not appointing a Data Protection Officer.
+
+- Country: Country of the actor (data subject, application owner, DPO, etc.).
+  - Attributes:
+    - `countryId` (string): Country identifier.
+    - `name` (string): Name of the country.
+    - `minorAge` (int): Age of majority in the country.
+    - `adequate` (enum): Indicator showing whether personal data protection conditions are at least equivalent to those offered by the GDPR (yes, partial, no).
+]
+
+- Carefully reads the question, the entire metamodel and the instructions before answering.
+- Read the entire prompt, including the definitions of the answer options, before answering.

@@ -1,0 +1,403 @@
+This is our metamodel:
+[
+ GDPR Compliance Metamodel
+
+ Packages
+
+ Actor Package: : Represents different types of stakeholders in the application.
+
+ Classes
+- Actor: Represents different types of stakeholders.
+  - Attributes:
+    - `actorId` (string): Actor's unique identifier.
+    - `name` (string): Name of the entity or actor.
+    - `address` (string): Physical address associated with the actor.
+    - `phone` (string): Telephone number associated with the actor.
+    - `email` (string): Email address associated with the actor.
+
+- MainActor: Corresponds to entities playing central roles in the privacy management process (data controller, data subject).
+  - Attributes: Inherits from `Actor`.
+
+- SecondaryActor: A natural or legal person entitled to obtain communication of the collected or produced data. Can be a third-party or processor.
+  - Attributes:
+    - Inherits from `Actor`.
+    - `safeguard` (string): All measures or commitments taken by an organization or data processor to ensure that personal data processing complies with legal protection standards.
+    - `safeguardType` (enum): Type of safeguard (Adequacy decision, Contractual clause, Derogation, BCR).
+
+- ApplicationOwner: Represents the data controller in the GDPR, responsible for ensuring that processing of personal data complies with the regulation.
+  - Attributes:
+    - `aoName` (string): Name of the application owner.
+    - `aoAddress` (string): Physical address of the application owner.
+    - `aoPhone` (string): Telephone number of the application owner.
+    - `aoEmail` (string): Email address of the application owner.
+
+- DataSubject: Refers to the person whose personal data is collected, processed, transmitted, or stored.
+  - Attributes:
+    - `age` (int): Age of the person concerned.
+    - `referenceId` (string): A unique reference identifier linking a data subject's information in the application database to its information in the PRIAM database.
+
+- DPO: Data Protection Officer, responsible for enforcing personal data regulations within a company.
+  - Attributes:
+    - `dpoName` (string): Name of the Data Protection Officer.
+    - `dpoAddress` (string): Physical address of the Data Protection Officer.
+    - `dpoPhone` (string): Telephone number of the Data Protection Officer.
+    - `dpoEmail` (string): Email address of the Data Protection Officer.
+    - `reason` (string): Reason for not appointing a Data Protection Officer.
+
+- Representative: A natural or legal person established in the EU who is designated in writing by the controller.
+  - Attributes:
+    - `repName` (string): Name of the representative.
+    - `repAddress` (string): Physical address of the representative.
+    - `repPhone` (string): Telephone number of the representative.
+    - `repEmail` (string): Email address of the representative.
+
+- Tutor: Refers to the holder of parental responsibility for the minor data subject.
+  - Attributes:
+    - `tutorName` (string): Name of the guardian or person in charge of a minor.
+
+- Processor: A natural or legal person, public authority, agency, or other body which processes personal data on behalf of the controller.
+  - Attributes: Inherits from `SecondaryActor`.
+
+- ThirdParty: A natural or legal person, public authority, agency, or body other than the data subject, controller, processor, and persons who, under the direct authority of the controller or processor, are authorized to process personal data.
+  - Attributes: Inherits from `SecondaryActor`.
+
+- DataSubjectCategory: Category of data subject.
+  - Attributes:
+    - `dscId` (string): Identifier of a data subject category.
+    - `dscName` (string): Name of a data subject category.
+    - `locationId` (string): Identifier of the data subject category in the application database (e.g., ClientId for a Client category).
+
+- SecondaryActorCategory: Category of secondary actor (e.g., commercial partner, research center, supervisory authority).
+  - Attributes:
+    - `id` (string): Unique identifier of a secondary actor category.
+    - `sacName` (string): Name of the secondary actor.
+
+- Country: Country of the actor (data subject, application owner, DPO, etc.).
+  - Attributes:
+    - `countryId` (string): Country identifier.
+    - `name` (string): Name of the country.
+    - `minorAge` (int): Age of majority in the country.
+    - `adequate` (enum): Indicator showing whether personal data protection conditions are at least equivalent to those offered by the GDPR (yes, partial, no).
+
+ Associations
+- Actor <|-- SecondaryActor
+- Actor <|-- MainActor
+- SecondaryActor <|-- DataProcessor
+- SecondaryActor <|-- ThirdParty
+- MainActor <|-- ApplicationOwner
+- MainActor <|-- DataSubject
+- MainActor <|-- Tutor
+- MainActor <|-- DPO
+- MainActor <|-- Representative
+- Country "1" -- "*" Actor
+- DataSubjectCategory "1" -- "*" DataSubject
+- DataSubject "1..*" -- "0..1" Tutor
+- SecondaryActor "1" -- "*" SecondaryActorCategory
+
+ User Stories
+- As a [data subject], I want to have access to the contact details of the DPO (Data Protection Officer).
+- As a [data subject], I want to have access to the contact details of the data controller/representative.
+- As a [data subject], I want a legal guardian to be appointed so that I can be sure that my rights are protected.
+- As a [data subject], I want to be informed of the data consumers/categories of data consumers.
+- As a data controller, I want to be able to document my contact details/those of the representative.
+- As a data controller, I want to be able to document the DPO's contact details.
+- As a data controller, I want to document the contact details of the data consumers (recipient, third party, and data processor).
+- As a data controller, I want to list the categories of data subjects.
+
+ Constraints
+- The age of the data subject must be greater than 0.
+- The minor age of the data subject must be between 13 and 16.
+- A minor data subject must have a guardian (responsible parent).
+- The contact details of the control authority must be known to the data subject. There must therefore be exactly one secondary actor whose category is "supervisory authority".
+- If the country associated with the secondary actor is not adequate, then the secondary actor must provide a guarantee.
+
+ Data Package: Describes the data collected and stored.
+
+ Classes
+- Data: Holds the description of a kind of collected and stored data.
+  - Attributes:
+    - `dataId` (string): Unique data identifier.
+    - `dataName` (string): Attribute name (of a data item).
+    - `source` (enum): Origin or provenance of personal data. It can take one of three values: Indirect (the data subject is not the source of his,/her,her data), Direct (data subject is the source of his/her data) and produced (automatically generated data via a decision-making system, inference...).
+    - `sourceDetails` (string): Detailed information concerning the origin of data when this is an indirect source.
+    - `dataConservation` (date): Retention period, the length of time for which personal data is stored.
+    - `isPersonal` (boolean): An indicator specifying whether the data in question is considered personal, i.e., linked to an identifiable person.
+    - `isPortable` (boolean): An indicator specifying whether personal data is portable.
+
+- PersonalDataCategory: Category of personal data.
+  - Attributes:
+    - `pdcId` (string): Unique identifier of a personal data category.
+    - `pdcName` (string): Name of a category of personal data (health, identification, profile, sensitive, etc.).
+
+- DataType: Defines the content of the data as a classifier (set of attributes associated with primitive types).
+  - Attributes:
+    - `dataTypeId` (string): Unique identifier of a data type.
+    - `dataTypeName` (string): Name of the data type referring to the name of a class or table in a database.
+
+ Associations
+- DataSubjectCategory "0..1" -- "1..*" Data
+- Data "1..*" -- "1" DataType
+- PersonalDataCategory "0..1" -- "*" Data
+
+ User Stories
+- As a [data subject], I want to be informed about which personal data is collected, processed, and shared.
+- As a [data subject], I want to be informed of the source of my personal data ([data list]).
+- As a [data subject], I want to be informed about the categories of my personal data ([data list]).
+- As a [data subject], I want to be informed about how long my personal data ([data list]) will be kept (retention period).
+- As a data controller, I want to ensure that my organization has mechanisms in place to keep personal data up to date and accurate.
+- As a data controller, I want to list the data in my application and their status (personal or non-personal).
+- As a data controller, I want to document for each piece of personal data, its retention period, its source, its category, as well as the category of data subject to which it belongs to ensure adequate and transparent documentation.
+
+ Constraints
+- If the data is personal, then the data subject and personal data categories must not be empty, the source must not be "No", and the data retention period must not be zero.
+- If the data source is "Direct", then the data must be portable.
+- If the data source is "Generated", then the data must not be portable.
+- If the data source is "Indirect", then the source details must be filled in.
+
+ Processing Package: Represents operations performed on data.
+
+ Classes
+- Processing: Any operation or set of operations which is performed on (personal) data.
+  - Attributes:
+    - `processingId` (string): Unique identifier for a processing operation.
+    - `processingName` (string): Processing name/title.
+    - `pt` (enum): Processing type (Default, Necessary, Optional, Mandatory).
+    - `pc` (enum): Processing category refers to the legal basis in the GDPR (Consent/Contract, Vital Interests, Legitimate Interests, Legal Obligations, Public Interests).
+    - `createdAt` (date): Processing creation date.
+    - `modifiedAt` (date): Processing modification date.
+    - `endedAt` (date): Processing end date.
+    - `consequence` (string): Describes the specific impacts of not providing the data required for a given processing operation.
+
+- DataUsage: Links processings to the data they use to assess their status regarding privacy management.
+  - Attributes:
+    - `dataUsageId` (string): Unique identifier of a data usage.
+    - `hasPersonalStatus` (boolean): Status of personal data (personal or not) in a specific processing.
+    - `c/r/u/d` (enum): Operation (create, read, update, delete) that a processing can perform on data.
+
+- PersonalDataTransfer: Transfer personal data, keeps track of any data transfer. It allows knowing to whom the data has been transferred and for what purpose.
+  - Attributes:
+    - `transferId` (string): Unique identifier of a transfer.
+
+- Purpose: Objective of the processing in the application (e.g., profiling, automated decision making, marketing, statistics, research).
+  - Attributes:
+    - `purposeId` (string): Unique identifier of a purpose.
+    - `description` (string): Description of purpose.
+    - `type` (enum): Type of purpose (primary or secondary).
+
+- Measure: Action taken to protect personal data and processing against threats, risks, or breaches.
+  - Attributes:
+    - `measureId` (string): Unique identifier for a measure.
+    - `description` (string): Measure description.
+    - `Mtype` (enum): Measure type (organizational, technical).
+    - `Mcategory` (string): Measure category (e.g., encryption, anonymization).
+
+- ProcessingLink: Links two processings together. For now, we distinguish two types of links: Similarity when processings have similar purposes and Inclusion when one processing includes the other. In both cases, a single consent is sufficient.
+  - Attributes:
+    - `typeOfLink` (enum): Type of link (Similarity, Inclusion).
+
+ Associations
+- SecondaryActor "1..*" -- "*" PersonalDataTransfer
+- Data "1..*" -- "*" PersonalDataTransfer
+- Processing "1" -- "1" PersonalDataTransfer
+- Data "1" -- "1..*" DataUsage
+- Processing "1" -- "1..*" DataUsage
+- Processing "1" -- "*" Measure
+- Processing "1..*" -- "1..*" MainActor
+- Processing o- Purpose
+- ProcessingLink diamond
+- ProcessingLink diamond -- "from 0..*" Processing
+- ProcessingLink diamond -- "to 0..*" Processing
+
+ User Stories
+- As a [data subject], I want to be informed of any personal processing ([processings list]) performed on my personal data.
+- As a [data subject], I want to be informed of the legal basis for my processings ([processings list]).
+- As a [data subject], I want to be informed of the purposes for which my personal processing ([processings list]) has been performed.
+- As a [data subject], I want to be informed of any processing related to the transfer of my personal data ([list of transferred data]) within or outside the European Union, including the data transferred, the purpose of the transfer, and the receiving entity.
+- As a [data subject], I must be informed of the technical and organizational measures taken to guarantee the protection of my personal data ([data list]).
+- As a [data subject], I want to be informed of any further processing of my personal data ([data list]), including the purposes of such processing.
+- As a [data subject], I want to be notified of any changes concerning my personal data ([data list]) and data processing ([processings list]).
+- As a [data subject], I want to understand whether providing my personal data is a legal or contractual obligation, and what the consequences are if I choose not to provide this data, so that I can make decisions about disclosing my personal data.
+- As a data controller, I want to ensure that my organization complies with the data minimization principles by collecting only the information that is strictly necessary for the specific purposes of the processing.
+- As a data controller, I want to be able to document the details of each data processing operation, including its legal basis, its purpose(s), and the associated technical and organizational measures.
+- As a data controller, I want to be able to document the data required for each processing and its status (personal/non-personal) (data usage table).
+- As a data controller, I want to be able to document all transfers, including the data consumer and the data to be transferred.
+- As a data controller, I want to be able to add and perform a processing operation with the same purpose as another, where further processing is necessary, without obtaining additional consent from data subjects.
+- As a controller, I want to ensure that my organization has complete documentation of processing activities, including purposes, categories of data, and recipients (processing activities record).
+- As a data controller, I want to ensure that my organization carries out Data Protection Impact Assessments (DPIA).
+
+ Constraints
+- The modification date (modifiedAt) must be equal to or later than the creation date (createdAt).
+- The end date (endedAt) must be equal to or later than the modification date (modifiedAt).
+- There must be exactly one main purpose in the list of purposes associated with data processing.
+- If the processing type (pt) is "Optional" or "Necessary", then the processing category (pc) must be "Consent/Contract".
+- If the category of processing (pc) is "VitalInterest", "LegalObligation", or "PublicInterest", then the type of processing (pt) must be "Mandatory".
+
+ Consent Package: Represents explicit consent given by a data subject.
+
+ Classes
+- Contract: An agreement between the data subject and the data controller. It represents a set of consents.
+  - Attributes:
+    - `contractId` (string): Unique identifier of a contract.
+    - `signatureDate` (date): Contract signature date (start date).
+    - `expirationDate` (date): Contract expiry date (contract termination date).
+
+- Consent: Represents the explicit consent given by a data subject to the processing of his/her personal data.
+  - Attributes:
+    - `consentId` (string): Unique consent identifier.
+    - `startDate` (date): Consent start date.
+    - `endDate` (date): Consent end date.
+
+ Associations
+- DataSubject "1" -- "1..*" Contract
+- Contract "*" -- "1" Consent
+- Consent "*" -- "1" Processing
+
+ User Stories
+- As a [data subject], I want to give my explicit consent for each specific processing ([processings list]) of my personal data.
+- As a [data subject], I want to be able to change my consent preferences at any time.
+- As a [data subject], I want to be able to refuse that my data be used for profiling purposes or to be the subject of automated decisions.
+- As a [data subject], I want the process of collecting my consent to be transparent and easy to understand.
+- As a [data subject], I want to access/download my contract.
+- As a data controller, I want to document and record individuals' consent so that I can demonstrate it if necessary.
+- As a data controller, I want to ensure that my organization complies with specific rules regarding the consent of minors, where applicable.
+- As a data controller, I want to access or download a data subject's contract.
+- As a data controller, I want to generate, in a machine-readable format, the consents of the data subjects to the processing performed by the secondary actors.
+
+ Constraints
+- The consent start date must be greater than or equal to the contract signature date, and the consent end date must be less than or equal to the contract expiry date.
+- The consent start date must be equal to or later than the processing start date, and the consent end date must be equal to or earlier than the processing end date.
+
+ Rights Package: Represents the rights of data subjects.
+
+ Classes
+- Request: A formal request sent by the data subject to exercise one of his or her rights.
+  - Attributes:
+    - `requestId` (string): Unique request identifier.
+    - `claim` (string): Request justification.
+    - `issuedAt` (date): Request issue date.
+
+- DataRequest: A "data request" refers to a request made by a data subject that concerns a specific piece of data or several specific pieces of data about him/her (concerns individual data). It may be a request for rectification, deletion, access, or portability.
+  - Attributes:
+    - Inherits from `Request`.
+    - `newValue` (string): In the case of a rectification request, this attribute represents the new value of the data to be modified.
+    - `type` (enum): Type of data request (rectification, deletion, access).
+    - `isIsolated` (boolean): In the case of a rectification request, the data concerned is isolated until a response is issued.
+
+- ProcessingRequest: A "processing request" refers to a request concerning the entire processing of personal data, not just specific data. It concerns data processing as such, not just specific data. It may be a request for objection, limitation, and information.
+  - Attributes:
+    - Inherits from `Request`.
+    - `type` (enum): Type of processing request (Objection, Knowledge, Restriction).
+
+- Answer: The response provided by the data controller in response to a request from the data subject to exercise a right.
+  - Attributes:
+    - `answerId` (string): Unique response identifier.
+    - `answer` (boolean): Yes or no answer to a request.
+    - `issuedAt` (date): Date of response.
+    - `claim` (string): Justification for response.
+
+ Associations
+- Request <|-- DataRequest
+- Request <|-- ProcessingRequest
+- ApplicationOwner "1" -- "*" Answer
+- DataSubject "1" -- "0..*" Request
+- Answer "0..1" -- "1" Request
+- ProcessingRequest "*" -- "1" Processing
+- DataRequest "0..*" -- "1..*" Data
+
+ User Stories
+- As a [data subject], I want to access all my personal data ([data list]).
+- As a [data subject], I want to be able to object to processing ([processings list]).
+- As a [data subject], I want to be able to restrict processing ([processings list]).
+- As a [data subject], I want to give or not and withdraw my consent anytime for ([processings list]) so that I exercise my right to consent.
+- As a [data subject], I want to rectify any of my personal data ([data list]) so that I exercise my rectification right.
+- As a [data subject], I want to erase any of my personal data ([data list]) so that I exercise my right to be forgotten.
+- As a [data subject], I want to obtain my personal data ([data list]) in a structured and/or machine-readable format so that I exercise my right to personal data portability.
+- As a [data subject], I want to know all information about my personal data ([data list]) and their processing so that I enforce my right to knowledge.
+- As a [data subject], I want my personal data ([data list]) to be deleted when legally required to do so.
+- As a [data subject], I want to be informed of my rights.
+- As a [data subject], I want to be informed of my right to lodge a complaint with a supervisory authority.
+- As a [data subject], I want to be notified when the limitation is lifted.
+- As a [data subject], I want to be notified of responses to my requests to enforce my rights.
+- As the [data subject], I want to be informed of the answers given to my requests, as well as the date and claim.
+- As a data controller, I want to ensure that the time limits (not exceeding 1 month) for responding to requests to enforce the rights of data subjects are respected.
+- As a data controller, I want to be able to request additional information from my data subjects if necessary.
+- As a data controller, I want to be notified when data subjects make a request to enforce their rights.
+- As a data controller, I want to notify data consumers of any changes that affect the personal data of data subjects.
+
+ Constraints
+- The date of the response (issuedAt) must be equal to or later than the date of the request (issuedAt).
+- If the type of data request is "Rectification", then the new value (newValue) must not be null.
+- If the type of data request is "Deletion" or "Rectification", then there must be exactly one piece of data associated with this request.
+- If a data request is of type Portability, all data included in this request must be marked as portable (isPortable = true).
+- When creating a data request, the isPersonal attribute of the associated data must be set to true (data must be personal).
+- To create a data request (DataRequest) of type Rectification (GDPR right of rectification), the request must first be of this type (precondition). Once the request has been created, the isIsolated field is set to true (postcondition), meaning that the data concerned by the request will be isolated.
+
+ Breach Package: Represents a data security breach.
+
+ Classes
+- Breach: A breach in data security, leading to unauthorized access or disclosure of personal data.
+  - Attributes:
+    - `breachId` (string): Unique identifier of a breach.
+    - `nature` (string): Nature of the personal data breach.
+    - `riskLevel` (enum): Level of risk generated by the breach (None, Medium, High).
+    - `createdAt` (date): Date of creation of the breach.
+    - `sprvAuthNonNotifReasons` (string): Reasons why a data protection authority has not been notified of a breach.
+    - `dataSubjNonNotifReasons` (string): Reasons why the data subject has not been notified of a breach.
+
+- Consequence: The impact or effect resulting from an incident, such as a personal data breach.
+  - Attributes:
+    - `impactId` (string): Unique identifier of a consequence.
+    - `description` (string): Consequence description.
+
+ Associations
+- Breach "1..*" -- "1..*" Consequence
+- Breach "*" -- "*" Measure
+- Breach "*" -- "1..*" DataSubject
+- Breach "*" -- "1..*" Data
+
+ User Stories
+- As a [data subject], I want to be informed of the technical and organizational measures taken to guarantee the protection of my personal data that has been breached.
+- As a [data subject], I want to be informed of the data ([data list]) that has been breached and the consequences of the breach.
+- As a data controller, I want to maintain a data breach record.
+- As a data controller, I want to be able to inform the supervisory authority in the event of a data breach of personal data.
+- As a data controller, I want to document all information related to the breach, including the data subjects affected, the data breached, the consequences, and the measures taken.
+- As a data controller, I want to document the reasons why the supervisory authority and/or data subjects have not been notified.
+- As a data controller, I want to be alerted when notification of the supervisory authority is required.
+- As a secondary actor, I want to document all information related to the breach, including the data subjects affected, the data breached, the consequences, and the measures taken.
+
+ Constraints
+- In the context of a Breach, all data involved must be personal (isPersonal = true). If data is not personal, it must not be included in the breach.
+- If the risk level of the data breach is "No risk", then the reasons for non-notification to the data protection authority (sprvAuthNonNotifReasons) and the reasons for non-notification to the data subject (dataSubjNonNotifReasons) must be entered.
+- If the risk level of the data breach is "Medium", then the reasons for non-notification (dataSubjNonNotifReasons) must be entered.
+
+ Document Package: Represents relevant documents for compliance.
+
+ Classes
+- Document: A file containing relevant information about the processing of personal data.
+  - Attributes:
+    - `docId` (string): Unique document identifier.
+    - `content` (string): Content of the document. It can be in the form of a PDF file, text file, etc.
+    - `createdAt` (date): Document creation date.
+
+- RecordProcessingA: A document listing the processing of personal data and its details (data processed, its category, purposes, security measures, etc.).
+  - Attributes: Inherits from `Document`.
+
+- RecordBreach: A document detailing a personal data breach, including the data breached, the data subjects affected.
+  - Attributes: Inherits from `Document`.
+
+- DPIA: Data Protection Impact Assessment (DPIA) is a process used to evaluate and mitigate privacy risks when processing personal data. It helps organizations assess the impact of data processing activities on individuals' privacy, especially when such processing may pose high risks, and ensures compliance with data protection laws like the GDPR.
+  - Attributes:
+    - `toolUrl` (string): URL of the tool used to perform the impact analysis.
+
+ Associations
+- Document <|-- DPIAReport
+- Document <|-- RecordProcessingA
+- Document <|-- Contract
+- Document <|-- RecordBreach
+- RecordBreach "1" -- "1..*" Breach
+- DPIAReport "1..*" -- "1..*" Processing
+- RecordProcessingA "1" -- "1..*" Processing
+]
+
+- Carefully reads the question, the entire metamodel and the instructions before answering.
+- Read the entire prompt, including the definitions of the answer options, before answering.
