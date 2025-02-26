@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/GDPR_V1/PRIAM_LANGUAGE.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/GDPR_V1/sandbox/PRIAM_LANGUAGE.sandbox.msd" folder="" />
+    </projectModules>
+  </component>
+</project>

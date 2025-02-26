@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="8,0,40,0" name="PRIAM_LANGUAGE.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:2adcd0b5-6265-4462-b7b6-92dedd477e2c(PRIAM_LANGUAGE.typesystem)/1633837476040803209">
+    <file name="TypesystemDescriptor.java">
+      <node id="1633837476040803209" at="14,5,15,87" concept="6" />
+      <node id="1633837476040803209" at="15,87,16,55" concept="2" />
+      <node id="1633837476040803209" at="13,5,17,5" concept="0" />
+      <scope id="1633837476040803209" at="14,5,16,55">
+        <var name="nonTypesystemRule" id="1633837476040803209" />
+      </scope>
+    </file>
+    <file name="check_Data_NonTypesystemRule.java">
+      <node id="5156672680757754063" at="28,11,29,70" concept="6" />
+      <node id="5156672680757754063" at="29,70,30,281" concept="6" />
+      <node id="1633837476043452477" at="32,9,33,0" concept="8" />
+      <node id="5156672680757756469" at="37,11,38,70" concept="6" />
+      <node id="5156672680757756469" at="38,70,39,251" concept="6" />
+      <node id="6487941389414267027" at="42,7,43,0" concept="8" />
+      <node id="3562240872162217535" at="46,11,47,70" concept="6" />
+      <node id="3562240872162217535" at="47,70,48,236" concept="6" />
+      <node id="1633837476043452489" at="51,7,52,0" concept="8" />
+      <node id="3562240872166939950" at="54,9,55,68" concept="6" />
+      <node id="3562240872166939950" at="55,68,56,233" concept="6" />
+      <node id="3562240872166947852" at="60,9,61,68" concept="6" />
+      <node id="3562240872166947852" at="61,68,62,272" concept="6" />
+      <node id="1633837476040803209" at="67,50,68,28" concept="7" />
+      <node id="1633837476040803209" at="70,68,71,102" concept="7" />
+      <node id="1633837476040803209" at="73,30,74,17" concept="7" />
+      <node id="3562240872161587014" at="76,52,77,40" concept="7" />
+      <node id="1633837476040803209" at="81,0,82,0" concept="9" trace="isPersonal$gtJN" />
+      <node id="1633837476040803209" at="82,0,83,0" concept="9" trace="isPortable$g$kf" />
+      <node id="1633837476040803209" at="83,0,84,0" concept="9" trace="source$gzQd" />
+      <node id="1633837476040803209" at="84,0,85,0" concept="9" trace="sourceDetails$g$5e" />
+      <node id="1633837476040803209" at="88,0,89,0" concept="9" trace="personalDataCategory$gF7G" />
+      <node id="1633837476040803209" at="89,0,90,0" concept="9" trace="dataSubjectCategory$gFmH" />
+      <node id="1633837476040803209" at="93,0,94,0" concept="9" trace="Data$W_" />
+      <node id="1633837476040803209" at="22,0,24,0" concept="1" trace="check_Data_NonTypesystemRule#()V" />
+      <node id="1633837476040803209" at="67,0,70,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1633837476040803209" at="70,0,73,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="1633837476040803209" at="73,0,76,0" concept="5" trace="overrides#()Z" />
+      <node id="3562240872161587014" at="76,0,79,0" concept="10" trace="isEmptyString#(Ljava/lang/String;)Z" />
+      <node id="5156672680757754063" at="27,83,31,11" concept="0" />
+      <node id="5156672680757756469" at="36,82,40,11" concept="0" />
+      <node id="3562240872162217535" at="45,91,49,11" concept="0" />
+      <node id="3562240872166939950" at="53,87,57,9" concept="0" />
+      <node id="3562240872166947852" at="59,86,63,9" concept="0" />
+      <node id="1633837476042283718" at="26,93,32,9" concept="4" />
+      <node id="1633837476043452893" at="35,96,41,9" concept="4" />
+      <node id="6487941389414299200" at="44,95,50,9" concept="4" />
+      <node id="3562240872166934679" at="52,0,58,7" concept="4" />
+      <node id="3562240872166947850" at="58,7,64,7" concept="4" />
+      <node id="1633837476043452891" at="34,7,42,7" concept="4" />
+      <node id="6487941389414268202" at="43,0,51,7" concept="4" />
+      <node id="1633837476040803219" at="25,70,34,7" concept="4" />
+      <node id="3562240872160954395" at="24,117,65,5" concept="4" />
+      <node id="1633837476040803209" at="24,0,67,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="1633837476040803209" at="22,41,22,41" />
+      <scope id="1633837476040803209" at="67,50,68,28" />
+      <scope id="1633837476040803209" at="70,68,71,102" />
+      <scope id="1633837476040803209" at="73,30,74,17" />
+      <scope id="3562240872161587014" at="76,52,77,40" />
+      <scope id="1633837476040803209" at="22,0,24,0" />
+      <scope id="5156672680757754063" at="28,11,30,281">
+        <var name="_reporter_2309309498" id="5156672680757754063" />
+        <var name="errorTarget" id="5156672680757754063" />
+      </scope>
+      <scope id="5156672680757756469" at="37,11,39,251">
+        <var name="_reporter_2309309498" id="5156672680757756469" />
+        <var name="errorTarget" id="5156672680757756469" />
+      </scope>
+      <scope id="3562240872162217535" at="46,11,48,236">
+        <var name="_reporter_2309309498" id="3562240872162217535" />
+        <var name="errorTarget" id="3562240872162217535" />
+      </scope>
+      <scope id="3562240872166939950" at="54,9,56,233">
+        <var name="_reporter_2309309498" id="3562240872166939950" />
+        <var name="errorTarget" id="3562240872166939950" />
+      </scope>
+      <scope id="3562240872166947852" at="60,9,62,272">
+        <var name="_reporter_2309309498" id="3562240872166947852" />
+        <var name="errorTarget" id="3562240872166947852" />
+      </scope>
+      <scope id="1633837476040803209" at="67,0,70,0" />
+      <scope id="1633837476040803209" at="70,0,73,0">
+        <var name="argument" id="1633837476040803209" />
+      </scope>
+      <scope id="1633837476040803209" at="73,0,76,0" />
+      <scope id="3562240872161587014" at="76,0,79,0">
+        <var name="str" id="3562240872161587014" />
+      </scope>
+      <scope id="1633837476042283720" at="27,83,31,11" />
+      <scope id="1633837476043452894" at="36,82,40,11" />
+      <scope id="6487941389414299202" at="45,91,49,11" />
+      <scope id="3562240872166934681" at="53,87,57,9" />
+      <scope id="3562240872166947851" at="59,86,63,9" />
+      <scope id="1633837476043452892" at="35,96,41,9" />
+      <scope id="6487941389414268204" at="44,95,50,9" />
+      <scope id="1633837476040803221" at="26,93,33,0" />
+      <scope id="3562240872160954397" at="25,70,64,7" />
+      <scope id="1633837476040803210" at="24,117,65,5" />
+      <scope id="1633837476040803209" at="24,0,67,0">
+        <var name="data" id="1633837476040803209" />
+        <var name="status" id="1633837476040803209" />
+        <var name="typeCheckingContext" id="1633837476040803209" />
+      </scope>
+      <unit id="1633837476040803209" at="92,0,95,0" name="PRIAM_LANGUAGE.typesystem.check_Data_NonTypesystemRule$CONCEPTS" />
+      <unit id="1633837476040803209" at="87,0,91,0" name="PRIAM_LANGUAGE.typesystem.check_Data_NonTypesystemRule$LINKS" />
+      <unit id="1633837476040803209" at="80,0,86,0" name="PRIAM_LANGUAGE.typesystem.check_Data_NonTypesystemRule$PROPS" />
+      <unit id="1633837476040803209" at="21,0,96,0" name="PRIAM_LANGUAGE.typesystem.check_Data_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:2adcd0b5-6265-4462-b7b6-92dedd477e2c(PRIAM_LANGUAGE.typesystem)/1903269460203664380">
+    <file name="TypesystemDescriptor.java">
+      <node id="1903269460203664380" at="34,5,35,93" concept="6" />
+      <node id="1903269460203664380" at="35,93,36,55" concept="2" />
+      <node id="1903269460203664380" at="33,5,37,5" concept="0" />
+      <scope id="1903269460203664380" at="34,5,36,55">
+        <var name="nonTypesystemRule" id="1903269460203664380" />
+      </scope>
+    </file>
+    <file name="check_processing_NonTypesystemRule.java">
+      <node id="1903269460203845168" at="25,7,26,66" concept="6" />
+      <node id="1903269460203845168" at="26,66,27,238" concept="6" />
+      <node id="6829385373503091523" at="29,5,30,0" concept="8" />
+      <node id="6829385373503092829" at="32,7,33,66" concept="6" />
+      <node id="6829385373503092829" at="33,66,34,247" concept="6" />
+      <node id="6829385373503092750" at="36,5,37,0" concept="8" />
+      <node id="1903269460204623145" at="40,9,41,68" concept="6" />
+      <node id="1903269460204623145" at="41,68,42,285" concept="6" />
+      <node id="5927725931185584189" at="45,5,46,0" concept="8" />
+      <node id="5927725931185614731" at="49,9,50,68" concept="6" />
+      <node id="5927725931185614731" at="50,68,51,311" concept="6" />
+      <node id="1903269460203664380" at="56,50,57,34" concept="7" />
+      <node id="1903269460203664380" at="59,68,60,102" concept="7" />
+      <node id="1903269460203664380" at="62,30,63,17" concept="7" />
+      <node id="1903269460203664380" at="67,0,68,0" concept="9" trace="pc$RQ7h" />
+      <node id="1903269460203664380" at="68,0,69,0" concept="9" trace="pt$RPDf" />
+      <node id="1903269460203664380" at="72,0,73,0" concept="9" trace="Processing$5F" />
+      <node id="1903269460203664380" at="21,0,23,0" concept="1" trace="check_processing_NonTypesystemRule#()V" />
+      <node id="1903269460203664380" at="56,0,59,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1903269460203664380" at="59,0,62,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="1903269460203664380" at="62,0,65,0" concept="5" trace="overrides#()Z" />
+      <node id="1903269460203845168" at="24,98,28,7" concept="0" />
+      <node id="6829385373503092829" at="31,98,35,7" concept="0" />
+      <node id="1903269460204623145" at="39,108,43,9" concept="0" />
+      <node id="5927725931185614731" at="48,101,52,9" concept="0" />
+      <node id="1903269460203664394" at="23,123,29,5" concept="4" />
+      <node id="6829385373503092822" at="30,0,36,5" concept="4" />
+      <node id="1903269460204612745" at="38,184,44,7" concept="4" />
+      <node id="5927725931185601117" at="47,290,53,7" concept="4" />
+      <node id="1903269460204598076" at="37,0,45,5" concept="4" />
+      <node id="5927725931185585249" at="46,0,54,5" concept="4" />
+      <node id="1903269460203664380" at="23,0,56,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="1903269460203664380" at="21,47,21,47" />
+      <scope id="1903269460203664380" at="56,50,57,34" />
+      <scope id="1903269460203664380" at="59,68,60,102" />
+      <scope id="1903269460203664380" at="62,30,63,17" />
+      <scope id="1903269460203664380" at="21,0,23,0" />
+      <scope id="1903269460203845168" at="25,7,27,238">
+        <var name="_reporter_2309309498" id="1903269460203845168" />
+        <var name="errorTarget" id="1903269460203845168" />
+      </scope>
+      <scope id="6829385373503092829" at="32,7,34,247">
+        <var name="_reporter_2309309498" id="6829385373503092829" />
+        <var name="errorTarget" id="6829385373503092829" />
+      </scope>
+      <scope id="1903269460204623145" at="40,9,42,285">
+        <var name="_reporter_2309309498" id="1903269460204623145" />
+        <var name="errorTarget" id="1903269460204623145" />
+      </scope>
+      <scope id="5927725931185614731" at="49,9,51,311">
+        <var name="_reporter_2309309498" id="5927725931185614731" />
+        <var name="errorTarget" id="5927725931185614731" />
+      </scope>
+      <scope id="1903269460203664380" at="56,0,59,0" />
+      <scope id="1903269460203664380" at="59,0,62,0">
+        <var name="argument" id="1903269460203664380" />
+      </scope>
+      <scope id="1903269460203664380" at="62,0,65,0" />
+      <scope id="1903269460203664396" at="24,98,28,7" />
+      <scope id="6829385373503092828" at="31,98,35,7" />
+      <scope id="1903269460204612747" at="39,108,43,9" />
+      <scope id="5927725931185601119" at="48,101,52,9" />
+      <scope id="1903269460204598078" at="38,184,44,7" />
+      <scope id="5927725931185585251" at="47,290,53,7" />
+      <scope id="1903269460203664381" at="23,123,54,5" />
+      <scope id="1903269460203664380" at="23,0,56,0">
+        <var name="processing" id="1903269460203664380" />
+        <var name="status" id="1903269460203664380" />
+        <var name="typeCheckingContext" id="1903269460203664380" />
+      </scope>
+      <unit id="1903269460203664380" at="71,0,74,0" name="PRIAM_LANGUAGE.typesystem.check_processing_NonTypesystemRule$CONCEPTS" />
+      <unit id="1903269460203664380" at="66,0,70,0" name="PRIAM_LANGUAGE.typesystem.check_processing_NonTypesystemRule$PROPS" />
+      <unit id="1903269460203664380" at="20,0,75,0" name="PRIAM_LANGUAGE.typesystem.check_processing_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:2adcd0b5-6265-4462-b7b6-92dedd477e2c(PRIAM_LANGUAGE.typesystem)/4978688509083360195">
+    <file name="TypesystemDescriptor.java">
+      <node id="4978688509083360195" at="18,5,19,94" concept="6" />
+      <node id="4978688509083360195" at="19,94,20,55" concept="2" />
+      <node id="4978688509083360195" at="17,5,21,5" concept="0" />
+      <scope id="4978688509083360195" at="18,5,20,55">
+        <var name="nonTypesystemRule" id="4978688509083360195" />
+      </scope>
+    </file>
+    <file name="check_DataSubject_NonTypesystemRule.java">
+      <node id="4978688509084242782" at="26,7,27,66" concept="6" />
+      <node id="4978688509084242782" at="27,66,28,298" concept="6" />
+      <node id="4978688509083360195" at="32,50,33,35" concept="7" />
+      <node id="4978688509083360195" at="35,68,36,102" concept="7" />
+      <node id="4978688509083360195" at="38,30,39,17" concept="7" />
+      <node id="4978688509083360195" at="43,0,44,0" concept="9" trace="parent$TQS8" />
+      <node id="4978688509083360195" at="44,0,45,0" concept="9" trace="country$PakR" />
+      <node id="4978688509083360195" at="48,0,49,0" concept="9" trace="age$k8JX" />
+      <node id="4978688509083360195" at="49,0,50,0" concept="9" trace="minorAge$aKNi" />
+      <node id="4978688509083360195" at="53,0,54,0" concept="9" trace="DataSubject$Ol" />
+      <node id="4978688509083360195" at="22,0,24,0" concept="1" trace="check_DataSubject_NonTypesystemRule#()V" />
+      <node id="4978688509083360195" at="32,0,35,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="4978688509083360195" at="35,0,38,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="4978688509083360195" at="38,0,41,0" concept="5" trace="overrides#()Z" />
+      <node id="4978688509084242782" at="25,253,29,7" concept="0" />
+      <node id="4978688509083360216" at="24,124,30,5" concept="4" />
+      <node id="4978688509083360195" at="24,0,32,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="4978688509083360195" at="22,48,22,48" />
+      <scope id="4978688509083360195" at="32,50,33,35" />
+      <scope id="4978688509083360195" at="35,68,36,102" />
+      <scope id="4978688509083360195" at="38,30,39,17" />
+      <scope id="4978688509083360195" at="22,0,24,0" />
+      <scope id="4978688509084242782" at="26,7,28,298">
+        <var name="_reporter_2309309498" id="4978688509084242782" />
+        <var name="errorTarget" id="4978688509084242782" />
+      </scope>
+      <scope id="4978688509083360195" at="32,0,35,0" />
+      <scope id="4978688509083360195" at="35,0,38,0">
+        <var name="argument" id="4978688509083360195" />
+      </scope>
+      <scope id="4978688509083360195" at="38,0,41,0" />
+      <scope id="4978688509083360218" at="25,253,29,7" />
+      <scope id="4978688509083360196" at="24,124,30,5" />
+      <scope id="4978688509083360195" at="24,0,32,0">
+        <var name="dataSubject" id="4978688509083360195" />
+        <var name="status" id="4978688509083360195" />
+        <var name="typeCheckingContext" id="4978688509083360195" />
+      </scope>
+      <unit id="4978688509083360195" at="52,0,55,0" name="PRIAM_LANGUAGE.typesystem.check_DataSubject_NonTypesystemRule$CONCEPTS" />
+      <unit id="4978688509083360195" at="42,0,46,0" name="PRIAM_LANGUAGE.typesystem.check_DataSubject_NonTypesystemRule$LINKS" />
+      <unit id="4978688509083360195" at="47,0,51,0" name="PRIAM_LANGUAGE.typesystem.check_DataSubject_NonTypesystemRule$PROPS" />
+      <unit id="4978688509083360195" at="21,0,56,0" name="PRIAM_LANGUAGE.typesystem.check_DataSubject_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:2adcd0b5-6265-4462-b7b6-92dedd477e2c(PRIAM_LANGUAGE.typesystem)/4978688509084327257">
+    <file name="TypesystemDescriptor.java">
+      <node id="4978688509084327257" at="22,5,23,92" concept="6" />
+      <node id="4978688509084327257" at="23,92,24,55" concept="2" />
+      <node id="4978688509084327257" at="21,5,25,5" concept="0" />
+      <scope id="4978688509084327257" at="22,5,24,55">
+        <var name="nonTypesystemRule" id="4978688509084327257" />
+      </scope>
+    </file>
+    <file name="check_DataUsage_NonTypesystemRule.java">
+      <node id="4978688509084334792" at="27,9,28,68" concept="6" />
+      <node id="4978688509084334792" at="28,68,29,255" concept="6" />
+      <node id="4978688509084327257" at="34,50,35,33" concept="7" />
+      <node id="4978688509084327257" at="37,68,38,102" concept="7" />
+      <node id="4978688509084327257" at="40,30,41,17" concept="7" />
+      <node id="4978688509084327257" at="45,0,46,0" concept="9" trace="data$IQYy" />
+      <node id="4978688509084327257" at="49,0,50,0" concept="9" trace="isPersonal$gtJN" />
+      <node id="4978688509084327257" at="50,0,51,0" concept="9" trace="hasPersonalUsage$NmBj" />
+      <node id="4978688509084327257" at="54,0,55,0" concept="9" trace="DataUsage$nH" />
+      <node id="4978688509084327257" at="22,0,24,0" concept="1" trace="check_DataUsage_NonTypesystemRule#()V" />
+      <node id="4978688509084327257" at="34,0,37,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="4978688509084327257" at="37,0,40,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="4978688509084327257" at="40,0,43,0" concept="5" trace="overrides#()Z" />
+      <node id="4978688509084334792" at="26,83,30,9" concept="0" />
+      <node id="4978688509084333252" at="25,122,31,7" concept="4" />
+      <node id="4978688509084327264" at="24,122,32,5" concept="4" />
+      <node id="4978688509084327257" at="24,0,34,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="4978688509084327257" at="22,46,22,46" />
+      <scope id="4978688509084327257" at="34,50,35,33" />
+      <scope id="4978688509084327257" at="37,68,38,102" />
+      <scope id="4978688509084327257" at="40,30,41,17" />
+      <scope id="4978688509084327257" at="22,0,24,0" />
+      <scope id="4978688509084334792" at="27,9,29,255">
+        <var name="_reporter_2309309498" id="4978688509084334792" />
+        <var name="errorTarget" id="4978688509084334792" />
+      </scope>
+      <scope id="4978688509084327257" at="34,0,37,0" />
+      <scope id="4978688509084327257" at="37,0,40,0">
+        <var name="argument" id="4978688509084327257" />
+      </scope>
+      <scope id="4978688509084327257" at="40,0,43,0" />
+      <scope id="4978688509084333254" at="26,83,30,9" />
+      <scope id="4978688509084327266" at="25,122,31,7" />
+      <scope id="4978688509084327258" at="24,122,32,5" />
+      <scope id="4978688509084327257" at="24,0,34,0">
+        <var name="dataUsage" id="4978688509084327257" />
+        <var name="status" id="4978688509084327257" />
+        <var name="typeCheckingContext" id="4978688509084327257" />
+      </scope>
+      <unit id="4978688509084327257" at="44,0,47,0" name="PRIAM_LANGUAGE.typesystem.check_DataUsage_NonTypesystemRule$LINKS" />
+      <unit id="4978688509084327257" at="53,0,56,0" name="PRIAM_LANGUAGE.typesystem.check_DataUsage_NonTypesystemRule$CONCEPTS" />
+      <unit id="4978688509084327257" at="48,0,52,0" name="PRIAM_LANGUAGE.typesystem.check_DataUsage_NonTypesystemRule$PROPS" />
+      <unit id="4978688509084327257" at="21,0,57,0" name="PRIAM_LANGUAGE.typesystem.check_DataUsage_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:2adcd0b5-6265-4462-b7b6-92dedd477e2c(PRIAM_LANGUAGE.typesystem)/4978688509084335201">
+    <file name="TypesystemDescriptor.java">
+      <node id="4978688509084335201" at="26,5,27,97" concept="6" />
+      <node id="4978688509084335201" at="27,97,28,55" concept="2" />
+      <node id="4978688509084335201" at="25,5,29,5" concept="0" />
+      <scope id="4978688509084335201" at="26,5,28,55">
+        <var name="nonTypesystemRule" id="4978688509084335201" />
+      </scope>
+    </file>
+    <file name="check_SecondaryActor_NonTypesystemRule.java">
+      <node id="5156672680738407294" at="26,7,27,66" concept="6" />
+      <node id="5156672680738407294" at="27,66,28,393" concept="6" />
+      <node id="5156672680739307360" at="30,5,31,0" concept="8" />
+      <node id="5156672680738666933" at="31,0,32,0" concept="8" />
+      <node id="4978688509084335201" at="34,50,35,38" concept="7" />
+      <node id="4978688509084335201" at="37,68,38,102" concept="7" />
+      <node id="4978688509084335201" at="40,30,41,17" concept="7" />
+      <node id="4978688509084335201" at="45,0,46,0" concept="9" trace="safeguardType$iVKA" />
+      <node id="4978688509084335201" at="46,0,47,0" concept="9" trace="adequate$mDBg" />
+      <node id="4978688509084335201" at="50,0,51,0" concept="9" trace="country$PakR" />
+      <node id="4978688509084335201" at="54,0,55,0" concept="9" trace="SecondaryActor$NQ" />
+      <node id="4978688509084335201" at="22,0,24,0" concept="1" trace="check_SecondaryActor_NonTypesystemRule#()V" />
+      <node id="4978688509084335201" at="34,0,37,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="4978688509084335201" at="37,0,40,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="4978688509084335201" at="40,0,43,0" concept="5" trace="overrides#()Z" />
+      <node id="5156672680738407294" at="25,220,29,7" concept="0" />
+      <node id="4978688509084335208" at="24,127,30,5" concept="4" />
+      <node id="4978688509084335201" at="24,0,34,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="4978688509084335201" at="22,51,22,51" />
+      <scope id="4978688509084335201" at="34,50,35,38" />
+      <scope id="4978688509084335201" at="37,68,38,102" />
+      <scope id="4978688509084335201" at="40,30,41,17" />
+      <scope id="4978688509084335201" at="22,0,24,0" />
+      <scope id="5156672680738407294" at="26,7,28,393">
+        <var name="_reporter_2309309498" id="5156672680738407294" />
+        <var name="errorTarget" id="5156672680738407294" />
+      </scope>
+      <scope id="4978688509084335201" at="34,0,37,0" />
+      <scope id="4978688509084335201" at="37,0,40,0">
+        <var name="argument" id="4978688509084335201" />
+      </scope>
+      <scope id="4978688509084335201" at="40,0,43,0" />
+      <scope id="4978688509084335210" at="25,220,29,7" />
+      <scope id="4978688509084335202" at="24,127,32,0" />
+      <scope id="4978688509084335201" at="24,0,34,0">
+        <var name="secondaryActor" id="4978688509084335201" />
+        <var name="status" id="4978688509084335201" />
+        <var name="typeCheckingContext" id="4978688509084335201" />
+      </scope>
+      <unit id="4978688509084335201" at="49,0,52,0" name="PRIAM_LANGUAGE.typesystem.check_SecondaryActor_NonTypesystemRule$LINKS" />
+      <unit id="4978688509084335201" at="53,0,56,0" name="PRIAM_LANGUAGE.typesystem.check_SecondaryActor_NonTypesystemRule$CONCEPTS" />
+      <unit id="4978688509084335201" at="44,0,48,0" name="PRIAM_LANGUAGE.typesystem.check_SecondaryActor_NonTypesystemRule$PROPS" />
+      <unit id="4978688509084335201" at="21,0,57,0" name="PRIAM_LANGUAGE.typesystem.check_SecondaryActor_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:2adcd0b5-6265-4462-b7b6-92dedd477e2c(PRIAM_LANGUAGE.typesystem)/5156672680740095838">
+    <file name="TypesystemDescriptor.java">
+      <node id="5156672680740095838" at="10,5,11,98" concept="6" />
+      <node id="5156672680740095838" at="11,98,12,55" concept="2" />
+      <node id="5156672680740095838" at="9,33,13,5" concept="0" />
+      <scope id="5156672680740095838" at="10,5,12,55">
+        <var name="nonTypesystemRule" id="5156672680740095838" />
+      </scope>
+    </file>
+    <file name="check_ActorAnnotation_NonTypesystemRule.java">
+      <node id="5156672680740446966" at="26,128,27,20" concept="6" />
+      <node id="5156672680744927979" at="29,142,30,14" concept="2" />
+      <node id="5156672680740793114" at="33,9,34,68" concept="6" />
+      <node id="5156672680740793114" at="34,68,35,298" concept="6" />
+      <node id="5156672680740095838" at="40,50,41,39" concept="7" />
+      <node id="5156672680740095838" at="43,68,44,102" concept="7" />
+      <node id="5156672680740095838" at="46,30,47,17" concept="7" />
+      <node id="5156672680740095838" at="51,0,52,0" concept="9" trace="category$RZC4" />
+      <node id="5156672680740095838" at="52,0,53,0" concept="9" trace="secondaryActors$_5yk" />
+      <node id="5156672680740095838" at="56,0,57,0" concept="9" trace="name$MnvL" />
+      <node id="5156672680740095838" at="60,0,61,0" concept="9" trace="ActorAnnotation$z7" />
+      <node id="5156672680740095838" at="24,0,26,0" concept="1" trace="check_ActorAnnotation_NonTypesystemRule#()V" />
+      <node id="5156672680740227272" at="28,117,31,7" concept="4" />
+      <node id="5156672680740095838" at="40,0,43,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5156672680740095838" at="43,0,46,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="5156672680740095838" at="46,0,49,0" concept="5" trace="overrides#()Z" />
+      <node id="5156672680740793114" at="32,21,36,9" concept="0" />
+      <node id="5156672680740718571" at="31,7,37,7" concept="4" />
+      <node id="5156672680740133045" at="27,20,38,5" concept="3" />
+      <node id="5156672680740095838" at="26,0,40,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="5156672680740095838" at="24,52,24,52" />
+      <scope id="5156672680740227274" at="29,142,30,14" />
+      <scope id="5156672680740095838" at="40,50,41,39" />
+      <scope id="5156672680740095838" at="43,68,44,102" />
+      <scope id="5156672680740095838" at="46,30,47,17" />
+      <scope id="5156672680740095838" at="24,0,26,0" />
+      <scope id="5156672680740793114" at="33,9,35,298">
+        <var name="_reporter_2309309498" id="5156672680740793114" />
+        <var name="errorTarget" id="5156672680740793114" />
+      </scope>
+      <scope id="5156672680740095838" at="40,0,43,0" />
+      <scope id="5156672680740095838" at="43,0,46,0">
+        <var name="argument" id="5156672680740095838" />
+      </scope>
+      <scope id="5156672680740095838" at="46,0,49,0" />
+      <scope id="5156672680740718573" at="32,21,36,9" />
+      <scope id="5156672680740133048" at="28,117,37,7" />
+      <scope id="5156672680740133045" at="27,20,38,5">
+        <var name="s" id="5156672680740133046" />
+      </scope>
+      <scope id="5156672680740095839" at="26,128,38,5">
+        <var name="cpt" id="5156672680740446969" />
+      </scope>
+      <scope id="5156672680740095838" at="26,0,40,0">
+        <var name="actorAnnotation" id="5156672680740095838" />
+        <var name="status" id="5156672680740095838" />
+        <var name="typeCheckingContext" id="5156672680740095838" />
+      </scope>
+      <unit id="5156672680740095838" at="55,0,58,0" name="PRIAM_LANGUAGE.typesystem.check_ActorAnnotation_NonTypesystemRule$PROPS" />
+      <unit id="5156672680740095838" at="59,0,62,0" name="PRIAM_LANGUAGE.typesystem.check_ActorAnnotation_NonTypesystemRule$CONCEPTS" />
+      <unit id="5156672680740095838" at="50,0,54,0" name="PRIAM_LANGUAGE.typesystem.check_ActorAnnotation_NonTypesystemRule$LINKS" />
+      <unit id="5156672680740095838" at="23,0,63,0" name="PRIAM_LANGUAGE.typesystem.check_ActorAnnotation_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:2adcd0b5-6265-4462-b7b6-92dedd477e2c(PRIAM_LANGUAGE.typesystem)/5443663467297055794">
+    <file name="TypesystemDescriptor.java">
+      <node id="5443663467297055794" at="30,5,31,90" concept="6" />
+      <node id="5443663467297055794" at="31,90,32,55" concept="2" />
+      <node id="5443663467297055794" at="29,5,33,5" concept="0" />
+      <scope id="5443663467297055794" at="30,5,32,55">
+        <var name="nonTypesystemRule" id="5443663467297055794" />
+      </scope>
+    </file>
+    <file name="check_country_NonTypesystemRule.java">
+      <node id="962273745576811869" at="24,7,25,66" concept="6" />
+      <node id="962273745576811869" at="25,66,26,254" concept="6" />
+      <node id="5443663467297055794" at="30,50,31,31" concept="7" />
+      <node id="5443663467297055794" at="33,68,34,102" concept="7" />
+      <node id="5443663467297055794" at="36,30,37,17" concept="7" />
+      <node id="5443663467297055794" at="41,0,42,0" concept="9" trace="minorAge$aKNi" />
+      <node id="5443663467297055794" at="45,0,46,0" concept="9" trace="Country$U_" />
+      <node id="5443663467297055794" at="20,0,22,0" concept="1" trace="check_country_NonTypesystemRule#()V" />
+      <node id="5443663467297055794" at="30,0,33,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5443663467297055794" at="33,0,36,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="5443663467297055794" at="36,0,39,0" concept="5" trace="overrides#()Z" />
+      <node id="962273745576811869" at="23,145,27,7" concept="0" />
+      <node id="5443663467297066869" at="22,120,28,5" concept="4" />
+      <node id="5443663467297055794" at="22,0,30,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="5443663467297055794" at="20,44,20,44" />
+      <scope id="5443663467297055794" at="30,50,31,31" />
+      <scope id="5443663467297055794" at="33,68,34,102" />
+      <scope id="5443663467297055794" at="36,30,37,17" />
+      <scope id="5443663467297055794" at="20,0,22,0" />
+      <scope id="962273745576811869" at="24,7,26,254">
+        <var name="_reporter_2309309498" id="962273745576811869" />
+        <var name="errorTarget" id="962273745576811869" />
+      </scope>
+      <scope id="5443663467297055794" at="30,0,33,0" />
+      <scope id="5443663467297055794" at="33,0,36,0">
+        <var name="argument" id="5443663467297055794" />
+      </scope>
+      <scope id="5443663467297055794" at="36,0,39,0" />
+      <scope id="5443663467297066871" at="23,145,27,7" />
+      <scope id="5443663467297055795" at="22,120,28,5" />
+      <scope id="5443663467297055794" at="22,0,30,0">
+        <var name="country" id="5443663467297055794" />
+        <var name="status" id="5443663467297055794" />
+        <var name="typeCheckingContext" id="5443663467297055794" />
+      </scope>
+      <unit id="5443663467297055794" at="40,0,43,0" name="PRIAM_LANGUAGE.typesystem.check_country_NonTypesystemRule$PROPS" />
+      <unit id="5443663467297055794" at="44,0,47,0" name="PRIAM_LANGUAGE.typesystem.check_country_NonTypesystemRule$CONCEPTS" />
+      <unit id="5443663467297055794" at="19,0,48,0" name="PRIAM_LANGUAGE.typesystem.check_country_NonTypesystemRule" />
+    </file>
+  </root>
+</debug-info>
+

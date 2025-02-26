@@ -1,0 +1,1 @@
+insert into gdpr_datarequest (DataRequestID, claim, newValue, datareqType, datasubject, data) values(2, '', '20', 'rectification', '1', '2');
