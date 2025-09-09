@@ -10,15 +10,11 @@ This is our metamodel:
 - Actor: Represents different types of stakeholders.
   - Attributes:
     - `actorId` (string): Actor's unique identifier.
-    - `name` (string): Name of the entity or actor.
-    - `address` (string): Physical address associated with the actor.
-    - `phone` (string): Telephone number associated with the actor.
-    - `email` (string): Email address associated with the actor.
 
 - MainActor: Corresponds to entities playing central roles in the privacy management process (data controller, data subject).
   - Attributes: Inherits from `Actor`.
 
-- SecondaryActor: A natural or legal person entitled to obtain communication of the collected or produced data. Can be a third-party or processor.
+- SecondaryActor: A natural or legal person entitled to obtain communication of the collected or produced data. Can be a third-party or data processor.
   - Attributes:
     - Inherits from `Actor`.
     - `safeguard` (string): All measures or commitments taken by an organization or data processor to ensure that personal data processing complies with legal protection standards.
@@ -55,10 +51,10 @@ This is our metamodel:
   - Attributes:
     - `tutorName` (string): Name of the guardian or person in charge of a minor.
 
-- Processor: A natural or legal person, public authority, agency, or other body which processes personal data on behalf of the controller.
+- DataProcessor: A natural or legal person, public authority, agency, or other body which processes personal data on behalf of the controller.
   - Attributes: Inherits from `SecondaryActor`.
 
-- ThirdParty: A natural or legal person, public authority, agency, or body other than the data subject, controller, processor, and persons who, under the direct authority of the controller or processor, are authorized to process personal data.
+- ThirdParty: A natural or legal person, public authority, agency, or body other than the data subject, controller, data processor, and persons who, under the direct authority of the controller or processor, are authorized to process personal data.
   - Attributes: Inherits from `SecondaryActor`.
 
 - DataSubjectCategory: Category of data subject.
